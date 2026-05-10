@@ -20,3 +20,7 @@ Utiliser des outils open source et des données OSINT pour :
 ### Sous-projet pour des équipes Albert School + étudiants de l’Ecole 42
 + Générer des politiques de logs (ex. : quels logs collecter, où les stocker, combien de temps les conserver).
 + Automatiser la détection et la réponse aux incidents.
+
+## Consignes
+Commencez par la section "Mise en jambe" pou comprendre le problème, le contexte, les outils, ls données. 
+Continuer avec la section "Généralisation". 
