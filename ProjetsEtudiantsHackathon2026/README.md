@@ -11,7 +11,7 @@ Les étudiants sont donc incités à être force de proposition et d’innovatio
 Il n’y a pas de « bonne réponse ». Il y a une proposition de démarche claire, documentée, justifiée, … ne pas hésitez à restreindre le périmètre et vous focaliser sur un sous-problème si vous êtes en mesure de justifier son intérêt.  
 
 ## Sujet 1 : log as code, génération automatisée de politiques de logs de sécurité 
-[Lien](https://exemple.com)
+[Lien](https:[SujetsHackathon2026/Sujet1](https://github.com/eanique/HackathonAlbert2026/tree/ec845ae5777130e9b31bf3a75ef94dd44bc11ce8/SujetsHackathon2026/Sujet1))
 
 ## Sujet 2 : Cartographie des impacts métier d'une attaque cyber 
 [Lien](https://exemple.com)
