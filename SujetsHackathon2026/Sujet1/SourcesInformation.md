@@ -7,14 +7,15 @@ d’acquérir et de maintenir une connaissance de la menace et de l’attaquant 
 institutions. 
 
 L'organisation pou laquelle vous traitez le sujet évolue dans un environnement technologique riche, 
-complexe et distribué. Cet environnement comporte des _systèmes informatiques d'entreprise_ et 
-des _systèmes industriels connectés_ (terminaux intelligents, objets connectés, systèmes industriels). Le présent challenge se concentre sur les systèmes informatiques 
-d'entreprise.
+complexe et distribué. Cet environnement comporte des _systèmes informatiques d'entreprise_, IT, et 
+des _systèmes industriels connectés_, OT (terminaux intelligents, objets connectés, systèmes industriels). La sécurité IT et OT protège deux domaines distincts que les attaquants exploitent désormais comme une seule surface d’attaque. Le présent challenge se concentre sur les systèmes informatiques 
+d'entreprise (IT).
 
 # MITRE ATT&CK® 
 MITRE ATT&CK is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. 
 The ATT&CK knowledge base is used as a foundation for the development of specific threat models and 
-methodologies 
+methodologies.
+The "https://github.com/mitre-attack/mitreattack-python/#mitreattack-python" repository contains a library of Python tools and utilities for working with ATT&CK data. 
 
 # TTP
 Les TTP (Tactics, Techniques, and Procedures) décrivent comment les attaquants opèrent pour atteindre 
