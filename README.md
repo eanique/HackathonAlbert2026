@@ -13,7 +13,7 @@ Les étudiants sont donc incités à être force de proposition et d’innovatio
 Il n’y a pas de « bonne réponse ». Il y a une proposition de démarche claire, documentée, justifiée, … ne pas hésitez à restreindre le périmètre et vous focaliser sur un sous-problème si vous êtes en mesure de justifier son intérêt.  
 
 ## Sujets
-### Sujet 1 : log as code, génération automatisée de politiques de logs de sécurité 
+### Sujet 1 : Log as code, génération automatisée de politiques de logs de sécurité 
 
 ### Sujet 2 : Cartographie des impacts métier d'une attaque cyber 
 
