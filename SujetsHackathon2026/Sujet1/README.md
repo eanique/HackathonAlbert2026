@@ -22,10 +22,10 @@ Utiliser des outils open source et des données OSINT pour :
 + Automatiser la détection et la réponse aux incidents.
 
 ## Consignes
-Commencez par la section "Mise en jambe" pou comprendre le problème, le contexte, les outils, ls données. 
+Commencez par la section "Mise en jambe" pou comprendre le problème, le contexte, les outils, les données. 
 Continuer avec la section "Généralisation". 
 
-# SOURCES
+# SOURCES ET LIENS
 ## CTI
 La Cyber Threat Intelligence définit la recherche, l’analyse et la modélisation de la menace cyber. 
 Elle permet de décrire une menace ou une attaque informatique au travers d’éléments contextualisés et/ou 
