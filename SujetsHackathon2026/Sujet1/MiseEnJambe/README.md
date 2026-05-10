@@ -15,7 +15,7 @@ https://github.com/oasis-open/cti-python-stix2 (format STIX2...)
 
 4. Mapper les CVE avec TTPs (ex. : CVE-2021-44228 → T1190). Préparer l'automatisation des liens (NLP, graphe de connaissance, ...).
 
-5. Générer un rapport actionnable avec les TTPs prioritaires (par exemple : CVSS > 8)
+5. Générer un rapport avec les TTPs prioritaires (par exemple : CVSS > 8)
 
 L'objectif avec les briques ci-dessus,est d'aller vers la construction d'un pipeline automatisé :
 
@@ -23,4 +23,4 @@ L'objectif avec les briques ci-dessus,est d'aller vers la construction d'un pipe
 2. Enrichit les logs avec des métadonnées (TTPs, CVE, criticité).
 3. Détecte des anomalies (ML, etc.).
 4. Mappe automatiquement les logs aux TTPs/CVE avec NLP et graphes.
-5. Génère des rapports prioritaires (CVSS > 8, TTPs critiques, etc.).
+5. Génère des rapports prioritaires (% de log valides, CVSS > 8, TTPs critiques, etc.).
