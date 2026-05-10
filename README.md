@@ -14,20 +14,14 @@ Il n’y a pas de « bonne réponse ». Il y a une proposition de démarche cl
 
 ## Sujets
 ### Sujet 1 : log as code, génération automatisée de politiques de logs de sécurité 
-[SujetsHackathon2026/Sujet1]()
 
 ### Sujet 2 : Cartographie des impacts métier d'une attaque cyber 
-[SujetsHackathon2026/Sujet2]()
-
 
 ### Sujet 3 : Aide à l’identification des navires par analyse intelligente de leur radio signature 
-[SujetsHackathon2026/Sujet3]()
 
 ### Sujet 4 : Détection d’activités maritimes anormales à partir des données AIS 
-[SujetsHackathon2026/Sujet4]()
 
 ### Sujet 5 : Chasse aux navires de guerre 
-[SujetsHackathon2026/Sujet5]()
 
 ## Livraison des travaux
 
