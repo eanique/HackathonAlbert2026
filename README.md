@@ -40,4 +40,4 @@ Votre réponse  comporte :
 + Précision et complétude des résultats : extraction, transformation, apprentissage, tuning, mapping, liens entre données, scoring métier, etc. 
 + Automatisation : usage d'API, de librairies, code performant, etc.
 + Collaboration : bonne répartition du travail entre les membres
-+ Présentation : clarté, conviction
++ Présentation : clarté, conviction, ergonomie
