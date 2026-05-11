@@ -1,0 +1,94 @@
+{
+    "description": "Fichier contenant une liste de 20 navires avec leurs caractéristiques de base.",
+    "champs": {
+        "mmsi": {
+            "type": "String",
+            "description": "Maritime Mobile Service Identity (identifiant unique du navire).",
+            "exemple": "244710000",
+            "format": "9 chiffres",
+            "obligatoire": true
+        },
+        "name": {
+            "type": "String",
+            "description": "Nom officiel du navire.",
+            "exemple": "MSC Oscar",
+            "format": "Texte libre",
+            "obligatoire": true
+        },
+        "imo": {
+            "type": "String",
+            "description": "IMO Number (identifiant unique international du navire).",
+            "exemple": "9681530",
+            "format": "7 chiffres",
+            "obligatoire": true
+        },
+        "type": {
+            "type": "String",
+            "description": "Type de navire.",
+            "exemple": "Container Ship",
+            "valeurs_possibles": [
+                "Container Ship",
+                "Tanker",
+                "Bulk Carrier",
+                "General Cargo",
+                "Passenger Ship",
+                "Fishing Vessel",
+                "Tugboat",
+                "Pilot Vessel",
+                "Sailboat",
+                "Yacht",
+                "Military",
+                "Other"
+            ],
+            "obligatoire": true
+        },
+        "flag": {
+            "type": "String",
+            "description": "Pavillon du navire (pays d'immatriculation).",
+            "exemple": "Panama",
+            "valeurs_possibles": [
+                "Panama",
+                "Liberia",
+                "France",
+                "Denmark",
+                "Singapore",
+                "Marshall Islands",
+                "Malta",
+                "Bahamas",
+                "China",
+                "USA"
+            ],
+            "obligatoire": true
+        },
+        "length": {
+            "type": "Float",
+            "description": "Longueur du navire en mètres.",
+            "exemple": 395.4,
+            "unité": "mètres",
+            "obligatoire": true
+        },
+        "width": {
+            "type": "Float",
+            "description": "Largeur du navire en mètres.",
+            "exemple": 59.0,
+            "unité": "mètres",
+            "obligatoire": true
+        },
+        "destination": {
+            "type": "String",
+            "description": "Destination déclarée du navire.",
+            "exemple": "Rotterdam",
+            "format": "Texte libre",
+            "obligatoire": false
+        },
+        "last_ais_update": {
+            "type": "DateTime",
+            "description": "Dernière mise à jour des données AIS (format ISO 8601).",
+            "exemple": "2026-05-10T14:30:00Z",
+            "format": "YYYY-MM-DDTHH:MM:SSZ",
+            "obligatoire": false
+        }
+    },
+    "nombre_lignes": 20,
+    "fichier_associe": "ships_small.csv"
+}

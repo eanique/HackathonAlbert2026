@@ -1,0 +1,76 @@
+{
+    "description": "Fichier contenant 20 données AIS pour les navires de ships_small.csv.",
+    "champs": {
+        "mmsi": {
+            "type": "String",
+            "description": "MMSI du navire.",
+            "exemple": "244710000",
+            "format": "9 chiffres",
+            "obligatoire": true
+        },
+        "timestamp": {
+            "type": "DateTime",
+            "description": "Date et heure de la donnée AIS (format ISO 8601).",
+            "exemple": "2026-05-10T14:30:00Z",
+            "format": "YYYY-MM-DDTHH:MM:SSZ",
+            "obligatoire": true
+        },
+        "latitude": {
+            "type": "Float",
+            "description": "Latitude du navire (position AIS).",
+            "exemple": 43.2965,
+            "unité": "degrés décimaux",
+            "plage": "-90.0 à 90.0",
+            "obligatoire": true
+        },
+        "longitude": {
+            "type": "Float",
+            "description": "Longitude du navire (position AIS).",
+            "exemple": -5.3698,
+            "unité": "degrés décimaux",
+            "plage": "-180.0 à 180.0",
+            "obligatoire": true
+        },
+        "speed": {
+            "type": "Float",
+            "description": "Vitesse du navire en nœuds.",
+            "exemple": 12.5,
+            "unité": "nœuds",
+            "plage": "0.0 - 50.0",
+            "obligatoire": false
+        },
+        "course": {
+            "type": "Float",
+            "description": "Cap du navire en degrés (0-360).",
+            "exemple": 270.0,
+            "unité": "degrés",
+            "plage": "0.0 - 360.0",
+            "obligatoire": false
+        },
+        "status": {
+            "type": "String",
+            "description": "Statut de navigation du navire.",
+            "exemple": "Under Way",
+            "valeurs_possibles": [
+                "Under Way",
+                "At Anchor",
+                "Moored",
+                "Not under command",
+                "Restricted maneuverability"
+            ],
+            "obligatoire": false
+        },
+        "ais_active": {
+            "type": "Boolean",
+            "description": "Indique si l'AIS du navire est activé.",
+            "exemple": true,
+            "valeurs_possibles": [
+                true,
+                false
+            ],
+            "obligatoire": true
+        }
+    },
+    "nombre_lignes": 20,
+    "fichier_associe": "ais_data_small.csv"
+}

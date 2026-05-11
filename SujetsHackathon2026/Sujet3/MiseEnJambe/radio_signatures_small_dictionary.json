@@ -1,0 +1,89 @@
+{
+    "description": "Fichier contenant 20 signatures radio captées pour les navires de ships_small.csv.",
+    "champs": {
+        "signature_id": {
+            "type": "String",
+            "description": "Identifiant unique de la signature radio.",
+            "exemple": "SIG-0001",
+            "format": "SIG-XXXX (4 chiffres)",
+            "obligatoire": true
+        },
+        "mmsi": {
+            "type": "String",
+            "description": "MMSI du navire associé à cette signature radio.",
+            "exemple": "244710000",
+            "format": "9 chiffres",
+            "obligatoire": true
+        },
+        "frequency": {
+            "type": "Float",
+            "description": "Fréquence principale de l'émission radio en MHz.",
+            "exemple": 156.8,
+            "unité": "MHz",
+            "plage": "156.0 - 162.0",
+            "obligatoire": true
+        },
+        "bandwidth": {
+            "type": "Float",
+            "description": "Bande passante de l'émission radio en kHz.",
+            "exemple": 25.0,
+            "unité": "kHz",
+            "plage": "10.0 - 50.0",
+            "obligatoire": true
+        },
+        "modulation": {
+            "type": "String",
+            "description": "Type de modulation de l'émission radio.",
+            "exemple": "FM",
+            "valeurs_possibles": [
+                "FM",
+                "AM",
+                "DSC",
+                "SSB",
+                "OFDM"
+            ],
+            "obligatoire": true
+        },
+        "power": {
+            "type": "Float",
+            "description": "Puissance d'émission en watts.",
+            "exemple": 100.0,
+            "unité": "watts",
+            "plage": "1.0 - 500.0",
+            "obligatoire": true
+        },
+        "timestamp": {
+            "type": "DateTime",
+            "description": "Date et heure de capture de la signature radio (format ISO 8601).",
+            "exemple": "2026-05-10T14:30:00Z",
+            "format": "YYYY-MM-DDTHH:MM:SSZ",
+            "obligatoire": true
+        },
+        "location_lat": {
+            "type": "Float",
+            "description": "Latitude de la position où la signature radio a été captée.",
+            "exemple": 43.2965,
+            "unité": "degrés décimaux",
+            "plage": "-90.0 à 90.0",
+            "obligatoire": true
+        },
+        "location_lon": {
+            "type": "Float",
+            "description": "Longitude de la position où la signature radio a été captée.",
+            "exemple": -5.3698,
+            "unité": "degrés décimaux",
+            "plage": "-180.0 à 180.0",
+            "obligatoire": true
+        },
+        "signal_strength": {
+            "type": "Float",
+            "description": "Force du signal radio en dBm (décibels-milliwatts).",
+            "exemple": -75.0,
+            "unité": "dBm",
+            "plage": "-120.0 à -20.0",
+            "obligatoire": true
+        }
+    },
+    "nombre_lignes": 20,
+    "fichier_associe": "radio_signatures_small.csv"
+}

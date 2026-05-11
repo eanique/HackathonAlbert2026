@@ -1,0 +1,68 @@
+{
+    "description": "Fichier contenant 100 anomalies détectées (faux pavillon, changement de nom, etc.).",
+    "champs": {
+        "anomaly_id": {
+            "type": "String",
+            "description": "Identifiant unique de l'anomalie.",
+            "exemple": "ANOM-001",
+            "format": "ANOM-XXX (3 chiffres)",
+            "obligatoire": true
+        },
+        "mmsi": {
+            "type": "String",
+            "description": "MMSI du navire concerné par l'anomalie.",
+            "exemple": "244710003",
+            "format": "9 chiffres",
+            "obligatoire": true
+        },
+        "type": {
+            "type": "String",
+            "description": "Type d'anomalie détectée.",
+            "exemple": "Fake Flag",
+            "valeurs_possibles": [
+                "Fake Flag",
+                "Name Change",
+                "Spoofing",
+                "AIS Disabled",
+                "Position Mismatch",
+                "Speed Anomaly",
+                "Course Anomaly"
+            ],
+            "obligatoire": true
+        },
+        "description": {
+            "type": "String",
+            "description": "Description détaillée de l'anomalie.",
+            "exemple": "Pavillon déclaré : Panama, mais signature radio typique des navires sous pavillon Libérien.",
+            "format": "Texte libre",
+            "obligatoire": true
+        },
+        "timestamp": {
+            "type": "DateTime",
+            "description": "Date et heure de détection de l'anomalie (format ISO 8601).",
+            "exemple": "2026-05-10T14:33:00Z",
+            "format": "YYYY-MM-DDTHH:MM:SSZ",
+            "obligatoire": true
+        },
+        "confidence": {
+            "type": "Float",
+            "description": "Niveau de confiance de la détection (0.0 à 1.0).",
+            "exemple": 0.95,
+            "plage": "0.0 - 1.0",
+            "obligatoire": true
+        },
+        "source": {
+            "type": "String",
+            "description": "Source de la détection de l'anomalie.",
+            "exemple": "Radio Signature",
+            "valeurs_possibles": [
+                "Radio Signature",
+                "AIS Inconsistency",
+                "Manual Review"
+            ],
+            "obligatoire": true
+        }
+    },
+    "nombre_lignes": 100,
+    "fichier_associe": "anomalies_large.csv"
+}
