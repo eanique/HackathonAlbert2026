@@ -1,0 +1,101 @@
+anomaly_id,mmsi,type,description,timestamp,confidence,source
+ANOM-000,591498401,AIS Disabled,"AIS désactivé depuis 24h, mais signature radio active.",2026-04-11T00:00:00Z,0.86,Radio Signature
+ANOM-001,666126066,Speed Anomaly,Vitesse anormale : 43.4 nœuds (limite : 30 nœuds).,2026-03-02T00:00:00Z,0.76,AIS Inconsistency
+ANOM-002,616945014,Speed Anomaly,Vitesse anormale : 38.7 nœuds (limite : 30 nœuds).,2026-05-05T00:00:00Z,0.72,Manual Review
+ANOM-003,780872220,AIS Disabled,"AIS désactivé depuis 24h, mais signature radio active.",2026-05-11T00:00:00Z,0.95,AIS Inconsistency
+ANOM-004,393509366,Speed Anomaly,Vitesse anormale : 32.1 nœuds (limite : 30 nœuds).,2026-01-30T00:00:00Z,0.78,AIS Inconsistency
+ANOM-005,647288961,Course Anomaly,Changement de cap brutal détecté.,2026-12-31T00:00:00Z,0.91,Radio Signature
+ANOM-006,389921162,Spoofing,"Signature radio similaire à celle du navire NAVIRE-3276, mais MMSI différent.",2026-07-28T00:00:00Z,0.93,Radio Signature
+ANOM-007,729794426,Name Change,"Nom déclaré : NAVIRE-4426, mais signature radio associée au navire NAVIRE-0030.",2026-02-11T00:00:00Z,0.92,AIS Inconsistency
+ANOM-008,379393743,Speed Anomaly,Vitesse anormale : 49.2 nœuds (limite : 30 nœuds).,2026-11-08T00:00:00Z,1.0,Radio Signature
+ANOM-009,796002514,Spoofing,"Signature radio similaire à celle du navire NAVIRE-3622, mais MMSI différent.",2026-08-11T00:00:00Z,0.71,Radio Signature
+ANOM-010,570937640,Name Change,"Nom déclaré : NAVIRE-7640, mais signature radio associée au navire NAVIRE-2832.",2026-02-14T00:00:00Z,0.78,Manual Review
+ANOM-011,324742591,Fake Flag,"Pavillon déclaré : Bahamas, mais signature radio typique des navires sous pavillon Liberia.",2026-10-05T00:00:00Z,0.74,AIS Inconsistency
+ANOM-012,778196639,Course Anomaly,Changement de cap brutal détecté.,2026-07-23T00:00:00Z,0.89,Radio Signature
+ANOM-013,721604393,Speed Anomaly,Vitesse anormale : 48.8 nœuds (limite : 30 nœuds).,2026-04-15T00:00:00Z,0.72,Manual Review
+ANOM-014,441462536,Fake Flag,"Pavillon déclaré : USA, mais signature radio typique des navires sous pavillon France.",2026-10-09T00:00:00Z,0.96,Radio Signature
+ANOM-015,777666051,Position Mismatch,Position AIS et position radio ne correspondent pas (écart > 1 km).,2026-01-13T00:00:00Z,0.99,AIS Inconsistency
+ANOM-016,324742591,Position Mismatch,Position AIS et position radio ne correspondent pas (écart > 1 km).,2026-10-21T00:00:00Z,0.88,AIS Inconsistency
+ANOM-017,583562034,Position Mismatch,Position AIS et position radio ne correspondent pas (écart > 1 km).,2026-11-02T00:00:00Z,0.74,Radio Signature
+ANOM-018,291644254,AIS Disabled,"AIS désactivé depuis 24h, mais signature radio active.",2026-03-01T00:00:00Z,0.76,AIS Inconsistency
+ANOM-019,290000334,Course Anomaly,Changement de cap brutal détecté.,2026-10-31T00:00:00Z,0.9,AIS Inconsistency
+ANOM-020,206220320,Speed Anomaly,Vitesse anormale : 30.7 nœuds (limite : 30 nœuds).,2026-03-26T00:00:00Z,0.97,AIS Inconsistency
+ANOM-021,522604490,Name Change,"Nom déclaré : NAVIRE-4490, mais signature radio associée au navire NAVIRE-8148.",2026-09-24T00:00:00Z,0.74,AIS Inconsistency
+ANOM-022,386428572,AIS Disabled,"AIS désactivé depuis 24h, mais signature radio active.",2026-01-28T00:00:00Z,0.8,Manual Review
+ANOM-023,789472539,Speed Anomaly,Vitesse anormale : 32.2 nœuds (limite : 30 nœuds).,2026-09-14T00:00:00Z,0.89,AIS Inconsistency
+ANOM-024,544068709,Spoofing,"Signature radio similaire à celle du navire NAVIRE-5822, mais MMSI différent.",2026-11-14T00:00:00Z,0.8,AIS Inconsistency
+ANOM-025,347759038,Spoofing,"Signature radio similaire à celle du navire NAVIRE-7846, mais MMSI différent.",2026-06-29T00:00:00Z,0.73,Radio Signature
+ANOM-026,377068202,Speed Anomaly,Vitesse anormale : 34.6 nœuds (limite : 30 nœuds).,2026-07-03T00:00:00Z,0.73,Manual Review
+ANOM-027,783109193,Spoofing,"Signature radio similaire à celle du navire NAVIRE-6211, mais MMSI différent.",2026-02-26T00:00:00Z,0.9,Manual Review
+ANOM-028,586349749,Spoofing,"Signature radio similaire à celle du navire NAVIRE-8651, mais MMSI différent.",2026-08-20T00:00:00Z,0.85,AIS Inconsistency
+ANOM-029,245445168,Name Change,"Nom déclaré : NAVIRE-5168, mais signature radio associée au navire NAVIRE-7757.",2026-05-04T00:00:00Z,0.9,Manual Review
+ANOM-030,779191453,Position Mismatch,Position AIS et position radio ne correspondent pas (écart > 1 km).,2026-08-03T00:00:00Z,0.93,Radio Signature
+ANOM-031,208492908,Speed Anomaly,Vitesse anormale : 40.7 nœuds (limite : 30 nœuds).,2026-06-22T00:00:00Z,0.75,AIS Inconsistency
+ANOM-032,474472853,Position Mismatch,Position AIS et position radio ne correspondent pas (écart > 1 km).,2026-07-28T00:00:00Z,0.76,AIS Inconsistency
+ANOM-033,420862582,Course Anomaly,Changement de cap brutal détecté.,2026-04-22T00:00:00Z,0.86,Manual Review
+ANOM-034,510872204,Name Change,"Nom déclaré : NAVIRE-2204, mais signature radio associée au navire NAVIRE-1746.",2026-02-16T00:00:00Z,0.99,AIS Inconsistency
+ANOM-035,220627024,Name Change,"Nom déclaré : NAVIRE-7024, mais signature radio associée au navire NAVIRE-5591.",2026-11-10T00:00:00Z,0.91,AIS Inconsistency
+ANOM-036,548068452,Position Mismatch,Position AIS et position radio ne correspondent pas (écart > 1 km).,2026-01-30T00:00:00Z,0.81,Manual Review
+ANOM-037,401816566,Name Change,"Nom déclaré : NAVIRE-6566, mais signature radio associée au navire NAVIRE-8682.",2026-12-04T00:00:00Z,0.9,Radio Signature
+ANOM-038,723678138,Fake Flag,"Pavillon déclaré : Malta, mais signature radio typique des navires sous pavillon Liberia.",2026-05-02T00:00:00Z,0.88,AIS Inconsistency
+ANOM-039,557579724,Course Anomaly,Changement de cap brutal détecté.,2026-06-14T00:00:00Z,0.84,Manual Review
+ANOM-040,792163190,Spoofing,"Signature radio similaire à celle du navire NAVIRE-1374, mais MMSI différent.",2026-06-14T00:00:00Z,1.0,AIS Inconsistency
+ANOM-041,559795298,Name Change,"Nom déclaré : NAVIRE-5298, mais signature radio associée au navire NAVIRE-3879.",2026-02-11T00:00:00Z,0.93,Manual Review
+ANOM-042,763169399,AIS Disabled,"AIS désactivé depuis 24h, mais signature radio active.",2026-08-12T00:00:00Z,0.94,Radio Signature
+ANOM-043,515300056,Position Mismatch,Position AIS et position radio ne correspondent pas (écart > 1 km).,2026-08-16T00:00:00Z,0.89,AIS Inconsistency
+ANOM-044,426878147,Fake Flag,"Pavillon déclaré : Panama, mais signature radio typique des navires sous pavillon Panama.",2026-01-13T00:00:00Z,0.93,Radio Signature
+ANOM-045,305790946,AIS Disabled,"AIS désactivé depuis 24h, mais signature radio active.",2026-05-03T00:00:00Z,0.77,Radio Signature
+ANOM-046,353691130,Speed Anomaly,Vitesse anormale : 38.6 nœuds (limite : 30 nœuds).,2026-04-08T00:00:00Z,0.8,Radio Signature
+ANOM-047,796671313,Fake Flag,"Pavillon déclaré : USA, mais signature radio typique des navires sous pavillon France.",2026-06-11T00:00:00Z,0.71,AIS Inconsistency
+ANOM-048,449459316,Name Change,"Nom déclaré : NAVIRE-9316, mais signature radio associée au navire NAVIRE-7314.",2026-08-16T00:00:00Z,0.92,Manual Review
+ANOM-049,340668048,Spoofing,"Signature radio similaire à celle du navire NAVIRE-3308, mais MMSI différent.",2026-06-27T00:00:00Z,0.83,Radio Signature
+ANOM-050,308695892,Course Anomaly,Changement de cap brutal détecté.,2026-08-23T00:00:00Z,0.86,Manual Review
+ANOM-051,725306361,Spoofing,"Signature radio similaire à celle du navire NAVIRE-3762, mais MMSI différent.",2026-05-26T00:00:00Z,0.81,Manual Review
+ANOM-052,471117456,Speed Anomaly,Vitesse anormale : 46.7 nœuds (limite : 30 nœuds).,2026-01-28T00:00:00Z,0.86,AIS Inconsistency
+ANOM-053,580125089,Fake Flag,"Pavillon déclaré : France, mais signature radio typique des navires sous pavillon Panama.",2026-06-08T00:00:00Z,0.97,Manual Review
+ANOM-054,377992909,Course Anomaly,Changement de cap brutal détecté.,2026-12-27T00:00:00Z,0.71,Radio Signature
+ANOM-055,614687847,Name Change,"Nom déclaré : NAVIRE-7847, mais signature radio associée au navire NAVIRE-4826.",2026-07-05T00:00:00Z,0.95,AIS Inconsistency
+ANOM-056,332786654,Course Anomaly,Changement de cap brutal détecté.,2026-04-20T00:00:00Z,0.79,Manual Review
+ANOM-057,769565144,Course Anomaly,Changement de cap brutal détecté.,2026-07-20T00:00:00Z,0.89,Manual Review
+ANOM-058,385217219,Course Anomaly,Changement de cap brutal détecté.,2026-04-24T00:00:00Z,0.79,Manual Review
+ANOM-059,742854816,Speed Anomaly,Vitesse anormale : 38.1 nœuds (limite : 30 nœuds).,2026-05-07T00:00:00Z,0.78,AIS Inconsistency
+ANOM-060,579409855,Position Mismatch,Position AIS et position radio ne correspondent pas (écart > 1 km).,2026-07-08T00:00:00Z,0.79,AIS Inconsistency
+ANOM-061,341249881,Position Mismatch,Position AIS et position radio ne correspondent pas (écart > 1 km).,2026-07-29T00:00:00Z,0.94,AIS Inconsistency
+ANOM-062,587285928,Fake Flag,"Pavillon déclaré : Panama, mais signature radio typique des navires sous pavillon Panama.",2026-06-08T00:00:00Z,0.92,Radio Signature
+ANOM-063,685694091,Course Anomaly,Changement de cap brutal détecté.,2026-07-26T00:00:00Z,0.88,Manual Review
+ANOM-064,543045682,Fake Flag,"Pavillon déclaré : USA, mais signature radio typique des navires sous pavillon France.",2026-03-12T00:00:00Z,0.98,Manual Review
+ANOM-065,642476777,Name Change,"Nom déclaré : NAVIRE-6777, mais signature radio associée au navire NAVIRE-8046.",2026-12-08T00:00:00Z,0.95,AIS Inconsistency
+ANOM-066,447149593,Course Anomaly,Changement de cap brutal détecté.,2026-11-21T00:00:00Z,0.74,AIS Inconsistency
+ANOM-067,286026287,Course Anomaly,Changement de cap brutal détecté.,2026-11-04T00:00:00Z,0.84,Radio Signature
+ANOM-068,345917757,Speed Anomaly,Vitesse anormale : 31.0 nœuds (limite : 30 nœuds).,2026-06-09T00:00:00Z,0.95,Manual Review
+ANOM-069,211394760,Position Mismatch,Position AIS et position radio ne correspondent pas (écart > 1 km).,2026-06-11T00:00:00Z,0.94,AIS Inconsistency
+ANOM-070,630180360,Speed Anomaly,Vitesse anormale : 38.3 nœuds (limite : 30 nœuds).,2026-06-01T00:00:00Z,0.79,Manual Review
+ANOM-071,571927479,Course Anomaly,Changement de cap brutal détecté.,2026-07-29T00:00:00Z,0.95,Radio Signature
+ANOM-072,783109193,AIS Disabled,"AIS désactivé depuis 24h, mais signature radio active.",2026-01-01T00:00:00Z,0.85,Radio Signature
+ANOM-073,733587569,Course Anomaly,Changement de cap brutal détecté.,2026-01-02T00:00:00Z,0.85,AIS Inconsistency
+ANOM-074,368365433,AIS Disabled,"AIS désactivé depuis 24h, mais signature radio active.",2026-06-07T00:00:00Z,0.74,AIS Inconsistency
+ANOM-075,481997523,Course Anomaly,Changement de cap brutal détecté.,2026-08-18T00:00:00Z,0.95,Manual Review
+ANOM-076,704843269,AIS Disabled,"AIS désactivé depuis 24h, mais signature radio active.",2026-05-29T00:00:00Z,0.91,Radio Signature
+ANOM-077,333886054,Speed Anomaly,Vitesse anormale : 31.2 nœuds (limite : 30 nœuds).,2026-06-14T00:00:00Z,0.89,AIS Inconsistency
+ANOM-078,553298294,Name Change,"Nom déclaré : NAVIRE-8294, mais signature radio associée au navire NAVIRE-6902.",2026-10-26T00:00:00Z,0.88,Manual Review
+ANOM-079,616945014,Name Change,"Nom déclaré : NAVIRE-5014, mais signature radio associée au navire NAVIRE-3383.",2026-01-09T00:00:00Z,0.98,Manual Review
+ANOM-080,270308779,Position Mismatch,Position AIS et position radio ne correspondent pas (écart > 1 km).,2026-08-24T00:00:00Z,0.71,Radio Signature
+ANOM-081,602448584,Fake Flag,"Pavillon déclaré : Denmark, mais signature radio typique des navires sous pavillon France.",2026-02-24T00:00:00Z,0.91,Manual Review
+ANOM-082,580232268,Position Mismatch,Position AIS et position radio ne correspondent pas (écart > 1 km).,2026-01-29T00:00:00Z,0.91,AIS Inconsistency
+ANOM-083,543131057,Speed Anomaly,Vitesse anormale : 47.4 nœuds (limite : 30 nœuds).,2026-04-13T00:00:00Z,0.73,Manual Review
+ANOM-084,656481138,AIS Disabled,"AIS désactivé depuis 24h, mais signature radio active.",2026-12-20T00:00:00Z,0.73,Manual Review
+ANOM-085,431340436,Position Mismatch,Position AIS et position radio ne correspondent pas (écart > 1 km).,2026-12-24T00:00:00Z,0.97,AIS Inconsistency
+ANOM-086,620065675,Position Mismatch,Position AIS et position radio ne correspondent pas (écart > 1 km).,2026-05-19T00:00:00Z,0.83,Manual Review
+ANOM-087,315074468,Fake Flag,"Pavillon déclaré : USA, mais signature radio typique des navires sous pavillon Panama.",2026-05-17T00:00:00Z,0.73,Manual Review
+ANOM-088,230810621,Name Change,"Nom déclaré : NAVIRE-0621, mais signature radio associée au navire NAVIRE-7471.",2026-02-20T00:00:00Z,0.79,Manual Review
+ANOM-089,680213971,Name Change,"Nom déclaré : NAVIRE-3971, mais signature radio associée au navire NAVIRE-0307.",2026-03-12T00:00:00Z,0.71,Manual Review
+ANOM-090,345917757,Fake Flag,"Pavillon déclaré : Bahamas, mais signature radio typique des navires sous pavillon Panama.",2026-01-31T00:00:00Z,0.85,Radio Signature
+ANOM-091,378367378,Course Anomaly,Changement de cap brutal détecté.,2026-10-16T00:00:00Z,0.93,AIS Inconsistency
+ANOM-092,728358748,Course Anomaly,Changement de cap brutal détecté.,2026-01-24T00:00:00Z,0.7,Manual Review
+ANOM-093,457122734,Course Anomaly,Changement de cap brutal détecté.,2026-01-10T00:00:00Z,0.83,Radio Signature
+ANOM-094,275509216,Fake Flag,"Pavillon déclaré : Marshall Islands, mais signature radio typique des navires sous pavillon France.",2026-01-27T00:00:00Z,0.71,Radio Signature
+ANOM-095,465482524,AIS Disabled,"AIS désactivé depuis 24h, mais signature radio active.",2026-03-27T00:00:00Z,0.85,AIS Inconsistency
+ANOM-096,469045896,Course Anomaly,Changement de cap brutal détecté.,2026-08-16T00:00:00Z,0.76,AIS Inconsistency
+ANOM-097,470359883,Course Anomaly,Changement de cap brutal détecté.,2026-11-14T00:00:00Z,0.75,Radio Signature
+ANOM-098,236799075,Spoofing,"Signature radio similaire à celle du navire NAVIRE-8981, mais MMSI différent.",2026-08-03T00:00:00Z,0.93,Manual Review
+ANOM-099,749434747,AIS Disabled,"AIS désactivé depuis 24h, mais signature radio active.",2026-06-21T00:00:00Z,0.78,Manual Review
