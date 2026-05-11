@@ -1,0 +1,16 @@
+id,name,description
+process-001,Analyse des Risques,Processus métier : Analyse des Risques
+process-002,Approvisionnement,Processus métier : Approvisionnement
+process-003,Communication Interne,Processus métier : Communication Interne
+process-004,Douanes et Réglementations,Processus métier : Douanes et Réglementations
+process-005,Finance et Comptabilité,Processus métier : Finance et Comptabilité
+process-006,Gestion des Clients,Processus métier : Gestion des Clients
+process-007,Gestion des Flottes,Processus métier : Gestion des Flottes
+process-008,Gestion des Réservations,Processus métier : Gestion des Réservations
+process-009,Gestion des Stocks,Processus métier : Gestion des Stocks
+process-010,Gestion des Équipages,Processus métier : Gestion des Équipages
+process-011,Maintenance des Navires,Processus métier : Maintenance des Navires
+process-012,Planification des Itinéraires,Processus métier : Planification des Itinéraires
+process-013,Ressources Humaines,Processus métier : Ressources Humaines
+process-014,Suivi des Cargaisons,Processus métier : Suivi des Cargaisons
+process-015,Sécurité et Conformité,Processus métier : Sécurité et Conformité

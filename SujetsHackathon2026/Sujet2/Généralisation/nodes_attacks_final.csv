@@ -1,0 +1,1001 @@
+id,name,type,tactics,description,severity,cvss_score,cvss_vector
+CVE-2017-0144,EternalBlue,CVE,initial-access,Windows SMB Remote Code Execution Vulnerability.,critical,9.8,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T1562.002,Disable Security Tools,TTP,defense-evasion,Adversaries may disable or modify security tools to avoid detection.,high,,
+CVE-2020-1472,ZeroLogon,CVE,privilege-escalation,Elevation of privilege vulnerability in Windows Netlogon Remote Protocol.,critical,10.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T1059,Command and Scripting Interpreter,TTP,execution,"Adversaries may abuse command and scripting interpreters to execute commands, scripts, or binaries.",high,,
+T1053,Scheduled Task/Job,TTP,"persistence, privilege-escalation",Adversaries may abuse task scheduling functionality to facilitate execution.,high,,
+CVE-2020-0688,Microsoft Exchange Vulnerability,CVE,initial-access,Remote code execution vulnerability in Microsoft Exchange Server.,high,8.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2019-11510,Pulse Secure VPN Vulnerability,CVE,initial-access,Arbitrary file disclosure vulnerability in Pulse Secure VPN.,critical,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2021-44228,Log4Shell,CVE,initial-access,Apache Log4j2 RCE vulnerability allowing remote code execution.,critical,10.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T1190,Exploit Public-Facing Application,TTP,initial-access,Adversaries may exploit weaknesses in an Internet-facing computer system or program.,critical,,
+T1048,Exfiltration Over Alternative Protocol,TTP,exfiltration,Adversaries may exfiltrate data over a different protocol than that of the command and control channel.,medium,,
+T7410,TTP-11,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 11.,high,,
+T6465,TTP-12,TTP,execution,Adversaries may perform malicious activity related to TTP 12.,critical,,
+T1870,TTP-13,TTP,discovery,Adversaries may perform malicious activity related to TTP 13.,medium,,
+CVE-2022-3172,CVE-14,CVE,initial-access,Critical vulnerability in software 14 allowing remote exploitation.,critical,8.9,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2025-6883,CVE-15,CVE,execution,Critical vulnerability in software 15 allowing remote exploitation.,high,8.7,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+T2763,TTP-16,TTP,discovery,Adversaries may perform malicious activity related to TTP 16.,critical,,
+T3333,TTP-17,TTP,execution,Adversaries may perform malicious activity related to TTP 17.,high,,
+T7191,TTP-18,TTP,execution,Adversaries may perform malicious activity related to TTP 18.,medium,,
+T7135,TTP-19,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 19.,medium,,
+T7337,TTP-20,TTP,discovery,Adversaries may perform malicious activity related to TTP 20.,medium,,
+CVE-2021-9153,CVE-21,CVE,execution,Critical vulnerability in software 21 allowing remote exploitation.,high,9.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2024-3072,CVE-22,CVE,privilege-escalation,Critical vulnerability in software 22 allowing remote exploitation.,high,9.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T4630,TTP-23,TTP,impact,Adversaries may perform malicious activity related to TTP 23.,high,,
+CVE-2020-8560,CVE-24,CVE,initial-access,Critical vulnerability in software 24 allowing remote exploitation.,high,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-1778,CVE-25,CVE,privilege-escalation,Critical vulnerability in software 25 allowing remote exploitation.,critical,7.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T6815,TTP-26,TTP,execution,Adversaries may perform malicious activity related to TTP 26.,high,,
+T8515,TTP-27,TTP,discovery,Adversaries may perform malicious activity related to TTP 27.,high,,
+CVE-2021-6424,CVE-28,CVE,execution,Critical vulnerability in software 28 allowing remote exploitation.,critical,7.9,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T7365,TTP-29,TTP,execution,Adversaries may perform malicious activity related to TTP 29.,critical,,
+T3756,TTP-30,TTP,discovery,Adversaries may perform malicious activity related to TTP 30.,high,,
+CVE-2022-3893,CVE-31,CVE,execution,Critical vulnerability in software 31 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2020-1823,CVE-32,CVE,initial-access,Critical vulnerability in software 32 allowing remote exploitation.,high,8.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T4230,TTP-33,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 33.,high,,
+T2259,TTP-34,TTP,discovery,Adversaries may perform malicious activity related to TTP 34.,medium,,
+T7199,TTP-35,TTP,discovery,Adversaries may perform malicious activity related to TTP 35.,medium,,
+T5756,TTP-36,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 36.,critical,,
+T7141,TTP-37,TTP,execution,Adversaries may perform malicious activity related to TTP 37.,medium,,
+CVE-2023-3960,CVE-38,CVE,execution,Critical vulnerability in software 38 allowing remote exploitation.,critical,7.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2020-7719,CVE-39,CVE,privilege-escalation,Critical vulnerability in software 39 allowing remote exploitation.,critical,8.4,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2024-5383,CVE-40,CVE,privilege-escalation,Critical vulnerability in software 40 allowing remote exploitation.,critical,9.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-3373,CVE-41,CVE,execution,Critical vulnerability in software 41 allowing remote exploitation.,critical,9.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+T4408,TTP-42,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 42.,critical,,
+T6783,TTP-43,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 43.,critical,,
+T9458,TTP-44,TTP,impact,Adversaries may perform malicious activity related to TTP 44.,critical,,
+T8328,TTP-45,TTP,discovery,Adversaries may perform malicious activity related to TTP 45.,critical,,
+CVE-2022-2241,CVE-46,CVE,execution,Critical vulnerability in software 46 allowing remote exploitation.,high,9.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-4740,CVE-47,CVE,privilege-escalation,Critical vulnerability in software 47 allowing remote exploitation.,high,7.3,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2024-4517,CVE-48,CVE,initial-access,Critical vulnerability in software 48 allowing remote exploitation.,critical,8.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T3053,TTP-49,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 49.,medium,,
+T8913,TTP-50,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 50.,critical,,
+CVE-2021-9366,CVE-51,CVE,execution,Critical vulnerability in software 51 allowing remote exploitation.,critical,7.4,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+T6276,TTP-52,TTP,execution,Adversaries may perform malicious activity related to TTP 52.,medium,,
+CVE-2024-8435,CVE-53,CVE,initial-access,Critical vulnerability in software 53 allowing remote exploitation.,critical,7.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T7788,TTP-54,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 54.,critical,,
+T2076,TTP-55,TTP,discovery,Adversaries may perform malicious activity related to TTP 55.,high,,
+T5150,TTP-56,TTP,discovery,Adversaries may perform malicious activity related to TTP 56.,high,,
+CVE-2021-1872,CVE-57,CVE,initial-access,Critical vulnerability in software 57 allowing remote exploitation.,critical,8.2,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T4854,TTP-58,TTP,execution,Adversaries may perform malicious activity related to TTP 58.,critical,,
+CVE-2020-7989,CVE-59,CVE,execution,Critical vulnerability in software 59 allowing remote exploitation.,critical,9.7,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2021-1586,CVE-60,CVE,initial-access,Critical vulnerability in software 60 allowing remote exploitation.,high,8.9,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T1955,TTP-61,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 61.,medium,,
+CVE-2021-5136,CVE-62,CVE,privilege-escalation,Critical vulnerability in software 62 allowing remote exploitation.,critical,8.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T4317,TTP-63,TTP,discovery,Adversaries may perform malicious activity related to TTP 63.,high,,
+CVE-2025-7981,CVE-64,CVE,initial-access,Critical vulnerability in software 64 allowing remote exploitation.,high,9.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T7245,TTP-65,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 65.,critical,,
+CVE-2021-3088,CVE-66,CVE,execution,Critical vulnerability in software 66 allowing remote exploitation.,critical,9.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T2390,TTP-67,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 67.,critical,,
+T1371,TTP-68,TTP,execution,Adversaries may perform malicious activity related to TTP 68.,medium,,
+CVE-2023-8115,CVE-69,CVE,privilege-escalation,Critical vulnerability in software 69 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2025-7522,CVE-70,CVE,execution,Critical vulnerability in software 70 allowing remote exploitation.,critical,10.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T7181,TTP-71,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 71.,high,,
+CVE-2023-4016,CVE-72,CVE,execution,Critical vulnerability in software 72 allowing remote exploitation.,critical,8.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T5122,TTP-73,TTP,execution,Adversaries may perform malicious activity related to TTP 73.,critical,,
+CVE-2020-8280,CVE-74,CVE,privilege-escalation,Critical vulnerability in software 74 allowing remote exploitation.,critical,7.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2023-8496,CVE-75,CVE,execution,Critical vulnerability in software 75 allowing remote exploitation.,high,8.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+T4477,TTP-76,TTP,impact,Adversaries may perform malicious activity related to TTP 76.,medium,,
+T9211,TTP-77,TTP,persistence,Adversaries may perform malicious activity related to TTP 77.,medium,,
+T2257,TTP-78,TTP,execution,Adversaries may perform malicious activity related to TTP 78.,medium,,
+T2428,TTP-79,TTP,impact,Adversaries may perform malicious activity related to TTP 79.,high,,
+T5040,TTP-80,TTP,persistence,Adversaries may perform malicious activity related to TTP 80.,medium,,
+CVE-2020-8276,CVE-81,CVE,initial-access,Critical vulnerability in software 81 allowing remote exploitation.,critical,8.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T3390,TTP-82,TTP,discovery,Adversaries may perform malicious activity related to TTP 82.,high,,
+T2471,TTP-83,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 83.,medium,,
+CVE-2021-6360,CVE-84,CVE,initial-access,Critical vulnerability in software 84 allowing remote exploitation.,high,9.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T9920,TTP-85,TTP,persistence,Adversaries may perform malicious activity related to TTP 85.,medium,,
+CVE-2025-2412,CVE-86,CVE,execution,Critical vulnerability in software 86 allowing remote exploitation.,high,9.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T2657,TTP-87,TTP,discovery,Adversaries may perform malicious activity related to TTP 87.,medium,,
+CVE-2025-1541,CVE-88,CVE,initial-access,Critical vulnerability in software 88 allowing remote exploitation.,high,7.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2022-9408,CVE-89,CVE,privilege-escalation,Critical vulnerability in software 89 allowing remote exploitation.,high,9.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T8553,TTP-90,TTP,impact,Adversaries may perform malicious activity related to TTP 90.,high,,
+CVE-2025-9108,CVE-91,CVE,privilege-escalation,Critical vulnerability in software 91 allowing remote exploitation.,critical,7.2,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T2511,TTP-92,TTP,discovery,Adversaries may perform malicious activity related to TTP 92.,medium,,
+T6446,TTP-93,TTP,discovery,Adversaries may perform malicious activity related to TTP 93.,medium,,
+T1258,TTP-94,TTP,discovery,Adversaries may perform malicious activity related to TTP 94.,critical,,
+T4093,TTP-95,TTP,discovery,Adversaries may perform malicious activity related to TTP 95.,critical,,
+CVE-2020-1703,CVE-96,CVE,initial-access,Critical vulnerability in software 96 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T3367,TTP-97,TTP,discovery,Adversaries may perform malicious activity related to TTP 97.,high,,
+CVE-2023-8724,CVE-98,CVE,privilege-escalation,Critical vulnerability in software 98 allowing remote exploitation.,critical,8.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2025-3154,CVE-99,CVE,execution,Critical vulnerability in software 99 allowing remote exploitation.,critical,7.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-1196,CVE-100,CVE,initial-access,Critical vulnerability in software 100 allowing remote exploitation.,high,8.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2023-4990,CVE-101,CVE,execution,Critical vulnerability in software 101 allowing remote exploitation.,high,8.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T3274,TTP-102,TTP,execution,Adversaries may perform malicious activity related to TTP 102.,high,,
+CVE-2022-3819,CVE-103,CVE,execution,Critical vulnerability in software 103 allowing remote exploitation.,high,8.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2020-2796,CVE-104,CVE,execution,Critical vulnerability in software 104 allowing remote exploitation.,critical,8.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T4162,TTP-105,TTP,execution,Adversaries may perform malicious activity related to TTP 105.,critical,,
+T8520,TTP-106,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 106.,high,,
+T3181,TTP-107,TTP,impact,Adversaries may perform malicious activity related to TTP 107.,high,,
+T2634,TTP-108,TTP,persistence,Adversaries may perform malicious activity related to TTP 108.,critical,,
+CVE-2022-7018,CVE-109,CVE,initial-access,Critical vulnerability in software 109 allowing remote exploitation.,high,9.4,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2025-3838,CVE-110,CVE,execution,Critical vulnerability in software 110 allowing remote exploitation.,high,7.6,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T3371,TTP-111,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 111.,high,,
+CVE-2025-8430,CVE-112,CVE,execution,Critical vulnerability in software 112 allowing remote exploitation.,critical,9.7,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2021-4190,CVE-113,CVE,initial-access,Critical vulnerability in software 113 allowing remote exploitation.,critical,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T2687,TTP-114,TTP,execution,Adversaries may perform malicious activity related to TTP 114.,high,,
+CVE-2023-3332,CVE-115,CVE,execution,Critical vulnerability in software 115 allowing remote exploitation.,critical,7.2,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T6565,TTP-116,TTP,impact,Adversaries may perform malicious activity related to TTP 116.,critical,,
+CVE-2021-5683,CVE-117,CVE,initial-access,Critical vulnerability in software 117 allowing remote exploitation.,high,7.9,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2020-2673,CVE-118,CVE,initial-access,Critical vulnerability in software 118 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2021-1956,CVE-119,CVE,initial-access,Critical vulnerability in software 119 allowing remote exploitation.,high,7.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T3388,TTP-120,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 120.,high,,
+T4115,TTP-121,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 121.,high,,
+CVE-2022-2409,CVE-122,CVE,privilege-escalation,Critical vulnerability in software 122 allowing remote exploitation.,critical,7.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T4896,TTP-123,TTP,discovery,Adversaries may perform malicious activity related to TTP 123.,high,,
+T4374,TTP-124,TTP,impact,Adversaries may perform malicious activity related to TTP 124.,medium,,
+CVE-2022-4532,CVE-125,CVE,initial-access,Critical vulnerability in software 125 allowing remote exploitation.,critical,9.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2024-5170,CVE-126,CVE,execution,Critical vulnerability in software 126 allowing remote exploitation.,high,8.6,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2023-8620,CVE-127,CVE,privilege-escalation,Critical vulnerability in software 127 allowing remote exploitation.,critical,8.6,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2025-5402,CVE-128,CVE,execution,Critical vulnerability in software 128 allowing remote exploitation.,critical,9.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2022-7860,CVE-129,CVE,execution,Critical vulnerability in software 129 allowing remote exploitation.,high,9.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T3608,TTP-130,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 130.,high,,
+CVE-2024-4344,CVE-131,CVE,execution,Critical vulnerability in software 131 allowing remote exploitation.,high,9.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T1820,TTP-132,TTP,impact,Adversaries may perform malicious activity related to TTP 132.,medium,,
+T1995,TTP-133,TTP,impact,Adversaries may perform malicious activity related to TTP 133.,medium,,
+T4095,TTP-134,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 134.,high,,
+CVE-2022-4419,CVE-135,CVE,initial-access,Critical vulnerability in software 135 allowing remote exploitation.,high,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2023-9434,CVE-136,CVE,privilege-escalation,Critical vulnerability in software 136 allowing remote exploitation.,high,9.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2022-2051,CVE-137,CVE,execution,Critical vulnerability in software 137 allowing remote exploitation.,critical,9.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T2733,TTP-138,TTP,execution,Adversaries may perform malicious activity related to TTP 138.,high,,
+T8458,TTP-139,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 139.,critical,,
+CVE-2021-8477,CVE-140,CVE,execution,Critical vulnerability in software 140 allowing remote exploitation.,high,8.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-5036,CVE-141,CVE,execution,Critical vulnerability in software 141 allowing remote exploitation.,high,9.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2025-6277,CVE-142,CVE,execution,Critical vulnerability in software 142 allowing remote exploitation.,high,7.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2021-3111,CVE-143,CVE,execution,Critical vulnerability in software 143 allowing remote exploitation.,critical,9.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T3915,TTP-144,TTP,execution,Adversaries may perform malicious activity related to TTP 144.,high,,
+T9375,TTP-145,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 145.,high,,
+T8411,TTP-146,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 146.,high,,
+T3614,TTP-147,TTP,execution,Adversaries may perform malicious activity related to TTP 147.,high,,
+CVE-2021-6051,CVE-148,CVE,privilege-escalation,Critical vulnerability in software 148 allowing remote exploitation.,high,9.6,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T6687,TTP-149,TTP,discovery,Adversaries may perform malicious activity related to TTP 149.,medium,,
+CVE-2021-3485,CVE-150,CVE,initial-access,Critical vulnerability in software 150 allowing remote exploitation.,critical,7.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T5497,TTP-151,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 151.,high,,
+CVE-2021-1706,CVE-152,CVE,initial-access,Critical vulnerability in software 152 allowing remote exploitation.,critical,8.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2024-3145,CVE-153,CVE,execution,Critical vulnerability in software 153 allowing remote exploitation.,critical,7.4,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2023-6002,CVE-154,CVE,initial-access,Critical vulnerability in software 154 allowing remote exploitation.,high,8.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2025-2628,CVE-155,CVE,execution,Critical vulnerability in software 155 allowing remote exploitation.,high,9.7,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2024-2110,CVE-156,CVE,privilege-escalation,Critical vulnerability in software 156 allowing remote exploitation.,high,7.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T5725,TTP-157,TTP,discovery,Adversaries may perform malicious activity related to TTP 157.,high,,
+CVE-2020-1691,CVE-158,CVE,initial-access,Critical vulnerability in software 158 allowing remote exploitation.,critical,9.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-7759,CVE-159,CVE,privilege-escalation,Critical vulnerability in software 159 allowing remote exploitation.,high,8.6,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T2866,TTP-160,TTP,discovery,Adversaries may perform malicious activity related to TTP 160.,critical,,
+CVE-2025-8720,CVE-161,CVE,execution,Critical vulnerability in software 161 allowing remote exploitation.,high,8.8,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T2195,TTP-162,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 162.,critical,,
+CVE-2024-3632,CVE-163,CVE,privilege-escalation,Critical vulnerability in software 163 allowing remote exploitation.,critical,7.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T6234,TTP-164,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 164.,high,,
+CVE-2024-2988,CVE-165,CVE,execution,Critical vulnerability in software 165 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2022-7121,CVE-166,CVE,initial-access,Critical vulnerability in software 166 allowing remote exploitation.,high,7.4,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2022-9424,CVE-167,CVE,initial-access,Critical vulnerability in software 167 allowing remote exploitation.,critical,7.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2024-9666,CVE-168,CVE,privilege-escalation,Critical vulnerability in software 168 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2025-4098,CVE-169,CVE,initial-access,Critical vulnerability in software 169 allowing remote exploitation.,critical,8.8,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T3994,TTP-170,TTP,discovery,Adversaries may perform malicious activity related to TTP 170.,critical,,
+T8280,TTP-171,TTP,execution,Adversaries may perform malicious activity related to TTP 171.,high,,
+CVE-2021-2356,CVE-172,CVE,execution,Critical vulnerability in software 172 allowing remote exploitation.,critical,7.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-6900,CVE-173,CVE,privilege-escalation,Critical vulnerability in software 173 allowing remote exploitation.,critical,9.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T2728,TTP-174,TTP,discovery,Adversaries may perform malicious activity related to TTP 174.,high,,
+T9938,TTP-175,TTP,discovery,Adversaries may perform malicious activity related to TTP 175.,critical,,
+T4866,TTP-176,TTP,impact,Adversaries may perform malicious activity related to TTP 176.,medium,,
+CVE-2020-7038,CVE-177,CVE,execution,Critical vulnerability in software 177 allowing remote exploitation.,high,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T1711,TTP-178,TTP,discovery,Adversaries may perform malicious activity related to TTP 178.,high,,
+CVE-2023-3653,CVE-179,CVE,initial-access,Critical vulnerability in software 179 allowing remote exploitation.,high,7.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2021-2051,CVE-180,CVE,privilege-escalation,Critical vulnerability in software 180 allowing remote exploitation.,critical,7.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2024-8292,CVE-181,CVE,execution,Critical vulnerability in software 181 allowing remote exploitation.,critical,7.7,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T4188,TTP-182,TTP,execution,Adversaries may perform malicious activity related to TTP 182.,medium,,
+T6913,TTP-183,TTP,discovery,Adversaries may perform malicious activity related to TTP 183.,medium,,
+T1882,TTP-184,TTP,impact,Adversaries may perform malicious activity related to TTP 184.,high,,
+T3516,TTP-185,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 185.,high,,
+CVE-2023-6229,CVE-186,CVE,execution,Critical vulnerability in software 186 allowing remote exploitation.,high,8.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T1025,TTP-187,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 187.,medium,,
+T2824,TTP-188,TTP,impact,Adversaries may perform malicious activity related to TTP 188.,high,,
+T6752,TTP-189,TTP,impact,Adversaries may perform malicious activity related to TTP 189.,critical,,
+T8665,TTP-190,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 190.,critical,,
+T8003,TTP-191,TTP,impact,Adversaries may perform malicious activity related to TTP 191.,medium,,
+CVE-2024-2010,CVE-192,CVE,initial-access,Critical vulnerability in software 192 allowing remote exploitation.,high,9.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2022-9007,CVE-193,CVE,execution,Critical vulnerability in software 193 allowing remote exploitation.,critical,9.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2025-9062,CVE-194,CVE,privilege-escalation,Critical vulnerability in software 194 allowing remote exploitation.,high,9.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T4754,TTP-195,TTP,persistence,Adversaries may perform malicious activity related to TTP 195.,high,,
+T4345,TTP-196,TTP,impact,Adversaries may perform malicious activity related to TTP 196.,high,,
+T2917,TTP-197,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 197.,high,,
+T3714,TTP-198,TTP,execution,Adversaries may perform malicious activity related to TTP 198.,medium,,
+CVE-2024-4620,CVE-199,CVE,privilege-escalation,Critical vulnerability in software 199 allowing remote exploitation.,high,9.8,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T4145,TTP-200,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 200.,high,,
+T9252,TTP-201,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 201.,critical,,
+CVE-2022-5850,CVE-202,CVE,execution,Critical vulnerability in software 202 allowing remote exploitation.,high,8.7,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T5094,TTP-203,TTP,impact,Adversaries may perform malicious activity related to TTP 203.,high,,
+T7165,TTP-204,TTP,execution,Adversaries may perform malicious activity related to TTP 204.,critical,,
+T2077,TTP-205,TTP,execution,Adversaries may perform malicious activity related to TTP 205.,critical,,
+CVE-2023-2007,CVE-206,CVE,execution,Critical vulnerability in software 206 allowing remote exploitation.,critical,8.5,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2020-8730,CVE-207,CVE,execution,Critical vulnerability in software 207 allowing remote exploitation.,high,9.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2024-4917,CVE-208,CVE,execution,Critical vulnerability in software 208 allowing remote exploitation.,critical,9.8,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T7395,TTP-209,TTP,discovery,Adversaries may perform malicious activity related to TTP 209.,medium,,
+CVE-2020-5322,CVE-210,CVE,privilege-escalation,Critical vulnerability in software 210 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2025-4512,CVE-211,CVE,privilege-escalation,Critical vulnerability in software 211 allowing remote exploitation.,high,7.9,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-1883,CVE-212,CVE,execution,Critical vulnerability in software 212 allowing remote exploitation.,critical,9.5,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T2340,TTP-213,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 213.,medium,,
+T8356,TTP-214,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 214.,high,,
+T7312,TTP-215,TTP,discovery,Adversaries may perform malicious activity related to TTP 215.,critical,,
+T4504,TTP-216,TTP,impact,Adversaries may perform malicious activity related to TTP 216.,medium,,
+T3392,TTP-217,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 217.,critical,,
+CVE-2022-7372,CVE-218,CVE,initial-access,Critical vulnerability in software 218 allowing remote exploitation.,high,10.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T5963,TTP-219,TTP,impact,Adversaries may perform malicious activity related to TTP 219.,medium,,
+T6467,TTP-220,TTP,persistence,Adversaries may perform malicious activity related to TTP 220.,high,,
+CVE-2025-5149,CVE-221,CVE,execution,Critical vulnerability in software 221 allowing remote exploitation.,high,9.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2020-2327,CVE-222,CVE,initial-access,Critical vulnerability in software 222 allowing remote exploitation.,high,9.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-6933,CVE-223,CVE,execution,Critical vulnerability in software 223 allowing remote exploitation.,critical,9.4,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2020-1659,CVE-224,CVE,execution,Critical vulnerability in software 224 allowing remote exploitation.,high,8.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2025-5888,CVE-225,CVE,privilege-escalation,Critical vulnerability in software 225 allowing remote exploitation.,high,9.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T3156,TTP-226,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 226.,high,,
+CVE-2024-2815,CVE-227,CVE,privilege-escalation,Critical vulnerability in software 227 allowing remote exploitation.,high,9.7,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T8296,TTP-228,TTP,persistence,Adversaries may perform malicious activity related to TTP 228.,high,,
+CVE-2025-4656,CVE-229,CVE,execution,Critical vulnerability in software 229 allowing remote exploitation.,high,8.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T6968,TTP-230,TTP,execution,Adversaries may perform malicious activity related to TTP 230.,medium,,
+T9413,TTP-231,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 231.,critical,,
+CVE-2022-9962,CVE-232,CVE,execution,Critical vulnerability in software 232 allowing remote exploitation.,critical,9.8,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T2162,TTP-233,TTP,impact,Adversaries may perform malicious activity related to TTP 233.,medium,,
+T7935,TTP-234,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 234.,medium,,
+CVE-2024-6816,CVE-235,CVE,privilege-escalation,Critical vulnerability in software 235 allowing remote exploitation.,critical,8.7,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2024-1730,CVE-236,CVE,privilege-escalation,Critical vulnerability in software 236 allowing remote exploitation.,high,7.7,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2022-9915,CVE-237,CVE,execution,Critical vulnerability in software 237 allowing remote exploitation.,high,10.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T2817,TTP-238,TTP,execution,Adversaries may perform malicious activity related to TTP 238.,critical,,
+CVE-2022-5169,CVE-239,CVE,initial-access,Critical vulnerability in software 239 allowing remote exploitation.,high,7.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T5078,TTP-240,TTP,execution,Adversaries may perform malicious activity related to TTP 240.,high,,
+CVE-2022-7754,CVE-241,CVE,privilege-escalation,Critical vulnerability in software 241 allowing remote exploitation.,critical,9.3,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-4670,CVE-242,CVE,execution,Critical vulnerability in software 242 allowing remote exploitation.,critical,9.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-6371,CVE-243,CVE,execution,Critical vulnerability in software 243 allowing remote exploitation.,critical,7.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2021-6157,CVE-244,CVE,privilege-escalation,Critical vulnerability in software 244 allowing remote exploitation.,high,8.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2021-5600,CVE-245,CVE,privilege-escalation,Critical vulnerability in software 245 allowing remote exploitation.,critical,8.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T4925,TTP-246,TTP,execution,Adversaries may perform malicious activity related to TTP 246.,medium,,
+CVE-2022-1770,CVE-247,CVE,privilege-escalation,Critical vulnerability in software 247 allowing remote exploitation.,critical,7.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2020-9721,CVE-248,CVE,execution,Critical vulnerability in software 248 allowing remote exploitation.,high,7.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T1967,TTP-249,TTP,persistence,Adversaries may perform malicious activity related to TTP 249.,critical,,
+CVE-2022-7567,CVE-250,CVE,privilege-escalation,Critical vulnerability in software 250 allowing remote exploitation.,critical,7.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2025-5237,CVE-251,CVE,initial-access,Critical vulnerability in software 251 allowing remote exploitation.,critical,8.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T2929,TTP-252,TTP,persistence,Adversaries may perform malicious activity related to TTP 252.,medium,,
+CVE-2023-3220,CVE-253,CVE,privilege-escalation,Critical vulnerability in software 253 allowing remote exploitation.,high,8.4,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2024-7889,CVE-254,CVE,initial-access,Critical vulnerability in software 254 allowing remote exploitation.,critical,8.9,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T6774,TTP-255,TTP,impact,Adversaries may perform malicious activity related to TTP 255.,critical,,
+T9036,TTP-256,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 256.,critical,,
+CVE-2023-4892,CVE-257,CVE,initial-access,Critical vulnerability in software 257 allowing remote exploitation.,critical,8.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2022-1059,CVE-258,CVE,execution,Critical vulnerability in software 258 allowing remote exploitation.,high,9.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T9135,TTP-259,TTP,impact,Adversaries may perform malicious activity related to TTP 259.,high,,
+T8694,TTP-260,TTP,persistence,Adversaries may perform malicious activity related to TTP 260.,high,,
+CVE-2023-2264,CVE-261,CVE,initial-access,Critical vulnerability in software 261 allowing remote exploitation.,high,9.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+T8171,TTP-262,TTP,discovery,Adversaries may perform malicious activity related to TTP 262.,critical,,
+CVE-2023-1982,CVE-263,CVE,initial-access,Critical vulnerability in software 263 allowing remote exploitation.,high,9.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T5599,TTP-264,TTP,discovery,Adversaries may perform malicious activity related to TTP 264.,critical,,
+CVE-2021-4524,CVE-265,CVE,execution,Critical vulnerability in software 265 allowing remote exploitation.,high,9.9,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-2981,CVE-266,CVE,initial-access,Critical vulnerability in software 266 allowing remote exploitation.,critical,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T9853,TTP-267,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 267.,medium,,
+CVE-2020-2995,CVE-268,CVE,execution,Critical vulnerability in software 268 allowing remote exploitation.,high,8.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2024-4799,CVE-269,CVE,initial-access,Critical vulnerability in software 269 allowing remote exploitation.,high,8.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2023-1946,CVE-270,CVE,initial-access,Critical vulnerability in software 270 allowing remote exploitation.,critical,8.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2023-1925,CVE-271,CVE,privilege-escalation,Critical vulnerability in software 271 allowing remote exploitation.,high,8.7,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T8548,TTP-272,TTP,discovery,Adversaries may perform malicious activity related to TTP 272.,medium,,
+T7653,TTP-273,TTP,discovery,Adversaries may perform malicious activity related to TTP 273.,critical,,
+CVE-2022-7169,CVE-274,CVE,privilege-escalation,Critical vulnerability in software 274 allowing remote exploitation.,high,8.3,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T8082,TTP-275,TTP,impact,Adversaries may perform malicious activity related to TTP 275.,high,,
+T8272,TTP-276,TTP,execution,Adversaries may perform malicious activity related to TTP 276.,high,,
+CVE-2025-6357,CVE-277,CVE,initial-access,Critical vulnerability in software 277 allowing remote exploitation.,high,7.5,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-5080,CVE-278,CVE,initial-access,Critical vulnerability in software 278 allowing remote exploitation.,critical,8.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2022-7138,CVE-279,CVE,initial-access,Critical vulnerability in software 279 allowing remote exploitation.,critical,9.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T4491,TTP-280,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 280.,critical,,
+CVE-2022-6568,CVE-281,CVE,initial-access,Critical vulnerability in software 281 allowing remote exploitation.,high,7.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2020-8777,CVE-282,CVE,privilege-escalation,Critical vulnerability in software 282 allowing remote exploitation.,critical,8.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-9584,CVE-283,CVE,privilege-escalation,Critical vulnerability in software 283 allowing remote exploitation.,critical,7.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T4081,TTP-284,TTP,execution,Adversaries may perform malicious activity related to TTP 284.,critical,,
+T4160,TTP-285,TTP,impact,Adversaries may perform malicious activity related to TTP 285.,high,,
+CVE-2020-4215,CVE-286,CVE,execution,Critical vulnerability in software 286 allowing remote exploitation.,high,8.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T9101,TTP-287,TTP,persistence,Adversaries may perform malicious activity related to TTP 287.,critical,,
+CVE-2023-6608,CVE-288,CVE,initial-access,Critical vulnerability in software 288 allowing remote exploitation.,critical,9.7,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2024-3506,CVE-289,CVE,privilege-escalation,Critical vulnerability in software 289 allowing remote exploitation.,critical,9.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2020-9202,CVE-290,CVE,initial-access,Critical vulnerability in software 290 allowing remote exploitation.,high,7.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T2798,TTP-291,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 291.,critical,,
+CVE-2024-6460,CVE-292,CVE,privilege-escalation,Critical vulnerability in software 292 allowing remote exploitation.,critical,8.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2024-9837,CVE-293,CVE,initial-access,Critical vulnerability in software 293 allowing remote exploitation.,high,7.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2023-4415,CVE-294,CVE,privilege-escalation,Critical vulnerability in software 294 allowing remote exploitation.,high,7.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2022-8689,CVE-295,CVE,initial-access,Critical vulnerability in software 295 allowing remote exploitation.,high,9.5,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+T1429,TTP-296,TTP,discovery,Adversaries may perform malicious activity related to TTP 296.,high,,
+T2078,TTP-297,TTP,persistence,Adversaries may perform malicious activity related to TTP 297.,critical,,
+T9199,TTP-298,TTP,persistence,Adversaries may perform malicious activity related to TTP 298.,medium,,
+CVE-2020-9738,CVE-299,CVE,privilege-escalation,Critical vulnerability in software 299 allowing remote exploitation.,critical,7.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T8834,TTP-300,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 300.,high,,
+T4895,TTP-301,TTP,persistence,Adversaries may perform malicious activity related to TTP 301.,high,,
+T1549,TTP-302,TTP,persistence,Adversaries may perform malicious activity related to TTP 302.,medium,,
+CVE-2020-5306,CVE-303,CVE,initial-access,Critical vulnerability in software 303 allowing remote exploitation.,critical,9.9,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T5466,TTP-304,TTP,discovery,Adversaries may perform malicious activity related to TTP 304.,medium,,
+CVE-2025-5048,CVE-305,CVE,execution,Critical vulnerability in software 305 allowing remote exploitation.,critical,7.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2022-3624,CVE-306,CVE,initial-access,Critical vulnerability in software 306 allowing remote exploitation.,critical,8.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2022-6226,CVE-307,CVE,initial-access,Critical vulnerability in software 307 allowing remote exploitation.,critical,9.4,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-9267,CVE-308,CVE,privilege-escalation,Critical vulnerability in software 308 allowing remote exploitation.,critical,9.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2022-8634,CVE-309,CVE,privilege-escalation,Critical vulnerability in software 309 allowing remote exploitation.,high,8.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T6538,TTP-310,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 310.,critical,,
+CVE-2024-9705,CVE-311,CVE,initial-access,Critical vulnerability in software 311 allowing remote exploitation.,high,7.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T9096,TTP-312,TTP,execution,Adversaries may perform malicious activity related to TTP 312.,critical,,
+CVE-2021-4911,CVE-313,CVE,execution,Critical vulnerability in software 313 allowing remote exploitation.,critical,8.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T6752,TTP-314,TTP,impact,Adversaries may perform malicious activity related to TTP 314.,high,,
+T5552,TTP-315,TTP,discovery,Adversaries may perform malicious activity related to TTP 315.,critical,,
+CVE-2020-4205,CVE-316,CVE,privilege-escalation,Critical vulnerability in software 316 allowing remote exploitation.,high,9.6,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T1058,TTP-317,TTP,discovery,Adversaries may perform malicious activity related to TTP 317.,medium,,
+CVE-2025-8632,CVE-318,CVE,execution,Critical vulnerability in software 318 allowing remote exploitation.,high,7.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T4705,TTP-319,TTP,discovery,Adversaries may perform malicious activity related to TTP 319.,medium,,
+T7087,TTP-320,TTP,persistence,Adversaries may perform malicious activity related to TTP 320.,medium,,
+CVE-2020-9508,CVE-321,CVE,execution,Critical vulnerability in software 321 allowing remote exploitation.,high,8.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2024-5807,CVE-322,CVE,privilege-escalation,Critical vulnerability in software 322 allowing remote exploitation.,critical,8.5,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T9697,TTP-323,TTP,persistence,Adversaries may perform malicious activity related to TTP 323.,medium,,
+T3672,TTP-324,TTP,discovery,Adversaries may perform malicious activity related to TTP 324.,critical,,
+CVE-2025-2022,CVE-325,CVE,privilege-escalation,Critical vulnerability in software 325 allowing remote exploitation.,critical,9.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-6649,CVE-326,CVE,privilege-escalation,Critical vulnerability in software 326 allowing remote exploitation.,high,8.3,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-2334,CVE-327,CVE,initial-access,Critical vulnerability in software 327 allowing remote exploitation.,high,7.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2021-5267,CVE-328,CVE,privilege-escalation,Critical vulnerability in software 328 allowing remote exploitation.,high,9.3,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T2226,TTP-329,TTP,impact,Adversaries may perform malicious activity related to TTP 329.,critical,,
+CVE-2022-6242,CVE-330,CVE,execution,Critical vulnerability in software 330 allowing remote exploitation.,critical,9.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-7475,CVE-331,CVE,execution,Critical vulnerability in software 331 allowing remote exploitation.,critical,7.7,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-1913,CVE-332,CVE,execution,Critical vulnerability in software 332 allowing remote exploitation.,high,7.2,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+CVE-2023-6865,CVE-333,CVE,execution,Critical vulnerability in software 333 allowing remote exploitation.,high,9.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-2566,CVE-334,CVE,initial-access,Critical vulnerability in software 334 allowing remote exploitation.,critical,7.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2024-6369,CVE-335,CVE,privilege-escalation,Critical vulnerability in software 335 allowing remote exploitation.,critical,8.8,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-2540,CVE-336,CVE,privilege-escalation,Critical vulnerability in software 336 allowing remote exploitation.,high,7.9,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2024-2196,CVE-337,CVE,privilege-escalation,Critical vulnerability in software 337 allowing remote exploitation.,critical,9.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2020-6331,CVE-338,CVE,privilege-escalation,Critical vulnerability in software 338 allowing remote exploitation.,high,8.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-3152,CVE-339,CVE,privilege-escalation,Critical vulnerability in software 339 allowing remote exploitation.,high,7.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-6237,CVE-340,CVE,initial-access,Critical vulnerability in software 340 allowing remote exploitation.,critical,8.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2025-6403,CVE-341,CVE,privilege-escalation,Critical vulnerability in software 341 allowing remote exploitation.,high,9.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2024-5183,CVE-342,CVE,initial-access,Critical vulnerability in software 342 allowing remote exploitation.,critical,9.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-3154,CVE-343,CVE,privilege-escalation,Critical vulnerability in software 343 allowing remote exploitation.,high,9.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2024-6937,CVE-344,CVE,execution,Critical vulnerability in software 344 allowing remote exploitation.,critical,9.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T8203,TTP-345,TTP,discovery,Adversaries may perform malicious activity related to TTP 345.,medium,,
+CVE-2025-6821,CVE-346,CVE,execution,Critical vulnerability in software 346 allowing remote exploitation.,high,8.5,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2025-5689,CVE-347,CVE,execution,Critical vulnerability in software 347 allowing remote exploitation.,high,9.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T5990,TTP-348,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 348.,medium,,
+T9231,TTP-349,TTP,persistence,Adversaries may perform malicious activity related to TTP 349.,critical,,
+T3076,TTP-350,TTP,execution,Adversaries may perform malicious activity related to TTP 350.,high,,
+CVE-2021-6046,CVE-351,CVE,initial-access,Critical vulnerability in software 351 allowing remote exploitation.,critical,7.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2023-5325,CVE-352,CVE,privilege-escalation,Critical vulnerability in software 352 allowing remote exploitation.,high,7.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-7373,CVE-353,CVE,initial-access,Critical vulnerability in software 353 allowing remote exploitation.,critical,9.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+T9895,TTP-354,TTP,discovery,Adversaries may perform malicious activity related to TTP 354.,medium,,
+T6130,TTP-355,TTP,discovery,Adversaries may perform malicious activity related to TTP 355.,high,,
+CVE-2020-8202,CVE-356,CVE,initial-access,Critical vulnerability in software 356 allowing remote exploitation.,high,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T8002,TTP-357,TTP,persistence,Adversaries may perform malicious activity related to TTP 357.,medium,,
+T9133,TTP-358,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 358.,medium,,
+CVE-2023-4048,CVE-359,CVE,initial-access,Critical vulnerability in software 359 allowing remote exploitation.,high,7.5,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-2575,CVE-360,CVE,execution,Critical vulnerability in software 360 allowing remote exploitation.,high,8.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-4607,CVE-361,CVE,initial-access,Critical vulnerability in software 361 allowing remote exploitation.,high,9.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T6582,TTP-362,TTP,discovery,Adversaries may perform malicious activity related to TTP 362.,critical,,
+T3195,TTP-363,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 363.,high,,
+CVE-2021-3251,CVE-364,CVE,initial-access,Critical vulnerability in software 364 allowing remote exploitation.,high,8.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2022-4399,CVE-365,CVE,privilege-escalation,Critical vulnerability in software 365 allowing remote exploitation.,critical,7.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2021-1503,CVE-366,CVE,privilege-escalation,Critical vulnerability in software 366 allowing remote exploitation.,critical,9.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2023-2350,CVE-367,CVE,privilege-escalation,Critical vulnerability in software 367 allowing remote exploitation.,high,9.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T2299,TTP-368,TTP,impact,Adversaries may perform malicious activity related to TTP 368.,high,,
+T1013,TTP-369,TTP,execution,Adversaries may perform malicious activity related to TTP 369.,high,,
+CVE-2024-7538,CVE-370,CVE,privilege-escalation,Critical vulnerability in software 370 allowing remote exploitation.,critical,7.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2022-3918,CVE-371,CVE,execution,Critical vulnerability in software 371 allowing remote exploitation.,critical,9.9,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+T8120,TTP-372,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 372.,critical,,
+CVE-2021-7016,CVE-373,CVE,privilege-escalation,Critical vulnerability in software 373 allowing remote exploitation.,critical,9.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T3649,TTP-374,TTP,execution,Adversaries may perform malicious activity related to TTP 374.,medium,,
+T2692,TTP-375,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 375.,high,,
+T8526,TTP-376,TTP,discovery,Adversaries may perform malicious activity related to TTP 376.,critical,,
+CVE-2020-5581,CVE-377,CVE,initial-access,Critical vulnerability in software 377 allowing remote exploitation.,high,8.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2025-9815,CVE-378,CVE,execution,Critical vulnerability in software 378 allowing remote exploitation.,critical,9.3,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2024-8947,CVE-379,CVE,execution,Critical vulnerability in software 379 allowing remote exploitation.,critical,9.9,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T8379,TTP-380,TTP,impact,Adversaries may perform malicious activity related to TTP 380.,high,,
+T5267,TTP-381,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 381.,high,,
+T3260,TTP-382,TTP,persistence,Adversaries may perform malicious activity related to TTP 382.,high,,
+T5555,TTP-383,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 383.,high,,
+CVE-2021-3661,CVE-384,CVE,initial-access,Critical vulnerability in software 384 allowing remote exploitation.,critical,8.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2024-9998,CVE-385,CVE,initial-access,Critical vulnerability in software 385 allowing remote exploitation.,high,7.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2022-8964,CVE-386,CVE,privilege-escalation,Critical vulnerability in software 386 allowing remote exploitation.,high,8.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T8424,TTP-387,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 387.,high,,
+CVE-2021-8945,CVE-388,CVE,privilege-escalation,Critical vulnerability in software 388 allowing remote exploitation.,critical,8.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2020-2108,CVE-389,CVE,privilege-escalation,Critical vulnerability in software 389 allowing remote exploitation.,high,8.3,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2024-3583,CVE-390,CVE,initial-access,Critical vulnerability in software 390 allowing remote exploitation.,high,8.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+T2495,TTP-391,TTP,execution,Adversaries may perform malicious activity related to TTP 391.,high,,
+CVE-2025-8035,CVE-392,CVE,execution,Critical vulnerability in software 392 allowing remote exploitation.,critical,7.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T1227,TTP-393,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 393.,critical,,
+T7723,TTP-394,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 394.,medium,,
+CVE-2021-9039,CVE-395,CVE,execution,Critical vulnerability in software 395 allowing remote exploitation.,high,8.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T9470,TTP-396,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 396.,critical,,
+CVE-2024-3444,CVE-397,CVE,initial-access,Critical vulnerability in software 397 allowing remote exploitation.,high,8.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T5478,TTP-398,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 398.,medium,,
+CVE-2025-8137,CVE-399,CVE,privilege-escalation,Critical vulnerability in software 399 allowing remote exploitation.,critical,7.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2023-5545,CVE-400,CVE,execution,Critical vulnerability in software 400 allowing remote exploitation.,critical,7.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T3361,TTP-401,TTP,execution,Adversaries may perform malicious activity related to TTP 401.,medium,,
+CVE-2023-3393,CVE-402,CVE,privilege-escalation,Critical vulnerability in software 402 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-7396,CVE-403,CVE,initial-access,Critical vulnerability in software 403 allowing remote exploitation.,high,7.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T1602,TTP-404,TTP,persistence,Adversaries may perform malicious activity related to TTP 404.,medium,,
+T9313,TTP-405,TTP,impact,Adversaries may perform malicious activity related to TTP 405.,critical,,
+CVE-2020-9538,CVE-406,CVE,initial-access,Critical vulnerability in software 406 allowing remote exploitation.,critical,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-1024,CVE-407,CVE,execution,Critical vulnerability in software 407 allowing remote exploitation.,critical,8.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2024-8517,CVE-408,CVE,execution,Critical vulnerability in software 408 allowing remote exploitation.,high,9.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2020-8546,CVE-409,CVE,initial-access,Critical vulnerability in software 409 allowing remote exploitation.,high,8.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T8761,TTP-410,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 410.,critical,,
+T7941,TTP-411,TTP,execution,Adversaries may perform malicious activity related to TTP 411.,medium,,
+CVE-2025-9375,CVE-412,CVE,privilege-escalation,Critical vulnerability in software 412 allowing remote exploitation.,high,9.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-8300,CVE-413,CVE,privilege-escalation,Critical vulnerability in software 413 allowing remote exploitation.,critical,7.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T8541,TTP-414,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 414.,critical,,
+T3111,TTP-415,TTP,persistence,Adversaries may perform malicious activity related to TTP 415.,critical,,
+T5727,TTP-416,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 416.,critical,,
+T1465,TTP-417,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 417.,medium,,
+CVE-2024-8582,CVE-418,CVE,privilege-escalation,Critical vulnerability in software 418 allowing remote exploitation.,high,8.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T6782,TTP-419,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 419.,critical,,
+CVE-2024-6786,CVE-420,CVE,execution,Critical vulnerability in software 420 allowing remote exploitation.,high,9.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T2058,TTP-421,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 421.,medium,,
+T9019,TTP-422,TTP,impact,Adversaries may perform malicious activity related to TTP 422.,high,,
+T2752,TTP-423,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 423.,medium,,
+T5587,TTP-424,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 424.,medium,,
+CVE-2023-3287,CVE-425,CVE,initial-access,Critical vulnerability in software 425 allowing remote exploitation.,critical,9.9,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2021-8462,CVE-426,CVE,initial-access,Critical vulnerability in software 426 allowing remote exploitation.,critical,7.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T7201,TTP-427,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 427.,high,,
+T6087,TTP-428,TTP,impact,Adversaries may perform malicious activity related to TTP 428.,high,,
+T4938,TTP-429,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 429.,high,,
+T8717,TTP-430,TTP,execution,Adversaries may perform malicious activity related to TTP 430.,critical,,
+CVE-2023-2055,CVE-431,CVE,initial-access,Critical vulnerability in software 431 allowing remote exploitation.,critical,7.9,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T2903,TTP-432,TTP,execution,Adversaries may perform malicious activity related to TTP 432.,critical,,
+CVE-2020-3228,CVE-433,CVE,initial-access,Critical vulnerability in software 433 allowing remote exploitation.,critical,8.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T5829,TTP-434,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 434.,high,,
+CVE-2021-8623,CVE-435,CVE,initial-access,Critical vulnerability in software 435 allowing remote exploitation.,high,9.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+T9907,TTP-436,TTP,impact,Adversaries may perform malicious activity related to TTP 436.,high,,
+CVE-2023-5430,CVE-437,CVE,initial-access,Critical vulnerability in software 437 allowing remote exploitation.,critical,8.2,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T6093,TTP-438,TTP,discovery,Adversaries may perform malicious activity related to TTP 438.,high,,
+T3219,TTP-439,TTP,execution,Adversaries may perform malicious activity related to TTP 439.,critical,,
+CVE-2021-1004,CVE-440,CVE,privilege-escalation,Critical vulnerability in software 440 allowing remote exploitation.,high,9.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2022-1756,CVE-441,CVE,privilege-escalation,Critical vulnerability in software 441 allowing remote exploitation.,critical,8.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2024-2912,CVE-442,CVE,privilege-escalation,Critical vulnerability in software 442 allowing remote exploitation.,high,9.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T4721,TTP-443,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 443.,medium,,
+T6958,TTP-444,TTP,discovery,Adversaries may perform malicious activity related to TTP 444.,high,,
+T5967,TTP-445,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 445.,high,,
+T8056,TTP-446,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 446.,high,,
+CVE-2020-6574,CVE-447,CVE,execution,Critical vulnerability in software 447 allowing remote exploitation.,critical,8.9,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T3107,TTP-448,TTP,execution,Adversaries may perform malicious activity related to TTP 448.,critical,,
+T8290,TTP-449,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 449.,critical,,
+CVE-2020-7532,CVE-450,CVE,privilege-escalation,Critical vulnerability in software 450 allowing remote exploitation.,high,10.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T8446,TTP-451,TTP,execution,Adversaries may perform malicious activity related to TTP 451.,critical,,
+CVE-2020-7432,CVE-452,CVE,initial-access,Critical vulnerability in software 452 allowing remote exploitation.,critical,7.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T2901,TTP-453,TTP,execution,Adversaries may perform malicious activity related to TTP 453.,critical,,
+CVE-2021-8055,CVE-454,CVE,privilege-escalation,Critical vulnerability in software 454 allowing remote exploitation.,critical,7.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2020-2664,CVE-455,CVE,privilege-escalation,Critical vulnerability in software 455 allowing remote exploitation.,critical,9.2,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T6602,TTP-456,TTP,impact,Adversaries may perform malicious activity related to TTP 456.,high,,
+T2228,TTP-457,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 457.,high,,
+T4915,TTP-458,TTP,persistence,Adversaries may perform malicious activity related to TTP 458.,high,,
+T1587,TTP-459,TTP,persistence,Adversaries may perform malicious activity related to TTP 459.,high,,
+CVE-2022-8442,CVE-460,CVE,initial-access,Critical vulnerability in software 460 allowing remote exploitation.,high,7.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T2119,TTP-461,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 461.,high,,
+CVE-2020-6722,CVE-462,CVE,execution,Critical vulnerability in software 462 allowing remote exploitation.,high,9.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T5522,TTP-463,TTP,impact,Adversaries may perform malicious activity related to TTP 463.,medium,,
+CVE-2021-4642,CVE-464,CVE,privilege-escalation,Critical vulnerability in software 464 allowing remote exploitation.,high,7.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-2986,CVE-465,CVE,execution,Critical vulnerability in software 465 allowing remote exploitation.,critical,7.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2025-7963,CVE-466,CVE,execution,Critical vulnerability in software 466 allowing remote exploitation.,critical,8.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+T2610,TTP-467,TTP,discovery,Adversaries may perform malicious activity related to TTP 467.,high,,
+T9365,TTP-468,TTP,execution,Adversaries may perform malicious activity related to TTP 468.,critical,,
+CVE-2021-8443,CVE-469,CVE,execution,Critical vulnerability in software 469 allowing remote exploitation.,critical,9.9,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-1771,CVE-470,CVE,execution,Critical vulnerability in software 470 allowing remote exploitation.,critical,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T8106,TTP-471,TTP,impact,Adversaries may perform malicious activity related to TTP 471.,medium,,
+CVE-2020-2132,CVE-472,CVE,privilege-escalation,Critical vulnerability in software 472 allowing remote exploitation.,critical,9.9,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2024-7442,CVE-473,CVE,initial-access,Critical vulnerability in software 473 allowing remote exploitation.,high,8.9,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T3995,TTP-474,TTP,impact,Adversaries may perform malicious activity related to TTP 474.,high,,
+T2203,TTP-475,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 475.,critical,,
+T9805,TTP-476,TTP,impact,Adversaries may perform malicious activity related to TTP 476.,high,,
+T6564,TTP-477,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 477.,critical,,
+CVE-2020-7989,CVE-478,CVE,execution,Critical vulnerability in software 478 allowing remote exploitation.,critical,9.3,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T5375,TTP-479,TTP,execution,Adversaries may perform malicious activity related to TTP 479.,high,,
+CVE-2024-6145,CVE-480,CVE,initial-access,Critical vulnerability in software 480 allowing remote exploitation.,high,8.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T2522,TTP-481,TTP,discovery,Adversaries may perform malicious activity related to TTP 481.,medium,,
+CVE-2020-4031,CVE-482,CVE,initial-access,Critical vulnerability in software 482 allowing remote exploitation.,high,8.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T3555,TTP-483,TTP,execution,Adversaries may perform malicious activity related to TTP 483.,high,,
+CVE-2023-3302,CVE-484,CVE,privilege-escalation,Critical vulnerability in software 484 allowing remote exploitation.,high,8.2,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T4048,TTP-485,TTP,execution,Adversaries may perform malicious activity related to TTP 485.,high,,
+T8994,TTP-486,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 486.,medium,,
+CVE-2024-8012,CVE-487,CVE,initial-access,Critical vulnerability in software 487 allowing remote exploitation.,critical,9.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+CVE-2025-4681,CVE-488,CVE,initial-access,Critical vulnerability in software 488 allowing remote exploitation.,high,9.7,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T8040,TTP-489,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 489.,medium,,
+T3106,TTP-490,TTP,execution,Adversaries may perform malicious activity related to TTP 490.,high,,
+T7777,TTP-491,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 491.,high,,
+CVE-2022-2762,CVE-492,CVE,execution,Critical vulnerability in software 492 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-5404,CVE-493,CVE,privilege-escalation,Critical vulnerability in software 493 allowing remote exploitation.,critical,8.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2022-5524,CVE-494,CVE,privilege-escalation,Critical vulnerability in software 494 allowing remote exploitation.,critical,9.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T2640,TTP-495,TTP,impact,Adversaries may perform malicious activity related to TTP 495.,medium,,
+T3365,TTP-496,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 496.,medium,,
+CVE-2020-4859,CVE-497,CVE,execution,Critical vulnerability in software 497 allowing remote exploitation.,high,7.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2020-1795,CVE-498,CVE,initial-access,Critical vulnerability in software 498 allowing remote exploitation.,high,8.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2023-3784,CVE-499,CVE,privilege-escalation,Critical vulnerability in software 499 allowing remote exploitation.,critical,9.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2022-3238,CVE-500,CVE,privilege-escalation,Critical vulnerability in software 500 allowing remote exploitation.,high,8.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2020-8189,CVE-501,CVE,execution,Critical vulnerability in software 501 allowing remote exploitation.,high,7.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+CVE-2020-3108,CVE-502,CVE,initial-access,Critical vulnerability in software 502 allowing remote exploitation.,high,8.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T9795,TTP-503,TTP,impact,Adversaries may perform malicious activity related to TTP 503.,medium,,
+CVE-2024-3659,CVE-504,CVE,execution,Critical vulnerability in software 504 allowing remote exploitation.,critical,8.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T6121,TTP-505,TTP,impact,Adversaries may perform malicious activity related to TTP 505.,critical,,
+T9925,TTP-506,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 506.,critical,,
+CVE-2025-9208,CVE-507,CVE,execution,Critical vulnerability in software 507 allowing remote exploitation.,high,8.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T3477,TTP-508,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 508.,critical,,
+CVE-2023-3541,CVE-509,CVE,privilege-escalation,Critical vulnerability in software 509 allowing remote exploitation.,high,9.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T1611,TTP-510,TTP,execution,Adversaries may perform malicious activity related to TTP 510.,critical,,
+T2632,TTP-511,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 511.,critical,,
+CVE-2023-9047,CVE-512,CVE,privilege-escalation,Critical vulnerability in software 512 allowing remote exploitation.,critical,7.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T3834,TTP-513,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 513.,high,,
+T2230,TTP-514,TTP,persistence,Adversaries may perform malicious activity related to TTP 514.,high,,
+CVE-2020-7851,CVE-515,CVE,privilege-escalation,Critical vulnerability in software 515 allowing remote exploitation.,critical,7.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2025-7345,CVE-516,CVE,privilege-escalation,Critical vulnerability in software 516 allowing remote exploitation.,critical,8.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2022-6656,CVE-517,CVE,privilege-escalation,Critical vulnerability in software 517 allowing remote exploitation.,high,9.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+T4867,TTP-518,TTP,discovery,Adversaries may perform malicious activity related to TTP 518.,high,,
+CVE-2021-2075,CVE-519,CVE,privilege-escalation,Critical vulnerability in software 519 allowing remote exploitation.,high,9.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T1959,TTP-520,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 520.,high,,
+CVE-2021-9429,CVE-521,CVE,initial-access,Critical vulnerability in software 521 allowing remote exploitation.,critical,8.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T2719,TTP-522,TTP,persistence,Adversaries may perform malicious activity related to TTP 522.,critical,,
+T2653,TTP-523,TTP,impact,Adversaries may perform malicious activity related to TTP 523.,critical,,
+CVE-2024-7695,CVE-524,CVE,execution,Critical vulnerability in software 524 allowing remote exploitation.,critical,9.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T8299,TTP-525,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 525.,medium,,
+T5299,TTP-526,TTP,discovery,Adversaries may perform malicious activity related to TTP 526.,high,,
+T7486,TTP-527,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 527.,medium,,
+T7238,TTP-528,TTP,execution,Adversaries may perform malicious activity related to TTP 528.,critical,,
+T3341,TTP-529,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 529.,critical,,
+CVE-2024-5914,CVE-530,CVE,initial-access,Critical vulnerability in software 530 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T8243,TTP-531,TTP,impact,Adversaries may perform malicious activity related to TTP 531.,medium,,
+CVE-2022-6951,CVE-532,CVE,execution,Critical vulnerability in software 532 allowing remote exploitation.,critical,7.6,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2023-1348,CVE-533,CVE,initial-access,Critical vulnerability in software 533 allowing remote exploitation.,high,7.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T4026,TTP-534,TTP,persistence,Adversaries may perform malicious activity related to TTP 534.,high,,
+CVE-2024-2360,CVE-535,CVE,execution,Critical vulnerability in software 535 allowing remote exploitation.,high,8.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2020-3789,CVE-536,CVE,privilege-escalation,Critical vulnerability in software 536 allowing remote exploitation.,critical,9.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2023-9749,CVE-537,CVE,privilege-escalation,Critical vulnerability in software 537 allowing remote exploitation.,critical,9.8,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2024-5805,CVE-538,CVE,initial-access,Critical vulnerability in software 538 allowing remote exploitation.,critical,8.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2020-6600,CVE-539,CVE,privilege-escalation,Critical vulnerability in software 539 allowing remote exploitation.,critical,8.7,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T3209,TTP-540,TTP,discovery,Adversaries may perform malicious activity related to TTP 540.,medium,,
+CVE-2024-1772,CVE-541,CVE,initial-access,Critical vulnerability in software 541 allowing remote exploitation.,critical,9.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T2541,TTP-542,TTP,execution,Adversaries may perform malicious activity related to TTP 542.,critical,,
+T5181,TTP-543,TTP,execution,Adversaries may perform malicious activity related to TTP 543.,critical,,
+T3419,TTP-544,TTP,discovery,Adversaries may perform malicious activity related to TTP 544.,medium,,
+T8881,TTP-545,TTP,discovery,Adversaries may perform malicious activity related to TTP 545.,high,,
+T9087,TTP-546,TTP,execution,Adversaries may perform malicious activity related to TTP 546.,high,,
+T4872,TTP-547,TTP,persistence,Adversaries may perform malicious activity related to TTP 547.,critical,,
+T3522,TTP-548,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 548.,high,,
+CVE-2022-4096,CVE-549,CVE,execution,Critical vulnerability in software 549 allowing remote exploitation.,critical,7.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2024-3576,CVE-550,CVE,privilege-escalation,Critical vulnerability in software 550 allowing remote exploitation.,critical,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T4012,TTP-551,TTP,impact,Adversaries may perform malicious activity related to TTP 551.,critical,,
+T5130,TTP-552,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 552.,medium,,
+T1262,TTP-553,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 553.,high,,
+CVE-2023-8133,CVE-554,CVE,privilege-escalation,Critical vulnerability in software 554 allowing remote exploitation.,high,9.4,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2020-5648,CVE-555,CVE,privilege-escalation,Critical vulnerability in software 555 allowing remote exploitation.,high,8.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2024-3765,CVE-556,CVE,privilege-escalation,Critical vulnerability in software 556 allowing remote exploitation.,high,7.2,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T9830,TTP-557,TTP,persistence,Adversaries may perform malicious activity related to TTP 557.,high,,
+CVE-2025-7364,CVE-558,CVE,privilege-escalation,Critical vulnerability in software 558 allowing remote exploitation.,critical,8.7,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-5996,CVE-559,CVE,privilege-escalation,Critical vulnerability in software 559 allowing remote exploitation.,high,7.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-7091,CVE-560,CVE,execution,Critical vulnerability in software 560 allowing remote exploitation.,high,8.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2022-7916,CVE-561,CVE,privilege-escalation,Critical vulnerability in software 561 allowing remote exploitation.,critical,9.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T5459,TTP-562,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 562.,critical,,
+CVE-2025-8718,CVE-563,CVE,initial-access,Critical vulnerability in software 563 allowing remote exploitation.,critical,9.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T1388,TTP-564,TTP,persistence,Adversaries may perform malicious activity related to TTP 564.,medium,,
+CVE-2024-3069,CVE-565,CVE,execution,Critical vulnerability in software 565 allowing remote exploitation.,high,7.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2021-6588,CVE-566,CVE,privilege-escalation,Critical vulnerability in software 566 allowing remote exploitation.,critical,10.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T6226,TTP-567,TTP,impact,Adversaries may perform malicious activity related to TTP 567.,high,,
+T6465,TTP-568,TTP,impact,Adversaries may perform malicious activity related to TTP 568.,critical,,
+CVE-2021-7469,CVE-569,CVE,initial-access,Critical vulnerability in software 569 allowing remote exploitation.,high,9.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2025-8617,CVE-570,CVE,execution,Critical vulnerability in software 570 allowing remote exploitation.,critical,8.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2020-5200,CVE-571,CVE,initial-access,Critical vulnerability in software 571 allowing remote exploitation.,high,7.3,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T2310,TTP-572,TTP,execution,Adversaries may perform malicious activity related to TTP 572.,medium,,
+T8056,TTP-573,TTP,execution,Adversaries may perform malicious activity related to TTP 573.,critical,,
+T5498,TTP-574,TTP,persistence,Adversaries may perform malicious activity related to TTP 574.,medium,,
+T2129,TTP-575,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 575.,critical,,
+CVE-2025-6656,CVE-576,CVE,initial-access,Critical vulnerability in software 576 allowing remote exploitation.,critical,9.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T3175,TTP-577,TTP,discovery,Adversaries may perform malicious activity related to TTP 577.,critical,,
+CVE-2022-3331,CVE-578,CVE,execution,Critical vulnerability in software 578 allowing remote exploitation.,high,7.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-8031,CVE-579,CVE,initial-access,Critical vulnerability in software 579 allowing remote exploitation.,high,7.2,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2022-4658,CVE-580,CVE,privilege-escalation,Critical vulnerability in software 580 allowing remote exploitation.,high,7.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2022-2338,CVE-581,CVE,privilege-escalation,Critical vulnerability in software 581 allowing remote exploitation.,high,7.9,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2022-6930,CVE-582,CVE,execution,Critical vulnerability in software 582 allowing remote exploitation.,critical,7.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T3984,TTP-583,TTP,impact,Adversaries may perform malicious activity related to TTP 583.,medium,,
+T9258,TTP-584,TTP,persistence,Adversaries may perform malicious activity related to TTP 584.,critical,,
+CVE-2024-3662,CVE-585,CVE,privilege-escalation,Critical vulnerability in software 585 allowing remote exploitation.,critical,7.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2023-2623,CVE-586,CVE,execution,Critical vulnerability in software 586 allowing remote exploitation.,high,9.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2020-3947,CVE-587,CVE,privilege-escalation,Critical vulnerability in software 587 allowing remote exploitation.,critical,8.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2023-3301,CVE-588,CVE,execution,Critical vulnerability in software 588 allowing remote exploitation.,critical,8.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2023-8882,CVE-589,CVE,initial-access,Critical vulnerability in software 589 allowing remote exploitation.,critical,7.5,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2021-2927,CVE-590,CVE,privilege-escalation,Critical vulnerability in software 590 allowing remote exploitation.,high,8.2,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T7820,TTP-591,TTP,impact,Adversaries may perform malicious activity related to TTP 591.,medium,,
+T9570,TTP-592,TTP,persistence,Adversaries may perform malicious activity related to TTP 592.,critical,,
+CVE-2025-7136,CVE-593,CVE,initial-access,Critical vulnerability in software 593 allowing remote exploitation.,high,9.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T8864,TTP-594,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 594.,medium,,
+CVE-2023-7120,CVE-595,CVE,initial-access,Critical vulnerability in software 595 allowing remote exploitation.,high,9.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-3628,CVE-596,CVE,initial-access,Critical vulnerability in software 596 allowing remote exploitation.,critical,8.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2024-7370,CVE-597,CVE,execution,Critical vulnerability in software 597 allowing remote exploitation.,critical,9.9,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+T1807,TTP-598,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 598.,critical,,
+CVE-2025-5291,CVE-599,CVE,privilege-escalation,Critical vulnerability in software 599 allowing remote exploitation.,critical,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T3016,TTP-600,TTP,impact,Adversaries may perform malicious activity related to TTP 600.,high,,
+T7934,TTP-601,TTP,persistence,Adversaries may perform malicious activity related to TTP 601.,critical,,
+CVE-2020-8730,CVE-602,CVE,initial-access,Critical vulnerability in software 602 allowing remote exploitation.,high,9.6,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T8359,TTP-603,TTP,discovery,Adversaries may perform malicious activity related to TTP 603.,high,,
+CVE-2024-2119,CVE-604,CVE,initial-access,Critical vulnerability in software 604 allowing remote exploitation.,critical,8.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T3268,TTP-605,TTP,impact,Adversaries may perform malicious activity related to TTP 605.,medium,,
+CVE-2023-5303,CVE-606,CVE,initial-access,Critical vulnerability in software 606 allowing remote exploitation.,high,8.3,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T6379,TTP-607,TTP,discovery,Adversaries may perform malicious activity related to TTP 607.,critical,,
+T9576,TTP-608,TTP,impact,Adversaries may perform malicious activity related to TTP 608.,high,,
+T7862,TTP-609,TTP,discovery,Adversaries may perform malicious activity related to TTP 609.,medium,,
+CVE-2023-7289,CVE-610,CVE,initial-access,Critical vulnerability in software 610 allowing remote exploitation.,critical,7.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T5316,TTP-611,TTP,execution,Adversaries may perform malicious activity related to TTP 611.,medium,,
+CVE-2020-9074,CVE-612,CVE,execution,Critical vulnerability in software 612 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2024-2124,CVE-613,CVE,privilege-escalation,Critical vulnerability in software 613 allowing remote exploitation.,critical,9.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2025-8849,CVE-614,CVE,execution,Critical vulnerability in software 614 allowing remote exploitation.,critical,9.9,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T3953,TTP-615,TTP,persistence,Adversaries may perform malicious activity related to TTP 615.,high,,
+T1917,TTP-616,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 616.,high,,
+CVE-2024-3602,CVE-617,CVE,initial-access,Critical vulnerability in software 617 allowing remote exploitation.,critical,8.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-6119,CVE-618,CVE,execution,Critical vulnerability in software 618 allowing remote exploitation.,high,8.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T1101,TTP-619,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 619.,critical,,
+CVE-2023-4076,CVE-620,CVE,initial-access,Critical vulnerability in software 620 allowing remote exploitation.,high,8.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T1044,TTP-621,TTP,discovery,Adversaries may perform malicious activity related to TTP 621.,critical,,
+CVE-2020-5970,CVE-622,CVE,initial-access,Critical vulnerability in software 622 allowing remote exploitation.,high,8.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T2067,TTP-623,TTP,discovery,Adversaries may perform malicious activity related to TTP 623.,medium,,
+CVE-2020-3818,CVE-624,CVE,privilege-escalation,Critical vulnerability in software 624 allowing remote exploitation.,critical,7.8,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T5102,TTP-625,TTP,discovery,Adversaries may perform malicious activity related to TTP 625.,high,,
+CVE-2021-5065,CVE-626,CVE,initial-access,Critical vulnerability in software 626 allowing remote exploitation.,high,8.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T8086,TTP-627,TTP,persistence,Adversaries may perform malicious activity related to TTP 627.,medium,,
+CVE-2021-7045,CVE-628,CVE,initial-access,Critical vulnerability in software 628 allowing remote exploitation.,critical,8.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T6827,TTP-629,TTP,impact,Adversaries may perform malicious activity related to TTP 629.,medium,,
+T9592,TTP-630,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 630.,critical,,
+CVE-2025-5154,CVE-631,CVE,privilege-escalation,Critical vulnerability in software 631 allowing remote exploitation.,high,8.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2024-5807,CVE-632,CVE,initial-access,Critical vulnerability in software 632 allowing remote exploitation.,high,7.9,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T7721,TTP-633,TTP,execution,Adversaries may perform malicious activity related to TTP 633.,medium,,
+T2766,TTP-634,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 634.,medium,,
+CVE-2021-1503,CVE-635,CVE,initial-access,Critical vulnerability in software 635 allowing remote exploitation.,high,9.3,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+T6816,TTP-636,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 636.,critical,,
+T3343,TTP-637,TTP,execution,Adversaries may perform malicious activity related to TTP 637.,medium,,
+CVE-2024-2350,CVE-638,CVE,privilege-escalation,Critical vulnerability in software 638 allowing remote exploitation.,high,9.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T3845,TTP-639,TTP,persistence,Adversaries may perform malicious activity related to TTP 639.,critical,,
+T2435,TTP-640,TTP,discovery,Adversaries may perform malicious activity related to TTP 640.,high,,
+CVE-2024-2800,CVE-641,CVE,execution,Critical vulnerability in software 641 allowing remote exploitation.,critical,8.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T4666,TTP-642,TTP,execution,Adversaries may perform malicious activity related to TTP 642.,high,,
+CVE-2021-6908,CVE-643,CVE,execution,Critical vulnerability in software 643 allowing remote exploitation.,high,8.8,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T7781,TTP-644,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 644.,medium,,
+T9855,TTP-645,TTP,discovery,Adversaries may perform malicious activity related to TTP 645.,medium,,
+T5070,TTP-646,TTP,impact,Adversaries may perform malicious activity related to TTP 646.,critical,,
+CVE-2024-8848,CVE-647,CVE,execution,Critical vulnerability in software 647 allowing remote exploitation.,critical,7.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2024-1362,CVE-648,CVE,initial-access,Critical vulnerability in software 648 allowing remote exploitation.,high,9.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+CVE-2025-2288,CVE-649,CVE,execution,Critical vulnerability in software 649 allowing remote exploitation.,critical,7.5,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T3300,TTP-650,TTP,execution,Adversaries may perform malicious activity related to TTP 650.,high,,
+CVE-2025-4068,CVE-651,CVE,initial-access,Critical vulnerability in software 651 allowing remote exploitation.,critical,8.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2023-1618,CVE-652,CVE,privilege-escalation,Critical vulnerability in software 652 allowing remote exploitation.,critical,8.5,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2024-5237,CVE-653,CVE,execution,Critical vulnerability in software 653 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T8517,TTP-654,TTP,persistence,Adversaries may perform malicious activity related to TTP 654.,high,,
+T7652,TTP-655,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 655.,critical,,
+T8179,TTP-656,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 656.,high,,
+CVE-2025-9189,CVE-657,CVE,execution,Critical vulnerability in software 657 allowing remote exploitation.,critical,7.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T6355,TTP-658,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 658.,high,,
+T4970,TTP-659,TTP,impact,Adversaries may perform malicious activity related to TTP 659.,high,,
+T2712,TTP-660,TTP,persistence,Adversaries may perform malicious activity related to TTP 660.,medium,,
+T1377,TTP-661,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 661.,critical,,
+CVE-2020-8062,CVE-662,CVE,privilege-escalation,Critical vulnerability in software 662 allowing remote exploitation.,critical,8.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T2310,TTP-663,TTP,persistence,Adversaries may perform malicious activity related to TTP 663.,medium,,
+CVE-2025-2184,CVE-664,CVE,execution,Critical vulnerability in software 664 allowing remote exploitation.,critical,7.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T5263,TTP-665,TTP,discovery,Adversaries may perform malicious activity related to TTP 665.,medium,,
+T1523,TTP-666,TTP,discovery,Adversaries may perform malicious activity related to TTP 666.,medium,,
+T7048,TTP-667,TTP,persistence,Adversaries may perform malicious activity related to TTP 667.,high,,
+CVE-2021-4377,CVE-668,CVE,initial-access,Critical vulnerability in software 668 allowing remote exploitation.,critical,7.4,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2025-9502,CVE-669,CVE,execution,Critical vulnerability in software 669 allowing remote exploitation.,high,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2020-5379,CVE-670,CVE,privilege-escalation,Critical vulnerability in software 670 allowing remote exploitation.,high,9.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T1640,TTP-671,TTP,execution,Adversaries may perform malicious activity related to TTP 671.,medium,,
+T3631,TTP-672,TTP,execution,Adversaries may perform malicious activity related to TTP 672.,medium,,
+T6952,TTP-673,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 673.,critical,,
+CVE-2020-1863,CVE-674,CVE,privilege-escalation,Critical vulnerability in software 674 allowing remote exploitation.,high,9.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2020-8074,CVE-675,CVE,privilege-escalation,Critical vulnerability in software 675 allowing remote exploitation.,critical,9.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2022-8754,CVE-676,CVE,privilege-escalation,Critical vulnerability in software 676 allowing remote exploitation.,high,9.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T3625,TTP-677,TTP,execution,Adversaries may perform malicious activity related to TTP 677.,high,,
+CVE-2024-1576,CVE-678,CVE,initial-access,Critical vulnerability in software 678 allowing remote exploitation.,high,8.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T1773,TTP-679,TTP,execution,Adversaries may perform malicious activity related to TTP 679.,medium,,
+T8605,TTP-680,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 680.,critical,,
+CVE-2021-4737,CVE-681,CVE,privilege-escalation,Critical vulnerability in software 681 allowing remote exploitation.,critical,8.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T6606,TTP-682,TTP,execution,Adversaries may perform malicious activity related to TTP 682.,medium,,
+T3608,TTP-683,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 683.,critical,,
+CVE-2021-6548,CVE-684,CVE,initial-access,Critical vulnerability in software 684 allowing remote exploitation.,critical,8.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2025-6897,CVE-685,CVE,execution,Critical vulnerability in software 685 allowing remote exploitation.,high,7.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T8036,TTP-686,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 686.,medium,,
+CVE-2024-2174,CVE-687,CVE,privilege-escalation,Critical vulnerability in software 687 allowing remote exploitation.,high,9.4,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2024-1412,CVE-688,CVE,initial-access,Critical vulnerability in software 688 allowing remote exploitation.,critical,8.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T5358,TTP-689,TTP,execution,Adversaries may perform malicious activity related to TTP 689.,high,,
+CVE-2022-4953,CVE-690,CVE,privilege-escalation,Critical vulnerability in software 690 allowing remote exploitation.,high,8.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2022-7512,CVE-691,CVE,execution,Critical vulnerability in software 691 allowing remote exploitation.,high,8.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2024-4695,CVE-692,CVE,execution,Critical vulnerability in software 692 allowing remote exploitation.,high,7.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2024-1089,CVE-693,CVE,initial-access,Critical vulnerability in software 693 allowing remote exploitation.,critical,8.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2024-7814,CVE-694,CVE,execution,Critical vulnerability in software 694 allowing remote exploitation.,critical,9.7,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T4501,TTP-695,TTP,discovery,Adversaries may perform malicious activity related to TTP 695.,high,,
+CVE-2023-2599,CVE-696,CVE,initial-access,Critical vulnerability in software 696 allowing remote exploitation.,high,9.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2024-6843,CVE-697,CVE,execution,Critical vulnerability in software 697 allowing remote exploitation.,critical,9.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-3286,CVE-698,CVE,initial-access,Critical vulnerability in software 698 allowing remote exploitation.,high,9.9,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T2571,TTP-699,TTP,discovery,Adversaries may perform malicious activity related to TTP 699.,high,,
+T4414,TTP-700,TTP,discovery,Adversaries may perform malicious activity related to TTP 700.,medium,,
+T3639,TTP-701,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 701.,medium,,
+CVE-2022-2940,CVE-702,CVE,execution,Critical vulnerability in software 702 allowing remote exploitation.,high,9.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-9558,CVE-703,CVE,execution,Critical vulnerability in software 703 allowing remote exploitation.,high,9.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-4249,CVE-704,CVE,privilege-escalation,Critical vulnerability in software 704 allowing remote exploitation.,critical,9.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T7071,TTP-705,TTP,persistence,Adversaries may perform malicious activity related to TTP 705.,high,,
+T2234,TTP-706,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 706.,critical,,
+CVE-2020-7895,CVE-707,CVE,initial-access,Critical vulnerability in software 707 allowing remote exploitation.,high,7.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+T8813,TTP-708,TTP,persistence,Adversaries may perform malicious activity related to TTP 708.,high,,
+CVE-2020-7359,CVE-709,CVE,privilege-escalation,Critical vulnerability in software 709 allowing remote exploitation.,high,7.3,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-9112,CVE-710,CVE,execution,Critical vulnerability in software 710 allowing remote exploitation.,high,7.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2025-4792,CVE-711,CVE,privilege-escalation,Critical vulnerability in software 711 allowing remote exploitation.,critical,9.6,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T6218,TTP-712,TTP,execution,Adversaries may perform malicious activity related to TTP 712.,high,,
+CVE-2023-4102,CVE-713,CVE,privilege-escalation,Critical vulnerability in software 713 allowing remote exploitation.,critical,9.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T8563,TTP-714,TTP,impact,Adversaries may perform malicious activity related to TTP 714.,critical,,
+CVE-2020-4544,CVE-715,CVE,privilege-escalation,Critical vulnerability in software 715 allowing remote exploitation.,high,8.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T5619,TTP-716,TTP,discovery,Adversaries may perform malicious activity related to TTP 716.,critical,,
+T1056,TTP-717,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 717.,critical,,
+T1654,TTP-718,TTP,persistence,Adversaries may perform malicious activity related to TTP 718.,medium,,
+CVE-2025-9974,CVE-719,CVE,privilege-escalation,Critical vulnerability in software 719 allowing remote exploitation.,high,8.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T4902,TTP-720,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 720.,high,,
+T5950,TTP-721,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 721.,high,,
+T1264,TTP-722,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 722.,critical,,
+CVE-2023-7441,CVE-723,CVE,privilege-escalation,Critical vulnerability in software 723 allowing remote exploitation.,critical,7.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T6584,TTP-724,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 724.,critical,,
+T1517,TTP-725,TTP,execution,Adversaries may perform malicious activity related to TTP 725.,high,,
+T3743,TTP-726,TTP,persistence,Adversaries may perform malicious activity related to TTP 726.,high,,
+T3856,TTP-727,TTP,discovery,Adversaries may perform malicious activity related to TTP 727.,high,,
+CVE-2023-2593,CVE-728,CVE,execution,Critical vulnerability in software 728 allowing remote exploitation.,critical,8.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2023-8871,CVE-729,CVE,execution,Critical vulnerability in software 729 allowing remote exploitation.,high,9.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2020-3311,CVE-730,CVE,privilege-escalation,Critical vulnerability in software 730 allowing remote exploitation.,high,8.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+T5363,TTP-731,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 731.,critical,,
+CVE-2025-4347,CVE-732,CVE,privilege-escalation,Critical vulnerability in software 732 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2020-8366,CVE-733,CVE,initial-access,Critical vulnerability in software 733 allowing remote exploitation.,high,8.3,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T3561,TTP-734,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 734.,critical,,
+T5569,TTP-735,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 735.,high,,
+T5804,TTP-736,TTP,persistence,Adversaries may perform malicious activity related to TTP 736.,medium,,
+CVE-2022-7604,CVE-737,CVE,privilege-escalation,Critical vulnerability in software 737 allowing remote exploitation.,high,7.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2021-5939,CVE-738,CVE,initial-access,Critical vulnerability in software 738 allowing remote exploitation.,critical,8.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2022-2624,CVE-739,CVE,privilege-escalation,Critical vulnerability in software 739 allowing remote exploitation.,critical,7.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T9816,TTP-740,TTP,discovery,Adversaries may perform malicious activity related to TTP 740.,critical,,
+CVE-2022-2570,CVE-741,CVE,initial-access,Critical vulnerability in software 741 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-1264,CVE-742,CVE,execution,Critical vulnerability in software 742 allowing remote exploitation.,critical,9.4,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2023-6230,CVE-743,CVE,execution,Critical vulnerability in software 743 allowing remote exploitation.,critical,9.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2020-7762,CVE-744,CVE,privilege-escalation,Critical vulnerability in software 744 allowing remote exploitation.,critical,9.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-9346,CVE-745,CVE,privilege-escalation,Critical vulnerability in software 745 allowing remote exploitation.,critical,8.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2020-4520,CVE-746,CVE,execution,Critical vulnerability in software 746 allowing remote exploitation.,critical,8.9,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2022-7231,CVE-747,CVE,initial-access,Critical vulnerability in software 747 allowing remote exploitation.,high,7.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-6236,CVE-748,CVE,execution,Critical vulnerability in software 748 allowing remote exploitation.,critical,8.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T4052,TTP-749,TTP,execution,Adversaries may perform malicious activity related to TTP 749.,medium,,
+T6837,TTP-750,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 750.,medium,,
+T5900,TTP-751,TTP,discovery,Adversaries may perform malicious activity related to TTP 751.,critical,,
+T1126,TTP-752,TTP,discovery,Adversaries may perform malicious activity related to TTP 752.,high,,
+T6620,TTP-753,TTP,execution,Adversaries may perform malicious activity related to TTP 753.,critical,,
+CVE-2024-1045,CVE-754,CVE,execution,Critical vulnerability in software 754 allowing remote exploitation.,critical,8.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2023-2299,CVE-755,CVE,execution,Critical vulnerability in software 755 allowing remote exploitation.,high,9.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2021-2597,CVE-756,CVE,privilege-escalation,Critical vulnerability in software 756 allowing remote exploitation.,critical,9.9,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2021-1799,CVE-757,CVE,initial-access,Critical vulnerability in software 757 allowing remote exploitation.,critical,7.7,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+CVE-2021-7477,CVE-758,CVE,execution,Critical vulnerability in software 758 allowing remote exploitation.,critical,9.7,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T6754,TTP-759,TTP,discovery,Adversaries may perform malicious activity related to TTP 759.,medium,,
+CVE-2020-4931,CVE-760,CVE,privilege-escalation,Critical vulnerability in software 760 allowing remote exploitation.,critical,7.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T9312,TTP-761,TTP,persistence,Adversaries may perform malicious activity related to TTP 761.,high,,
+T7973,TTP-762,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 762.,critical,,
+CVE-2022-8450,CVE-763,CVE,privilege-escalation,Critical vulnerability in software 763 allowing remote exploitation.,critical,9.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T1358,TTP-764,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 764.,critical,,
+CVE-2023-5831,CVE-765,CVE,execution,Critical vulnerability in software 765 allowing remote exploitation.,critical,8.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T6213,TTP-766,TTP,discovery,Adversaries may perform malicious activity related to TTP 766.,medium,,
+T9202,TTP-767,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 767.,high,,
+T7648,TTP-768,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 768.,high,,
+T7083,TTP-769,TTP,persistence,Adversaries may perform malicious activity related to TTP 769.,medium,,
+T8738,TTP-770,TTP,discovery,Adversaries may perform malicious activity related to TTP 770.,high,,
+T5850,TTP-771,TTP,persistence,Adversaries may perform malicious activity related to TTP 771.,high,,
+T4233,TTP-772,TTP,discovery,Adversaries may perform malicious activity related to TTP 772.,high,,
+CVE-2021-1591,CVE-773,CVE,privilege-escalation,Critical vulnerability in software 773 allowing remote exploitation.,high,8.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T8034,TTP-774,TTP,persistence,Adversaries may perform malicious activity related to TTP 774.,medium,,
+T5120,TTP-775,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 775.,medium,,
+CVE-2024-1623,CVE-776,CVE,privilege-escalation,Critical vulnerability in software 776 allowing remote exploitation.,high,8.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2021-8064,CVE-777,CVE,initial-access,Critical vulnerability in software 777 allowing remote exploitation.,critical,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T2262,TTP-778,TTP,persistence,Adversaries may perform malicious activity related to TTP 778.,critical,,
+T9950,TTP-779,TTP,impact,Adversaries may perform malicious activity related to TTP 779.,high,,
+T1296,TTP-780,TTP,persistence,Adversaries may perform malicious activity related to TTP 780.,critical,,
+T4949,TTP-781,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 781.,medium,,
+T4491,TTP-782,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 782.,medium,,
+T2514,TTP-783,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 783.,critical,,
+CVE-2022-6665,CVE-784,CVE,execution,Critical vulnerability in software 784 allowing remote exploitation.,critical,7.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-1306,CVE-785,CVE,execution,Critical vulnerability in software 785 allowing remote exploitation.,critical,7.7,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T7483,TTP-786,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 786.,critical,,
+T6332,TTP-787,TTP,execution,Adversaries may perform malicious activity related to TTP 787.,critical,,
+T8676,TTP-788,TTP,execution,Adversaries may perform malicious activity related to TTP 788.,critical,,
+T6175,TTP-789,TTP,persistence,Adversaries may perform malicious activity related to TTP 789.,critical,,
+CVE-2022-8462,CVE-790,CVE,privilege-escalation,Critical vulnerability in software 790 allowing remote exploitation.,critical,8.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2021-3238,CVE-791,CVE,privilege-escalation,Critical vulnerability in software 791 allowing remote exploitation.,high,9.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T8762,TTP-792,TTP,execution,Adversaries may perform malicious activity related to TTP 792.,critical,,
+T2418,TTP-793,TTP,execution,Adversaries may perform malicious activity related to TTP 793.,high,,
+T4499,TTP-794,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 794.,high,,
+T3286,TTP-795,TTP,impact,Adversaries may perform malicious activity related to TTP 795.,medium,,
+T8271,TTP-796,TTP,execution,Adversaries may perform malicious activity related to TTP 796.,medium,,
+CVE-2022-2517,CVE-797,CVE,execution,Critical vulnerability in software 797 allowing remote exploitation.,high,8.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2022-2053,CVE-798,CVE,initial-access,Critical vulnerability in software 798 allowing remote exploitation.,critical,8.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T4230,TTP-799,TTP,persistence,Adversaries may perform malicious activity related to TTP 799.,critical,,
+CVE-2025-3953,CVE-800,CVE,privilege-escalation,Critical vulnerability in software 800 allowing remote exploitation.,critical,7.4,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T8878,TTP-801,TTP,impact,Adversaries may perform malicious activity related to TTP 801.,high,,
+CVE-2023-4232,CVE-802,CVE,initial-access,Critical vulnerability in software 802 allowing remote exploitation.,critical,7.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2022-5255,CVE-803,CVE,execution,Critical vulnerability in software 803 allowing remote exploitation.,critical,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2025-9139,CVE-804,CVE,privilege-escalation,Critical vulnerability in software 804 allowing remote exploitation.,critical,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2021-3659,CVE-805,CVE,execution,Critical vulnerability in software 805 allowing remote exploitation.,critical,7.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+T1306,TTP-806,TTP,impact,Adversaries may perform malicious activity related to TTP 806.,high,,
+CVE-2020-4472,CVE-807,CVE,privilege-escalation,Critical vulnerability in software 807 allowing remote exploitation.,high,9.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T7776,TTP-808,TTP,discovery,Adversaries may perform malicious activity related to TTP 808.,medium,,
+CVE-2023-5900,CVE-809,CVE,initial-access,Critical vulnerability in software 809 allowing remote exploitation.,critical,8.5,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T2847,TTP-810,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 810.,medium,,
+T9225,TTP-811,TTP,persistence,Adversaries may perform malicious activity related to TTP 811.,high,,
+CVE-2024-2014,CVE-812,CVE,initial-access,Critical vulnerability in software 812 allowing remote exploitation.,critical,9.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2025-6270,CVE-813,CVE,privilege-escalation,Critical vulnerability in software 813 allowing remote exploitation.,high,7.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T2410,TTP-814,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 814.,critical,,
+CVE-2024-9120,CVE-815,CVE,execution,Critical vulnerability in software 815 allowing remote exploitation.,critical,9.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2022-1080,CVE-816,CVE,privilege-escalation,Critical vulnerability in software 816 allowing remote exploitation.,high,7.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T3980,TTP-817,TTP,persistence,Adversaries may perform malicious activity related to TTP 817.,high,,
+T2750,TTP-818,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 818.,critical,,
+CVE-2023-5045,CVE-819,CVE,initial-access,Critical vulnerability in software 819 allowing remote exploitation.,critical,9.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T2362,TTP-820,TTP,execution,Adversaries may perform malicious activity related to TTP 820.,high,,
+T7514,TTP-821,TTP,discovery,Adversaries may perform malicious activity related to TTP 821.,high,,
+T4912,TTP-822,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 822.,medium,,
+CVE-2025-1020,CVE-823,CVE,execution,Critical vulnerability in software 823 allowing remote exploitation.,high,9.6,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T8324,TTP-824,TTP,discovery,Adversaries may perform malicious activity related to TTP 824.,medium,,
+T2385,TTP-825,TTP,discovery,Adversaries may perform malicious activity related to TTP 825.,high,,
+T9379,TTP-826,TTP,impact,Adversaries may perform malicious activity related to TTP 826.,high,,
+T2444,TTP-827,TTP,execution,Adversaries may perform malicious activity related to TTP 827.,high,,
+T7385,TTP-828,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 828.,high,,
+CVE-2020-3233,CVE-829,CVE,privilege-escalation,Critical vulnerability in software 829 allowing remote exploitation.,high,9.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T4769,TTP-830,TTP,discovery,Adversaries may perform malicious activity related to TTP 830.,medium,,
+CVE-2021-1819,CVE-831,CVE,execution,Critical vulnerability in software 831 allowing remote exploitation.,critical,8.7,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T6461,TTP-832,TTP,execution,Adversaries may perform malicious activity related to TTP 832.,critical,,
+CVE-2022-1115,CVE-833,CVE,privilege-escalation,Critical vulnerability in software 833 allowing remote exploitation.,critical,9.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T1828,TTP-834,TTP,execution,Adversaries may perform malicious activity related to TTP 834.,high,,
+T8832,TTP-835,TTP,persistence,Adversaries may perform malicious activity related to TTP 835.,high,,
+CVE-2023-2052,CVE-836,CVE,initial-access,Critical vulnerability in software 836 allowing remote exploitation.,high,9.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T7373,TTP-837,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 837.,critical,,
+CVE-2023-6006,CVE-838,CVE,execution,Critical vulnerability in software 838 allowing remote exploitation.,high,7.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2024-1398,CVE-839,CVE,initial-access,Critical vulnerability in software 839 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T5805,TTP-840,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 840.,medium,,
+T2044,TTP-841,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 841.,medium,,
+CVE-2023-3693,CVE-842,CVE,initial-access,Critical vulnerability in software 842 allowing remote exploitation.,high,7.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T5180,TTP-843,TTP,discovery,Adversaries may perform malicious activity related to TTP 843.,critical,,
+T3421,TTP-844,TTP,execution,Adversaries may perform malicious activity related to TTP 844.,medium,,
+T5108,TTP-845,TTP,discovery,Adversaries may perform malicious activity related to TTP 845.,critical,,
+T4947,TTP-846,TTP,impact,Adversaries may perform malicious activity related to TTP 846.,critical,,
+T9465,TTP-847,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 847.,high,,
+T1614,TTP-848,TTP,discovery,Adversaries may perform malicious activity related to TTP 848.,critical,,
+CVE-2022-3521,CVE-849,CVE,initial-access,Critical vulnerability in software 849 allowing remote exploitation.,critical,8.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T2734,TTP-850,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 850.,critical,,
+T9221,TTP-851,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 851.,high,,
+CVE-2020-6988,CVE-852,CVE,execution,Critical vulnerability in software 852 allowing remote exploitation.,critical,7.2,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2021-8650,CVE-853,CVE,initial-access,Critical vulnerability in software 853 allowing remote exploitation.,high,8.6,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2023-5960,CVE-854,CVE,initial-access,Critical vulnerability in software 854 allowing remote exploitation.,high,9.5,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T1653,TTP-855,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 855.,critical,,
+CVE-2022-3905,CVE-856,CVE,execution,Critical vulnerability in software 856 allowing remote exploitation.,high,10.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-6938,CVE-857,CVE,privilege-escalation,Critical vulnerability in software 857 allowing remote exploitation.,high,9.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2024-5694,CVE-858,CVE,initial-access,Critical vulnerability in software 858 allowing remote exploitation.,critical,8.4,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T1304,TTP-859,TTP,persistence,Adversaries may perform malicious activity related to TTP 859.,high,,
+CVE-2020-8718,CVE-860,CVE,execution,Critical vulnerability in software 860 allowing remote exploitation.,critical,9.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T8677,TTP-861,TTP,persistence,Adversaries may perform malicious activity related to TTP 861.,high,,
+CVE-2023-3529,CVE-862,CVE,privilege-escalation,Critical vulnerability in software 862 allowing remote exploitation.,high,8.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2025-3978,CVE-863,CVE,execution,Critical vulnerability in software 863 allowing remote exploitation.,critical,7.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T6912,TTP-864,TTP,execution,Adversaries may perform malicious activity related to TTP 864.,critical,,
+T8926,TTP-865,TTP,discovery,Adversaries may perform malicious activity related to TTP 865.,high,,
+CVE-2023-1716,CVE-866,CVE,privilege-escalation,Critical vulnerability in software 866 allowing remote exploitation.,critical,8.9,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2025-9633,CVE-867,CVE,privilege-escalation,Critical vulnerability in software 867 allowing remote exploitation.,high,7.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2025-9715,CVE-868,CVE,privilege-escalation,Critical vulnerability in software 868 allowing remote exploitation.,critical,7.2,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2022-9902,CVE-869,CVE,initial-access,Critical vulnerability in software 869 allowing remote exploitation.,critical,9.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2024-9332,CVE-870,CVE,privilege-escalation,Critical vulnerability in software 870 allowing remote exploitation.,high,8.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T8069,TTP-871,TTP,discovery,Adversaries may perform malicious activity related to TTP 871.,high,,
+CVE-2024-7792,CVE-872,CVE,initial-access,Critical vulnerability in software 872 allowing remote exploitation.,high,7.4,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T1855,TTP-873,TTP,persistence,Adversaries may perform malicious activity related to TTP 873.,medium,,
+T2439,TTP-874,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 874.,high,,
+T7207,TTP-875,TTP,execution,Adversaries may perform malicious activity related to TTP 875.,high,,
+T5289,TTP-876,TTP,discovery,Adversaries may perform malicious activity related to TTP 876.,high,,
+CVE-2022-6682,CVE-877,CVE,initial-access,Critical vulnerability in software 877 allowing remote exploitation.,critical,7.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2025-1983,CVE-878,CVE,initial-access,Critical vulnerability in software 878 allowing remote exploitation.,high,9.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2022-4234,CVE-879,CVE,privilege-escalation,Critical vulnerability in software 879 allowing remote exploitation.,high,7.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2021-5540,CVE-880,CVE,execution,Critical vulnerability in software 880 allowing remote exploitation.,critical,8.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2025-6336,CVE-881,CVE,privilege-escalation,Critical vulnerability in software 881 allowing remote exploitation.,critical,7.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T5147,TTP-882,TTP,persistence,Adversaries may perform malicious activity related to TTP 882.,high,,
+T4113,TTP-883,TTP,impact,Adversaries may perform malicious activity related to TTP 883.,medium,,
+CVE-2025-9800,CVE-884,CVE,initial-access,Critical vulnerability in software 884 allowing remote exploitation.,critical,9.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2025-6902,CVE-885,CVE,initial-access,Critical vulnerability in software 885 allowing remote exploitation.,high,7.4,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+CVE-2023-4074,CVE-886,CVE,execution,Critical vulnerability in software 886 allowing remote exploitation.,critical,8.7,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2025-6004,CVE-887,CVE,execution,Critical vulnerability in software 887 allowing remote exploitation.,critical,9.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+T4402,TTP-888,TTP,execution,Adversaries may perform malicious activity related to TTP 888.,critical,,
+T7576,TTP-889,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 889.,high,,
+CVE-2022-4745,CVE-890,CVE,initial-access,Critical vulnerability in software 890 allowing remote exploitation.,high,7.3,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T8814,TTP-891,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 891.,high,,
+T3282,TTP-892,TTP,discovery,Adversaries may perform malicious activity related to TTP 892.,critical,,
+CVE-2020-6812,CVE-893,CVE,execution,Critical vulnerability in software 893 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+CVE-2021-1384,CVE-894,CVE,initial-access,Critical vulnerability in software 894 allowing remote exploitation.,critical,8.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-6220,CVE-895,CVE,execution,Critical vulnerability in software 895 allowing remote exploitation.,critical,9.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T7281,TTP-896,TTP,impact,Adversaries may perform malicious activity related to TTP 896.,medium,,
+CVE-2024-6538,CVE-897,CVE,privilege-escalation,Critical vulnerability in software 897 allowing remote exploitation.,high,9.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2022-6334,CVE-898,CVE,privilege-escalation,Critical vulnerability in software 898 allowing remote exploitation.,high,7.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-1582,CVE-899,CVE,initial-access,Critical vulnerability in software 899 allowing remote exploitation.,high,8.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T9171,TTP-900,TTP,persistence,Adversaries may perform malicious activity related to TTP 900.,critical,,
+T3865,TTP-901,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 901.,critical,,
+CVE-2021-7724,CVE-902,CVE,execution,Critical vulnerability in software 902 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2022-7200,CVE-903,CVE,initial-access,Critical vulnerability in software 903 allowing remote exploitation.,high,9.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+CVE-2023-2794,CVE-904,CVE,execution,Critical vulnerability in software 904 allowing remote exploitation.,high,8.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T1557,TTP-905,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 905.,medium,,
+T9443,TTP-906,TTP,execution,Adversaries may perform malicious activity related to TTP 906.,high,,
+CVE-2021-1382,CVE-907,CVE,initial-access,Critical vulnerability in software 907 allowing remote exploitation.,high,9.7,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T9440,TTP-908,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 908.,medium,,
+CVE-2023-4464,CVE-909,CVE,execution,Critical vulnerability in software 909 allowing remote exploitation.,critical,9.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2023-3542,CVE-910,CVE,execution,Critical vulnerability in software 910 allowing remote exploitation.,critical,9.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2025-3471,CVE-911,CVE,privilege-escalation,Critical vulnerability in software 911 allowing remote exploitation.,high,9.6,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+CVE-2020-6664,CVE-912,CVE,privilege-escalation,Critical vulnerability in software 912 allowing remote exploitation.,critical,7.7,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T7001,TTP-913,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 913.,critical,,
+T2618,TTP-914,TTP,persistence,Adversaries may perform malicious activity related to TTP 914.,critical,,
+T8508,TTP-915,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 915.,medium,,
+T3154,TTP-916,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 916.,critical,,
+T6443,TTP-917,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 917.,medium,,
+CVE-2022-4176,CVE-918,CVE,execution,Critical vulnerability in software 918 allowing remote exploitation.,high,9.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2021-4394,CVE-919,CVE,privilege-escalation,Critical vulnerability in software 919 allowing remote exploitation.,critical,9.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+CVE-2022-6384,CVE-920,CVE,initial-access,Critical vulnerability in software 920 allowing remote exploitation.,critical,9.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+CVE-2020-4287,CVE-921,CVE,execution,Critical vulnerability in software 921 allowing remote exploitation.,critical,9.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T3449,TTP-922,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 922.,high,,
+CVE-2021-3717,CVE-923,CVE,execution,Critical vulnerability in software 923 allowing remote exploitation.,critical,7.4,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T4499,TTP-924,TTP,execution,Adversaries may perform malicious activity related to TTP 924.,critical,,
+T2245,TTP-925,TTP,discovery,Adversaries may perform malicious activity related to TTP 925.,high,,
+T7511,TTP-926,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 926.,high,,
+T7017,TTP-927,TTP,persistence,Adversaries may perform malicious activity related to TTP 927.,medium,,
+T5645,TTP-928,TTP,discovery,Adversaries may perform malicious activity related to TTP 928.,critical,,
+CVE-2020-1261,CVE-929,CVE,initial-access,Critical vulnerability in software 929 allowing remote exploitation.,critical,9.8,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T6360,TTP-930,TTP,execution,Adversaries may perform malicious activity related to TTP 930.,medium,,
+CVE-2020-5545,CVE-931,CVE,initial-access,Critical vulnerability in software 931 allowing remote exploitation.,critical,9.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2023-4393,CVE-932,CVE,privilege-escalation,Critical vulnerability in software 932 allowing remote exploitation.,critical,9.7,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+CVE-2020-4520,CVE-933,CVE,initial-access,Critical vulnerability in software 933 allowing remote exploitation.,critical,7.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+T6266,TTP-934,TTP,discovery,Adversaries may perform malicious activity related to TTP 934.,high,,
+T7224,TTP-935,TTP,impact,Adversaries may perform malicious activity related to TTP 935.,high,,
+T6190,TTP-936,TTP,impact,Adversaries may perform malicious activity related to TTP 936.,high,,
+T5231,TTP-937,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 937.,high,,
+CVE-2021-8129,CVE-938,CVE,initial-access,Critical vulnerability in software 938 allowing remote exploitation.,critical,7.1,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2025-8746,CVE-939,CVE,execution,Critical vulnerability in software 939 allowing remote exploitation.,critical,8.5,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2022-6319,CVE-940,CVE,initial-access,Critical vulnerability in software 940 allowing remote exploitation.,high,9.6,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T5972,TTP-941,TTP,execution,Adversaries may perform malicious activity related to TTP 941.,medium,,
+T9833,TTP-942,TTP,impact,Adversaries may perform malicious activity related to TTP 942.,high,,
+CVE-2021-5822,CVE-943,CVE,execution,Critical vulnerability in software 943 allowing remote exploitation.,critical,7.1,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2021-5480,CVE-944,CVE,execution,Critical vulnerability in software 944 allowing remote exploitation.,high,7.9,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2023-2655,CVE-945,CVE,privilege-escalation,Critical vulnerability in software 945 allowing remote exploitation.,critical,7.8,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T4197,TTP-946,TTP,persistence,Adversaries may perform malicious activity related to TTP 946.,medium,,
+T3181,TTP-947,TTP,persistence,Adversaries may perform malicious activity related to TTP 947.,high,,
+CVE-2023-2394,CVE-948,CVE,privilege-escalation,Critical vulnerability in software 948 allowing remote exploitation.,high,7.7,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+CVE-2022-5269,CVE-949,CVE,privilege-escalation,Critical vulnerability in software 949 allowing remote exploitation.,critical,7.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T7205,TTP-950,TTP,discovery,Adversaries may perform malicious activity related to TTP 950.,high,,
+CVE-2020-4341,CVE-951,CVE,privilege-escalation,Critical vulnerability in software 951 allowing remote exploitation.,critical,9.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+CVE-2020-7224,CVE-952,CVE,initial-access,Critical vulnerability in software 952 allowing remote exploitation.,critical,10.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+CVE-2025-4212,CVE-953,CVE,initial-access,Critical vulnerability in software 953 allowing remote exploitation.,critical,7.5,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T9441,TTP-954,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 954.,high,,
+T5450,TTP-955,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 955.,high,,
+T1150,TTP-956,TTP,discovery,Adversaries may perform malicious activity related to TTP 956.,high,,
+CVE-2021-2435,CVE-957,CVE,privilege-escalation,Critical vulnerability in software 957 allowing remote exploitation.,high,9.0,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+T4651,TTP-958,TTP,execution,Adversaries may perform malicious activity related to TTP 958.,medium,,
+CVE-2023-1030,CVE-959,CVE,execution,Critical vulnerability in software 959 allowing remote exploitation.,critical,7.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+CVE-2025-8446,CVE-960,CVE,initial-access,Critical vulnerability in software 960 allowing remote exploitation.,high,7.8,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+T9499,TTP-961,TTP,discovery,Adversaries may perform malicious activity related to TTP 961.,medium,,
+T3045,TTP-962,TTP,persistence,Adversaries may perform malicious activity related to TTP 962.,critical,,
+CVE-2024-1044,CVE-963,CVE,execution,Critical vulnerability in software 963 allowing remote exploitation.,high,8.7,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+CVE-2023-3221,CVE-964,CVE,initial-access,Critical vulnerability in software 964 allowing remote exploitation.,high,7.9,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T7567,TTP-965,TTP,discovery,Adversaries may perform malicious activity related to TTP 965.,critical,,
+CVE-2025-2298,CVE-966,CVE,privilege-escalation,Critical vulnerability in software 966 allowing remote exploitation.,critical,9.5,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+CVE-2023-5635,CVE-967,CVE,privilege-escalation,Critical vulnerability in software 967 allowing remote exploitation.,critical,8.3,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+CVE-2021-5000,CVE-968,CVE,execution,Critical vulnerability in software 968 allowing remote exploitation.,high,8.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+T5173,TTP-969,TTP,execution,Adversaries may perform malicious activity related to TTP 969.,medium,,
+T6869,TTP-970,TTP,impact,Adversaries may perform malicious activity related to TTP 970.,critical,,
+T5246,TTP-971,TTP,persistence,Adversaries may perform malicious activity related to TTP 971.,critical,,
+T4192,TTP-972,TTP,execution,Adversaries may perform malicious activity related to TTP 972.,critical,,
+CVE-2025-7923,CVE-973,CVE,privilege-escalation,Critical vulnerability in software 973 allowing remote exploitation.,high,8.0,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T5057,TTP-974,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 974.,critical,,
+T3855,TTP-975,TTP,execution,Adversaries may perform malicious activity related to TTP 975.,critical,,
+CVE-2020-2419,CVE-976,CVE,execution,Critical vulnerability in software 976 allowing remote exploitation.,high,7.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2021-1638,CVE-977,CVE,initial-access,Critical vulnerability in software 977 allowing remote exploitation.,critical,9.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T1185,TTP-978,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 978.,critical,,
+T8045,TTP-979,TTP,defense-evasion,Adversaries may perform malicious activity related to TTP 979.,high,,
+CVE-2021-1662,CVE-980,CVE,initial-access,Critical vulnerability in software 980 allowing remote exploitation.,critical,8.7,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H
+T9793,TTP-981,TTP,impact,Adversaries may perform malicious activity related to TTP 981.,medium,,
+T5464,TTP-982,TTP,impact,Adversaries may perform malicious activity related to TTP 982.,critical,,
+CVE-2024-2709,CVE-983,CVE,privilege-escalation,Critical vulnerability in software 983 allowing remote exploitation.,high,8.9,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H
+CVE-2021-8251,CVE-984,CVE,execution,Critical vulnerability in software 984 allowing remote exploitation.,high,9.7,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+T3080,TTP-985,TTP,persistence,Adversaries may perform malicious activity related to TTP 985.,critical,,
+T3901,TTP-986,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 986.,high,,
+CVE-2022-7827,CVE-987,CVE,execution,Critical vulnerability in software 987 allowing remote exploitation.,critical,7.9,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+T7710,TTP-988,TTP,persistence,Adversaries may perform malicious activity related to TTP 988.,high,,
+CVE-2020-9419,CVE-989,CVE,initial-access,Critical vulnerability in software 989 allowing remote exploitation.,critical,7.2,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
+T9226,TTP-990,TTP,discovery,Adversaries may perform malicious activity related to TTP 990.,critical,,
+CVE-2025-6076,CVE-991,CVE,privilege-escalation,Critical vulnerability in software 991 allowing remote exploitation.,critical,7.7,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
+CVE-2021-9202,CVE-992,CVE,execution,Critical vulnerability in software 992 allowing remote exploitation.,critical,7.1,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+CVE-2020-8827,CVE-993,CVE,privilege-escalation,Critical vulnerability in software 993 allowing remote exploitation.,high,7.3,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+T9076,TTP-994,TTP,discovery,Adversaries may perform malicious activity related to TTP 994.,high,,
+CVE-2020-3360,CVE-995,CVE,execution,Critical vulnerability in software 995 allowing remote exploitation.,critical,7.8,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+T2035,TTP-996,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 996.,high,,
+T1020,TTP-997,TTP,persistence,Adversaries may perform malicious activity related to TTP 997.,medium,,
+T2921,TTP-998,TTP,lateral-movement,Adversaries may perform malicious activity related to TTP 998.,critical,,
+CVE-2024-6442,CVE-999,CVE,execution,Critical vulnerability in software 999 allowing remote exploitation.,critical,8.0,CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H
+T1371,TTP-1000,TTP,discovery,Adversaries may perform malicious activity related to TTP 1000.,critical,,
