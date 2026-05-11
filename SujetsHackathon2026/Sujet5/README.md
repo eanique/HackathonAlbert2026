@@ -43,7 +43,8 @@ API Python pour l'analyse.
 
 Kaggle Datasets :
 
-Ships in Satellite Imagery
+Ships in Satellite Imagery : https://www.kaggle.com/datasets/rhammell/ships-in-satellite-imagery
+
 Contient des images avec des navires annotés.
 
 
