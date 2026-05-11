@@ -1,0 +1,187 @@
+behavior_id,mmsi,type,description,timestamp,confidence,severity,source
+BEH-00000,496736443,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-07-12T15:00:00Z,0.89,High,Manual Report
+BEH-00006,398960342,AIS Disabled,AIS désactivé pendant 5 heures.,2026-01-10T08:00:00Z,0.94,Medium,Manual Report
+BEH-00016,769058913,Course Anomaly,Changement de cap brutal (202° en 5 min).,2026-12-25T14:00:00Z,0.71,Critical,Manual Report
+BEH-00017,681892350,MMSI Spoofing,MMSI changé de 681892350 à FAKE-8061465.,2026-10-07T12:00:00Z,0.83,Medium,AIS Data
+BEH-00022,763335458,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-08-26T21:00:00Z,1.0,Critical,Satellite
+BEH-00024,244566435,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-11-12T09:00:00Z,0.89,High,Satellite
+BEH-00033,719653573,Fake Position,Position fausse détectée (écart de 0.10°).,2026-12-20T18:00:00Z,0.8,Low,Manual Report
+BEH-00035,578004121,Speed Anomaly,Vitesse anormale : 52.7 nœuds (limite : 25 nœuds).,2026-06-22T00:00:00Z,0.86,Low,Manual Report
+BEH-00039,255542581,Name Change,Nom changé de NAVIRE-2581 à FAKE_NAME_7048.,2026-01-04T00:00:00Z,0.86,Critical,Manual Report
+BEH-00040,553273143,Course Anomaly,Changement de cap brutal (160° en 5 min).,2026-02-27T01:00:00Z,0.77,Medium,AIS Data
+BEH-00041,426343536,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-12-26T03:00:00Z,0.92,Low,Satellite
+BEH-00044,207047908,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-02-05T16:00:00Z,0.74,Low,AIS Data
+BEH-00045,471446208,MMSI Spoofing,MMSI changé de 471446208 à FAKE-7361099.,2026-07-25T23:00:00Z,0.78,Critical,Manual Report
+BEH-00046,344826113,Speed Anomaly,Vitesse anormale : 50.7 nœuds (limite : 25 nœuds).,2026-02-15T06:00:00Z,0.82,Low,AIS Data
+BEH-00049,454493746,AIS Disabled,AIS désactivé pendant 49 heures.,2026-09-30T13:00:00Z,0.81,Critical,Manual Report
+BEH-00050,631269809,AIS Disabled,AIS désactivé pendant 20 heures.,2026-01-21T12:00:00Z,0.75,Critical,Satellite
+BEH-00052,609668201,Course Anomaly,Changement de cap brutal (117° en 5 min).,2026-09-17T23:00:00Z,0.91,High,Satellite
+BEH-00055,644013342,Course Anomaly,Changement de cap brutal (195° en 5 min).,2026-03-31T05:00:00Z,0.87,Medium,Manual Report
+BEH-00056,518571027,Name Change,Nom changé de NAVIRE-1027 à FAKE_NAME_3213.,2026-01-31T13:00:00Z,0.86,Low,AIS Data
+BEH-00060,701867757,AIS Disabled,AIS désactivé pendant 22 heures.,2026-08-21T02:00:00Z,0.92,High,Satellite
+BEH-00062,464285647,Speed Anomaly,Vitesse anormale : 42.6 nœuds (limite : 25 nœuds).,2026-07-31T20:00:00Z,0.9,Medium,Manual Report
+BEH-00064,568046927,Fake Position,Position fausse détectée (écart de 0.47°).,2026-07-22T21:00:00Z,0.83,Critical,AIS Data
+BEH-00067,508787460,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-10-09T05:00:00Z,0.79,Medium,Manual Report
+BEH-00071,502613705,AIS Disabled,AIS désactivé pendant 50 heures.,2026-03-09T16:00:00Z,0.87,Critical,AIS Data
+BEH-00073,377682260,MMSI Spoofing,MMSI changé de 377682260 à FAKE-4548617.,2026-10-13T17:00:00Z,0.81,Low,Satellite
+BEH-00075,549518042,Name Change,Nom changé de NAVIRE-8042 à FAKE_NAME_7343.,2026-12-14T01:00:00Z,0.97,Medium,AIS Data
+BEH-00078,744936474,MMSI Spoofing,MMSI changé de 744936474 à FAKE-7235207.,2026-07-16T13:00:00Z,0.74,Medium,Manual Report
+BEH-00086,672878585,AIS Disabled,AIS désactivé pendant 36 heures.,2026-10-19T02:00:00Z,0.98,Medium,AIS Data
+BEH-00087,322996417,AIS Disabled,AIS désactivé pendant 50 heures.,2026-03-08T03:00:00Z,0.89,Low,Manual Report
+BEH-00094,755431988,Speed Anomaly,Vitesse anormale : 32.6 nœuds (limite : 25 nœuds).,2026-07-12T19:00:00Z,0.74,Low,AIS Data
+BEH-00096,241998743,Speed Anomaly,Vitesse anormale : 40.0 nœuds (limite : 25 nœuds).,2026-12-26T07:00:00Z,0.75,Critical,Satellite
+BEH-00098,582119357,Name Change,Nom changé de NAVIRE-9357 à FAKE_NAME_5622.,2026-07-11T22:00:00Z,0.81,High,Satellite
+BEH-00101,726981905,Course Anomaly,Changement de cap brutal (180° en 5 min).,2026-02-10T16:00:00Z,0.87,Critical,AIS Data
+BEH-00102,597772697,Name Change,Nom changé de NAVIRE-2697 à FAKE_NAME_4663.,2026-05-06T15:00:00Z,0.82,Critical,Manual Report
+BEH-00104,432355709,Name Change,Nom changé de NAVIRE-5709 à FAKE_NAME_1591.,2026-06-13T11:00:00Z,0.9,Medium,Manual Report
+BEH-00105,769058913,AIS Disabled,AIS désactivé pendant 18 heures.,2026-09-14T00:00:00Z,0.77,High,Manual Report
+BEH-00106,388386027,Speed Anomaly,Vitesse anormale : 34.5 nœuds (limite : 25 nœuds).,2026-05-11T13:00:00Z,0.9,Critical,Manual Report
+BEH-00108,535268039,Name Change,Nom changé de NAVIRE-8039 à FAKE_NAME_7786.,2026-08-18T22:00:00Z,0.89,Critical,Manual Report
+BEH-00110,502980332,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-10-14T03:00:00Z,0.99,Low,Manual Report
+BEH-00111,444806532,Fake Position,Position fausse détectée (écart de 0.32°).,2026-09-02T12:00:00Z,0.71,Low,AIS Data
+BEH-00112,270848807,AIS Disabled,AIS désactivé pendant 3 heures.,2026-04-20T23:00:00Z,0.83,Low,AIS Data
+BEH-00113,547540742,Speed Anomaly,Vitesse anormale : 44.9 nœuds (limite : 25 nœuds).,2026-07-12T07:00:00Z,0.74,High,Satellite
+BEH-00116,645766732,Name Change,Nom changé de NAVIRE-6732 à FAKE_NAME_9317.,2026-12-20T20:00:00Z,0.98,Critical,Manual Report
+BEH-00117,364456513,MMSI Spoofing,MMSI changé de 364456513 à FAKE-4223851.,2026-03-20T22:00:00Z,0.83,Low,Satellite
+BEH-00119,419497356,Fake Position,Position fausse détectée (écart de 0.20°).,2026-12-19T11:00:00Z,0.73,High,Satellite
+BEH-00121,442686393,Name Change,Nom changé de NAVIRE-6393 à FAKE_NAME_6121.,2026-06-06T21:00:00Z,0.94,High,Satellite
+BEH-00124,334274260,Speed Anomaly,Vitesse anormale : 53.8 nœuds (limite : 25 nœuds).,2026-10-05T18:00:00Z,0.71,Critical,Satellite
+BEH-00126,481997221,Fake Position,Position fausse détectée (écart de 0.40°).,2026-12-26T13:00:00Z,0.89,Medium,Satellite
+BEH-00129,751358479,AIS Disabled,AIS désactivé pendant 34 heures.,2026-03-15T09:00:00Z,0.79,Critical,AIS Data
+BEH-00133,226449616,MMSI Spoofing,MMSI changé de 226449616 à FAKE-3654737.,2026-12-17T16:00:00Z,0.9,Medium,Satellite
+BEH-00134,405720111,AIS Disabled,AIS désactivé pendant 36 heures.,2026-12-14T08:00:00Z,0.89,Low,AIS Data
+BEH-00138,252354201,Name Change,Nom changé de NAVIRE-4201 à FAKE_NAME_3486.,2026-02-26T15:00:00Z,0.72,Low,Satellite
+BEH-00144,602086797,Speed Anomaly,Vitesse anormale : 50.6 nœuds (limite : 25 nœuds).,2026-01-14T22:00:00Z,0.91,High,AIS Data
+BEH-00151,631269809,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-12-31T11:00:00Z,0.83,Medium,Satellite
+BEH-00152,548240982,Name Change,Nom changé de NAVIRE-0982 à FAKE_NAME_2405.,2026-04-22T08:00:00Z,0.96,Critical,Satellite
+BEH-00157,394639193,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-04-27T16:00:00Z,0.9,Low,Manual Report
+BEH-00159,505017282,Fake Position,Position fausse détectée (écart de 0.05°).,2026-07-05T11:00:00Z,0.75,High,Manual Report
+BEH-00163,408438611,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-06-23T03:00:00Z,0.83,High,Manual Report
+BEH-00165,485307597,Fake Position,Position fausse détectée (écart de 0.18°).,2026-08-10T21:00:00Z,0.78,Critical,Manual Report
+BEH-00166,677217518,Name Change,Nom changé de NAVIRE-7518 à FAKE_NAME_7002.,2026-06-08T09:00:00Z,0.9,Medium,Manual Report
+BEH-00170,715747669,MMSI Spoofing,MMSI changé de 715747669 à FAKE-5836814.,2026-07-14T15:00:00Z,0.81,High,Satellite
+BEH-00172,525622266,MMSI Spoofing,MMSI changé de 525622266 à FAKE-6493274.,2026-07-17T20:00:00Z,0.92,Critical,Satellite
+BEH-00177,418337774,Speed Anomaly,Vitesse anormale : 55.6 nœuds (limite : 25 nœuds).,2026-04-13T23:00:00Z,0.85,Critical,Manual Report
+BEH-00178,376305754,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-06-22T11:00:00Z,0.75,High,AIS Data
+BEH-00181,677403079,Fake Position,Position fausse détectée (écart de 0.45°).,2026-07-16T08:00:00Z,0.75,Critical,Manual Report
+BEH-00183,689087617,Fake Position,Position fausse détectée (écart de 0.27°).,2026-02-03T04:00:00Z,0.86,High,Satellite
+BEH-00184,482209102,Fake Position,Position fausse détectée (écart de 0.33°).,2026-04-26T18:00:00Z,0.82,Low,Satellite
+BEH-00185,488784490,Fake Position,Position fausse détectée (écart de 0.38°).,2026-05-30T02:00:00Z,0.72,Medium,Satellite
+BEH-00187,454201105,Course Anomaly,Changement de cap brutal (167° en 5 min).,2026-01-29T16:00:00Z,0.79,Low,AIS Data
+BEH-00196,641599377,AIS Disabled,AIS désactivé pendant 48 heures.,2026-08-31T05:00:00Z,0.91,Medium,AIS Data
+BEH-00201,695403076,Course Anomaly,Changement de cap brutal (119° en 5 min).,2026-10-13T01:00:00Z,0.79,Critical,Manual Report
+BEH-00203,695322702,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-06-12T22:00:00Z,1.0,Medium,AIS Data
+BEH-00205,496736443,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-11-05T07:00:00Z,0.78,High,Satellite
+BEH-00206,232232391,Speed Anomaly,Vitesse anormale : 35.9 nœuds (limite : 25 nœuds).,2026-06-26T18:00:00Z,0.9,Low,Manual Report
+BEH-00213,458469288,Speed Anomaly,Vitesse anormale : 49.0 nœuds (limite : 25 nœuds).,2026-09-05T16:00:00Z,0.79,Low,AIS Data
+BEH-00217,717480216,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-09-16T03:00:00Z,0.92,Low,AIS Data
+BEH-00219,696924528,Name Change,Nom changé de NAVIRE-4528 à FAKE_NAME_7235.,2026-02-20T15:00:00Z,0.96,Low,AIS Data
+BEH-00227,535157919,Fake Position,Position fausse détectée (écart de 0.35°).,2026-07-20T13:00:00Z,0.77,High,Satellite
+BEH-00228,266469924,Course Anomaly,Changement de cap brutal (118° en 5 min).,2026-07-03T07:00:00Z,0.77,High,Manual Report
+BEH-00229,688819084,Fake Position,Position fausse détectée (écart de 0.31°).,2026-04-18T00:00:00Z,0.74,Low,Manual Report
+BEH-00233,371347661,AIS Disabled,AIS désactivé pendant 63 heures.,2026-10-12T18:00:00Z,0.94,Critical,Satellite
+BEH-00235,293961385,Speed Anomaly,Vitesse anormale : 46.0 nœuds (limite : 25 nœuds).,2026-12-27T22:00:00Z,0.94,Medium,Manual Report
+BEH-00236,211327960,Course Anomaly,Changement de cap brutal (171° en 5 min).,2026-05-21T18:00:00Z,0.93,Medium,Satellite
+BEH-00237,244054601,AIS Disabled,AIS désactivé pendant 57 heures.,2026-07-11T07:00:00Z,0.72,Low,Satellite
+BEH-00238,438334167,MMSI Spoofing,MMSI changé de 438334167 à FAKE-5526213.,2026-09-17T15:00:00Z,0.91,Medium,AIS Data
+BEH-00239,230462112,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-04-16T18:00:00Z,0.81,Medium,Manual Report
+BEH-00241,629495593,AIS Disabled,AIS désactivé pendant 49 heures.,2026-08-06T23:00:00Z,0.96,High,Manual Report
+BEH-00244,772002372,MMSI Spoofing,MMSI changé de 772002372 à FAKE-3248575.,2026-05-14T04:00:00Z,0.91,Critical,Manual Report
+BEH-00246,288290646,Name Change,Nom changé de NAVIRE-0646 à FAKE_NAME_9399.,2026-02-20T06:00:00Z,0.94,High,Manual Report
+BEH-00247,602086797,Course Anomaly,Changement de cap brutal (252° en 5 min).,2026-08-21T06:00:00Z,0.78,High,Satellite
+BEH-00248,266469924,AIS Disabled,AIS désactivé pendant 53 heures.,2026-06-19T06:00:00Z,0.86,High,AIS Data
+BEH-00249,266469924,MMSI Spoofing,MMSI changé de 266469924 à FAKE-8961011.,2026-07-18T11:00:00Z,0.76,Medium,Satellite
+BEH-00253,375209558,Course Anomaly,Changement de cap brutal (188° en 5 min).,2026-10-22T03:00:00Z,0.85,Critical,Manual Report
+BEH-00254,335430010,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-06-15T01:00:00Z,0.98,Critical,Manual Report
+BEH-00256,740353133,AIS Disabled,AIS désactivé pendant 8 heures.,2026-03-08T06:00:00Z,1.0,Medium,Manual Report
+BEH-00259,549771015,Name Change,Nom changé de NAVIRE-1015 à FAKE_NAME_4899.,2026-10-11T08:00:00Z,0.98,Medium,Satellite
+BEH-00261,754652303,Fake Position,Position fausse détectée (écart de 0.33°).,2026-03-06T20:00:00Z,0.87,Critical,Satellite
+BEH-00263,567721076,AIS Disabled,AIS désactivé pendant 11 heures.,2026-06-21T01:00:00Z,0.74,Medium,AIS Data
+BEH-00268,568456584,AIS Disabled,AIS désactivé pendant 41 heures.,2026-07-05T03:00:00Z,0.84,Critical,AIS Data
+BEH-00274,754652303,MMSI Spoofing,MMSI changé de 754652303 à FAKE-8357702.,2026-05-12T06:00:00Z,0.78,Critical,Manual Report
+BEH-00276,627330217,Course Anomaly,Changement de cap brutal (219° en 5 min).,2026-05-08T07:00:00Z,1.0,Medium,Manual Report
+BEH-00277,759582215,Fake Position,Position fausse détectée (écart de 0.31°).,2026-08-10T14:00:00Z,0.96,Low,Satellite
+BEH-00278,488341857,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-03-06T23:00:00Z,0.86,Medium,Manual Report
+BEH-00285,625249932,MMSI Spoofing,MMSI changé de 625249932 à FAKE-4445788.,2026-07-02T17:00:00Z,0.99,Medium,AIS Data
+BEH-00286,216407043,Fake Position,Position fausse détectée (écart de 0.33°).,2026-08-15T20:00:00Z,0.93,High,AIS Data
+BEH-00289,446960095,Fake Position,Position fausse détectée (écart de 0.35°).,2026-07-15T20:00:00Z,0.97,Critical,AIS Data
+BEH-00291,667961857,MMSI Spoofing,MMSI changé de 667961857 à FAKE-8952947.,2026-10-25T02:00:00Z,0.97,High,Satellite
+BEH-00295,202423823,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-04-19T10:00:00Z,0.84,Critical,Manual Report
+BEH-00297,333659184,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-11-29T20:00:00Z,0.94,Low,AIS Data
+BEH-00300,680048394,Fake Position,Position fausse détectée (écart de 0.45°).,2026-10-05T10:00:00Z,0.8,Medium,Satellite
+BEH-00303,667117915,Name Change,Nom changé de NAVIRE-7915 à FAKE_NAME_8456.,2026-06-03T13:00:00Z,0.74,Medium,AIS Data
+BEH-00307,657901600,Speed Anomaly,Vitesse anormale : 52.1 nœuds (limite : 25 nœuds).,2026-08-28T16:00:00Z,0.89,Medium,AIS Data
+BEH-00308,540186463,Name Change,Nom changé de NAVIRE-6463 à FAKE_NAME_3631.,2026-04-01T10:00:00Z,0.9,Critical,Manual Report
+BEH-00310,518571027,Fake Position,Position fausse détectée (écart de 0.30°).,2026-02-01T16:00:00Z,0.89,Medium,AIS Data
+BEH-00314,543202611,Name Change,Nom changé de NAVIRE-2611 à FAKE_NAME_4132.,2026-03-25T03:00:00Z,0.87,Critical,Manual Report
+BEH-00315,641919547,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-05-21T18:00:00Z,0.88,High,Manual Report
+BEH-00320,799561045,Course Anomaly,Changement de cap brutal (132° en 5 min).,2026-11-24T06:00:00Z,0.78,Medium,Manual Report
+BEH-00323,211996611,Course Anomaly,Changement de cap brutal (168° en 5 min).,2026-03-20T22:00:00Z,0.85,Medium,Satellite
+BEH-00325,573551360,Course Anomaly,Changement de cap brutal (141° en 5 min).,2026-05-26T02:00:00Z,0.88,Critical,Manual Report
+BEH-00328,313627597,Speed Anomaly,Vitesse anormale : 54.0 nœuds (limite : 25 nœuds).,2026-02-17T10:00:00Z,0.79,Critical,AIS Data
+BEH-00329,670600416,Course Anomaly,Changement de cap brutal (263° en 5 min).,2026-02-10T01:00:00Z,0.87,Critical,Satellite
+BEH-00333,302771696,Speed Anomaly,Vitesse anormale : 55.7 nœuds (limite : 25 nœuds).,2026-06-18T10:00:00Z,0.8,High,Satellite
+BEH-00334,703239596,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-11-17T18:00:00Z,0.8,Medium,Manual Report
+BEH-00336,428752348,Name Change,Nom changé de NAVIRE-2348 à FAKE_NAME_9575.,2026-02-09T21:00:00Z,0.87,Low,AIS Data
+BEH-00342,558220547,MMSI Spoofing,MMSI changé de 558220547 à FAKE-4185938.,2026-01-31T23:00:00Z,0.73,Low,AIS Data
+BEH-00352,787519756,Speed Anomaly,Vitesse anormale : 59.9 nœuds (limite : 25 nœuds).,2026-10-19T08:00:00Z,0.99,High,Satellite
+BEH-00354,641929484,MMSI Spoofing,MMSI changé de 641929484 à FAKE-3118720.,2026-10-22T05:00:00Z,0.74,Low,Satellite
+BEH-00355,529528291,MMSI Spoofing,MMSI changé de 529528291 à FAKE-2259405.,2026-09-09T21:00:00Z,0.82,Medium,AIS Data
+BEH-00357,419934878,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-08-05T19:00:00Z,0.71,Medium,Satellite
+BEH-00361,597007164,Name Change,Nom changé de NAVIRE-7164 à FAKE_NAME_6113.,2026-08-05T08:00:00Z,0.99,Medium,Satellite
+BEH-00364,324437656,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-09-26T14:00:00Z,0.93,Critical,Manual Report
+BEH-00365,641929484,MMSI Spoofing,MMSI changé de 641929484 à FAKE-2918372.,2026-10-04T11:00:00Z,0.8,Critical,AIS Data
+BEH-00370,300521373,AIS Disabled,AIS désactivé pendant 21 heures.,2026-07-13T12:00:00Z,0.86,Low,Satellite
+BEH-00371,684118819,Name Change,Nom changé de NAVIRE-8819 à FAKE_NAME_9375.,2026-08-16T03:00:00Z,0.96,Low,Satellite
+BEH-00372,450674342,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-08-31T14:00:00Z,0.82,Medium,AIS Data
+BEH-00373,438334167,Course Anomaly,Changement de cap brutal (165° en 5 min).,2026-07-15T03:00:00Z,0.88,Medium,Satellite
+BEH-00374,553273143,Fake Position,Position fausse détectée (écart de 0.21°).,2026-03-21T12:00:00Z,0.72,High,Satellite
+BEH-00375,758836998,Name Change,Nom changé de NAVIRE-6998 à FAKE_NAME_8659.,2026-07-19T01:00:00Z,0.72,Low,AIS Data
+BEH-00378,311061827,Speed Anomaly,Vitesse anormale : 51.9 nœuds (limite : 25 nœuds).,2026-03-14T13:00:00Z,0.74,Low,Manual Report
+BEH-00379,771761129,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-09-06T00:00:00Z,0.78,High,Satellite
+BEH-00387,432904622,AIS Disabled,AIS désactivé pendant 59 heures.,2026-01-14T07:00:00Z,0.78,High,Manual Report
+BEH-00388,758349994,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-07-13T15:00:00Z,0.96,Low,Manual Report
+BEH-00390,653134972,AIS Disabled,AIS désactivé pendant 43 heures.,2026-02-27T13:00:00Z,0.83,High,Manual Report
+BEH-00393,482669023,Fake Position,Position fausse détectée (écart de 0.09°).,2026-05-28T03:00:00Z,0.95,High,Satellite
+BEH-00394,685122198,Course Anomaly,Changement de cap brutal (263° en 5 min).,2026-03-26T18:00:00Z,0.95,Low,Manual Report
+BEH-00398,328301422,Course Anomaly,Changement de cap brutal (99° en 5 min).,2026-09-21T20:00:00Z,0.72,High,Satellite
+BEH-00401,496782021,MMSI Spoofing,MMSI changé de 496782021 à FAKE-6376136.,2026-05-18T00:00:00Z,0.99,Medium,AIS Data
+BEH-00404,609426126,MMSI Spoofing,MMSI changé de 609426126 à FAKE-5170866.,2026-10-24T18:00:00Z,0.9,Medium,Satellite
+BEH-00405,579766460,Name Change,Nom changé de NAVIRE-6460 à FAKE_NAME_6446.,2026-02-22T12:00:00Z,0.75,Medium,AIS Data
+BEH-00407,299076443,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-09-26T06:00:00Z,0.86,Low,Manual Report
+BEH-00408,700516144,Speed Anomaly,Vitesse anormale : 35.6 nœuds (limite : 25 nœuds).,2026-01-02T02:00:00Z,0.87,High,AIS Data
+BEH-00412,258140328,Course Anomaly,Changement de cap brutal (237° en 5 min).,2026-09-20T20:00:00Z,0.92,Low,Satellite
+BEH-00420,568046927,Fake Position,Position fausse détectée (écart de 0.33°).,2026-07-31T02:00:00Z,0.98,Medium,Manual Report
+BEH-00421,316818954,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-08-28T05:00:00Z,0.74,Medium,Manual Report
+BEH-00422,316649905,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-03-19T23:00:00Z,0.79,High,Satellite
+BEH-00424,408438611,Speed Anomaly,Vitesse anormale : 30.8 nœuds (limite : 25 nœuds).,2026-06-06T18:00:00Z,0.8,Critical,Satellite
+BEH-00429,300068534,Course Anomaly,Changement de cap brutal (111° en 5 min).,2026-06-30T10:00:00Z,0.76,High,Manual Report
+BEH-00430,237634356,Name Change,Nom changé de NAVIRE-4356 à FAKE_NAME_4281.,2026-11-06T06:00:00Z,0.73,Critical,Satellite
+BEH-00434,564606964,Fake Position,Position fausse détectée (écart de 0.22°).,2026-12-24T07:00:00Z,0.82,Medium,Manual Report
+BEH-00435,264250618,Speed Anomaly,Vitesse anormale : 39.9 nœuds (limite : 25 nœuds).,2026-07-27T20:00:00Z,0.72,Critical,Manual Report
+BEH-00436,717480216,AIS Disabled,AIS désactivé pendant 31 heures.,2026-05-27T00:00:00Z,0.71,Low,Satellite
+BEH-00440,505928634,AIS Disabled,AIS désactivé pendant 30 heures.,2026-06-06T02:00:00Z,0.88,High,Satellite
+BEH-00443,224333362,Name Change,Nom changé de NAVIRE-3362 à FAKE_NAME_8059.,2026-01-14T13:00:00Z,0.93,Medium,AIS Data
+BEH-00446,263392651,AIS Disabled,AIS désactivé pendant 67 heures.,2026-08-20T19:00:00Z,0.75,Critical,Manual Report
+BEH-00448,522502945,Fake Position,Position fausse détectée (écart de 0.26°).,2026-01-17T03:00:00Z,0.91,Critical,AIS Data
+BEH-00451,543202611,AIS Disabled,AIS désactivé pendant 28 heures.,2026-02-20T12:00:00Z,0.76,Medium,Manual Report
+BEH-00452,759582215,AIS Disabled,AIS désactivé pendant 5 heures.,2026-02-07T05:00:00Z,0.76,Critical,Manual Report
+BEH-00456,568456584,MMSI Spoofing,MMSI changé de 568456584 à FAKE-1453696.,2026-12-18T23:00:00Z,0.81,High,Manual Report
+BEH-00458,425793945,AIS Disabled,AIS désactivé pendant 11 heures.,2026-10-04T14:00:00Z,0.99,Critical,Satellite
+BEH-00461,448912425,Speed Anomaly,Vitesse anormale : 37.8 nœuds (limite : 25 nœuds).,2026-12-24T01:00:00Z,0.7,Low,AIS Data
+BEH-00464,245822641,Name Change,Nom changé de NAVIRE-2641 à FAKE_NAME_8511.,2026-07-30T19:00:00Z,0.87,Critical,Satellite
+BEH-00467,560605499,Name Change,Nom changé de NAVIRE-5499 à FAKE_NAME_2917.,2026-05-16T21:00:00Z,0.85,High,Manual Report
+BEH-00470,414692086,AIS Disabled,AIS désactivé pendant 57 heures.,2026-05-05T02:00:00Z,0.84,High,Manual Report
+BEH-00471,698246817,Fake Position,Position fausse détectée (écart de 0.37°).,2026-10-21T16:00:00Z,0.81,Medium,Manual Report
+BEH-00472,555556525,Speed Anomaly,Vitesse anormale : 46.3 nœuds (limite : 25 nœuds).,2026-03-21T04:00:00Z,0.8,Medium,Satellite
+BEH-00477,748609080,Name Change,Nom changé de NAVIRE-9080 à FAKE_NAME_9437.,2026-04-09T04:00:00Z,0.96,High,AIS Data
+BEH-00478,558220547,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-07-15T18:00:00Z,0.81,Critical,Manual Report
+BEH-00480,506636817,MMSI Spoofing,MMSI changé de 506636817 à FAKE-1448706.,2026-06-28T01:00:00Z,0.91,High,Manual Report
+BEH-00482,726505111,Course Anomaly,Changement de cap brutal (204° en 5 min).,2026-10-01T17:00:00Z,0.94,Critical,Manual Report
+BEH-00483,388386027,Name Change,Nom changé de NAVIRE-6027 à FAKE_NAME_6032.,2026-06-22T03:00:00Z,0.85,Medium,Satellite
+BEH-00486,538371585,MMSI Spoofing,MMSI changé de 538371585 à FAKE-5229625.,2026-07-02T02:00:00Z,0.97,Low,AIS Data
+BEH-00489,602309780,Zone Violation,Passage dans une zone à risque sans autorisation (ex: Détroit de Malacca).,2026-05-10T09:00:00Z,0.85,Medium,Manual Report
+BEH-00493,336559987,Fake Position,Position fausse détectée (écart de 0.09°).,2026-10-11T22:00:00Z,0.96,Medium,AIS Data
+BEH-00495,579766460,Fake Position,Position fausse détectée (écart de 0.36°).,2026-08-27T06:00:00Z,0.88,Medium,AIS Data
+BEH-00496,249654694,Name Change,Nom changé de NAVIRE-4694 à FAKE_NAME_7623.,2026-11-20T09:00:00Z,0.85,Low,Satellite
+BEH-00499,516366643,MMSI Spoofing,MMSI changé de 516366643 à FAKE-3248223.,2026-06-15T00:00:00Z,0.76,Low,Manual Report

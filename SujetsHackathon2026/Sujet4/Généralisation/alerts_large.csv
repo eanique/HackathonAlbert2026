@@ -1,0 +1,201 @@
+alert_id,mmsi,type,description,timestamp,severity,status,assigned_to,resolution
+ALERT-00000,302771696,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-1696 (Speed Anomaly).,2026-04-10T13:00:00Z,High,Investigating,Automatic,
+ALERT-00001,408438611,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-8611 (Speed Anomaly).,2026-08-21T19:00:00Z,Critical,Open,Team C,Résolu : Fausse alerte
+ALERT-00002,553273143,Fake Position,Alerte : Position suspecte pour NAVIRE-3143 (écart de 0.33°).,2026-04-29T00:00:00Z,High,Open,Team C,
+ALERT-00003,602309780,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-9780 (Zone Violation).,2026-06-07T00:00:00Z,Medium,Investigating,Automatic,Résolu : Sanctions appliquées
+ALERT-00004,715747669,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-7669. MMSI original: 715747669.,2026-03-27T08:00:00Z,High,Open,Automatic,
+ALERT-00005,670600416,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-0416 (Course Anomaly).,2026-11-03T15:00:00Z,Critical,Investigating,Team A,Résolu : Surveillance renforcée
+ALERT-00006,255542581,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-2581 (Name Change).,2026-03-07T09:00:00Z,Critical,Closed,Team B,Résolu : Fausse alerte
+ALERT-00007,496736443,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-6443 (Zone Violation).,2026-12-20T21:00:00Z,High,Open,Team A,Résolu : Sanctions appliquées
+ALERT-00008,568046927,Fake Position,Alerte : Position suspecte pour NAVIRE-6927 (écart de 0.26°).,2026-10-26T15:00:00Z,Medium,Closed,Team B,
+ALERT-00009,726981905,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-1905 (Course Anomaly).,2026-06-01T05:00:00Z,Critical,Closed,Team C,Résolu : Fausse alerte
+ALERT-00010,302771696,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-1696 (Speed Anomaly).,2026-08-12T20:00:00Z,High,Closed,Team C,Résolu : Fausse alerte
+ALERT-00011,313627597,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-7597 (Speed Anomaly).,2026-09-18T22:00:00Z,Critical,Open,Team B,
+ALERT-00012,405720111,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-0111 (MMSI: 405720111) pendant 34h.,2026-04-21T06:00:00Z,Low,Open,Team A,
+ALERT-00013,529528291,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-8291. MMSI original: 529528291.,2026-10-28T12:00:00Z,Medium,Closed,Team B,
+ALERT-00014,602309780,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-9780 (Zone Violation).,2026-10-16T14:00:00Z,Medium,Investigating,Team A,Résolu : Fausse alerte
+ALERT-00015,759582215,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-2215 (MMSI: 759582215) pendant 55h.,2026-06-17T08:00:00Z,Critical,Closed,Team C,Résolu : Surveillance renforcée
+ALERT-00016,684118819,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-8819 (Name Change).,2026-09-18T21:00:00Z,Low,Open,Team B,
+ALERT-00017,700516144,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-6144 (Speed Anomaly).,2026-11-26T20:00:00Z,High,Open,Team C,Résolu : Fausse alerte
+ALERT-00018,426343536,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-3536 (Zone Violation).,2026-09-26T07:00:00Z,Low,Open,Team A,
+ALERT-00019,560605499,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-5499 (Name Change).,2026-09-26T04:00:00Z,High,Open,Team B,Résolu : Sanctions appliquées
+ALERT-00020,518571027,Fake Position,Alerte : Position suspecte pour NAVIRE-1027 (écart de 0.39°).,2026-08-23T16:00:00Z,Medium,Investigating,Team B,Résolu : Surveillance renforcée
+ALERT-00021,553273143,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-3143 (Course Anomaly).,2026-03-30T16:00:00Z,Medium,Investigating,Team C,Résolu : Surveillance renforcée
+ALERT-00022,677403079,Fake Position,Alerte : Position suspecte pour NAVIRE-3079 (écart de 0.27°).,2026-01-14T03:00:00Z,Critical,Investigating,Team C,
+ALERT-00023,448912425,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-2425 (Speed Anomaly).,2026-01-23T06:00:00Z,Low,Open,Automatic,
+ALERT-00024,700516144,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-6144 (Speed Anomaly).,2026-12-17T19:00:00Z,High,Open,Team A,
+ALERT-00025,543202611,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-2611 (MMSI: 543202611) pendant 61h.,2026-12-18T12:00:00Z,Medium,Investigating,Team B,Résolu : Surveillance renforcée
+ALERT-00026,755431988,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-1988 (Speed Anomaly).,2026-07-11T02:00:00Z,Low,Investigating,Team C,Résolu : Fausse alerte
+ALERT-00027,522502945,Fake Position,Alerte : Position suspecte pour NAVIRE-2945 (écart de 0.27°).,2026-07-18T05:00:00Z,Critical,Open,Team A,
+ALERT-00028,293961385,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-1385 (Speed Anomaly).,2026-12-14T19:00:00Z,Medium,Investigating,Automatic,
+ALERT-00029,700516144,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-6144 (Speed Anomaly).,2026-05-14T05:00:00Z,High,Open,Automatic,
+ALERT-00030,264250618,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-0618 (Speed Anomaly).,2026-10-02T12:00:00Z,Critical,Closed,Team C,
+ALERT-00031,322996417,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-6417 (MMSI: 322996417) pendant 47h.,2026-05-20T05:00:00Z,Low,Investigating,Team A,
+ALERT-00032,677217518,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-7518 (Name Change).,2026-03-05T17:00:00Z,Medium,Open,Team C,
+ALERT-00033,560605499,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-5499 (Name Change).,2026-05-21T09:00:00Z,High,Closed,Team C,Résolu : Sanctions appliquées
+ALERT-00034,553273143,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-3143 (Course Anomaly).,2026-10-16T10:00:00Z,Medium,Investigating,Team A,
+ALERT-00035,313627597,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-7597 (Speed Anomaly).,2026-03-02T04:00:00Z,Critical,Open,Team B,Résolu : Fausse alerte
+ALERT-00036,505928634,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-8634 (MMSI: 505928634) pendant 52h.,2026-05-15T01:00:00Z,High,Investigating,Automatic,
+ALERT-00037,241998743,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-8743 (Speed Anomaly).,2026-12-02T01:00:00Z,Critical,Closed,Team B,
+ALERT-00038,446960095,Fake Position,Alerte : Position suspecte pour NAVIRE-0095 (écart de 0.31°).,2026-03-19T23:00:00Z,Critical,Closed,Team C,Résolu : Fausse alerte
+ALERT-00039,388386027,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-6027 (Name Change).,2026-08-03T00:00:00Z,Medium,Open,Team C,Résolu : Surveillance renforcée
+ALERT-00040,388386027,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-6027 (Name Change).,2026-01-22T19:00:00Z,Medium,Open,Team C,Résolu : Sanctions appliquées
+ALERT-00041,772002372,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-2372. MMSI original: 772002372.,2026-07-18T05:00:00Z,Critical,Investigating,Team C,
+ALERT-00042,558220547,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-0547. MMSI original: 558220547.,2026-10-26T10:00:00Z,Low,Investigating,Team B,Résolu : Sanctions appliquées
+ALERT-00043,754652303,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-2303. MMSI original: 754652303.,2026-07-31T22:00:00Z,Critical,Open,Team B,Résolu : Surveillance renforcée
+ALERT-00044,505928634,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-8634 (MMSI: 505928634) pendant 3h.,2026-02-18T06:00:00Z,High,Closed,Automatic,Résolu : Fausse alerte
+ALERT-00045,535157919,Fake Position,Alerte : Position suspecte pour NAVIRE-7919 (écart de 0.40°).,2026-09-30T13:00:00Z,High,Investigating,Team A,
+ALERT-00046,759582215,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-2215 (MMSI: 759582215) pendant 71h.,2026-10-13T23:00:00Z,Critical,Closed,Team C,
+ALERT-00047,641929484,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-9484. MMSI original: 641929484.,2026-12-20T08:00:00Z,Low,Investigating,Team A,
+ALERT-00048,547540742,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-0742 (Speed Anomaly).,2026-06-20T20:00:00Z,High,Open,Team C,
+ALERT-00049,394639193,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-9193 (Zone Violation).,2026-09-30T22:00:00Z,Low,Investigating,Automatic,
+ALERT-00050,597772697,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-2697 (Name Change).,2026-08-27T19:00:00Z,Critical,Open,Team C,
+ALERT-00051,644013342,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-3342 (Course Anomaly).,2026-08-06T16:00:00Z,Medium,Open,Team A,
+ALERT-00052,609668201,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-8201 (Course Anomaly).,2026-04-13T17:00:00Z,High,Closed,Team C,
+ALERT-00053,641929484,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-9484. MMSI original: 641929484.,2026-03-15T14:00:00Z,Critical,Open,Team C,
+ALERT-00054,300068534,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-8534 (Course Anomaly).,2026-12-26T02:00:00Z,High,Closed,Team B,
+ALERT-00055,419934878,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-4878 (Zone Violation).,2026-07-06T15:00:00Z,Medium,Open,Automatic,
+ALERT-00056,333659184,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-9184 (Zone Violation).,2026-01-01T11:00:00Z,Low,Investigating,Team B,Résolu : Surveillance renforcée
+ALERT-00057,419934878,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-4878 (Zone Violation).,2026-08-28T11:00:00Z,Medium,Closed,Automatic,
+ALERT-00058,316818954,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-8954 (Zone Violation).,2026-03-01T18:00:00Z,Medium,Open,Automatic,Résolu : Sanctions appliquées
+ALERT-00059,313627597,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-7597 (Speed Anomaly).,2026-10-16T10:00:00Z,Critical,Open,Team A,
+ALERT-00060,255542581,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-2581 (Name Change).,2026-11-04T19:00:00Z,Critical,Closed,Team A,
+ALERT-00061,316818954,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-8954 (Zone Violation).,2026-03-09T14:00:00Z,Medium,Open,Team B,Résolu : Sanctions appliquées
+ALERT-00062,744936474,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-6474. MMSI original: 744936474.,2026-02-26T04:00:00Z,Medium,Open,Team B,
+ALERT-00063,442686393,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-6393 (Name Change).,2026-02-06T04:00:00Z,High,Closed,Team B,
+ALERT-00064,685122198,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-2198 (Course Anomaly).,2026-08-17T05:00:00Z,Low,Open,Team C,
+ALERT-00065,377682260,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-2260. MMSI original: 377682260.,2026-02-01T20:00:00Z,Low,Closed,Team C,
+ALERT-00066,641929484,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-9484. MMSI original: 641929484.,2026-11-06T21:00:00Z,Critical,Open,Team B,Résolu : Fausse alerte
+ALERT-00067,751358479,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-8479 (MMSI: 751358479) pendant 14h.,2026-03-15T02:00:00Z,Critical,Open,Team B,
+ALERT-00068,293961385,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-1385 (Speed Anomaly).,2026-07-16T16:00:00Z,Medium,Closed,Team A,
+ALERT-00069,560605499,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-5499 (Name Change).,2026-06-03T10:00:00Z,High,Open,Team A,
+ALERT-00070,216407043,Fake Position,Alerte : Position suspecte pour NAVIRE-7043 (écart de 0.35°).,2026-02-17T23:00:00Z,High,Closed,Team A,
+ALERT-00071,645766732,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-6732 (Name Change).,2026-07-11T12:00:00Z,Critical,Investigating,Team C,
+ALERT-00072,245822641,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-2641 (Name Change).,2026-01-25T07:00:00Z,Critical,Investigating,Team A,
+ALERT-00073,549518042,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-8042 (Name Change).,2026-09-16T12:00:00Z,Medium,Open,Team B,Résolu : Surveillance renforcée
+ALERT-00074,454493746,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-3746 (MMSI: 454493746) pendant 50h.,2026-09-20T04:00:00Z,Critical,Open,Team B,
+ALERT-00075,418337774,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-7774 (Speed Anomaly).,2026-09-09T20:00:00Z,Critical,Closed,Team A,Résolu : Sanctions appliquées
+ALERT-00076,754652303,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-2303. MMSI original: 754652303.,2026-07-30T01:00:00Z,Critical,Open,Team C,
+ALERT-00077,516366643,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-6643. MMSI original: 516366643.,2026-03-12T05:00:00Z,Low,Closed,Team B,
+ALERT-00078,335430010,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-0010 (Zone Violation).,2026-06-08T22:00:00Z,Critical,Open,Team C,
+ALERT-00079,689087617,Fake Position,Alerte : Position suspecte pour NAVIRE-7617 (écart de 0.21°).,2026-06-07T01:00:00Z,High,Open,Automatic,
+ALERT-00080,299076443,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-6443 (Zone Violation).,2026-04-09T21:00:00Z,Low,Investigating,Automatic,Résolu : Fausse alerte
+ALERT-00081,442686393,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-6393 (Name Change).,2026-02-01T01:00:00Z,High,Investigating,Team B,Résolu : Sanctions appliquées
+ALERT-00082,696924528,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-4528 (Name Change).,2026-03-05T22:00:00Z,Low,Open,Team C,Résolu : Sanctions appliquées
+ALERT-00083,553273143,Fake Position,Alerte : Position suspecte pour NAVIRE-3143 (écart de 0.35°).,2026-09-03T00:00:00Z,High,Closed,Team C,
+ALERT-00084,543202611,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-2611 (MMSI: 543202611) pendant 64h.,2026-11-08T01:00:00Z,Medium,Open,Team A,Résolu : Sanctions appliquées
+ALERT-00085,454201105,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-1105 (Course Anomaly).,2026-12-04T03:00:00Z,Low,Open,Automatic,
+ALERT-00086,432904622,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-4622 (MMSI: 432904622) pendant 28h.,2026-10-27T20:00:00Z,High,Closed,Team B,Résolu : Surveillance renforcée
+ALERT-00087,496736443,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-6443 (Zone Violation).,2026-05-09T13:00:00Z,High,Investigating,Team B,
+ALERT-00088,602309780,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-9780 (Zone Violation).,2026-03-26T17:00:00Z,Medium,Open,Automatic,Résolu : Surveillance renforcée
+ALERT-00089,244054601,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-4601 (MMSI: 244054601) pendant 40h.,2026-10-24T01:00:00Z,Low,Open,Team A,
+ALERT-00090,300068534,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-8534 (Course Anomaly).,2026-02-11T00:00:00Z,High,Open,Team B,
+ALERT-00091,568046927,Fake Position,Alerte : Position suspecte pour NAVIRE-6927 (écart de 0.08°).,2026-01-26T01:00:00Z,Medium,Investigating,Team C,
+ALERT-00092,597772697,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-2697 (Name Change).,2026-05-19T22:00:00Z,Critical,Open,Team B,Résolu : Sanctions appliquées
+ALERT-00093,398960342,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-0342 (MMSI: 398960342) pendant 13h.,2026-09-12T07:00:00Z,Medium,Open,Automatic,
+ALERT-00094,377682260,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-2260. MMSI original: 377682260.,2026-08-24T21:00:00Z,Low,Closed,Team A,
+ALERT-00095,418337774,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-7774 (Speed Anomaly).,2026-03-30T07:00:00Z,Critical,Investigating,Team C,
+ALERT-00096,631269809,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-9809 (Zone Violation).,2026-12-15T04:00:00Z,Medium,Open,Team B,
+ALERT-00097,578004121,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-4121 (Speed Anomaly).,2026-07-10T12:00:00Z,Low,Investigating,Automatic,Résolu : Sanctions appliquées
+ALERT-00098,799561045,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-1045 (Course Anomaly).,2026-01-06T20:00:00Z,Medium,Open,Team B,Résolu : Sanctions appliquées
+ALERT-00099,717480216,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-0216 (MMSI: 717480216) pendant 26h.,2026-10-25T17:00:00Z,Low,Closed,Team B,
+ALERT-00100,364456513,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-6513. MMSI original: 364456513.,2026-09-23T21:00:00Z,Low,Closed,Team B,Résolu : Surveillance renforcée
+ALERT-00101,548240982,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-0982 (Name Change).,2026-12-07T17:00:00Z,Critical,Open,Automatic,
+ALERT-00102,419497356,Fake Position,Alerte : Position suspecte pour NAVIRE-7356 (écart de 0.42°).,2026-03-04T15:00:00Z,High,Investigating,Automatic,
+ALERT-00103,548240982,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-0982 (Name Change).,2026-10-29T19:00:00Z,Critical,Closed,Team B,Résolu : Fausse alerte
+ALERT-00104,322996417,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-6417 (MMSI: 322996417) pendant 36h.,2026-01-30T18:00:00Z,Low,Investigating,Automatic,
+ALERT-00105,324437656,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-7656 (Zone Violation).,2026-04-10T01:00:00Z,Critical,Open,Automatic,
+ALERT-00106,446960095,Fake Position,Alerte : Position suspecte pour NAVIRE-0095 (écart de 0.48°).,2026-05-20T18:00:00Z,Critical,Open,Automatic,Résolu : Surveillance renforcée
+ALERT-00107,302771696,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-1696 (Speed Anomaly).,2026-09-07T13:00:00Z,High,Closed,Automatic,
+ALERT-00108,482669023,Fake Position,Alerte : Position suspecte pour NAVIRE-9023 (écart de 0.12°).,2026-09-18T02:00:00Z,High,Open,Team A,Résolu : Surveillance renforcée
+ALERT-00109,631269809,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-9809 (MMSI: 631269809) pendant 17h.,2026-06-28T10:00:00Z,Critical,Investigating,Team A,
+ALERT-00110,502980332,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-0332 (Zone Violation).,2026-02-22T04:00:00Z,Low,Closed,Team B,
+ALERT-00111,553273143,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-3143 (Course Anomaly).,2026-02-15T02:00:00Z,Medium,Closed,Team B,
+ALERT-00112,564606964,Fake Position,Alerte : Position suspecte pour NAVIRE-6964 (écart de 0.12°).,2026-10-20T15:00:00Z,Medium,Open,Team B,
+ALERT-00113,547540742,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-0742 (Speed Anomaly).,2026-10-29T21:00:00Z,High,Open,Team C,
+ALERT-00114,597772697,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-2697 (Name Change).,2026-04-30T06:00:00Z,Critical,Investigating,Team C,
+ALERT-00115,302771696,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-1696 (Speed Anomaly).,2026-03-06T16:00:00Z,High,Investigating,Team C,
+ALERT-00116,508787460,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-7460 (Zone Violation).,2026-04-04T13:00:00Z,Medium,Investigating,Automatic,
+ALERT-00117,518571027,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-1027 (Name Change).,2026-10-26T17:00:00Z,Low,Closed,Team C,
+ALERT-00118,496782021,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-2021. MMSI original: 496782021.,2026-03-18T06:00:00Z,Medium,Open,Team A,
+ALERT-00119,717480216,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-0216 (Zone Violation).,2026-08-27T04:00:00Z,Low,Open,Team A,Résolu : Sanctions appliquées
+ALERT-00120,751358479,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-8479 (MMSI: 751358479) pendant 58h.,2026-07-13T01:00:00Z,Critical,Closed,Team B,Résolu : Surveillance renforcée
+ALERT-00121,496782021,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-2021. MMSI original: 496782021.,2026-06-30T19:00:00Z,Medium,Open,Automatic,
+ALERT-00122,568456584,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-6584. MMSI original: 568456584.,2026-03-16T17:00:00Z,High,Open,Team B,
+ALERT-00123,578004121,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-4121 (Speed Anomaly).,2026-06-11T16:00:00Z,Low,Open,Team B,
+ALERT-00124,641929484,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-9484. MMSI original: 641929484.,2026-01-05T10:00:00Z,Critical,Open,Automatic,
+ALERT-00125,211996611,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-6611 (Course Anomaly).,2026-05-27T04:00:00Z,Medium,Open,Team A,
+ALERT-00126,418337774,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-7774 (Speed Anomaly).,2026-12-16T08:00:00Z,Critical,Investigating,Automatic,
+ALERT-00127,418337774,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-7774 (Speed Anomaly).,2026-08-20T08:00:00Z,Critical,Closed,Team A,Résolu : Sanctions appliquées
+ALERT-00128,244566435,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-6435 (Zone Violation).,2026-04-28T21:00:00Z,High,Open,Team B,
+ALERT-00129,772002372,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-2372. MMSI original: 772002372.,2026-09-21T19:00:00Z,Critical,Investigating,Automatic,Résolu : Sanctions appliquées
+ALERT-00130,700516144,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-6144 (Speed Anomaly).,2026-12-08T21:00:00Z,High,Closed,Team B,
+ALERT-00131,496736443,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-6443 (Zone Violation).,2026-03-03T15:00:00Z,High,Open,Team B,
+ALERT-00132,482209102,Fake Position,Alerte : Position suspecte pour NAVIRE-9102 (écart de 0.32°).,2026-03-22T09:00:00Z,Low,Closed,Automatic,
+ALERT-00133,573551360,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-1360 (Course Anomaly).,2026-12-06T03:00:00Z,Critical,Closed,Team C,
+ALERT-00134,645766732,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-6732 (Name Change).,2026-01-27T20:00:00Z,Critical,Closed,Team C,
+ALERT-00135,255542581,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-2581 (Name Change).,2026-02-23T03:00:00Z,Critical,Investigating,Automatic,
+ALERT-00136,252354201,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-4201 (Name Change).,2026-04-11T11:00:00Z,Low,Closed,Team C,
+ALERT-00137,508787460,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-7460 (Zone Violation).,2026-03-10T22:00:00Z,Medium,Open,Team C,
+ALERT-00138,266469924,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-9924 (MMSI: 266469924) pendant 35h.,2026-03-21T15:00:00Z,High,Investigating,Automatic,Résolu : Fausse alerte
+ALERT-00139,703239596,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-9596 (Zone Violation).,2026-03-14T00:00:00Z,Medium,Investigating,Automatic,Résolu : Fausse alerte
+ALERT-00140,696924528,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-4528 (Name Change).,2026-06-23T17:00:00Z,Low,Closed,Automatic,
+ALERT-00141,333659184,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-9184 (Zone Violation).,2026-05-12T06:00:00Z,Low,Investigating,Team A,
+ALERT-00142,629495593,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-5593 (MMSI: 629495593) pendant 41h.,2026-02-02T07:00:00Z,High,Open,Team C,Résolu : Fausse alerte
+ALERT-00143,244566435,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-6435 (Zone Violation).,2026-08-02T07:00:00Z,High,Open,Team B,
+ALERT-00144,602086797,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-6797 (Course Anomaly).,2026-09-12T03:00:00Z,High,Investigating,Team C,Résolu : Fausse alerte
+ALERT-00145,549518042,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-8042 (Name Change).,2026-08-04T02:00:00Z,Medium,Closed,Team B,Résolu : Sanctions appliquées
+ALERT-00146,715747669,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-7669. MMSI original: 715747669.,2026-03-20T20:00:00Z,High,Investigating,Automatic,Résolu : Surveillance renforcée
+ALERT-00147,703239596,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-9596 (Zone Violation).,2026-01-24T01:00:00Z,Medium,Closed,Team B,
+ALERT-00148,543202611,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-2611 (MMSI: 543202611) pendant 14h.,2026-07-18T10:00:00Z,Medium,Investigating,Team B,
+ALERT-00149,299076443,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-6443 (Zone Violation).,2026-10-16T11:00:00Z,Low,Open,Team B,Résolu : Fausse alerte
+ALERT-00150,680048394,Fake Position,Alerte : Position suspecte pour NAVIRE-8394 (écart de 0.07°).,2026-07-02T22:00:00Z,Medium,Investigating,Team C,
+ALERT-00151,249654694,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-4694 (Name Change).,2026-01-31T13:00:00Z,Low,Investigating,Team C,
+ALERT-00152,458469288,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-9288 (Speed Anomaly).,2026-12-28T13:00:00Z,Low,Open,Automatic,
+ALERT-00153,405720111,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-0111 (MMSI: 405720111) pendant 62h.,2026-12-09T13:00:00Z,Low,Investigating,Team B,
+ALERT-00154,631269809,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-9809 (MMSI: 631269809) pendant 72h.,2026-10-13T04:00:00Z,Critical,Open,Team A,Résolu : Surveillance renforcée
+ALERT-00155,446960095,Fake Position,Alerte : Position suspecte pour NAVIRE-0095 (écart de 0.37°).,2026-02-09T15:00:00Z,Critical,Investigating,Automatic,
+ALERT-00156,631269809,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-9809 (Zone Violation).,2026-05-18T23:00:00Z,Medium,Investigating,Team C,
+ALERT-00157,302771696,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-1696 (Speed Anomaly).,2026-11-11T20:00:00Z,High,Closed,Team A,Résolu : Sanctions appliquées
+ALERT-00158,685122198,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-2198 (Course Anomaly).,2026-01-04T02:00:00Z,Low,Closed,Team B,
+ALERT-00159,485307597,Fake Position,Alerte : Position suspecte pour NAVIRE-7597 (écart de 0.17°).,2026-01-12T21:00:00Z,Critical,Closed,Team A,
+ALERT-00160,696924528,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-4528 (Name Change).,2026-03-21T22:00:00Z,Low,Investigating,Team B,
+ALERT-00161,266469924,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-9924 (MMSI: 266469924) pendant 50h.,2026-02-11T09:00:00Z,High,Investigating,Team B,Résolu : Fausse alerte
+ALERT-00162,425793945,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-3945 (MMSI: 425793945) pendant 11h.,2026-05-11T03:00:00Z,Critical,Investigating,Team B,Résolu : Sanctions appliquées
+ALERT-00163,680048394,Fake Position,Alerte : Position suspecte pour NAVIRE-8394 (écart de 0.29°).,2026-04-25T19:00:00Z,Medium,Closed,Team A,
+ALERT-00164,641919547,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-9547 (Zone Violation).,2026-01-27T01:00:00Z,High,Open,Automatic,
+ALERT-00165,667117915,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-7915 (Name Change).,2026-02-21T10:00:00Z,Medium,Investigating,Team C,
+ALERT-00166,680048394,Fake Position,Alerte : Position suspecte pour NAVIRE-8394 (écart de 0.17°).,2026-08-15T06:00:00Z,Medium,Investigating,Team C,
+ALERT-00167,448912425,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-2425 (Speed Anomaly).,2026-02-10T10:00:00Z,Low,Investigating,Team B,Résolu : Sanctions appliquées
+ALERT-00168,681892350,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-2350. MMSI original: 681892350.,2026-06-29T23:00:00Z,Medium,Closed,Team C,
+ALERT-00169,522502945,Fake Position,Alerte : Position suspecte pour NAVIRE-2945 (écart de 0.35°).,2026-07-13T09:00:00Z,Critical,Investigating,Team C,
+ALERT-00170,560605499,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-5499 (Name Change).,2026-09-15T20:00:00Z,High,Closed,Team B,
+ALERT-00171,446960095,Fake Position,Alerte : Position suspecte pour NAVIRE-0095 (écart de 0.12°).,2026-06-13T16:00:00Z,Critical,Closed,Team A,
+ALERT-00172,667117915,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-7915 (Name Change).,2027-01-01T20:00:00Z,Medium,Investigating,Automatic,
+ALERT-00173,717480216,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-0216 (MMSI: 717480216) pendant 44h.,2026-12-06T19:00:00Z,Low,Closed,Team B,Résolu : Surveillance renforcée
+ALERT-00174,518571027,Fake Position,Alerte : Position suspecte pour NAVIRE-1027 (écart de 0.43°).,2026-04-22T07:00:00Z,Medium,Closed,Team A,Résolu : Fausse alerte
+ALERT-00175,543202611,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-2611 (Name Change).,2026-04-17T07:00:00Z,Critical,Open,Automatic,
+ALERT-00176,300068534,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-8534 (Course Anomaly).,2026-06-20T00:00:00Z,High,Open,Team A,
+ALERT-00177,376305754,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-5754 (Zone Violation).,2026-05-27T19:00:00Z,High,Closed,Team B,
+ALERT-00178,388386027,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-6027 (Speed Anomaly).,2026-08-21T14:00:00Z,Critical,Open,Team A,
+ALERT-00179,578004121,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-4121 (Speed Anomaly).,2026-02-17T12:00:00Z,Low,Open,Team B,Résolu : Sanctions appliquées
+ALERT-00180,535268039,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-8039 (Name Change).,2026-07-12T13:00:00Z,Critical,Open,Team A,
+ALERT-00181,717480216,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-0216 (Zone Violation).,2026-07-13T23:00:00Z,Low,Investigating,Team B,
+ALERT-00182,444806532,Fake Position,Alerte : Position suspecte pour NAVIRE-6532 (écart de 0.29°).,2026-01-21T20:00:00Z,Low,Investigating,Team C,
+ALERT-00183,502613705,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-3705 (MMSI: 502613705) pendant 72h.,2026-06-24T23:00:00Z,Critical,Investigating,Team C,
+ALERT-00184,553273143,Course Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-3143 (Course Anomaly).,2026-03-24T03:00:00Z,Medium,Open,Team B,Résolu : Sanctions appliquées
+ALERT-00185,444806532,Fake Position,Alerte : Position suspecte pour NAVIRE-6532 (écart de 0.43°).,2026-12-11T01:00:00Z,Low,Open,Automatic,
+ALERT-00186,432904622,AIS Disabled,Alerte : AIS désactivé pour le navire NAVIRE-4622 (MMSI: 432904622) pendant 54h.,2026-06-29T04:00:00Z,High,Closed,Team B,
+ALERT-00187,288290646,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-0646 (Name Change).,2026-06-16T07:00:00Z,High,Open,Team A,
+ALERT-00188,245822641,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-2641 (Name Change).,2026-07-10T07:00:00Z,Critical,Closed,Team A,
+ALERT-00189,602086797,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-6797 (Speed Anomaly).,2026-06-05T07:00:00Z,High,Open,Automatic,
+ALERT-00190,241998743,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-8743 (Speed Anomaly).,2026-06-22T07:00:00Z,Critical,Investigating,Team A,
+ALERT-00191,324437656,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-7656 (Zone Violation).,2026-11-05T23:00:00Z,Critical,Closed,Automatic,
+ALERT-00192,226449616,MMSI Spoofing,Alerte : Spoofing de MMSI détecté pour NAVIRE-9616. MMSI original: 226449616.,2026-03-13T05:00:00Z,Medium,Open,Team B,
+ALERT-00193,252354201,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-4201 (Name Change).,2026-09-27T10:00:00Z,Low,Investigating,Automatic,Résolu : Fausse alerte
+ALERT-00194,597007164,Name Change,Alerte : Comportement suspect détecté pour NAVIRE-7164 (Name Change).,2026-12-23T07:00:00Z,Medium,Open,Automatic,
+ALERT-00195,755431988,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-1988 (Speed Anomaly).,2026-01-27T03:00:00Z,Low,Investigating,Team A,
+ALERT-00196,344826113,Speed Anomaly,Alerte : Comportement suspect détecté pour NAVIRE-6113 (Speed Anomaly).,2026-11-06T19:00:00Z,Low,Investigating,Team B,
+ALERT-00197,336559987,Fake Position,Alerte : Position suspecte pour NAVIRE-9987 (écart de 0.11°).,2026-03-17T15:00:00Z,Medium,Closed,Team C,Résolu : Sanctions appliquées
+ALERT-00198,426343536,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-3536 (Zone Violation).,2026-04-26T20:00:00Z,Low,Investigating,Team A,Résolu : Fausse alerte
+ALERT-00199,771761129,Zone Violation,Alerte : Comportement suspect détecté pour NAVIRE-1129 (Zone Violation).,2026-01-26T12:00:00Z,High,Investigating,Team B,

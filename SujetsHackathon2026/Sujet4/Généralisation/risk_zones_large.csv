@@ -1,0 +1,51 @@
+zone_id,name,coordinates,risk_level,description,country
+ZONE-000,Côte de l'Afrique de l'Ouest,"-2.4,23.94;2.41,28.02",Critical,Zone à risque en Côte de l'Afrique de l'Ouest avec des activités suspectes fréquentes.,Somalia
+ZONE-001,Golfe Persique,"-3.16,-1.27;-1.16,-4.43",High,Zone à risque en Golfe Persique avec des activités suspectes fréquentes.,Iran
+ZONE-002,Golfe Persique,"82.38,26.35;83.94,30.08",Low,Zone à risque en Golfe Persique avec des activités suspectes fréquentes.,USA
+ZONE-003,Canal de Panama,"82.79,-58.35;86.99,-61.7",Critical,Zone à risque en Canal de Panama avec des activités suspectes fréquentes.,Liberia
+ZONE-004,Mer Rouge,"-25.54,-13.24;-29.67,-17.43",Medium,Zone à risque en Mer Rouge avec des activités suspectes fréquentes.,Liberia
+ZONE-005,Mer de Corail,"-18.32,-65.41;-16.2,-64.22",High,Zone à risque en Mer de Corail avec des activités suspectes fréquentes.,Iran
+ZONE-006,Golfe Persique,"-48.54,-99.49;-51.91,-96.23",Low,Zone à risque en Golfe Persique avec des activités suspectes fréquentes.,USA
+ZONE-007,Détroit de Bab el-Mandeb,"-42.23,-132.09;-45.24,-132.77",Critical,Zone à risque en Détroit de Bab el-Mandeb avec des activités suspectes fréquentes.,Russia
+ZONE-008,Détroit de Gibraltar,"4.43,168.43;1.3,172.93",Medium,Zone à risque en Détroit de Gibraltar avec des activités suspectes fréquentes.,USA
+ZONE-009,Mer Noire,"22.15,-107.54;22.33,-111.74",Critical,Zone à risque en Mer Noire avec des activités suspectes fréquentes.,International
+ZONE-010,Canal de Suez,"53.1,-151.82;56.42,-147.7",Low,Zone à risque en Canal de Suez avec des activités suspectes fréquentes.,Iran
+ZONE-011,Golfe d'Aden,"25.27,78.31;21.78,81.38",Critical,Zone à risque en Golfe d'Aden avec des activités suspectes fréquentes.,International
+ZONE-012,Détroit de Magellan,"11.05,149.75;6.56,150.99",High,Zone à risque en Détroit de Magellan avec des activités suspectes fréquentes.,Panama
+ZONE-013,Côte de l'Afrique de l'Ouest,"47.69,-166.1;50.67,-168.42",Low,Zone à risque en Côte de l'Afrique de l'Ouest avec des activités suspectes fréquentes.,USA
+ZONE-014,Mer Rouge,"0.51,-47.91;-2.12,-44.96",Medium,Zone à risque en Mer Rouge avec des activités suspectes fréquentes.,International
+ZONE-015,Mer de Chine Méridionale,"-72.21,169.74;-70.32,171.16",High,Zone à risque en Mer de Chine Méridionale avec des activités suspectes fréquentes.,Panama
+ZONE-016,Canal de Suez,"-20.23,22.06;-18.62,23.05",High,Zone à risque en Canal de Suez avec des activités suspectes fréquentes.,International
+ZONE-017,Mer du Nord,"-35.36,42.89;-32.91,47.77",Medium,Zone à risque en Mer du Nord avec des activités suspectes fréquentes.,Liberia
+ZONE-018,Détroit de Magellan,"-45.56,34.63;-46.1,32.37",Medium,Zone à risque en Détroit de Magellan avec des activités suspectes fréquentes.,China
+ZONE-019,Mer de Corail,"69.52,163.58;67.66,162.9",Medium,Zone à risque en Mer de Corail avec des activités suspectes fréquentes.,International
+ZONE-020,Détroit de Taïwan,"9.32,41.59;10.37,42.69",Critical,Zone à risque en Détroit de Taïwan avec des activités suspectes fréquentes.,Panama
+ZONE-021,Mer de Java,"-45.57,-49.55;-43.59,-45.24",High,Zone à risque en Mer de Java avec des activités suspectes fréquentes.,Panama
+ZONE-022,Détroit de Magellan,"14.06,-132.92;11.33,-130.64",Medium,Zone à risque en Détroit de Magellan avec des activités suspectes fréquentes.,International
+ZONE-023,Mer de Corail,"-29.53,-61.63;-25.7,-57.15",Low,Zone à risque en Mer de Corail avec des activités suspectes fréquentes.,China
+ZONE-024,Détroit de Bab el-Mandeb,"-42.54,-83.21;-39.84,-81.01",Medium,Zone à risque en Détroit de Bab el-Mandeb avec des activités suspectes fréquentes.,Somalia
+ZONE-025,Mer d'Arabie,"55.14,121.2;53.1,120.41",High,Zone à risque en Mer d'Arabie avec des activités suspectes fréquentes.,USA
+ZONE-026,Mer Rouge,"84.67,94.82;89.15,90.01",Critical,Zone à risque en Mer Rouge avec des activités suspectes fréquentes.,Somalia
+ZONE-027,Mer de Chine Méridionale,"4.76,31.8;7.79,32.52",Medium,Zone à risque en Mer de Chine Méridionale avec des activités suspectes fréquentes.,Panama
+ZONE-028,Mer du Nord,"36.94,-162.65;32.32,-162.88",Critical,Zone à risque en Mer du Nord avec des activités suspectes fréquentes.,USA
+ZONE-029,Mer Rouge,"81.72,165.73;80.99,168.99",Low,Zone à risque en Mer Rouge avec des activités suspectes fréquentes.,Somalia
+ZONE-030,Côte de l'Afrique de l'Ouest,"-14.01,-91.79;-13.29,-92.77",Medium,Zone à risque en Côte de l'Afrique de l'Ouest avec des activités suspectes fréquentes.,International
+ZONE-031,Détroit d'Ormuz,"73.03,-113.72;77.79,-116.9",Low,Zone à risque en Détroit d'Ormuz avec des activités suspectes fréquentes.,International
+ZONE-032,Canal de Panama,"11.63,31.33;10.36,33.35",Low,Zone à risque en Canal de Panama avec des activités suspectes fréquentes.,Liberia
+ZONE-033,Détroit de Bab el-Mandeb,"-85.13,136.24;-86.7,133.68",Low,Zone à risque en Détroit de Bab el-Mandeb avec des activités suspectes fréquentes.,International
+ZONE-034,Golfe d'Aden,"6.21,-55.89;8.86,-58.19",Critical,Zone à risque en Golfe d'Aden avec des activités suspectes fréquentes.,China
+ZONE-035,Canal de Suez,"34.13,39.97;29.18,41.05",Medium,Zone à risque en Canal de Suez avec des activités suspectes fréquentes.,Liberia
+ZONE-036,Côte de l'Afrique de l'Ouest,"-67.92,-22.89;-70.55,-20.45",High,Zone à risque en Côte de l'Afrique de l'Ouest avec des activités suspectes fréquentes.,USA
+ZONE-037,Détroit de Bab el-Mandeb,"49.59,-29.98;51.45,-32.53",High,Zone à risque en Détroit de Bab el-Mandeb avec des activités suspectes fréquentes.,Russia
+ZONE-038,Détroit de Malacca,"-86.95,166.84;-88.36,171.21",Low,Zone à risque en Détroit de Malacca avec des activités suspectes fréquentes.,China
+ZONE-039,Mer d'Arabie,"73.16,-74.88;70.02,-71.05",Critical,Zone à risque en Mer d'Arabie avec des activités suspectes fréquentes.,USA
+ZONE-040,Côte de l'Afrique de l'Ouest,"-11.68,-46.62;-11.48,-47.43",Low,Zone à risque en Côte de l'Afrique de l'Ouest avec des activités suspectes fréquentes.,Liberia
+ZONE-041,Détroit de Taïwan,"42.26,32.67;37.86,33.12",Critical,Zone à risque en Détroit de Taïwan avec des activités suspectes fréquentes.,USA
+ZONE-042,Canal de Suez,"11.26,153.67;8.11,150.19",Low,Zone à risque en Canal de Suez avec des activités suspectes fréquentes.,China
+ZONE-043,Côte de l'Afrique de l'Ouest,"-65.28,52.48;-61.74,48.08",Low,Zone à risque en Côte de l'Afrique de l'Ouest avec des activités suspectes fréquentes.,Russia
+ZONE-044,Détroit d'Ormuz,"78.09,-53.13;76.29,-50.92",Critical,Zone à risque en Détroit d'Ormuz avec des activités suspectes fréquentes.,Somalia
+ZONE-045,Détroit de Bab el-Mandeb,"73.39,8.66;73.53,3.69",Low,Zone à risque en Détroit de Bab el-Mandeb avec des activités suspectes fréquentes.,Russia
+ZONE-046,Détroit de Malacca,"63.22,-16.06;63.29,-18.7",Critical,Zone à risque en Détroit de Malacca avec des activités suspectes fréquentes.,Somalia
+ZONE-047,Détroit de Taïwan,"-86.26,-59.86;-84.19,-56.67",Low,Zone à risque en Détroit de Taïwan avec des activités suspectes fréquentes.,Liberia
+ZONE-048,Golfe Persique,"50.76,-130.69;52.3,-133.09",High,Zone à risque en Golfe Persique avec des activités suspectes fréquentes.,Iran
+ZONE-049,Détroit de Malacca,"-86.78,-99.09;-83.07,-97.09",High,Zone à risque en Détroit de Malacca avec des activités suspectes fréquentes.,Somalia
