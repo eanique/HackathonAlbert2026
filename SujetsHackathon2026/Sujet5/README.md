@@ -4,7 +4,7 @@ L’objectif de ce hackathon est de concevoir un outil capable d’exploiter des
 
 Concrètement, les équipes devront développer une solution capable d’analyser automatiquement une image satellite et d’identifier la présence de bateaux. Une fois détectés, ces objets devront être localisés sur l’image et, dans la mesure du possible, classifiés selon leur nature. L’enjeu est notamment de pouvoir distinguer les navires civils des navires militaires, et d’identifier certains types caractéristiques comme les frégates, les destroyers ou les porte-avions.
 
-##SOLUTION
+## SOLUTION
 
 Pour rendre l’exercice concret et stimulant, la mission proposée pendant ce hackathon prendra la forme d’une véritable opération de recherche. Les participants devront utiliser leur outil pour explorer différentes zones du globe et identifier le plus grand nombre possible de navires militaires visibles sur des images satellites accessibles publiquement. Les ports militaires, les bases navales ou certaines zones maritimes stratégiques pourront constituer des terrains d’exploration particulièrement intéressants.
 
