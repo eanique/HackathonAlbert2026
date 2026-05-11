@@ -56,7 +56,5 @@
 
 
 
-Simuler de manière automatisée l’impact en cascade d’une panne ou d’une cyberattaque : identifier les processus métier affectés
-
-Utiliser un LLM pour enrichir les métadonnées (ex: décrire automatiquement les actifs),
+Généraliser les traitements réalisés précédement sur graphe de connaissance, simuler de manière automatisée l’impact en cascade d’une panne ou d’une cyberattaque, identifier les processus métier affectés, produiser un tableau de bord interactif.
 
