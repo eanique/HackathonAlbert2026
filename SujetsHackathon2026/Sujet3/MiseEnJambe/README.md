@@ -1,4 +1,4 @@
-**Dictionnaires de données"
+**Dictionnaires de données**
 
 - ships_small_dictionary.json
 - radio_signatures_small_dictionary.json
