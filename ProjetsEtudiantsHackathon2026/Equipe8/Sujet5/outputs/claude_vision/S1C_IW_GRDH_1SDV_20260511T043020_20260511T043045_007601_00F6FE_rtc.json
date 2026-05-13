@@ -1,0 +1,22 @@
+{
+  "vessel_detected": true,
+  "n_vessels_estimated": 4,
+  "vessel_category": "unknown",
+  "is_military": false,
+  "vessel_length_estimate_m": 80.0,
+  "confidence": 0.42,
+  "geographic_zone": "Côte de la mer de Barents, région de Mourmansk",
+  "zone_type": "coast",
+  "geopolitical_risk_level": "high",
+  "geopolitical_context": "La zone LAT 69.07 / LON 33.4 correspond à la péninsule de Kola, secteur de haute sensibilité stratégique abritant la flotte du Nord russe et des bases sous-marines nucléaires. Toute activité maritime dans cette région est surveillée par les alliés OTAN via la Norvège voisine.",
+  "is_dark_candidate": true,
+  "alert": false,
+  "alert_reason": null,
+  "limits": "Image SAR basse résolution : impossible de déterminer le type précis de navire, pavillon, MMSI, cap ou vitesse. Les réflecteurs brillants en bordure côtière peuvent être des structures fixes (bouées, jetées, bâtiments métalliques) et non des navires. La distinction navire/infrastructure portuaire n'est pas possible avec certitude. Pas de données AIS disponibles dans l'image.",
+  "model_version": "maritime-v1.1-bdd-minarm",
+  "model": "claude-sonnet-4-6",
+  "_image_file": "S1C_IW_GRDH_1SDV_20260511T043020_20260511T043045_007601_00F6FE_rtc_vv.preview.jpg",
+  "_scene_id": "S1C_IW_GRDH_1SDV_20260511T043020_20260511T043045_007601_00F6FE_rtc",
+  "_lat": 69.07,
+  "_lon": 33.4
+}

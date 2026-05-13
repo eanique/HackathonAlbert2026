@@ -1,0 +1,8 @@
+type,n_truth,n_overlap,recall,recoverable,note
+Course Anomaly,21,21,1.0,True,détecteur : 996 MMSI flaggés au total
+Speed Anomaly,16,14,0.875,True,détecteur : 806 MMSI flaggés au total
+Spoofing,10,4,0.4,True,détecteur : 327 MMSI flaggés au total
+Name Change,15,4,0.267,True,détecteur : 258 MMSI flaggés au total
+Position Mismatch,14,3,0.214,True,détecteur : 235 MMSI flaggés au total
+AIS Disabled,12,2,0.167,True,détecteur : 203 MMSI flaggés au total
+Fake Flag,12,1,0.083,True,détecteur : 60 MMSI flaggés au total

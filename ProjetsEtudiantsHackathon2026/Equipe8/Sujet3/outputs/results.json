@@ -1,0 +1,719 @@
+{
+  "data_quality": {
+    "volumetrie": {
+      "ships": [
+        1000,
+        18
+      ],
+      "radio": [
+        5000,
+        13
+      ],
+      "ais": [
+        10000,
+        11
+      ],
+      "anom": [
+        100,
+        7
+      ]
+    },
+    "manquants": {
+      "ships": {
+        "historical_names": 249
+      }
+    },
+    "doublons": {
+      "ships": 0,
+      "radio": 0,
+      "ais": 0,
+      "anom": 0
+    },
+    "hors_bornes": {},
+    "categories_hors_liste": {},
+    "integrite_referentielle": {
+      "radio_mmsi_orphans": 0,
+      "ais_mmsi_orphans": 0,
+      "anom_mmsi_orphans": 0,
+      "ships_without_radio": 6,
+      "ships_without_ais": 0,
+      "ships_without_radio_mmsi": [
+        "363951510",
+        "435131361",
+        "522451298",
+        "534553120",
+        "535117872",
+        "675464001"
+      ],
+      "n_fake_mmsi_in_radio": 0,
+      "radio_signatures_per_mmsi": {
+        "count": 994.0,
+        "mean": 5.03,
+        "std": 2.24,
+        "min": 1.0,
+        "25%": 3.0,
+        "50%": 5.0,
+        "75%": 6.0,
+        "max": 16.0
+      },
+      "ais_rows_per_mmsi": {
+        "count": 1000.0,
+        "mean": 10.0,
+        "std": 3.32,
+        "min": 1.0,
+        "25%": 8.0,
+        "50%": 10.0,
+        "75%": 12.0,
+        "max": 22.0
+      }
+    },
+    "formats": {
+      "mmsi_9digits_ships": true,
+      "mmsi_9digits_radio": true,
+      "mmsi_9digits_ais": true,
+      "imo_7digits_ships": true,
+      "name_is_placeholder": 1.0,
+      "mmsi_known_mid_pct": 0.061
+    },
+    "temporel": {
+      "ships.last_ais_update": {
+        "min": "2026-01-01 04:00:00+00:00",
+        "max": "2027-01-01 02:00:00+00:00",
+        "n_nat": 0
+      },
+      "radio.timestamp": {
+        "min": "2026-01-01 02:00:00+00:00",
+        "max": "2027-01-01 22:00:00+00:00",
+        "n_nat": 0
+      },
+      "ais.timestamp": {
+        "min": "2026-01-01 00:21:00+00:00",
+        "max": "2027-01-01 21:00:00+00:00",
+        "n_nat": 0
+      },
+      "anom.timestamp": {
+        "min": "2026-01-01 00:00:00+00:00",
+        "max": "2026-12-31 00:00:00+00:00",
+        "n_nat": 0
+      },
+      "ais_temporal_regressions": 0
+    },
+    "structure": {
+      "cramers_v_navstatus_vs_status": 0.0313,
+      "cramers_v_aisactive_vs_status": 0.0101,
+      "ais_active_true_pct": 0.5013,
+      "implicit_speed_knots": {
+        "median": 9.1,
+        "p95": 133.6,
+        "max": 12338.0
+      },
+      "historical_names_count_distribution": {
+        "0": 249,
+        "1": 253,
+        "2": 240,
+        "3": 258
+      }
+    },
+    "ceiling": {
+      "n_anomalies_total": 100,
+      "n_speed_anomaly": 16,
+      "n_course_anomaly": 21,
+      "max_speed_cited_in_descriptions": 49.2,
+      "max_speed_in_ais_table": 30.0,
+      "n_unrecoverable_from_tables": 37,
+      "achievable_recall_ceiling": 0.63,
+      "note": "Les valeurs de vitesse/cap des anomalies Speed/Course n'apparaissent que dans la description ; la colonne `speed` est plafonn\u00e9e et les positions sont al\u00e9atoires (vitesse implicite non discriminante) \u21d2 ces anomalies ne sont pas d\u00e9tectables depuis les tables fournies."
+    },
+    "cleaning_items": [
+      "6 navire(s) sans aucune signature radio \u2192 marqu\u00e9s `has_radio_signature=False` ; absents de ship_radio_profiles.csv ; utilis\u00e9s comme signal de suspicion (\u00ab navire jamais entendu \u00bb).",
+      "Le champ `name` (dataset large) est un placeholder d\u00e9riv\u00e9 du MMSI (NAVIRE-<4 derniers chiffres>) \u2192 on identifie par MMSI, le `name` n'apporte aucune information (\u2260 dataset small qui a de vrais noms).",
+      "`historical_names` vide pour 249 navires = \u00ab jamais renomm\u00e9 \u00bb (n_names_historical=0), PAS une donn\u00e9e manquante. Pars\u00e9 proprement par split(',')."
+    ]
+  },
+  "silent_ships": {
+    "n": 6,
+    "n_suspicious": 4,
+    "mmsi": [
+      "535117872",
+      "363951510",
+      "522451298",
+      "675464001",
+      "534553120",
+      "435131361"
+    ]
+  },
+  "q1_top5_freq": [
+    {
+      "mmsi": "211239944",
+      "name": "NAVIRE-9944",
+      "flag": "Singapore",
+      "freq_mean": 161.94,
+      "n_signatures": 1
+    },
+    {
+      "mmsi": "604969493",
+      "name": "NAVIRE-9493",
+      "flag": "China",
+      "freq_mean": 161.79,
+      "n_signatures": 1
+    },
+    {
+      "mmsi": "205927097",
+      "name": "NAVIRE-7097",
+      "flag": "France",
+      "freq_mean": 161.74,
+      "n_signatures": 1
+    },
+    {
+      "mmsi": "206352442",
+      "name": "NAVIRE-2442",
+      "flag": "USA",
+      "freq_mean": 161.6966666666667,
+      "n_signatures": 3
+    },
+    {
+      "mmsi": "637173265",
+      "name": "NAVIRE-3265",
+      "flag": "Denmark",
+      "freq_mean": 161.54,
+      "n_signatures": 1
+    }
+  ],
+  "q2": {
+    "n_distinct_patterns": 6,
+    "patterns_with_count_1": [],
+    "n_unique_combinations": 330,
+    "unique_combinations_sample": [
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "AM",
+        "freq_bin": 156.0,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "AM",
+        "freq_bin": 156.4,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "AM",
+        "freq_bin": 156.5,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "AM",
+        "freq_bin": 157.9,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "AM",
+        "freq_bin": 158.7,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "AM",
+        "freq_bin": 159.5,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "AM",
+        "freq_bin": 159.7,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "AM",
+        "freq_bin": 160.3,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "AM",
+        "freq_bin": 160.5,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "AM",
+        "freq_bin": 161.5,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "AM",
+        "freq_bin": 162.0,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "DSC",
+        "freq_bin": 156.4,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "DSC",
+        "freq_bin": 156.6,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "DSC",
+        "freq_bin": 157.6,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "DSC",
+        "freq_bin": 157.7,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "DSC",
+        "freq_bin": 158.0,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "DSC",
+        "freq_bin": 158.3,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "DSC",
+        "freq_bin": 158.9,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "DSC",
+        "freq_bin": 159.3,
+        "count": 1
+      },
+      {
+        "pulse_pattern": "Continuous",
+        "modulation": "DSC",
+        "freq_bin": 159.8,
+        "count": 1
+      }
+    ]
+  },
+  "q3": {
+    "silhouette": 0.22371294449378404,
+    "wcss": 1445.8699106047254,
+    "elbow": [
+      {
+        "k": 2,
+        "wcss": 2354.1264498871587,
+        "silhouette": 0.20785559230645018
+      },
+      {
+        "k": 3,
+        "wcss": 1938.765595163534,
+        "silhouette": 0.21374839702878223
+      },
+      {
+        "k": 4,
+        "wcss": 1623.083464972992,
+        "silhouette": 0.2270713862154527
+      },
+      {
+        "k": 5,
+        "wcss": 1445.8699106047256,
+        "silhouette": 0.22371294449378404
+      },
+      {
+        "k": 6,
+        "wcss": 1285.6521182567703,
+        "silhouette": 0.22052865624966386
+      },
+      {
+        "k": 7,
+        "wcss": 1195.624411899431,
+        "silhouette": 0.22495748396365836
+      },
+      {
+        "k": 8,
+        "wcss": 1117.4267495455215,
+        "silhouette": 0.19893478294105557
+      },
+      {
+        "k": 9,
+        "wcss": 1046.930941345722,
+        "silhouette": 0.21181212352669998
+      },
+      {
+        "k": 10,
+        "wcss": 982.0786874863525,
+        "silhouette": 0.21446572370985562
+      }
+    ]
+  },
+  "q4_eval": {
+    "precision": 0.016666666666666666,
+    "recall": 0.08333333333333333,
+    "n_flagged": 60,
+    "n_truth": 12
+  },
+  "q4_top10": [
+    {
+      "mmsi": "580720286",
+      "flag": "Panama",
+      "mahalanobis": 51.76804456719589,
+      "predicted": -1,
+      "confidence": 1.0,
+      "method": "EllipticEnvelope/MCD"
+    },
+    {
+      "mmsi": "383307372",
+      "flag": "Bahamas",
+      "mahalanobis": 76.99288735220813,
+      "predicted": -1,
+      "confidence": 1.0,
+      "method": "EllipticEnvelope/MCD"
+    },
+    {
+      "mmsi": "507138220",
+      "flag": "Bahamas",
+      "mahalanobis": 78.01099287842048,
+      "predicted": -1,
+      "confidence": 1.0,
+      "method": "EllipticEnvelope/MCD"
+    },
+    {
+      "mmsi": "798578134",
+      "flag": "Malta",
+      "mahalanobis": 22.873826757977387,
+      "predicted": -1,
+      "confidence": 1.0,
+      "method": "EllipticEnvelope/MCD"
+    },
+    {
+      "mmsi": "675737967",
+      "flag": "Malta",
+      "mahalanobis": 41.75935168244636,
+      "predicted": -1,
+      "confidence": 1.0,
+      "method": "EllipticEnvelope/MCD"
+    },
+    {
+      "mmsi": "750940589",
+      "flag": "Panama",
+      "mahalanobis": 34.09817972222159,
+      "predicted": -1,
+      "confidence": 1.0,
+      "method": "EllipticEnvelope/MCD"
+    },
+    {
+      "mmsi": "562875712",
+      "flag": "France",
+      "mahalanobis": 26.85312306330575,
+      "predicted": -1,
+      "confidence": 0.8160399269272663,
+      "method": "EllipticEnvelope/MCD"
+    },
+    {
+      "mmsi": "225377906",
+      "flag": "Singapore",
+      "mahalanobis": 50.80012617426097,
+      "predicted": -1,
+      "confidence": 0.757093452175618,
+      "method": "EllipticEnvelope/MCD"
+    },
+    {
+      "mmsi": "231663168",
+      "flag": "Marshall Islands",
+      "mahalanobis": 26.341431907674774,
+      "predicted": -1,
+      "confidence": 0.728255514693271,
+      "method": "EllipticEnvelope/MCD"
+    },
+    {
+      "mmsi": "545105896",
+      "flag": "Bahamas",
+      "mahalanobis": 59.40305790408059,
+      "predicted": -1,
+      "confidence": 0.6496799570138406,
+      "method": "EllipticEnvelope/MCD"
+    }
+  ],
+  "q5": {
+    "n_flagged": 258,
+    "recall": 0.26666666666666666,
+    "precision": 0.015503875968992248
+  },
+  "q6": {
+    "n_orphans": 0
+  },
+  "q7": {
+    "n_blocks": 215,
+    "n_mmsi": 203
+  },
+  "q8": {
+    "n_pairs": 261,
+    "n_mmsi": 235,
+    "map": "/Users/predictingmed/Desktop/bdd minarm/sujet3/outputs/carte_anomalies.html"
+  },
+  "q9": {
+    "mmsi": "336052886",
+    "jumps_freq": 10,
+    "jumps_signal": 8
+  },
+  "q10": {
+    "top_flag": "Denmark",
+    "top_mean": 159.16520920502091
+  },
+  "q11": {
+    "r": 0.030585618311902367,
+    "p": 0.6228118477197484,
+    "significant": false,
+    "n": 261
+  },
+  "score_uniform_weights": {
+    "auc": 0.5628226401179941,
+    "precision_at_k": 0.10416666666666667,
+    "k": 96
+  },
+  "score_metrics": {
+    "auc": 0.5182199032486525,
+    "best_threshold": 0.06836734693877551,
+    "best_cost": 525.0,
+    "precision_at_best": 0.4919517102615694,
+    "recall_at_best": 0.9959266802443992,
+    "f1_at_best": 0.6585858585858586
+  },
+  "recall_by_type": [
+    {
+      "type": "Course Anomaly",
+      "n_truth": 21,
+      "n_overlap": 21,
+      "recall": 1.0,
+      "recoverable": true,
+      "note": "d\u00e9tecteur : 996 MMSI flagg\u00e9s au total"
+    },
+    {
+      "type": "Speed Anomaly",
+      "n_truth": 16,
+      "n_overlap": 14,
+      "recall": 0.875,
+      "recoverable": true,
+      "note": "d\u00e9tecteur : 806 MMSI flagg\u00e9s au total"
+    },
+    {
+      "type": "Spoofing",
+      "n_truth": 10,
+      "n_overlap": 4,
+      "recall": 0.4,
+      "recoverable": true,
+      "note": "d\u00e9tecteur : 327 MMSI flagg\u00e9s au total"
+    },
+    {
+      "type": "Name Change",
+      "n_truth": 15,
+      "n_overlap": 4,
+      "recall": 0.267,
+      "recoverable": true,
+      "note": "d\u00e9tecteur : 258 MMSI flagg\u00e9s au total"
+    },
+    {
+      "type": "Position Mismatch",
+      "n_truth": 14,
+      "n_overlap": 3,
+      "recall": 0.214,
+      "recoverable": true,
+      "note": "d\u00e9tecteur : 235 MMSI flagg\u00e9s au total"
+    },
+    {
+      "type": "AIS Disabled",
+      "n_truth": 12,
+      "n_overlap": 2,
+      "recall": 0.167,
+      "recoverable": true,
+      "note": "d\u00e9tecteur : 203 MMSI flagg\u00e9s au total"
+    },
+    {
+      "type": "Fake Flag",
+      "n_truth": 12,
+      "n_overlap": 1,
+      "recall": 0.083,
+      "recoverable": true,
+      "note": "d\u00e9tecteur : 60 MMSI flagg\u00e9s au total"
+    }
+  ],
+  "score_tuned": {
+    "auc": 0.5545837942477876,
+    "precision_at_k": 0.15625,
+    "auc_oof": 0.5673626474926253,
+    "auc_train_mean": 0.6372133904351004,
+    "precision_at_k_oof": 0.14583333333333334,
+    "weights": {
+      "fake_flag": 0.0,
+      "name_change": 0.0,
+      "orphan": 0.0,
+      "ais_off": 0.185,
+      "position_mismatch": 0.059,
+      "speed": 0.1,
+      "spoofing_rules": 0.207,
+      "isolation_forest": 0.0,
+      "lof": 10.026,
+      "zone": 1.824,
+      "llm_tabular": 0.0
+    },
+    "coefs_mean": {
+      "fake_flag": -9.076485036251471,
+      "name_change": 0.25833146955706765,
+      "orphan": 0.0,
+      "ais_off": 2.582341939595067,
+      "position_mismatch": 0.8220632421776883,
+      "speed": 1.3961269731345383,
+      "spoofing_rules": 2.8886076251860944,
+      "isolation_forest": -20.155521461505366,
+      "lof": 140.12959502754092,
+      "zone": 25.492622987827822,
+      "llm_tabular": 0.0
+    },
+    "coefs_std": {
+      "fake_flag": 1.4555485552614822,
+      "name_change": 1.3177920944622445,
+      "orphan": 0.0,
+      "ais_off": 0.6866904190510337,
+      "position_mismatch": 0.7097457044193137,
+      "speed": 1.1913059359816158,
+      "spoofing_rules": 2.78138395165723,
+      "isolation_forest": 1.651974184464281,
+      "lof": 22.3463266340621,
+      "zone": 8.081614513840034,
+      "llm_tabular": 0.0
+    }
+  },
+  "xgboost": {
+    "auc_oof": 0.4961283185840708,
+    "auc_train_mean": 1.0,
+    "precision_at_k_oof": 0.08333333333333333,
+    "feature_importance_top10": [
+      [
+        "speed",
+        0.06072444096207619
+      ],
+      [
+        "ais_off",
+        0.060455846786499026
+      ],
+      [
+        "snr_mean",
+        0.06003388464450836
+      ],
+      [
+        "power_mean",
+        0.059635650366544724
+      ],
+      [
+        "spoofing_rules",
+        0.058998501300811766
+      ],
+      [
+        "signal_strength_mean",
+        0.05873622000217438
+      ],
+      [
+        "snr_std",
+        0.05788336768746376
+      ],
+      [
+        "lof",
+        0.05776882991194725
+      ],
+      [
+        "n_signatures",
+        0.05703718513250351
+      ],
+      [
+        "modulation_entropy",
+        0.05475945249199867
+      ]
+    ]
+  },
+  "pyod_benchmark": [
+    {
+      "model": "HBOS",
+      "contamination": 0.02,
+      "auc": 0.5284384218289085,
+      "precision_at_k": 0.10416666666666667,
+      "time_s": 1.28,
+      "error": NaN
+    },
+    {
+      "model": "COPOD",
+      "contamination": 0.02,
+      "auc": 0.5218012536873157,
+      "precision_at_k": 0.125,
+      "time_s": 0.04,
+      "error": NaN
+    },
+    {
+      "model": "KNN",
+      "contamination": 0.02,
+      "auc": 0.5014288348082596,
+      "precision_at_k": 0.13541666666666666,
+      "time_s": 0.1,
+      "error": NaN
+    },
+    {
+      "model": "ECOD",
+      "contamination": 0.02,
+      "auc": 0.4917957227138643,
+      "precision_at_k": 0.08333333333333333,
+      "time_s": 0.43,
+      "error": NaN
+    },
+    {
+      "model": "PCA-OD",
+      "contamination": NaN,
+      "auc": NaN,
+      "precision_at_k": NaN,
+      "time_s": 0.01,
+      "error": "Input contains infinity or a value too large for dtype('float64')."
+    }
+  ],
+  "graph": {
+    "n_nodes": 168,
+    "n_edges": 251,
+    "by_kind": {
+      "Navire": 121,
+      "Pavillon": 10,
+      "Anomalie": 7,
+      "Alerte": 30
+    },
+    "n_components": 1,
+    "avg_degree": 2.988095238095238
+  },
+  "q13": {
+    "per_seed": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean": 0.0,
+    "std": 0.0,
+    "matrix": [
+      [
+        12,
+        12
+      ],
+      [
+        14,
+        12
+      ]
+    ]
+  }
+}

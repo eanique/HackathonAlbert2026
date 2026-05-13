@@ -1,0 +1,53 @@
+{
+  "phase_1_done": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q10",
+    "Q11",
+    "Q12"
+  ],
+  "phase_2_done": [
+    "Q7 (binaire RF/SVM/MLP, finding: AUC≈0.5 sur CSV synthétique)",
+    "P2 sanity YOLOv8n (CPU/MPS, ~6 détections COCO)",
+    "Piste B survey Sentinel-1 (~80 scènes sur 5 bases sur 30 j)",
+    "ais_cross interface + GFW gap events (Levier L2)"
+  ],
+  "phase_3_done": [
+    "Q13 pipeline.predict_from_csv → règles d'alerte (zone × risk × militaire)",
+    "Q14 export ONNX + benchmark CPU PyTorch vs ONNX",
+    "Q15 OSINT (Nominatim port + OpenWeatherMap météo + Overpass military zones)",
+    "Q15/L3 intel_report → fiche markdown + PDF (Mistral REST si clé, sinon Jinja2)",
+    "Q16-Q18 benchmark détecteurs (YOLO vs RT-DETR vs Faster R-CNN) + classifieurs"
+  ],
+  "phase_2_3_todo": [
+    "Q4-Q6 fine-tune YOLO sur xView3 ou Airbus Ship  (→ Colab T4)",
+    "Q8-Q9 ResNet50 + HRSC2016  (→ Colab ou local long)",
+    "Piste B réelle : fetch_scene_geotiff + detect_ships_on_scene (→ Phase 2 J2)",
+    "ais_cross : DMA CSV plan B si pas de GFW_API_TOKEN"
+  ],
+  "outputs": [
+    "data/processed/q2_bbox_by_type.csv",
+    "data/processed/q3_merged.csv",
+    "data/processed/q10_detections_with_zones.csv",
+    "data/processed/q11_temporal_series.csv",
+    "data/processed/q12_anomalies_type_a.csv",
+    "data/processed/q12_anomalies_type_b.csv",
+    "data/processed/chasse_scenes_disponibles.csv",
+    "outputs/q7_metrics_binaire.csv",
+    "outputs/q7_roc_binaire.png",
+    "outputs/q7_feature_importance.png",
+    "outputs/q7_feature_importance.csv",
+    "outputs/q13_pipeline_detections.csv",
+    "outputs/q13_pipeline_alertes.csv",
+    "outputs/q14_onnx_benchmark.csv",
+    "outputs/q16_detectors_benchmark.csv",
+    "outputs/q17_classifiers_benchmark.csv",
+    "outputs/q18_benchmark_global.md",
+    "outputs/q18_detectors_latency.png",
+    "outputs/q18_classifiers.png",
+    "outputs/intel_*.md / intel_*.pdf",
+    "outputs/detections_carte.html",
+    "outputs/anomalies_carte.html"
+  ]
+}

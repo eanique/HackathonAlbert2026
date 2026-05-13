@@ -1,0 +1,5408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_05334cf80f651d6a2d623826211e0d89 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_05334cf80f651d6a2d623826211e0d89" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_05334cf80f651d6a2d623826211e0d89 = L.map(
+                "map_05334cf80f651d6a2d623826211e0d89",
+                {
+                    center: [28.305671641791047, 45.53283582089552],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a05cecf4593ddbb29fcdb875421c2f9e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a05cecf4593ddbb29fcdb875421c2f9e.addTo(map_05334cf80f651d6a2d623826211e0d89);
+        
+    
+            var circle_edc21818142ad0d64d906e1b0914c8bd = L.circle(
+                [31.2, 121.5],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 1}
+            ).addTo(map_05334cf80f651d6a2d623826211e0d89);
+        
+    
+            circle_edc21818142ad0d64d906e1b0914c8bd.bindTooltip(
+                `<div>
+                     Zone militaire 2 - Port de Shanghai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_6e5e3ac3423c50a20e41f125cd56c943 = L.circle(
+                [31.2, 121.5],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 1}
+            ).addTo(map_05334cf80f651d6a2d623826211e0d89);
+        
+    
+            circle_6e5e3ac3423c50a20e41f125cd56c943.bindTooltip(
+                `<div>
+                     Zone militaire 3 - Port de Shanghai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_efbd7848e46ef75be521c0f67ee8b0bb = L.circle(
+                [21.4, -157.9],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 1}
+            ).addTo(map_05334cf80f651d6a2d623826211e0d89);
+        
+    
+            circle_efbd7848e46ef75be521c0f67ee8b0bb.bindTooltip(
+                `<div>
+                     Zone militaire 5 - Base navale de Pearl Harbor
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_f213546125f48548ac43aa32792f1afb = L.circle(
+                [31.2, 121.5],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 1}
+            ).addTo(map_05334cf80f651d6a2d623826211e0d89);
+        
+    
+            circle_f213546125f48548ac43aa32792f1afb.bindTooltip(
+                `<div>
+                     Zone militaire 9 - Port de Shanghai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_9afd59b68e29247d1c56b75474539318 = L.circle(
+                [43.12, 5.9],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 1}
+            ).addTo(map_05334cf80f651d6a2d623826211e0d89);
+        
+    
+            circle_9afd59b68e29247d1c56b75474539318.bindTooltip(
+                `<div>
+                     Zone militaire 11 - Port militaire de Toulon
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_34e10f4c03f21f2521ab7505c8af360c = L.circle(
+                [25.0, 56.0],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 1}
+            ).addTo(map_05334cf80f651d6a2d623826211e0d89);
+        
+    
+            circle_34e10f4c03f21f2521ab7505c8af360c.bindTooltip(
+                `<div>
+                     Zone militaire 12 - Détroit d'Ormuz
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_c0c679f17ef3740f32cf6e592fce9f28 = L.circle(
+                [25.0, 56.0],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 1}
+            ).addTo(map_05334cf80f651d6a2d623826211e0d89);
+        
+    
+            circle_c0c679f17ef3740f32cf6e592fce9f28.bindTooltip(
+                `<div>
+                     Zone militaire 14 - Détroit d'Ormuz
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_836530cd556d475dc185fb6f7955e8f0 = L.circle(
+                [31.2, 121.5],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 1}
+            ).addTo(map_05334cf80f651d6a2d623826211e0d89);
+        
+    
+            circle_836530cd556d475dc185fb6f7955e8f0.bindTooltip(
+                `<div>
+                     Zone militaire 17 - Port de Shanghai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_c3962aac5772e172311bc9f4daf0c019 = L.circle(
+                [21.4, -157.9],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 1}
+            ).addTo(map_05334cf80f651d6a2d623826211e0d89);
+        
+    
+            circle_c3962aac5772e172311bc9f4daf0c019.bindTooltip(
+                `<div>
+                     Zone militaire 18 - Base navale de Pearl Harbor
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_1587b556d9b78bce199c1912d4bdec63 = L.circle(
+                [31.2, 121.5],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 1}
+            ).addTo(map_05334cf80f651d6a2d623826211e0d89);
+        
+    
+            circle_1587b556d9b78bce199c1912d4bdec63.bindTooltip(
+                `<div>
+                     Zone militaire 19 - Port de Shanghai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_1e9d7ee67279e711e9d617be6f35b0a5 = L.circle(
+                [21.4, -157.9],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 1}
+            ).addTo(map_05334cf80f651d6a2d623826211e0d89);
+        
+    
+            circle_1e9d7ee67279e711e9d617be6f35b0a5.bindTooltip(
+                `<div>
+                     Zone militaire 20 - Base navale de Pearl Harbor
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_5fb5a9406b914d1124d1be128401fd00 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_e19557784939e618a880171d77a7dac7 = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_8a9c6dbd7d5833c20f250da45553f675 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de105efcc16b6a4f9c4bb34988d45211 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2f5743c7f744a4a5a8838d1bbb34c25 = $(`<div id="html_b2f5743c7f744a4a5a8838d1bbb34c25" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_de105efcc16b6a4f9c4bb34988d45211.setContent(html_b2f5743c7f744a4a5a8838d1bbb34c25);
+            
+        
+
+        marker_e19557784939e618a880171d77a7dac7.bindPopup(popup_de105efcc16b6a4f9c4bb34988d45211)
+        ;
+
+        
+    
+    
+                marker_e19557784939e618a880171d77a7dac7.setIcon(icon_8a9c6dbd7d5833c20f250da45553f675);
+            
+    
+            var marker_021feedd2f1136da120acbd12bf17805 = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_e59c8bce8c6edc4556a77d6f6e09c621 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75ec4784f3bac31ce3e18c02872d83d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce4050dd857209c460ff088e67e60eca = $(`<div id="html_ce4050dd857209c460ff088e67e60eca" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_75ec4784f3bac31ce3e18c02872d83d6.setContent(html_ce4050dd857209c460ff088e67e60eca);
+            
+        
+
+        marker_021feedd2f1136da120acbd12bf17805.bindPopup(popup_75ec4784f3bac31ce3e18c02872d83d6)
+        ;
+
+        
+    
+    
+                marker_021feedd2f1136da120acbd12bf17805.setIcon(icon_e59c8bce8c6edc4556a77d6f6e09c621);
+            
+    
+            var marker_4af4215f6f539099cf08eb1441161361 = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_e1f1e274f4fdb99f2218020bbae61d79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30c548feff2ea1ae7381f516086e9605 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_921aab14525d5ceeca3a05ce005329a4 = $(`<div id="html_921aab14525d5ceeca3a05ce005329a4" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_30c548feff2ea1ae7381f516086e9605.setContent(html_921aab14525d5ceeca3a05ce005329a4);
+            
+        
+
+        marker_4af4215f6f539099cf08eb1441161361.bindPopup(popup_30c548feff2ea1ae7381f516086e9605)
+        ;
+
+        
+    
+    
+                marker_4af4215f6f539099cf08eb1441161361.setIcon(icon_e1f1e274f4fdb99f2218020bbae61d79);
+            
+    
+            var marker_06795df74bfd62fc8c59d80d8e0a08c6 = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_bd46fcd861e7e135b0f996b8b2cd9164 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_10bf9ba4045d3e235a414856066026d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_600684fe0f372f1e23f5aff3c536bc57 = $(`<div id="html_600684fe0f372f1e23f5aff3c536bc57" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_10bf9ba4045d3e235a414856066026d0.setContent(html_600684fe0f372f1e23f5aff3c536bc57);
+            
+        
+
+        marker_06795df74bfd62fc8c59d80d8e0a08c6.bindPopup(popup_10bf9ba4045d3e235a414856066026d0)
+        ;
+
+        
+    
+    
+                marker_06795df74bfd62fc8c59d80d8e0a08c6.setIcon(icon_bd46fcd861e7e135b0f996b8b2cd9164);
+            
+    
+            var marker_1b1ac8345d01af0082e9a3efd90afa23 = L.marker(
+                [35.4, 139.7],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_4aae496c796777191927d94bcc5297fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fbf2e235325f77143bdec1a974e219ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40e44ce7babacc58faeed096913a995e = $(`<div id="html_40e44ce7babacc58faeed096913a995e" style="width: 100.0%; height: 100.0%;">Porte-avions militaire hors zone</div>`)[0];
+                popup_fbf2e235325f77143bdec1a974e219ff.setContent(html_40e44ce7babacc58faeed096913a995e);
+            
+        
+
+        marker_1b1ac8345d01af0082e9a3efd90afa23.bindPopup(popup_fbf2e235325f77143bdec1a974e219ff)
+        ;
+
+        
+    
+    
+                marker_1b1ac8345d01af0082e9a3efd90afa23.setIcon(icon_4aae496c796777191927d94bcc5297fd);
+            
+    
+            var marker_8ea06cda1a31199b33ca9f49c6cd27ef = L.marker(
+                [35.4, 139.7],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_31f6ed1d29f765c7f0902363b1b4eca9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8c1d6833da145aa34fc220e3e7f4c86 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_819a2804bd3ed0e2b81aedd6161a0726 = $(`<div id="html_819a2804bd3ed0e2b81aedd6161a0726" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_e8c1d6833da145aa34fc220e3e7f4c86.setContent(html_819a2804bd3ed0e2b81aedd6161a0726);
+            
+        
+
+        marker_8ea06cda1a31199b33ca9f49c6cd27ef.bindPopup(popup_e8c1d6833da145aa34fc220e3e7f4c86)
+        ;
+
+        
+    
+    
+                marker_8ea06cda1a31199b33ca9f49c6cd27ef.setIcon(icon_31f6ed1d29f765c7f0902363b1b4eca9);
+            
+    
+            var marker_d1389584794f69af2c86593cd3938ed2 = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_9d8089faf64f601befd1e937597f9412 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e7b6fa0c4f9ba1e4baa1082d7afada46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a022ace5d9de2a31a2389989f7e318b = $(`<div id="html_7a022ace5d9de2a31a2389989f7e318b" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_e7b6fa0c4f9ba1e4baa1082d7afada46.setContent(html_7a022ace5d9de2a31a2389989f7e318b);
+            
+        
+
+        marker_d1389584794f69af2c86593cd3938ed2.bindPopup(popup_e7b6fa0c4f9ba1e4baa1082d7afada46)
+        ;
+
+        
+    
+    
+                marker_d1389584794f69af2c86593cd3938ed2.setIcon(icon_9d8089faf64f601befd1e937597f9412);
+            
+    
+            var marker_5c862e84eed0588f162b2417f0088da6 = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_4a6ed70c4497e7e399b2f102e680e597 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6233727357c9e6537f59be921203163a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71860c39e137b698aeb8368ee07b3f54 = $(`<div id="html_71860c39e137b698aeb8368ee07b3f54" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_6233727357c9e6537f59be921203163a.setContent(html_71860c39e137b698aeb8368ee07b3f54);
+            
+        
+
+        marker_5c862e84eed0588f162b2417f0088da6.bindPopup(popup_6233727357c9e6537f59be921203163a)
+        ;
+
+        
+    
+    
+                marker_5c862e84eed0588f162b2417f0088da6.setIcon(icon_4a6ed70c4497e7e399b2f102e680e597);
+            
+    
+            var marker_47149ba07778272a304f900eb5da5875 = L.marker(
+                [36.6, -6.4],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_6143a08460bcedcbc8527b9b298a71b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4d1cd9d927015d1802fa957dc41b5f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dab8463c4d86c59c7dc2139aa9b3d423 = $(`<div id="html_dab8463c4d86c59c7dc2139aa9b3d423" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_b4d1cd9d927015d1802fa957dc41b5f8.setContent(html_dab8463c4d86c59c7dc2139aa9b3d423);
+            
+        
+
+        marker_47149ba07778272a304f900eb5da5875.bindPopup(popup_b4d1cd9d927015d1802fa957dc41b5f8)
+        ;
+
+        
+    
+    
+                marker_47149ba07778272a304f900eb5da5875.setIcon(icon_6143a08460bcedcbc8527b9b298a71b2);
+            
+    
+            var marker_2994816500be2403061ba7312bd88a8e = L.marker(
+                [36.6, -6.4],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_969ad87da9215fb4be057c929ccf36d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8be3fb3865a063203d9c20e5cec50ae0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3be97d74f469dce307ee1376ff8edc54 = $(`<div id="html_3be97d74f469dce307ee1376ff8edc54" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_8be3fb3865a063203d9c20e5cec50ae0.setContent(html_3be97d74f469dce307ee1376ff8edc54);
+            
+        
+
+        marker_2994816500be2403061ba7312bd88a8e.bindPopup(popup_8be3fb3865a063203d9c20e5cec50ae0)
+        ;
+
+        
+    
+    
+                marker_2994816500be2403061ba7312bd88a8e.setIcon(icon_969ad87da9215fb4be057c929ccf36d0);
+            
+    
+            var marker_c0f9e668aba9958be639f934678c922c = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_c75c4dd8457452832679f59adec3624b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9f847e8982f3ceac83bcf5e92de60d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c94a91f393fc663c38e9e59bb1b53b5e = $(`<div id="html_c94a91f393fc663c38e9e59bb1b53b5e" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_c9f847e8982f3ceac83bcf5e92de60d6.setContent(html_c94a91f393fc663c38e9e59bb1b53b5e);
+            
+        
+
+        marker_c0f9e668aba9958be639f934678c922c.bindPopup(popup_c9f847e8982f3ceac83bcf5e92de60d6)
+        ;
+
+        
+    
+    
+                marker_c0f9e668aba9958be639f934678c922c.setIcon(icon_c75c4dd8457452832679f59adec3624b);
+            
+    
+            var marker_80dad858f2844ace28d2a09a97b7383b = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_ec22889d4538a5907b0bab2184d95a79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_edfd07e0e30bdedba0cac4cf850a5bf5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f9e4b2bef0adedce3bdf4cc7c5485e3 = $(`<div id="html_0f9e4b2bef0adedce3bdf4cc7c5485e3" style="width: 100.0%; height: 100.0%;">Sous-marin militaire hors zone</div>`)[0];
+                popup_edfd07e0e30bdedba0cac4cf850a5bf5.setContent(html_0f9e4b2bef0adedce3bdf4cc7c5485e3);
+            
+        
+
+        marker_80dad858f2844ace28d2a09a97b7383b.bindPopup(popup_edfd07e0e30bdedba0cac4cf850a5bf5)
+        ;
+
+        
+    
+    
+                marker_80dad858f2844ace28d2a09a97b7383b.setIcon(icon_ec22889d4538a5907b0bab2184d95a79);
+            
+    
+            var marker_771ce4412bd7bd10bd73eedde4856671 = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_ce1fa41f28c1a56519caca579fddc27f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e4f2e0cb5a0b045306538aa7f9b749d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04a66341ed295c7a62f22dca70305eb2 = $(`<div id="html_04a66341ed295c7a62f22dca70305eb2" style="width: 100.0%; height: 100.0%;">Porte-avions militaire hors zone</div>`)[0];
+                popup_9e4f2e0cb5a0b045306538aa7f9b749d.setContent(html_04a66341ed295c7a62f22dca70305eb2);
+            
+        
+
+        marker_771ce4412bd7bd10bd73eedde4856671.bindPopup(popup_9e4f2e0cb5a0b045306538aa7f9b749d)
+        ;
+
+        
+    
+    
+                marker_771ce4412bd7bd10bd73eedde4856671.setIcon(icon_ce1fa41f28c1a56519caca579fddc27f);
+            
+    
+            var marker_2e14f48ca7a4b137196e415102c45212 = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_be379c9a8d427dd96a347444ccc18174 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d91723a91cfe2b7b3abb6c0f9fc91332 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2fe46d2692825001010f828d5a72dc2 = $(`<div id="html_a2fe46d2692825001010f828d5a72dc2" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_d91723a91cfe2b7b3abb6c0f9fc91332.setContent(html_a2fe46d2692825001010f828d5a72dc2);
+            
+        
+
+        marker_2e14f48ca7a4b137196e415102c45212.bindPopup(popup_d91723a91cfe2b7b3abb6c0f9fc91332)
+        ;
+
+        
+    
+    
+                marker_2e14f48ca7a4b137196e415102c45212.setIcon(icon_be379c9a8d427dd96a347444ccc18174);
+            
+    
+            var marker_a2e242b98c847bb7391317acfb5ad32a = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_ab06c0546ae9dfe2fb061e7d972c48f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c31a961a5c8b161b74f770bc1c2b99ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a068ecb4a64bbc1a64c01d0575b23267 = $(`<div id="html_a068ecb4a64bbc1a64c01d0575b23267" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_c31a961a5c8b161b74f770bc1c2b99ef.setContent(html_a068ecb4a64bbc1a64c01d0575b23267);
+            
+        
+
+        marker_a2e242b98c847bb7391317acfb5ad32a.bindPopup(popup_c31a961a5c8b161b74f770bc1c2b99ef)
+        ;
+
+        
+    
+    
+                marker_a2e242b98c847bb7391317acfb5ad32a.setIcon(icon_ab06c0546ae9dfe2fb061e7d972c48f5);
+            
+    
+            var marker_03e197871f55bf6626c3845a3430c49c = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_ba252b4a7188a55849bf7d47e7c708a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ebb9e819511d8aacb1fe16234422817 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79bc293515c703431c1115a4904e8103 = $(`<div id="html_79bc293515c703431c1115a4904e8103" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_4ebb9e819511d8aacb1fe16234422817.setContent(html_79bc293515c703431c1115a4904e8103);
+            
+        
+
+        marker_03e197871f55bf6626c3845a3430c49c.bindPopup(popup_4ebb9e819511d8aacb1fe16234422817)
+        ;
+
+        
+    
+    
+                marker_03e197871f55bf6626c3845a3430c49c.setIcon(icon_ba252b4a7188a55849bf7d47e7c708a0);
+            
+    
+            var marker_0f6f7994c8407adc873cd41290b2f338 = L.marker(
+                [1.3, 103.8],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_3507a189ea16481a51df4f9843062f04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be87236605645a94c18c5c9018330f7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5eafe12f8267f39eabb558f7bfaa891 = $(`<div id="html_a5eafe12f8267f39eabb558f7bfaa891" style="width: 100.0%; height: 100.0%;">Sous-marin militaire hors zone</div>`)[0];
+                popup_be87236605645a94c18c5c9018330f7c.setContent(html_a5eafe12f8267f39eabb558f7bfaa891);
+            
+        
+
+        marker_0f6f7994c8407adc873cd41290b2f338.bindPopup(popup_be87236605645a94c18c5c9018330f7c)
+        ;
+
+        
+    
+    
+                marker_0f6f7994c8407adc873cd41290b2f338.setIcon(icon_3507a189ea16481a51df4f9843062f04);
+            
+    
+            var marker_81f8d6dd66b02d7766a9cb30fe729d84 = L.marker(
+                [1.3, 103.8],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_a6ec48cbc0a07d4a8b5f56ecce769df1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86ca67c6244f2f4014d6a5e8c1c5ebce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c6130c93f551e899d7eefb84ffaaaeb = $(`<div id="html_8c6130c93f551e899d7eefb84ffaaaeb" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_86ca67c6244f2f4014d6a5e8c1c5ebce.setContent(html_8c6130c93f551e899d7eefb84ffaaaeb);
+            
+        
+
+        marker_81f8d6dd66b02d7766a9cb30fe729d84.bindPopup(popup_86ca67c6244f2f4014d6a5e8c1c5ebce)
+        ;
+
+        
+    
+    
+                marker_81f8d6dd66b02d7766a9cb30fe729d84.setIcon(icon_a6ec48cbc0a07d4a8b5f56ecce769df1);
+            
+    
+            var marker_ef199b2af7604ccfe87dd94bec654c3d = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_65cfe38691ccc479b41b81aab4799957 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ccb30d9b4381746317136e7d4df096fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_357c58eac7f38b38bdef4f2fdad231c1 = $(`<div id="html_357c58eac7f38b38bdef4f2fdad231c1" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_ccb30d9b4381746317136e7d4df096fa.setContent(html_357c58eac7f38b38bdef4f2fdad231c1);
+            
+        
+
+        marker_ef199b2af7604ccfe87dd94bec654c3d.bindPopup(popup_ccb30d9b4381746317136e7d4df096fa)
+        ;
+
+        
+    
+    
+                marker_ef199b2af7604ccfe87dd94bec654c3d.setIcon(icon_65cfe38691ccc479b41b81aab4799957);
+            
+    
+            var marker_dba14c70f42afeed709a14ac9621b755 = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_971dc9ca8b5323383a0ba3ca71faa03b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16b04cf4999ec3c0ef7a9f180acaa896 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cb84a794c75d002448c2f9f202133ac = $(`<div id="html_0cb84a794c75d002448c2f9f202133ac" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_16b04cf4999ec3c0ef7a9f180acaa896.setContent(html_0cb84a794c75d002448c2f9f202133ac);
+            
+        
+
+        marker_dba14c70f42afeed709a14ac9621b755.bindPopup(popup_16b04cf4999ec3c0ef7a9f180acaa896)
+        ;
+
+        
+    
+    
+                marker_dba14c70f42afeed709a14ac9621b755.setIcon(icon_971dc9ca8b5323383a0ba3ca71faa03b);
+            
+    
+            var marker_7e4a813de20ec23112e89b7e4e278dd7 = L.marker(
+                [15.0, 110.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_8230548b43e3d605d85413bb59eb0d38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_752283bcfe4dc07ff57e806365307550 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7f7ba74067d53e7af464055953642c3 = $(`<div id="html_f7f7ba74067d53e7af464055953642c3" style="width: 100.0%; height: 100.0%;">Croiseur militaire hors zone</div>`)[0];
+                popup_752283bcfe4dc07ff57e806365307550.setContent(html_f7f7ba74067d53e7af464055953642c3);
+            
+        
+
+        marker_7e4a813de20ec23112e89b7e4e278dd7.bindPopup(popup_752283bcfe4dc07ff57e806365307550)
+        ;
+
+        
+    
+    
+                marker_7e4a813de20ec23112e89b7e4e278dd7.setIcon(icon_8230548b43e3d605d85413bb59eb0d38);
+            
+    
+            var marker_af0d4e2a84d6688159bb7fe4ad1496e3 = L.marker(
+                [26.0, 55.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_ab77499f2da2895a2fda5d27fb47e0fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e746cac27165254a5021f0967ea1886 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4df5f722be30f53bcc3d1bfd0cdc91c0 = $(`<div id="html_4df5f722be30f53bcc3d1bfd0cdc91c0" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_1e746cac27165254a5021f0967ea1886.setContent(html_4df5f722be30f53bcc3d1bfd0cdc91c0);
+            
+        
+
+        marker_af0d4e2a84d6688159bb7fe4ad1496e3.bindPopup(popup_1e746cac27165254a5021f0967ea1886)
+        ;
+
+        
+    
+    
+                marker_af0d4e2a84d6688159bb7fe4ad1496e3.setIcon(icon_ab77499f2da2895a2fda5d27fb47e0fb);
+            
+    
+            var marker_63d354a51816e8d3485fe94a159a4d13 = L.marker(
+                [26.0, 55.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_27f05a087e4281ec679cc90d0c5c8ab4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe750d75523853483d2b418663df4a3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2becc64f2748fe13878fbab92408b5d = $(`<div id="html_c2becc64f2748fe13878fbab92408b5d" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_fe750d75523853483d2b418663df4a3f.setContent(html_c2becc64f2748fe13878fbab92408b5d);
+            
+        
+
+        marker_63d354a51816e8d3485fe94a159a4d13.bindPopup(popup_fe750d75523853483d2b418663df4a3f)
+        ;
+
+        
+    
+    
+                marker_63d354a51816e8d3485fe94a159a4d13.setIcon(icon_27f05a087e4281ec679cc90d0c5c8ab4);
+            
+    
+            var marker_b745c978e9db8018bd01a5134ff4bbe0 = L.marker(
+                [26.0, 55.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_a4c7a3299f021f6a4b25cb7352995b03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c830cd0a6d655c3555ddebf3773c32d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09382c52f3eb8dddec164bdf8e9615b9 = $(`<div id="html_09382c52f3eb8dddec164bdf8e9615b9" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_7c830cd0a6d655c3555ddebf3773c32d.setContent(html_09382c52f3eb8dddec164bdf8e9615b9);
+            
+        
+
+        marker_b745c978e9db8018bd01a5134ff4bbe0.bindPopup(popup_7c830cd0a6d655c3555ddebf3773c32d)
+        ;
+
+        
+    
+    
+                marker_b745c978e9db8018bd01a5134ff4bbe0.setIcon(icon_a4c7a3299f021f6a4b25cb7352995b03);
+            
+    
+            var marker_5055111f4917b681745d95c6d4c2a642 = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_8b0c432beb2fb3a1acee2b21b1e61e37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_025848501949054cf91f05e4c73ce653 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b58c0c3e01553c541ee17c0a0c98fe5f = $(`<div id="html_b58c0c3e01553c541ee17c0a0c98fe5f" style="width: 100.0%; height: 100.0%;">Corvette militaire hors zone</div>`)[0];
+                popup_025848501949054cf91f05e4c73ce653.setContent(html_b58c0c3e01553c541ee17c0a0c98fe5f);
+            
+        
+
+        marker_5055111f4917b681745d95c6d4c2a642.bindPopup(popup_025848501949054cf91f05e4c73ce653)
+        ;
+
+        
+    
+    
+                marker_5055111f4917b681745d95c6d4c2a642.setIcon(icon_8b0c432beb2fb3a1acee2b21b1e61e37);
+            
+    
+            var marker_347d8422c2f5de116278f62f08a85c86 = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_6c923c40bc41b17c8a0299fb6ae724cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_870bae3c94d0370d4cc658e8ac41e6b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_152d4b600973fd358f7216fbbe2a04e9 = $(`<div id="html_152d4b600973fd358f7216fbbe2a04e9" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_870bae3c94d0370d4cc658e8ac41e6b0.setContent(html_152d4b600973fd358f7216fbbe2a04e9);
+            
+        
+
+        marker_347d8422c2f5de116278f62f08a85c86.bindPopup(popup_870bae3c94d0370d4cc658e8ac41e6b0)
+        ;
+
+        
+    
+    
+                marker_347d8422c2f5de116278f62f08a85c86.setIcon(icon_6c923c40bc41b17c8a0299fb6ae724cc);
+            
+    
+            var marker_b59401d0bb992d42a179bf6fb33bbbd1 = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_6a7d749ede7a77ee48b99183c42c78c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ca3163b0751e90064ba89c65a0f3d86 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eff0a22eaa0c9785f7c4e753f2bd40f2 = $(`<div id="html_eff0a22eaa0c9785f7c4e753f2bd40f2" style="width: 100.0%; height: 100.0%;">Sous-marin militaire hors zone</div>`)[0];
+                popup_7ca3163b0751e90064ba89c65a0f3d86.setContent(html_eff0a22eaa0c9785f7c4e753f2bd40f2);
+            
+        
+
+        marker_b59401d0bb992d42a179bf6fb33bbbd1.bindPopup(popup_7ca3163b0751e90064ba89c65a0f3d86)
+        ;
+
+        
+    
+    
+                marker_b59401d0bb992d42a179bf6fb33bbbd1.setIcon(icon_6a7d749ede7a77ee48b99183c42c78c8);
+            
+    
+            var marker_80c8fb737c76d12bdfcf4f40ad9be481 = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_d27be10f546ea2054f2a8efaa41a0b6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6d2ef15094cb3ac6198012c175ee572 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ea43c9f8e51c8fedd7b912c5b73e620 = $(`<div id="html_6ea43c9f8e51c8fedd7b912c5b73e620" style="width: 100.0%; height: 100.0%;">Porte-avions militaire hors zone</div>`)[0];
+                popup_c6d2ef15094cb3ac6198012c175ee572.setContent(html_6ea43c9f8e51c8fedd7b912c5b73e620);
+            
+        
+
+        marker_80c8fb737c76d12bdfcf4f40ad9be481.bindPopup(popup_c6d2ef15094cb3ac6198012c175ee572)
+        ;
+
+        
+    
+    
+                marker_80c8fb737c76d12bdfcf4f40ad9be481.setIcon(icon_d27be10f546ea2054f2a8efaa41a0b6b);
+            
+    
+            var marker_6728f987f0edb2774a397972ec9af34c = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_65fb42138a6c735fb15e8ac9d034d9ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73dd4c10bf6ae5c7a096afcd22249975 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c77e2aad993c52a621724930ee94c17a = $(`<div id="html_c77e2aad993c52a621724930ee94c17a" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_73dd4c10bf6ae5c7a096afcd22249975.setContent(html_c77e2aad993c52a621724930ee94c17a);
+            
+        
+
+        marker_6728f987f0edb2774a397972ec9af34c.bindPopup(popup_73dd4c10bf6ae5c7a096afcd22249975)
+        ;
+
+        
+    
+    
+                marker_6728f987f0edb2774a397972ec9af34c.setIcon(icon_65fb42138a6c735fb15e8ac9d034d9ee);
+            
+    
+            var marker_7fec33eb1d270db4865b8d7301642598 = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_f48aefb3eb0b36f203c73c0061b251a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_462798f82e8779758fe518a4a500592c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2bc15e90296452f7ca3462d3406e64f = $(`<div id="html_f2bc15e90296452f7ca3462d3406e64f" style="width: 100.0%; height: 100.0%;">Porte-avions militaire hors zone</div>`)[0];
+                popup_462798f82e8779758fe518a4a500592c.setContent(html_f2bc15e90296452f7ca3462d3406e64f);
+            
+        
+
+        marker_7fec33eb1d270db4865b8d7301642598.bindPopup(popup_462798f82e8779758fe518a4a500592c)
+        ;
+
+        
+    
+    
+                marker_7fec33eb1d270db4865b8d7301642598.setIcon(icon_f48aefb3eb0b36f203c73c0061b251a6);
+            
+    
+            var marker_b87508a0520a2102cd56d88be555465f = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_c9becde13db1733dcbdddbd8cc847ce7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9780e208d1edccd210025e8d9629db28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66994214423cac42b8f823afa1991dc8 = $(`<div id="html_66994214423cac42b8f823afa1991dc8" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_9780e208d1edccd210025e8d9629db28.setContent(html_66994214423cac42b8f823afa1991dc8);
+            
+        
+
+        marker_b87508a0520a2102cd56d88be555465f.bindPopup(popup_9780e208d1edccd210025e8d9629db28)
+        ;
+
+        
+    
+    
+                marker_b87508a0520a2102cd56d88be555465f.setIcon(icon_c9becde13db1733dcbdddbd8cc847ce7);
+            
+    
+            var marker_90ed1b79bfd5f4d77ab24b848d1a2cb4 = L.marker(
+                [51.9, 4.5],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_de3b51124752d109da2e1377591a1dad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ffac216d5f599d00cb0422a2028d811e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_994de3fb26f0977db4b3dae60825d1fb = $(`<div id="html_994de3fb26f0977db4b3dae60825d1fb" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_ffac216d5f599d00cb0422a2028d811e.setContent(html_994de3fb26f0977db4b3dae60825d1fb);
+            
+        
+
+        marker_90ed1b79bfd5f4d77ab24b848d1a2cb4.bindPopup(popup_ffac216d5f599d00cb0422a2028d811e)
+        ;
+
+        
+    
+    
+                marker_90ed1b79bfd5f4d77ab24b848d1a2cb4.setIcon(icon_de3b51124752d109da2e1377591a1dad);
+            
+    
+            var marker_46978d50bfa6b82dc24e1f9e0b61267c = L.marker(
+                [1.3, 103.8],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_9d0ed04b1630a0813b71daf763251130 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2bd3f04774cedff2f5d9f405f2feb77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1dcfcae8205caed9973aad48c9e20b27 = $(`<div id="html_1dcfcae8205caed9973aad48c9e20b27" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_c2bd3f04774cedff2f5d9f405f2feb77.setContent(html_1dcfcae8205caed9973aad48c9e20b27);
+            
+        
+
+        marker_46978d50bfa6b82dc24e1f9e0b61267c.bindPopup(popup_c2bd3f04774cedff2f5d9f405f2feb77)
+        ;
+
+        
+    
+    
+                marker_46978d50bfa6b82dc24e1f9e0b61267c.setIcon(icon_9d0ed04b1630a0813b71daf763251130);
+            
+    
+            var marker_3c0b799131113c3235a512edb96892cc = L.marker(
+                [51.9, 4.5],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_d2d6ad6eabbec47cfa56d56f1b3ae80a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9661883cae37cd985d9dc98468903ec2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_959bde23424d65e890801e6ede931001 = $(`<div id="html_959bde23424d65e890801e6ede931001" style="width: 100.0%; height: 100.0%;">Porte-avions militaire hors zone</div>`)[0];
+                popup_9661883cae37cd985d9dc98468903ec2.setContent(html_959bde23424d65e890801e6ede931001);
+            
+        
+
+        marker_3c0b799131113c3235a512edb96892cc.bindPopup(popup_9661883cae37cd985d9dc98468903ec2)
+        ;
+
+        
+    
+    
+                marker_3c0b799131113c3235a512edb96892cc.setIcon(icon_d2d6ad6eabbec47cfa56d56f1b3ae80a);
+            
+    
+            var marker_00202538caf09d068eca838d81344c29 = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_fd29794b44e81742bfb7819c29d8258d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_366b607b1b9773409b27fd20098a0433 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd32178bcc9cd06434a2effcaf2202ab = $(`<div id="html_bd32178bcc9cd06434a2effcaf2202ab" style="width: 100.0%; height: 100.0%;">Corvette militaire hors zone</div>`)[0];
+                popup_366b607b1b9773409b27fd20098a0433.setContent(html_bd32178bcc9cd06434a2effcaf2202ab);
+            
+        
+
+        marker_00202538caf09d068eca838d81344c29.bindPopup(popup_366b607b1b9773409b27fd20098a0433)
+        ;
+
+        
+    
+    
+                marker_00202538caf09d068eca838d81344c29.setIcon(icon_fd29794b44e81742bfb7819c29d8258d);
+            
+    
+            var marker_a668d86e51bbec8f018267d38daf79cc = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_08292295dcaf4f854a1aaf736ffca5c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdd6553634d129b4235965167f47fcc9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_091f45a832b6fad093e32c7390e8a5de = $(`<div id="html_091f45a832b6fad093e32c7390e8a5de" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_fdd6553634d129b4235965167f47fcc9.setContent(html_091f45a832b6fad093e32c7390e8a5de);
+            
+        
+
+        marker_a668d86e51bbec8f018267d38daf79cc.bindPopup(popup_fdd6553634d129b4235965167f47fcc9)
+        ;
+
+        
+    
+    
+                marker_a668d86e51bbec8f018267d38daf79cc.setIcon(icon_08292295dcaf4f854a1aaf736ffca5c9);
+            
+    
+            var marker_580fa67d70a6c69cc9247ffec6f05fa4 = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_374a0de0b965ec8bb9b9b4951226ec64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48590c5b9ec7cbd60308f2838f88572d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec0f567fff2d0a59edc1a264d5102e84 = $(`<div id="html_ec0f567fff2d0a59edc1a264d5102e84" style="width: 100.0%; height: 100.0%;">Croiseur militaire hors zone</div>`)[0];
+                popup_48590c5b9ec7cbd60308f2838f88572d.setContent(html_ec0f567fff2d0a59edc1a264d5102e84);
+            
+        
+
+        marker_580fa67d70a6c69cc9247ffec6f05fa4.bindPopup(popup_48590c5b9ec7cbd60308f2838f88572d)
+        ;
+
+        
+    
+    
+                marker_580fa67d70a6c69cc9247ffec6f05fa4.setIcon(icon_374a0de0b965ec8bb9b9b4951226ec64);
+            
+    
+            var marker_e9ab4f7b869337a31f84dd917c9640ad = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_60b6fa6926e67a3398aac1647233c0cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79c7c607758cbaa3027c353d63946982 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06e8d08704c9f0262803fed00a33c21f = $(`<div id="html_06e8d08704c9f0262803fed00a33c21f" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_79c7c607758cbaa3027c353d63946982.setContent(html_06e8d08704c9f0262803fed00a33c21f);
+            
+        
+
+        marker_e9ab4f7b869337a31f84dd917c9640ad.bindPopup(popup_79c7c607758cbaa3027c353d63946982)
+        ;
+
+        
+    
+    
+                marker_e9ab4f7b869337a31f84dd917c9640ad.setIcon(icon_60b6fa6926e67a3398aac1647233c0cd);
+            
+    
+            var marker_58661b7a5c10fe829f3ad582b1ef3de2 = L.marker(
+                [51.9, 4.5],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_8a23090d751862ea4a2a4a5b2da007dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2084d2ba41a0547c3836a64da61fb91e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbfee4bad7f62401d40df690aaebdbb1 = $(`<div id="html_dbfee4bad7f62401d40df690aaebdbb1" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_2084d2ba41a0547c3836a64da61fb91e.setContent(html_dbfee4bad7f62401d40df690aaebdbb1);
+            
+        
+
+        marker_58661b7a5c10fe829f3ad582b1ef3de2.bindPopup(popup_2084d2ba41a0547c3836a64da61fb91e)
+        ;
+
+        
+    
+    
+                marker_58661b7a5c10fe829f3ad582b1ef3de2.setIcon(icon_8a23090d751862ea4a2a4a5b2da007dd);
+            
+    
+            var marker_b2d02df1b7740506946797a222a4f068 = L.marker(
+                [36.6, -6.4],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_29a296642a9c48d60e5b75882e76ade6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04f4d81837e171c5b25a25ea4af935ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ee10fa8bdfaf463e7ffaf0aedce0849 = $(`<div id="html_0ee10fa8bdfaf463e7ffaf0aedce0849" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_04f4d81837e171c5b25a25ea4af935ee.setContent(html_0ee10fa8bdfaf463e7ffaf0aedce0849);
+            
+        
+
+        marker_b2d02df1b7740506946797a222a4f068.bindPopup(popup_04f4d81837e171c5b25a25ea4af935ee)
+        ;
+
+        
+    
+    
+                marker_b2d02df1b7740506946797a222a4f068.setIcon(icon_29a296642a9c48d60e5b75882e76ade6);
+            
+    
+            var marker_3cc01efcc747c8c07226a09fa5effa2b = L.marker(
+                [15.0, 110.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_188b8d4b06c3f8599ae97c81d73ddbf0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_827c615bb25921e0593cb03cead09089 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a450fdde8cddca4e5a15175ac41e880 = $(`<div id="html_4a450fdde8cddca4e5a15175ac41e880" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_827c615bb25921e0593cb03cead09089.setContent(html_4a450fdde8cddca4e5a15175ac41e880);
+            
+        
+
+        marker_3cc01efcc747c8c07226a09fa5effa2b.bindPopup(popup_827c615bb25921e0593cb03cead09089)
+        ;
+
+        
+    
+    
+                marker_3cc01efcc747c8c07226a09fa5effa2b.setIcon(icon_188b8d4b06c3f8599ae97c81d73ddbf0);
+            
+    
+            var marker_e59b7e64188bac981107e03ed104f45d = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_205564562ca2bb992bcc5bd6d7647968 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a193440954390322e91ea3628ffb1bb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5c3d527b234078d7e28d2ba4f5267c7 = $(`<div id="html_d5c3d527b234078d7e28d2ba4f5267c7" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_a193440954390322e91ea3628ffb1bb4.setContent(html_d5c3d527b234078d7e28d2ba4f5267c7);
+            
+        
+
+        marker_e59b7e64188bac981107e03ed104f45d.bindPopup(popup_a193440954390322e91ea3628ffb1bb4)
+        ;
+
+        
+    
+    
+                marker_e59b7e64188bac981107e03ed104f45d.setIcon(icon_205564562ca2bb992bcc5bd6d7647968);
+            
+    
+            var marker_5234628581cc3592dbf1311cea526ef4 = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_8a2d4aa2f647c6b773e066b33651a957 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44b1075ae8566098f9065d22d9dd8f5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65db05f57b79854c1f6f448b99bd1f8e = $(`<div id="html_65db05f57b79854c1f6f448b99bd1f8e" style="width: 100.0%; height: 100.0%;">Corvette militaire hors zone</div>`)[0];
+                popup_44b1075ae8566098f9065d22d9dd8f5c.setContent(html_65db05f57b79854c1f6f448b99bd1f8e);
+            
+        
+
+        marker_5234628581cc3592dbf1311cea526ef4.bindPopup(popup_44b1075ae8566098f9065d22d9dd8f5c)
+        ;
+
+        
+    
+    
+                marker_5234628581cc3592dbf1311cea526ef4.setIcon(icon_8a2d4aa2f647c6b773e066b33651a957);
+            
+    
+            var marker_4fa1f5a936b06e78626c309d462f3e0b = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_70b4f7e19affced5dcb27833d6b92351 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2557c434d9f750fed3c87df05e69db74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de8272c2c75fac3fa04e403eeefd8291 = $(`<div id="html_de8272c2c75fac3fa04e403eeefd8291" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_2557c434d9f750fed3c87df05e69db74.setContent(html_de8272c2c75fac3fa04e403eeefd8291);
+            
+        
+
+        marker_4fa1f5a936b06e78626c309d462f3e0b.bindPopup(popup_2557c434d9f750fed3c87df05e69db74)
+        ;
+
+        
+    
+    
+                marker_4fa1f5a936b06e78626c309d462f3e0b.setIcon(icon_70b4f7e19affced5dcb27833d6b92351);
+            
+    
+            var marker_c31309b25fd2ffe6e6a4d87759a1e137 = L.marker(
+                [35.4, 139.7],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_fa1b1a04c8b6336b473d3a6c83e5963b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8498affd7d756b801bb794275a4706e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf13d4bd489f8ea0d1d1fecd34622a99 = $(`<div id="html_bf13d4bd489f8ea0d1d1fecd34622a99" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_8498affd7d756b801bb794275a4706e6.setContent(html_bf13d4bd489f8ea0d1d1fecd34622a99);
+            
+        
+
+        marker_c31309b25fd2ffe6e6a4d87759a1e137.bindPopup(popup_8498affd7d756b801bb794275a4706e6)
+        ;
+
+        
+    
+    
+                marker_c31309b25fd2ffe6e6a4d87759a1e137.setIcon(icon_fa1b1a04c8b6336b473d3a6c83e5963b);
+            
+    
+            var marker_e0e12fb35783ae5a626306fcf5beeb6e = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_ac939ffea855c5e51254e440466fe619 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45c47fe6526f6eb5e17c376b66f3d82a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_527453d9feb2d0144ccc4012c7d0510c = $(`<div id="html_527453d9feb2d0144ccc4012c7d0510c" style="width: 100.0%; height: 100.0%;">Corvette militaire hors zone</div>`)[0];
+                popup_45c47fe6526f6eb5e17c376b66f3d82a.setContent(html_527453d9feb2d0144ccc4012c7d0510c);
+            
+        
+
+        marker_e0e12fb35783ae5a626306fcf5beeb6e.bindPopup(popup_45c47fe6526f6eb5e17c376b66f3d82a)
+        ;
+
+        
+    
+    
+                marker_e0e12fb35783ae5a626306fcf5beeb6e.setIcon(icon_ac939ffea855c5e51254e440466fe619);
+            
+    
+            var marker_64a248cc7ccd4df9b05aa5fe60924d26 = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_865a02d17b8c2a5c06228760521ae4fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b878adf08867501b5a1086452ead023e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db6b28743939bc3142ce7b0949d2c065 = $(`<div id="html_db6b28743939bc3142ce7b0949d2c065" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_b878adf08867501b5a1086452ead023e.setContent(html_db6b28743939bc3142ce7b0949d2c065);
+            
+        
+
+        marker_64a248cc7ccd4df9b05aa5fe60924d26.bindPopup(popup_b878adf08867501b5a1086452ead023e)
+        ;
+
+        
+    
+    
+                marker_64a248cc7ccd4df9b05aa5fe60924d26.setIcon(icon_865a02d17b8c2a5c06228760521ae4fd);
+            
+    
+            var marker_863dc9cd7a820c060b422722ca9d2318 = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_244c09bdb4cf0488669fff4261e4f06d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_760c4e661ce9033c8fd752020f5554da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62ac6d88d394249230f98cab713baa67 = $(`<div id="html_62ac6d88d394249230f98cab713baa67" style="width: 100.0%; height: 100.0%;">Sous-marin militaire hors zone</div>`)[0];
+                popup_760c4e661ce9033c8fd752020f5554da.setContent(html_62ac6d88d394249230f98cab713baa67);
+            
+        
+
+        marker_863dc9cd7a820c060b422722ca9d2318.bindPopup(popup_760c4e661ce9033c8fd752020f5554da)
+        ;
+
+        
+    
+    
+                marker_863dc9cd7a820c060b422722ca9d2318.setIcon(icon_244c09bdb4cf0488669fff4261e4f06d);
+            
+    
+            var marker_af17e765ca666aa638bf4bd72853e9b8 = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_faffebaff866a9bc2dab41c32416ca44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_58e87d83594438c3c633fbbf309fefcf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6288650709709dd23c6b2fba5f2d2950 = $(`<div id="html_6288650709709dd23c6b2fba5f2d2950" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_58e87d83594438c3c633fbbf309fefcf.setContent(html_6288650709709dd23c6b2fba5f2d2950);
+            
+        
+
+        marker_af17e765ca666aa638bf4bd72853e9b8.bindPopup(popup_58e87d83594438c3c633fbbf309fefcf)
+        ;
+
+        
+    
+    
+                marker_af17e765ca666aa638bf4bd72853e9b8.setIcon(icon_faffebaff866a9bc2dab41c32416ca44);
+            
+    
+            var marker_b14c285877742ac0ad91dc689e75803c = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_db1c2443a2fb1480043828ff870292dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dceb175d568ad66a246114a5e072ffdb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccede8cdb3334c18ee26edc11afc4f0c = $(`<div id="html_ccede8cdb3334c18ee26edc11afc4f0c" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_dceb175d568ad66a246114a5e072ffdb.setContent(html_ccede8cdb3334c18ee26edc11afc4f0c);
+            
+        
+
+        marker_b14c285877742ac0ad91dc689e75803c.bindPopup(popup_dceb175d568ad66a246114a5e072ffdb)
+        ;
+
+        
+    
+    
+                marker_b14c285877742ac0ad91dc689e75803c.setIcon(icon_db1c2443a2fb1480043828ff870292dd);
+            
+    
+            var marker_090ff2ffabd1a925189ee9f3f1b86ab9 = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_839cb3bfaceda8828eaa56f4902e90a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a50fb2af6c7e1dd3811949034f8d0a77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87f82ae8d93ae4ca1784dfa7973947b7 = $(`<div id="html_87f82ae8d93ae4ca1784dfa7973947b7" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_a50fb2af6c7e1dd3811949034f8d0a77.setContent(html_87f82ae8d93ae4ca1784dfa7973947b7);
+            
+        
+
+        marker_090ff2ffabd1a925189ee9f3f1b86ab9.bindPopup(popup_a50fb2af6c7e1dd3811949034f8d0a77)
+        ;
+
+        
+    
+    
+                marker_090ff2ffabd1a925189ee9f3f1b86ab9.setIcon(icon_839cb3bfaceda8828eaa56f4902e90a8);
+            
+    
+            var marker_f8e919e4f135b39d58406583e367643a = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_806239ddb5866c72e091530f38a3f65b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5188303266507a6067998299800dea83 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4b993a24e94ce68aa10501287765b62 = $(`<div id="html_e4b993a24e94ce68aa10501287765b62" style="width: 100.0%; height: 100.0%;">Corvette militaire hors zone</div>`)[0];
+                popup_5188303266507a6067998299800dea83.setContent(html_e4b993a24e94ce68aa10501287765b62);
+            
+        
+
+        marker_f8e919e4f135b39d58406583e367643a.bindPopup(popup_5188303266507a6067998299800dea83)
+        ;
+
+        
+    
+    
+                marker_f8e919e4f135b39d58406583e367643a.setIcon(icon_806239ddb5866c72e091530f38a3f65b);
+            
+    
+            var marker_f6174766c9c88651cc0e82b06317aebe = L.marker(
+                [15.0, 110.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_4fa5ccf8ab0db9a174be0e709dc71b14 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7bb1966abb5283da65c0aec57e29aa9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de330c518720bd95a069ca4bd46ee873 = $(`<div id="html_de330c518720bd95a069ca4bd46ee873" style="width: 100.0%; height: 100.0%;">Sous-marin militaire hors zone</div>`)[0];
+                popup_7bb1966abb5283da65c0aec57e29aa9d.setContent(html_de330c518720bd95a069ca4bd46ee873);
+            
+        
+
+        marker_f6174766c9c88651cc0e82b06317aebe.bindPopup(popup_7bb1966abb5283da65c0aec57e29aa9d)
+        ;
+
+        
+    
+    
+                marker_f6174766c9c88651cc0e82b06317aebe.setIcon(icon_4fa5ccf8ab0db9a174be0e709dc71b14);
+            
+    
+            var marker_b94f9b278bb4d1d49c14fc396aefd7a0 = L.marker(
+                [15.0, 110.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_f06b44b3335db890be2532ebb72b9496 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b0e761148903a821ee76d049e43c12a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe4c15e9d6ac3291d72c052a52b3becb = $(`<div id="html_fe4c15e9d6ac3291d72c052a52b3becb" style="width: 100.0%; height: 100.0%;">Porte-avions militaire hors zone</div>`)[0];
+                popup_5b0e761148903a821ee76d049e43c12a.setContent(html_fe4c15e9d6ac3291d72c052a52b3becb);
+            
+        
+
+        marker_b94f9b278bb4d1d49c14fc396aefd7a0.bindPopup(popup_5b0e761148903a821ee76d049e43c12a)
+        ;
+
+        
+    
+    
+                marker_b94f9b278bb4d1d49c14fc396aefd7a0.setIcon(icon_f06b44b3335db890be2532ebb72b9496);
+            
+    
+            var marker_0ed7492418ce2b534f5e5116c6f27643 = L.marker(
+                [35.1, 129.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_986412023a784bf2df6947cfdd402491 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb52918710fb26a733c8855274c21d52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3454b7e3e1d6c37572c6079d57a74e7 = $(`<div id="html_e3454b7e3e1d6c37572c6079d57a74e7" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_cb52918710fb26a733c8855274c21d52.setContent(html_e3454b7e3e1d6c37572c6079d57a74e7);
+            
+        
+
+        marker_0ed7492418ce2b534f5e5116c6f27643.bindPopup(popup_cb52918710fb26a733c8855274c21d52)
+        ;
+
+        
+    
+    
+                marker_0ed7492418ce2b534f5e5116c6f27643.setIcon(icon_986412023a784bf2df6947cfdd402491);
+            
+    
+            var marker_e6d09a5cf16e93fd587aaed957f2e7ee = L.marker(
+                [35.1, 129.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_15e0a204a82cbdeb149a3b35a7aa92db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e60cb1a06ceadd7e38ce24fa477e33d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f26f55d8aaeb734635642f50e944852b = $(`<div id="html_f26f55d8aaeb734635642f50e944852b" style="width: 100.0%; height: 100.0%;">Croiseur militaire hors zone</div>`)[0];
+                popup_2e60cb1a06ceadd7e38ce24fa477e33d.setContent(html_f26f55d8aaeb734635642f50e944852b);
+            
+        
+
+        marker_e6d09a5cf16e93fd587aaed957f2e7ee.bindPopup(popup_2e60cb1a06ceadd7e38ce24fa477e33d)
+        ;
+
+        
+    
+    
+                marker_e6d09a5cf16e93fd587aaed957f2e7ee.setIcon(icon_15e0a204a82cbdeb149a3b35a7aa92db);
+            
+    
+            var marker_4cde69a6ce7ddc362ef06c56365ed8a6 = L.marker(
+                [36.6, -6.4],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_83507cf386d02d275cf59e6f8e2f7409 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f1bc4074f768c1715af9d64f3515ada = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccdcfe9b6cdd1492e32ed53526269235 = $(`<div id="html_ccdcfe9b6cdd1492e32ed53526269235" style="width: 100.0%; height: 100.0%;">Porte-avions militaire hors zone</div>`)[0];
+                popup_5f1bc4074f768c1715af9d64f3515ada.setContent(html_ccdcfe9b6cdd1492e32ed53526269235);
+            
+        
+
+        marker_4cde69a6ce7ddc362ef06c56365ed8a6.bindPopup(popup_5f1bc4074f768c1715af9d64f3515ada)
+        ;
+
+        
+    
+    
+                marker_4cde69a6ce7ddc362ef06c56365ed8a6.setIcon(icon_83507cf386d02d275cf59e6f8e2f7409);
+            
+    
+            var marker_b92e5b81ba03141d8eae59ede87cf8ba = L.marker(
+                [36.6, -6.4],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_ade948dec0edd29987ebdf0a65bdbd66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1c60abd758d79d9aa4beb50b3cfbbf0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d85ba7b6d384245dc9a838ac659d445 = $(`<div id="html_1d85ba7b6d384245dc9a838ac659d445" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_c1c60abd758d79d9aa4beb50b3cfbbf0.setContent(html_1d85ba7b6d384245dc9a838ac659d445);
+            
+        
+
+        marker_b92e5b81ba03141d8eae59ede87cf8ba.bindPopup(popup_c1c60abd758d79d9aa4beb50b3cfbbf0)
+        ;
+
+        
+    
+    
+                marker_b92e5b81ba03141d8eae59ede87cf8ba.setIcon(icon_ade948dec0edd29987ebdf0a65bdbd66);
+            
+    
+            var marker_70da23f8e25a07ecb1a141ed78b5f9c4 = L.marker(
+                [51.9, 4.5],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_fe2b6e8b5465651d6c67bfb93b303b3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c001614bb50cc2bc5078406de5f9e61a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6327cc3db0fdb6b7176371879d498a93 = $(`<div id="html_6327cc3db0fdb6b7176371879d498a93" style="width: 100.0%; height: 100.0%;">Croiseur militaire hors zone</div>`)[0];
+                popup_c001614bb50cc2bc5078406de5f9e61a.setContent(html_6327cc3db0fdb6b7176371879d498a93);
+            
+        
+
+        marker_70da23f8e25a07ecb1a141ed78b5f9c4.bindPopup(popup_c001614bb50cc2bc5078406de5f9e61a)
+        ;
+
+        
+    
+    
+                marker_70da23f8e25a07ecb1a141ed78b5f9c4.setIcon(icon_fe2b6e8b5465651d6c67bfb93b303b3b);
+            
+    
+            var marker_1b11bcf99c8ea3728e0b54419ad3166b = L.marker(
+                [51.9, 4.5],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_0c0322298f5e0a38676b58445335791a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50232376671a98f7aafb5879b4abb998 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9950c68a30b627e7dbce4c35a05e01f = $(`<div id="html_c9950c68a30b627e7dbce4c35a05e01f" style="width: 100.0%; height: 100.0%;">Porte-avions militaire hors zone</div>`)[0];
+                popup_50232376671a98f7aafb5879b4abb998.setContent(html_c9950c68a30b627e7dbce4c35a05e01f);
+            
+        
+
+        marker_1b11bcf99c8ea3728e0b54419ad3166b.bindPopup(popup_50232376671a98f7aafb5879b4abb998)
+        ;
+
+        
+    
+    
+                marker_1b11bcf99c8ea3728e0b54419ad3166b.setIcon(icon_0c0322298f5e0a38676b58445335791a);
+            
+    
+            var marker_02c94c236b7e6c26d329b120d57b789d = L.marker(
+                [51.9, 4.5],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_c9a1cb181181ff718491272b2dc108fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d522a69cc563549704ccb308e5281689 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_158e4be7a8f87b436aedc07ecd23c6f1 = $(`<div id="html_158e4be7a8f87b436aedc07ecd23c6f1" style="width: 100.0%; height: 100.0%;">Corvette militaire hors zone</div>`)[0];
+                popup_d522a69cc563549704ccb308e5281689.setContent(html_158e4be7a8f87b436aedc07ecd23c6f1);
+            
+        
+
+        marker_02c94c236b7e6c26d329b120d57b789d.bindPopup(popup_d522a69cc563549704ccb308e5281689)
+        ;
+
+        
+    
+    
+                marker_02c94c236b7e6c26d329b120d57b789d.setIcon(icon_c9a1cb181181ff718491272b2dc108fe);
+            
+    
+            var marker_f20bb0b8076afdf7cf34512d01bb7c45 = L.marker(
+                [1.3, 103.8],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_b923abbb100ac345b7cb024c6597b920 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4bc0be238250f1a075cd81e2b4ab3576 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48e9e54e480602b289ee26c5d8302a88 = $(`<div id="html_48e9e54e480602b289ee26c5d8302a88" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_4bc0be238250f1a075cd81e2b4ab3576.setContent(html_48e9e54e480602b289ee26c5d8302a88);
+            
+        
+
+        marker_f20bb0b8076afdf7cf34512d01bb7c45.bindPopup(popup_4bc0be238250f1a075cd81e2b4ab3576)
+        ;
+
+        
+    
+    
+                marker_f20bb0b8076afdf7cf34512d01bb7c45.setIcon(icon_b923abbb100ac345b7cb024c6597b920);
+            
+    
+            var marker_06eda5f67a2d1c484a6c1146ad4f88f6 = L.marker(
+                [1.3, 103.8],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_9ff768a5c69a769a4c8449db31f3ced0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69356c47ede075696b16fd0aaaf77175 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3eb7130f0a5d06909044c380d2241fc5 = $(`<div id="html_3eb7130f0a5d06909044c380d2241fc5" style="width: 100.0%; height: 100.0%;">Croiseur militaire hors zone</div>`)[0];
+                popup_69356c47ede075696b16fd0aaaf77175.setContent(html_3eb7130f0a5d06909044c380d2241fc5);
+            
+        
+
+        marker_06eda5f67a2d1c484a6c1146ad4f88f6.bindPopup(popup_69356c47ede075696b16fd0aaaf77175)
+        ;
+
+        
+    
+    
+                marker_06eda5f67a2d1c484a6c1146ad4f88f6.setIcon(icon_9ff768a5c69a769a4c8449db31f3ced0);
+            
+    
+            var marker_d3c0a862ad24138ca1b30546c283e938 = L.marker(
+                [1.3, 103.8],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_93f02d3cef2ca1abfef77cc5468a4419 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5087aa78b15215ddc9d6aaf1ba9ead51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e68178968af79bcc09fa389f79b290b = $(`<div id="html_6e68178968af79bcc09fa389f79b290b" style="width: 100.0%; height: 100.0%;">Sous-marin militaire hors zone</div>`)[0];
+                popup_5087aa78b15215ddc9d6aaf1ba9ead51.setContent(html_6e68178968af79bcc09fa389f79b290b);
+            
+        
+
+        marker_d3c0a862ad24138ca1b30546c283e938.bindPopup(popup_5087aa78b15215ddc9d6aaf1ba9ead51)
+        ;
+
+        
+    
+    
+                marker_d3c0a862ad24138ca1b30546c283e938.setIcon(icon_93f02d3cef2ca1abfef77cc5468a4419);
+            
+    
+            var marker_06764ed827fbaf7c6b7fe47acf6d7a2a = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_650dd6da85c93de2797199044c78aa9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_982289c424eadc65fd1ad688f6db25ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50c657ba6b623e9a1f923b2e56160830 = $(`<div id="html_50c657ba6b623e9a1f923b2e56160830" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_982289c424eadc65fd1ad688f6db25ca.setContent(html_50c657ba6b623e9a1f923b2e56160830);
+            
+        
+
+        marker_06764ed827fbaf7c6b7fe47acf6d7a2a.bindPopup(popup_982289c424eadc65fd1ad688f6db25ca)
+        ;
+
+        
+    
+    
+                marker_06764ed827fbaf7c6b7fe47acf6d7a2a.setIcon(icon_650dd6da85c93de2797199044c78aa9f);
+            
+    
+            var marker_f9cfbe2be1aa2b96220d0f8c0b1bafed = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_2ebc6301aa6e1bfe77fd7f82b8121a61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5dd5cdf7808623a4e2de2971421b311 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d1a687d855c1423b652146474cf443b = $(`<div id="html_6d1a687d855c1423b652146474cf443b" style="width: 100.0%; height: 100.0%;">Porte-avions militaire hors zone</div>`)[0];
+                popup_f5dd5cdf7808623a4e2de2971421b311.setContent(html_6d1a687d855c1423b652146474cf443b);
+            
+        
+
+        marker_f9cfbe2be1aa2b96220d0f8c0b1bafed.bindPopup(popup_f5dd5cdf7808623a4e2de2971421b311)
+        ;
+
+        
+    
+    
+                marker_f9cfbe2be1aa2b96220d0f8c0b1bafed.setIcon(icon_2ebc6301aa6e1bfe77fd7f82b8121a61);
+            
+    
+            var marker_be6765470b43be54c615dc48c7d8def7 = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_8a0bf600b5f71e7d9305a90770e268cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c05262e1602d96064cf4016b71a0eea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5abfc9c47be1f93df710d87c3448c8b = $(`<div id="html_b5abfc9c47be1f93df710d87c3448c8b" style="width: 100.0%; height: 100.0%;">Corvette militaire hors zone</div>`)[0];
+                popup_8c05262e1602d96064cf4016b71a0eea.setContent(html_b5abfc9c47be1f93df710d87c3448c8b);
+            
+        
+
+        marker_be6765470b43be54c615dc48c7d8def7.bindPopup(popup_8c05262e1602d96064cf4016b71a0eea)
+        ;
+
+        
+    
+    
+                marker_be6765470b43be54c615dc48c7d8def7.setIcon(icon_8a0bf600b5f71e7d9305a90770e268cc);
+            
+    
+            var marker_a434e04739f0261b642b88a73479f4ac = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_22136da5c006fcb09db74c9a599a5e4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9cd3ca1640bda6601f1e6672401ea5cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6bf0f18318238b193bf80534af9a7b8 = $(`<div id="html_e6bf0f18318238b193bf80534af9a7b8" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_9cd3ca1640bda6601f1e6672401ea5cb.setContent(html_e6bf0f18318238b193bf80534af9a7b8);
+            
+        
+
+        marker_a434e04739f0261b642b88a73479f4ac.bindPopup(popup_9cd3ca1640bda6601f1e6672401ea5cb)
+        ;
+
+        
+    
+    
+                marker_a434e04739f0261b642b88a73479f4ac.setIcon(icon_22136da5c006fcb09db74c9a599a5e4f);
+            
+    
+            var marker_e1f9f1d797f2d6e58294e0046e40e81f = L.marker(
+                [30.0, 32.5],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_bd3dd9e5c69287e76b2c4fb6e34237ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7b82584fc4eff742117322094c4f1df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b6453ee6f8b147f8bd45d2167a3a1d7 = $(`<div id="html_0b6453ee6f8b147f8bd45d2167a3a1d7" style="width: 100.0%; height: 100.0%;">Sous-marin militaire hors zone</div>`)[0];
+                popup_b7b82584fc4eff742117322094c4f1df.setContent(html_0b6453ee6f8b147f8bd45d2167a3a1d7);
+            
+        
+
+        marker_e1f9f1d797f2d6e58294e0046e40e81f.bindPopup(popup_b7b82584fc4eff742117322094c4f1df)
+        ;
+
+        
+    
+    
+                marker_e1f9f1d797f2d6e58294e0046e40e81f.setIcon(icon_bd3dd9e5c69287e76b2c4fb6e34237ee);
+            
+    
+            var marker_127b744c9170cd2f6eccf4366957be6e = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_e66df293cb196a8948636ed6ca704b64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de650ad8e23a3b1750578ed77917c853 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5945c5f7337dc333e1cf6d10704ff2dc = $(`<div id="html_5945c5f7337dc333e1cf6d10704ff2dc" style="width: 100.0%; height: 100.0%;">Sous-marin militaire hors zone</div>`)[0];
+                popup_de650ad8e23a3b1750578ed77917c853.setContent(html_5945c5f7337dc333e1cf6d10704ff2dc);
+            
+        
+
+        marker_127b744c9170cd2f6eccf4366957be6e.bindPopup(popup_de650ad8e23a3b1750578ed77917c853)
+        ;
+
+        
+    
+    
+                marker_127b744c9170cd2f6eccf4366957be6e.setIcon(icon_e66df293cb196a8948636ed6ca704b64);
+            
+    
+            var marker_48b65b86616c293e71084ed26440c079 = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_60eb10042eca3fc67d5c8d1b5dc54b6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b10391d649a3f87535a7014e80435f2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67bdaf2334cc20ff98c6a2ee3f295e9a = $(`<div id="html_67bdaf2334cc20ff98c6a2ee3f295e9a" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_b10391d649a3f87535a7014e80435f2d.setContent(html_67bdaf2334cc20ff98c6a2ee3f295e9a);
+            
+        
+
+        marker_48b65b86616c293e71084ed26440c079.bindPopup(popup_b10391d649a3f87535a7014e80435f2d)
+        ;
+
+        
+    
+    
+                marker_48b65b86616c293e71084ed26440c079.setIcon(icon_60eb10042eca3fc67d5c8d1b5dc54b6b);
+            
+    
+            var marker_00bb25cb9cdbda69812be89f71978b11 = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_b21c38dce5ede45bbf647acf9003cfc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_207a606fb6eb29b7bf8f037a2ce15615 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_252732b3621679e47882075d8de0c9c0 = $(`<div id="html_252732b3621679e47882075d8de0c9c0" style="width: 100.0%; height: 100.0%;">Porte-avions militaire hors zone</div>`)[0];
+                popup_207a606fb6eb29b7bf8f037a2ce15615.setContent(html_252732b3621679e47882075d8de0c9c0);
+            
+        
+
+        marker_00bb25cb9cdbda69812be89f71978b11.bindPopup(popup_207a606fb6eb29b7bf8f037a2ce15615)
+        ;
+
+        
+    
+    
+                marker_00bb25cb9cdbda69812be89f71978b11.setIcon(icon_b21c38dce5ede45bbf647acf9003cfc0);
+            
+    
+            var marker_a7926d797d316c6c2e6a736433fe29cb = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_86491010d7401284f88b27a98ce056d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3f5809285da86347c1fd331b0b9ce26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b32732d5c100271840f49c46e51032b = $(`<div id="html_4b32732d5c100271840f49c46e51032b" style="width: 100.0%; height: 100.0%;">Sous-marin militaire hors zone</div>`)[0];
+                popup_c3f5809285da86347c1fd331b0b9ce26.setContent(html_4b32732d5c100271840f49c46e51032b);
+            
+        
+
+        marker_a7926d797d316c6c2e6a736433fe29cb.bindPopup(popup_c3f5809285da86347c1fd331b0b9ce26)
+        ;
+
+        
+    
+    
+                marker_a7926d797d316c6c2e6a736433fe29cb.setIcon(icon_86491010d7401284f88b27a98ce056d1);
+            
+    
+            var marker_ea3732c194c1d563f04692ad8bb95dda = L.marker(
+                [35.1, 129.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_b63f8820a046f8422b59ea827f9b54f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91ee88e71a27886595802c2e0eb8d627 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f68afb926a4365b3540978ec15cadfff = $(`<div id="html_f68afb926a4365b3540978ec15cadfff" style="width: 100.0%; height: 100.0%;">Croiseur militaire hors zone</div>`)[0];
+                popup_91ee88e71a27886595802c2e0eb8d627.setContent(html_f68afb926a4365b3540978ec15cadfff);
+            
+        
+
+        marker_ea3732c194c1d563f04692ad8bb95dda.bindPopup(popup_91ee88e71a27886595802c2e0eb8d627)
+        ;
+
+        
+    
+    
+                marker_ea3732c194c1d563f04692ad8bb95dda.setIcon(icon_b63f8820a046f8422b59ea827f9b54f8);
+            
+    
+            var marker_87e4f44e0036a0d379218f2251dbd7f6 = L.marker(
+                [15.0, 110.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_ccadd8a5cd460574cb0d1809c4aafaca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e005fedba4ea20f9dcd834c0a3f7209 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_835689bae36453bbb1961c97220bd074 = $(`<div id="html_835689bae36453bbb1961c97220bd074" style="width: 100.0%; height: 100.0%;">Sous-marin militaire hors zone</div>`)[0];
+                popup_5e005fedba4ea20f9dcd834c0a3f7209.setContent(html_835689bae36453bbb1961c97220bd074);
+            
+        
+
+        marker_87e4f44e0036a0d379218f2251dbd7f6.bindPopup(popup_5e005fedba4ea20f9dcd834c0a3f7209)
+        ;
+
+        
+    
+    
+                marker_87e4f44e0036a0d379218f2251dbd7f6.setIcon(icon_ccadd8a5cd460574cb0d1809c4aafaca);
+            
+    
+            var marker_8286934d9dc13c31a46c722592cd1102 = L.marker(
+                [15.0, 110.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_779d73d3e3c915855f0784eca945758c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be79b590e02721ec19374b4088e90887 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74d78db737222b04fa9793791292f0e1 = $(`<div id="html_74d78db737222b04fa9793791292f0e1" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_be79b590e02721ec19374b4088e90887.setContent(html_74d78db737222b04fa9793791292f0e1);
+            
+        
+
+        marker_8286934d9dc13c31a46c722592cd1102.bindPopup(popup_be79b590e02721ec19374b4088e90887)
+        ;
+
+        
+    
+    
+                marker_8286934d9dc13c31a46c722592cd1102.setIcon(icon_779d73d3e3c915855f0784eca945758c);
+            
+    
+            var marker_ec301b0942ed84068cb3d00fc74a65d5 = L.marker(
+                [15.0, 110.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_1402927dbbd242d7f4debe7a15416c2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cbdf401b374c19b63783aebe58f96d5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_183bff3b33a952c6da5ca1310a2d95d8 = $(`<div id="html_183bff3b33a952c6da5ca1310a2d95d8" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_cbdf401b374c19b63783aebe58f96d5e.setContent(html_183bff3b33a952c6da5ca1310a2d95d8);
+            
+        
+
+        marker_ec301b0942ed84068cb3d00fc74a65d5.bindPopup(popup_cbdf401b374c19b63783aebe58f96d5e)
+        ;
+
+        
+    
+    
+                marker_ec301b0942ed84068cb3d00fc74a65d5.setIcon(icon_1402927dbbd242d7f4debe7a15416c2d);
+            
+    
+            var marker_fca1d15b13ff663329ea564957be6f80 = L.marker(
+                [15.0, 110.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_431d4049205d34b3724fa3f9455e64dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfca35ed0b170793d478a03d1e1f58f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51321e231ea77a2e04fe7846f29b1ea5 = $(`<div id="html_51321e231ea77a2e04fe7846f29b1ea5" style="width: 100.0%; height: 100.0%;">Croiseur militaire hors zone</div>`)[0];
+                popup_dfca35ed0b170793d478a03d1e1f58f3.setContent(html_51321e231ea77a2e04fe7846f29b1ea5);
+            
+        
+
+        marker_fca1d15b13ff663329ea564957be6f80.bindPopup(popup_dfca35ed0b170793d478a03d1e1f58f3)
+        ;
+
+        
+    
+    
+                marker_fca1d15b13ff663329ea564957be6f80.setIcon(icon_431d4049205d34b3724fa3f9455e64dc);
+            
+    
+            var marker_ca82c37ac0b3a6f28800a9764fe6718c = L.marker(
+                [36.6, -6.4],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_e8466935f3ff9489c78fb28c62a9a865 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52d31a5b84918097cfd95a7cc1e1ec84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_566212a0b1bb8e8c528c270712d952f0 = $(`<div id="html_566212a0b1bb8e8c528c270712d952f0" style="width: 100.0%; height: 100.0%;">Corvette militaire hors zone</div>`)[0];
+                popup_52d31a5b84918097cfd95a7cc1e1ec84.setContent(html_566212a0b1bb8e8c528c270712d952f0);
+            
+        
+
+        marker_ca82c37ac0b3a6f28800a9764fe6718c.bindPopup(popup_52d31a5b84918097cfd95a7cc1e1ec84)
+        ;
+
+        
+    
+    
+                marker_ca82c37ac0b3a6f28800a9764fe6718c.setIcon(icon_e8466935f3ff9489c78fb28c62a9a865);
+            
+    
+            var marker_b20da86343f2365e46e8aea6de5c9881 = L.marker(
+                [36.6, -6.4],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_e42c6f1886ed1def79afa52946c4d412 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bc9e91e94b5c4d3d0fa882f8a0d90c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0fa7be22d3e3530d8bf5d38adcdcb16b = $(`<div id="html_0fa7be22d3e3530d8bf5d38adcdcb16b" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_2bc9e91e94b5c4d3d0fa882f8a0d90c0.setContent(html_0fa7be22d3e3530d8bf5d38adcdcb16b);
+            
+        
+
+        marker_b20da86343f2365e46e8aea6de5c9881.bindPopup(popup_2bc9e91e94b5c4d3d0fa882f8a0d90c0)
+        ;
+
+        
+    
+    
+                marker_b20da86343f2365e46e8aea6de5c9881.setIcon(icon_e42c6f1886ed1def79afa52946c4d412);
+            
+    
+            var marker_2c22367a4040fd165db5a318f3323fbc = L.marker(
+                [36.6, -6.4],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_69fe1edda007b80216cd581cca4853f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_916975125680135e6642f5dd08df94e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_943fd020ba97c16da03f962ec0959909 = $(`<div id="html_943fd020ba97c16da03f962ec0959909" style="width: 100.0%; height: 100.0%;">Sous-marin militaire hors zone</div>`)[0];
+                popup_916975125680135e6642f5dd08df94e7.setContent(html_943fd020ba97c16da03f962ec0959909);
+            
+        
+
+        marker_2c22367a4040fd165db5a318f3323fbc.bindPopup(popup_916975125680135e6642f5dd08df94e7)
+        ;
+
+        
+    
+    
+                marker_2c22367a4040fd165db5a318f3323fbc.setIcon(icon_69fe1edda007b80216cd581cca4853f1);
+            
+    
+            var marker_88d8a5810ab530873fe940e4f7c46d61 = L.marker(
+                [36.6, -6.4],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_73fad749baaab512527736e30fb8f507 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca1072f914e2a4776ade03e0b0b63ff4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5637fe447463c170dd8c43b15dac607 = $(`<div id="html_c5637fe447463c170dd8c43b15dac607" style="width: 100.0%; height: 100.0%;">Corvette militaire hors zone</div>`)[0];
+                popup_ca1072f914e2a4776ade03e0b0b63ff4.setContent(html_c5637fe447463c170dd8c43b15dac607);
+            
+        
+
+        marker_88d8a5810ab530873fe940e4f7c46d61.bindPopup(popup_ca1072f914e2a4776ade03e0b0b63ff4)
+        ;
+
+        
+    
+    
+                marker_88d8a5810ab530873fe940e4f7c46d61.setIcon(icon_73fad749baaab512527736e30fb8f507);
+            
+    
+            var marker_a4785e954d7f6dbe2a680da4e40d5799 = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_ce33c7e84df0af8b251f9451de3e0877 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fefa71a8cc90d3f11b9db46a1d2bff92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_628930e82d883b51abde1a864c2c3ed4 = $(`<div id="html_628930e82d883b51abde1a864c2c3ed4" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_fefa71a8cc90d3f11b9db46a1d2bff92.setContent(html_628930e82d883b51abde1a864c2c3ed4);
+            
+        
+
+        marker_a4785e954d7f6dbe2a680da4e40d5799.bindPopup(popup_fefa71a8cc90d3f11b9db46a1d2bff92)
+        ;
+
+        
+    
+    
+                marker_a4785e954d7f6dbe2a680da4e40d5799.setIcon(icon_ce33c7e84df0af8b251f9451de3e0877);
+            
+    
+            var marker_eee6b2d0744a4486cf2bfd2d36d36f6f = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_5eb95f46b758e32b5f7fd87196a21929 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3f2f1ec6c50d1bd4cefe75272a98c79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d2f9777ee51f1a1e70ba215300a6924 = $(`<div id="html_2d2f9777ee51f1a1e70ba215300a6924" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_b3f2f1ec6c50d1bd4cefe75272a98c79.setContent(html_2d2f9777ee51f1a1e70ba215300a6924);
+            
+        
+
+        marker_eee6b2d0744a4486cf2bfd2d36d36f6f.bindPopup(popup_b3f2f1ec6c50d1bd4cefe75272a98c79)
+        ;
+
+        
+    
+    
+                marker_eee6b2d0744a4486cf2bfd2d36d36f6f.setIcon(icon_5eb95f46b758e32b5f7fd87196a21929);
+            
+    
+            var marker_b364496588b01e8fc777f748f3cae138 = L.marker(
+                [15.0, 110.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_6b3b089b3543d2bb6084e8e6e40fa025 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a33d7a5c76811269389deeafa7d4531 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc6e80c468a54f9c1c1c34d334471e5f = $(`<div id="html_cc6e80c468a54f9c1c1c34d334471e5f" style="width: 100.0%; height: 100.0%;">Porte-avions militaire hors zone</div>`)[0];
+                popup_5a33d7a5c76811269389deeafa7d4531.setContent(html_cc6e80c468a54f9c1c1c34d334471e5f);
+            
+        
+
+        marker_b364496588b01e8fc777f748f3cae138.bindPopup(popup_5a33d7a5c76811269389deeafa7d4531)
+        ;
+
+        
+    
+    
+                marker_b364496588b01e8fc777f748f3cae138.setIcon(icon_6b3b089b3543d2bb6084e8e6e40fa025);
+            
+    
+            var marker_727fd8066aef9076d20eee2badd9a092 = L.marker(
+                [51.9, 4.5],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_ae964774022c1a0d1b48ea01cbf22b95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d1d5afd7964f5002a5159fa4bb93609 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f272b6a28c99a6362fa836108ba708ba = $(`<div id="html_f272b6a28c99a6362fa836108ba708ba" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_2d1d5afd7964f5002a5159fa4bb93609.setContent(html_f272b6a28c99a6362fa836108ba708ba);
+            
+        
+
+        marker_727fd8066aef9076d20eee2badd9a092.bindPopup(popup_2d1d5afd7964f5002a5159fa4bb93609)
+        ;
+
+        
+    
+    
+                marker_727fd8066aef9076d20eee2badd9a092.setIcon(icon_ae964774022c1a0d1b48ea01cbf22b95);
+            
+    
+            var marker_ce6deadd8f5eb1653ea521cfab290498 = L.marker(
+                [51.9, 4.5],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_ef66de2118f0810f2902ad1bd5721a62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a114f66b5d15cdb66ad146234cc1ebdf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da0c664d19f281cfe57b1360c2707fb7 = $(`<div id="html_da0c664d19f281cfe57b1360c2707fb7" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_a114f66b5d15cdb66ad146234cc1ebdf.setContent(html_da0c664d19f281cfe57b1360c2707fb7);
+            
+        
+
+        marker_ce6deadd8f5eb1653ea521cfab290498.bindPopup(popup_a114f66b5d15cdb66ad146234cc1ebdf)
+        ;
+
+        
+    
+    
+                marker_ce6deadd8f5eb1653ea521cfab290498.setIcon(icon_ef66de2118f0810f2902ad1bd5721a62);
+            
+    
+            var marker_cac3ed2fd51aaf3788c0a05e00102cac = L.marker(
+                [15.0, 110.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_4360d97bfa0f1fec51cb35bf52c6f147 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fd8abeaa243bfae06c8183358c58487 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6a600327f327b1df2375acac8d7a619 = $(`<div id="html_a6a600327f327b1df2375acac8d7a619" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_2fd8abeaa243bfae06c8183358c58487.setContent(html_a6a600327f327b1df2375acac8d7a619);
+            
+        
+
+        marker_cac3ed2fd51aaf3788c0a05e00102cac.bindPopup(popup_2fd8abeaa243bfae06c8183358c58487)
+        ;
+
+        
+    
+    
+                marker_cac3ed2fd51aaf3788c0a05e00102cac.setIcon(icon_4360d97bfa0f1fec51cb35bf52c6f147);
+            
+    
+            var marker_1dd62e8f594c64d81393952f46355f38 = L.marker(
+                [51.9, 4.5],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_c54a8494861710b997f24a6cdc641fd8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f69e6282ecb5974d51d816adcbea5096 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f7cea03b80143b41fd873d62828dfbe = $(`<div id="html_2f7cea03b80143b41fd873d62828dfbe" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_f69e6282ecb5974d51d816adcbea5096.setContent(html_2f7cea03b80143b41fd873d62828dfbe);
+            
+        
+
+        marker_1dd62e8f594c64d81393952f46355f38.bindPopup(popup_f69e6282ecb5974d51d816adcbea5096)
+        ;
+
+        
+    
+    
+                marker_1dd62e8f594c64d81393952f46355f38.setIcon(icon_c54a8494861710b997f24a6cdc641fd8);
+            
+    
+            var marker_779934f582f082a232217456e9791132 = L.marker(
+                [1.3, 103.8],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_ef06c768540df2666625d9792dce2eb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b32ad6bcbf8a75b3dea3a750d8cbe2ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf50b175f42e986240a97a2b089238f1 = $(`<div id="html_cf50b175f42e986240a97a2b089238f1" style="width: 100.0%; height: 100.0%;">Croiseur militaire hors zone</div>`)[0];
+                popup_b32ad6bcbf8a75b3dea3a750d8cbe2ec.setContent(html_cf50b175f42e986240a97a2b089238f1);
+            
+        
+
+        marker_779934f582f082a232217456e9791132.bindPopup(popup_b32ad6bcbf8a75b3dea3a750d8cbe2ec)
+        ;
+
+        
+    
+    
+                marker_779934f582f082a232217456e9791132.setIcon(icon_ef06c768540df2666625d9792dce2eb2);
+            
+    
+            var marker_c24c9918a0a585f3704154b3d066a97d = L.marker(
+                [1.3, 103.8],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_d447db841c19cd8aff141f861e9c1b3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb072b6fe841bd784217bf5c644c057f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0dac786d562263c98ab252b2c1c566c9 = $(`<div id="html_0dac786d562263c98ab252b2c1c566c9" style="width: 100.0%; height: 100.0%;">Sous-marin militaire hors zone</div>`)[0];
+                popup_cb072b6fe841bd784217bf5c644c057f.setContent(html_0dac786d562263c98ab252b2c1c566c9);
+            
+        
+
+        marker_c24c9918a0a585f3704154b3d066a97d.bindPopup(popup_cb072b6fe841bd784217bf5c644c057f)
+        ;
+
+        
+    
+    
+                marker_c24c9918a0a585f3704154b3d066a97d.setIcon(icon_d447db841c19cd8aff141f861e9c1b3d);
+            
+    
+            var marker_0af47b18e6bd9a5231720bd52434b4e4 = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_a8f81e22d036e0633d93567b1a0295a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9aa1c6f29f3921896bc590d005bc1b5a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0087ccea753a44ad8e194e3a7780fcd = $(`<div id="html_d0087ccea753a44ad8e194e3a7780fcd" style="width: 100.0%; height: 100.0%;">Sous-marin militaire hors zone</div>`)[0];
+                popup_9aa1c6f29f3921896bc590d005bc1b5a.setContent(html_d0087ccea753a44ad8e194e3a7780fcd);
+            
+        
+
+        marker_0af47b18e6bd9a5231720bd52434b4e4.bindPopup(popup_9aa1c6f29f3921896bc590d005bc1b5a)
+        ;
+
+        
+    
+    
+                marker_0af47b18e6bd9a5231720bd52434b4e4.setIcon(icon_a8f81e22d036e0633d93567b1a0295a1);
+            
+    
+            var marker_1a876264a5039361452e3a5d71d2b609 = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_aaa98abdd215360d8d639d02fee2a9ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d86793fc6127daf4bbb5959c910c044 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c1e5ea84c5c8e7054e71d2a157791d3 = $(`<div id="html_5c1e5ea84c5c8e7054e71d2a157791d3" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_4d86793fc6127daf4bbb5959c910c044.setContent(html_5c1e5ea84c5c8e7054e71d2a157791d3);
+            
+        
+
+        marker_1a876264a5039361452e3a5d71d2b609.bindPopup(popup_4d86793fc6127daf4bbb5959c910c044)
+        ;
+
+        
+    
+    
+                marker_1a876264a5039361452e3a5d71d2b609.setIcon(icon_aaa98abdd215360d8d639d02fee2a9ac);
+            
+    
+            var marker_2f76496de12b2cba295252cd71415233 = L.marker(
+                [15.0, 110.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_90521d9b03064f38b95f3d2cc2c83508 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9bb2b98e82e719e5ade46e4515704fbe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87b35e0f52fee156ce74bec5490d2e0c = $(`<div id="html_87b35e0f52fee156ce74bec5490d2e0c" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_9bb2b98e82e719e5ade46e4515704fbe.setContent(html_87b35e0f52fee156ce74bec5490d2e0c);
+            
+        
+
+        marker_2f76496de12b2cba295252cd71415233.bindPopup(popup_9bb2b98e82e719e5ade46e4515704fbe)
+        ;
+
+        
+    
+    
+                marker_2f76496de12b2cba295252cd71415233.setIcon(icon_90521d9b03064f38b95f3d2cc2c83508);
+            
+    
+            var marker_dc8b1870be3986a953a379d1554c0577 = L.marker(
+                [15.0, 110.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_aa21bf9e912e249c2ec5a42fe419051e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0027dff7bb9bd99a97e093c33cb19a86 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a772b3c0bb4dd454a838eda846e6390c = $(`<div id="html_a772b3c0bb4dd454a838eda846e6390c" style="width: 100.0%; height: 100.0%;">Croiseur militaire hors zone</div>`)[0];
+                popup_0027dff7bb9bd99a97e093c33cb19a86.setContent(html_a772b3c0bb4dd454a838eda846e6390c);
+            
+        
+
+        marker_dc8b1870be3986a953a379d1554c0577.bindPopup(popup_0027dff7bb9bd99a97e093c33cb19a86)
+        ;
+
+        
+    
+    
+                marker_dc8b1870be3986a953a379d1554c0577.setIcon(icon_aa21bf9e912e249c2ec5a42fe419051e);
+            
+    
+            var marker_931fba63da446a712b23ba6cc136690c = L.marker(
+                [35.4, 139.7],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_53098f275b2ad81f9f5a8aafcbd0d57c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ad4b9f2c7c261d51e6417f9fee60a36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69ca6cd756ea40e54ea4c351f23dbbff = $(`<div id="html_69ca6cd756ea40e54ea4c351f23dbbff" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_4ad4b9f2c7c261d51e6417f9fee60a36.setContent(html_69ca6cd756ea40e54ea4c351f23dbbff);
+            
+        
+
+        marker_931fba63da446a712b23ba6cc136690c.bindPopup(popup_4ad4b9f2c7c261d51e6417f9fee60a36)
+        ;
+
+        
+    
+    
+                marker_931fba63da446a712b23ba6cc136690c.setIcon(icon_53098f275b2ad81f9f5a8aafcbd0d57c);
+            
+    
+            var marker_1e939510d5616d063cab0534fc238edf = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_b6c7e05214f2af2b1117571cb8c93e99 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_633fdb81fdcef6ab7204c718b93731d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7ade5d68e7ee8357f9289f739501732 = $(`<div id="html_a7ade5d68e7ee8357f9289f739501732" style="width: 100.0%; height: 100.0%;">Sous-marin militaire hors zone</div>`)[0];
+                popup_633fdb81fdcef6ab7204c718b93731d3.setContent(html_a7ade5d68e7ee8357f9289f739501732);
+            
+        
+
+        marker_1e939510d5616d063cab0534fc238edf.bindPopup(popup_633fdb81fdcef6ab7204c718b93731d3)
+        ;
+
+        
+    
+    
+                marker_1e939510d5616d063cab0534fc238edf.setIcon(icon_b6c7e05214f2af2b1117571cb8c93e99);
+            
+    
+            var marker_7ae99666884f30248c5eb628c0d34b40 = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_c1eed298559c947055e03bd0b92f3953 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c88ce334272ac15f85245a903d3c89d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3086027a2112514b4afaa2b20ac1251 = $(`<div id="html_e3086027a2112514b4afaa2b20ac1251" style="width: 100.0%; height: 100.0%;">Croiseur militaire hors zone</div>`)[0];
+                popup_c88ce334272ac15f85245a903d3c89d4.setContent(html_e3086027a2112514b4afaa2b20ac1251);
+            
+        
+
+        marker_7ae99666884f30248c5eb628c0d34b40.bindPopup(popup_c88ce334272ac15f85245a903d3c89d4)
+        ;
+
+        
+    
+    
+                marker_7ae99666884f30248c5eb628c0d34b40.setIcon(icon_c1eed298559c947055e03bd0b92f3953);
+            
+    
+            var marker_e5565f25b4ea18a6170029f6254b24ee = L.marker(
+                [1.3, 103.8],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_65ca441e0807676e86cfd85d3c5324a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0073168d6bd8345249ed45b844f71f81 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c671b2c29c4f60b5e38e37defcda087 = $(`<div id="html_3c671b2c29c4f60b5e38e37defcda087" style="width: 100.0%; height: 100.0%;">Croiseur militaire hors zone</div>`)[0];
+                popup_0073168d6bd8345249ed45b844f71f81.setContent(html_3c671b2c29c4f60b5e38e37defcda087);
+            
+        
+
+        marker_e5565f25b4ea18a6170029f6254b24ee.bindPopup(popup_0073168d6bd8345249ed45b844f71f81)
+        ;
+
+        
+    
+    
+                marker_e5565f25b4ea18a6170029f6254b24ee.setIcon(icon_65ca441e0807676e86cfd85d3c5324a1);
+            
+    
+            var marker_b4192275a3388f3c9389a1847fbff4be = L.marker(
+                [1.3, 103.8],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_47806a94ead2fe8b8effe125fd94914d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a212510531d49ed3435656664b892ef3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1190c7f8a03f3ebf2a3e2c2b56f2cdab = $(`<div id="html_1190c7f8a03f3ebf2a3e2c2b56f2cdab" style="width: 100.0%; height: 100.0%;">Corvette militaire hors zone</div>`)[0];
+                popup_a212510531d49ed3435656664b892ef3.setContent(html_1190c7f8a03f3ebf2a3e2c2b56f2cdab);
+            
+        
+
+        marker_b4192275a3388f3c9389a1847fbff4be.bindPopup(popup_a212510531d49ed3435656664b892ef3)
+        ;
+
+        
+    
+    
+                marker_b4192275a3388f3c9389a1847fbff4be.setIcon(icon_47806a94ead2fe8b8effe125fd94914d);
+            
+    
+            var marker_e746da76a1683dc87265fe6d2df0db43 = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_e7243ac51af98c21daadb915b7d9708b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_070283fdc7b28bd8a6ec42c857264c91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff3525a66abcf58c490a515fe3e296ae = $(`<div id="html_ff3525a66abcf58c490a515fe3e296ae" style="width: 100.0%; height: 100.0%;">Frégate militaire hors zone</div>`)[0];
+                popup_070283fdc7b28bd8a6ec42c857264c91.setContent(html_ff3525a66abcf58c490a515fe3e296ae);
+            
+        
+
+        marker_e746da76a1683dc87265fe6d2df0db43.bindPopup(popup_070283fdc7b28bd8a6ec42c857264c91)
+        ;
+
+        
+    
+    
+                marker_e746da76a1683dc87265fe6d2df0db43.setIcon(icon_e7243ac51af98c21daadb915b7d9708b);
+            
+    
+            var marker_87c0ea03bf4abfb73631aa5710665228 = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_0108b5bc0707b5a269f3bcb35cda5fea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c8fce0fb2a968bb3738c7e65879b274 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_925a39079a1675c41400a6efb40dc9ab = $(`<div id="html_925a39079a1675c41400a6efb40dc9ab" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_5c8fce0fb2a968bb3738c7e65879b274.setContent(html_925a39079a1675c41400a6efb40dc9ab);
+            
+        
+
+        marker_87c0ea03bf4abfb73631aa5710665228.bindPopup(popup_5c8fce0fb2a968bb3738c7e65879b274)
+        ;
+
+        
+    
+    
+                marker_87c0ea03bf4abfb73631aa5710665228.setIcon(icon_0108b5bc0707b5a269f3bcb35cda5fea);
+            
+    
+            var marker_5aad559cbfe6f683f640e853a0da6db2 = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_770cfc2c9716dafd2e936e23685d0e76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ab9e762d7e7fe6fed603386fb504dd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61da808864cbe1cd3926a565c912234d = $(`<div id="html_61da808864cbe1cd3926a565c912234d" style="width: 100.0%; height: 100.0%;">Corvette militaire hors zone</div>`)[0];
+                popup_4ab9e762d7e7fe6fed603386fb504dd3.setContent(html_61da808864cbe1cd3926a565c912234d);
+            
+        
+
+        marker_5aad559cbfe6f683f640e853a0da6db2.bindPopup(popup_4ab9e762d7e7fe6fed603386fb504dd3)
+        ;
+
+        
+    
+    
+                marker_5aad559cbfe6f683f640e853a0da6db2.setIcon(icon_770cfc2c9716dafd2e936e23685d0e76);
+            
+    
+            var marker_b70533723e09a95c153b412291e2d3be = L.marker(
+                [36.9, -76.3],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_aca4e6033d3eff2ec40fb26e1d773e42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70791d05008cd4dd5e5ff3b21bd91c5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9600c9177964afc986e6bde1280bb07 = $(`<div id="html_f9600c9177964afc986e6bde1280bb07" style="width: 100.0%; height: 100.0%;">Sous-marin militaire hors zone</div>`)[0];
+                popup_70791d05008cd4dd5e5ff3b21bd91c5d.setContent(html_f9600c9177964afc986e6bde1280bb07);
+            
+        
+
+        marker_b70533723e09a95c153b412291e2d3be.bindPopup(popup_70791d05008cd4dd5e5ff3b21bd91c5d)
+        ;
+
+        
+    
+    
+                marker_b70533723e09a95c153b412291e2d3be.setIcon(icon_aca4e6033d3eff2ec40fb26e1d773e42);
+            
+    
+            var marker_3c5475c61330011a3e0f1f78c26c3cb2 = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_2b11178412c5d57a91a44a28d3fd507a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2818ae47aaade1af75e87c36f77fe717 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35a5c64fc85480ba462c1e55c72ff162 = $(`<div id="html_35a5c64fc85480ba462c1e55c72ff162" style="width: 100.0%; height: 100.0%;">Destroyer militaire hors zone</div>`)[0];
+                popup_2818ae47aaade1af75e87c36f77fe717.setContent(html_35a5c64fc85480ba462c1e55c72ff162);
+            
+        
+
+        marker_3c5475c61330011a3e0f1f78c26c3cb2.bindPopup(popup_2818ae47aaade1af75e87c36f77fe717)
+        ;
+
+        
+    
+    
+                marker_3c5475c61330011a3e0f1f78c26c3cb2.setIcon(icon_2b11178412c5d57a91a44a28d3fd507a);
+            
+    
+            var marker_9a80f6eb248ac748d382eb7fd609ac3c = L.marker(
+                [55.0, 20.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_264bd934d74820609c0dbc85fb21a271 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c398bc40b14b0c0950cc887aa8b6affa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_707119e3329fc9ee133f4d33af627b1e = $(`<div id="html_707119e3329fc9ee133f4d33af627b1e" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_c398bc40b14b0c0950cc887aa8b6affa.setContent(html_707119e3329fc9ee133f4d33af627b1e);
+            
+        
+
+        marker_9a80f6eb248ac748d382eb7fd609ac3c.bindPopup(popup_c398bc40b14b0c0950cc887aa8b6affa)
+        ;
+
+        
+    
+    
+                marker_9a80f6eb248ac748d382eb7fd609ac3c.setIcon(icon_264bd934d74820609c0dbc85fb21a271);
+            
+    
+            var marker_b0d1f844b48bdbe3d39499b8d8e65e95 = L.marker(
+                [3.0, 101.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_399587ade5ff3dc52c613edabe165f54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db5339bd5015d558f4bae0543b25cf77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_698c4c347244f0346fe651722d1778cf = $(`<div id="html_698c4c347244f0346fe651722d1778cf" style="width: 100.0%; height: 100.0%;">Croiseur militaire hors zone</div>`)[0];
+                popup_db5339bd5015d558f4bae0543b25cf77.setContent(html_698c4c347244f0346fe651722d1778cf);
+            
+        
+
+        marker_b0d1f844b48bdbe3d39499b8d8e65e95.bindPopup(popup_db5339bd5015d558f4bae0543b25cf77)
+        ;
+
+        
+    
+    
+                marker_b0d1f844b48bdbe3d39499b8d8e65e95.setIcon(icon_399587ade5ff3dc52c613edabe165f54);
+            
+    
+            var marker_76cb328952159cfff3a52306fb10f26f = L.marker(
+                [36.6, -6.4],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_8fe333def5bcadd72e1d4751d102ceab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_118dad98d84a1fcab80f16e6a09ed15f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59c6a1a17a64a85babf577103c4cf335 = $(`<div id="html_59c6a1a17a64a85babf577103c4cf335" style="width: 100.0%; height: 100.0%;">Croiseur militaire hors zone</div>`)[0];
+                popup_118dad98d84a1fcab80f16e6a09ed15f.setContent(html_59c6a1a17a64a85babf577103c4cf335);
+            
+        
+
+        marker_76cb328952159cfff3a52306fb10f26f.bindPopup(popup_118dad98d84a1fcab80f16e6a09ed15f)
+        ;
+
+        
+    
+    
+                marker_76cb328952159cfff3a52306fb10f26f.setIcon(icon_8fe333def5bcadd72e1d4751d102ceab);
+            
+    
+            var marker_7ee50c41100148c6a61bad60728253d1 = L.marker(
+                [51.9, 4.5],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_38934dbbabbdd1274b9f04f9a2198347 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_896aeae8aa7d33975ec7159324c2da00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d3cd77ee918fed0c05bc1be30035e3b = $(`<div id="html_5d3cd77ee918fed0c05bc1be30035e3b" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_896aeae8aa7d33975ec7159324c2da00.setContent(html_5d3cd77ee918fed0c05bc1be30035e3b);
+            
+        
+
+        marker_7ee50c41100148c6a61bad60728253d1.bindPopup(popup_896aeae8aa7d33975ec7159324c2da00)
+        ;
+
+        
+    
+    
+                marker_7ee50c41100148c6a61bad60728253d1.setIcon(icon_38934dbbabbdd1274b9f04f9a2198347);
+            
+    
+            var marker_1d4d2ac8445218cb386c608437d731a5 = L.marker(
+                [51.9, 4.5],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_334b66a1a14b7a6c93451ff7160b4ac1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7283a8dd0b64f95cbab75591a692e422 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db93bf1e863f21868b88576cc7e6d385 = $(`<div id="html_db93bf1e863f21868b88576cc7e6d385" style="width: 100.0%; height: 100.0%;">Croiseur militaire hors zone</div>`)[0];
+                popup_7283a8dd0b64f95cbab75591a692e422.setContent(html_db93bf1e863f21868b88576cc7e6d385);
+            
+        
+
+        marker_1d4d2ac8445218cb386c608437d731a5.bindPopup(popup_7283a8dd0b64f95cbab75591a692e422)
+        ;
+
+        
+    
+    
+                marker_1d4d2ac8445218cb386c608437d731a5.setIcon(icon_334b66a1a14b7a6c93451ff7160b4ac1);
+            
+    
+            var marker_08c114824f766bea6e8df3dbc1c3cf2b = L.marker(
+                [15.0, 110.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_f5681e5110e492d81609895125df01c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4d92547e4aafcac1326f0c6a87b4232 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7687d22b93c9cb5b5bcd9a31c2b4742c = $(`<div id="html_7687d22b93c9cb5b5bcd9a31c2b4742c" style="width: 100.0%; height: 100.0%;">Corvette militaire hors zone</div>`)[0];
+                popup_c4d92547e4aafcac1326f0c6a87b4232.setContent(html_7687d22b93c9cb5b5bcd9a31c2b4742c);
+            
+        
+
+        marker_08c114824f766bea6e8df3dbc1c3cf2b.bindPopup(popup_c4d92547e4aafcac1326f0c6a87b4232)
+        ;
+
+        
+    
+    
+                marker_08c114824f766bea6e8df3dbc1c3cf2b.setIcon(icon_f5681e5110e492d81609895125df01c9);
+            
+    
+            var marker_e67f2fcaf10c5fbcf09ef1918ecf05b5 = L.marker(
+                [15.0, 110.0],
+                {
+}
+            ).addTo(feature_group_5fb5a9406b914d1124d1be128401fd00);
+        
+    
+            var icon_1d49d6b96af48cd0b2cb560226055430 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75480a56caf4eecb8f5752e260164a2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed7f53e9bc3b0d800917343eef24b50a = $(`<div id="html_ed7f53e9bc3b0d800917343eef24b50a" style="width: 100.0%; height: 100.0%;">Navire de guerre militaire hors zone</div>`)[0];
+                popup_75480a56caf4eecb8f5752e260164a2e.setContent(html_ed7f53e9bc3b0d800917343eef24b50a);
+            
+        
+
+        marker_e67f2fcaf10c5fbcf09ef1918ecf05b5.bindPopup(popup_75480a56caf4eecb8f5752e260164a2e)
+        ;
+
+        
+    
+    
+                marker_e67f2fcaf10c5fbcf09ef1918ecf05b5.setIcon(icon_1d49d6b96af48cd0b2cb560226055430);
+            
+    
+            feature_group_5fb5a9406b914d1124d1be128401fd00.addTo(map_05334cf80f651d6a2d623826211e0d89);
+        
+    
+            var feature_group_87cac41eaefb0beaeda5a9877a58a283 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_55f19ac10058b3f2c3676f10e7d4d275 = L.marker(
+                [31.2, 121.5],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_168059c54e514949fd7860ab2137b904 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba619c30291987b65fdfa305a1292c1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e928b5ebc5b20a1f93f44ef13b96bd56 = $(`<div id="html_e928b5ebc5b20a1f93f44ef13b96bd56" style="width: 100.0%; height: 100.0%;">Chalutier civil en zone Zone militaire 2 - Port de Shanghai (risk=Critical)</div>`)[0];
+                popup_ba619c30291987b65fdfa305a1292c1d.setContent(html_e928b5ebc5b20a1f93f44ef13b96bd56);
+            
+        
+
+        marker_55f19ac10058b3f2c3676f10e7d4d275.bindPopup(popup_ba619c30291987b65fdfa305a1292c1d)
+        ;
+
+        
+    
+    
+                marker_55f19ac10058b3f2c3676f10e7d4d275.setIcon(icon_168059c54e514949fd7860ab2137b904);
+            
+    
+            var marker_aac264d3c91fcf5185bde3d4ba2599d4 = L.marker(
+                [31.2, 121.5],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_dd27f1f51bb087c4b9854dbab345dbfd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96677b9eb53803a609df384e758a5377 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0945f06a51f6cc3221885840fdbe133 = $(`<div id="html_d0945f06a51f6cc3221885840fdbe133" style="width: 100.0%; height: 100.0%;">Pétrolier civil en zone Zone militaire 2 - Port de Shanghai (risk=Critical)</div>`)[0];
+                popup_96677b9eb53803a609df384e758a5377.setContent(html_d0945f06a51f6cc3221885840fdbe133);
+            
+        
+
+        marker_aac264d3c91fcf5185bde3d4ba2599d4.bindPopup(popup_96677b9eb53803a609df384e758a5377)
+        ;
+
+        
+    
+    
+                marker_aac264d3c91fcf5185bde3d4ba2599d4.setIcon(icon_dd27f1f51bb087c4b9854dbab345dbfd);
+            
+    
+            var marker_ab9899ddc13ca83a88f30abe571088be = L.marker(
+                [25.0, 56.0],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_852b6788562088652eb5f6fb5dedc7cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a2fbb47cd776647364dcddac3814ea6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4bc05a484fdde7bf0eda82639e09ab0e = $(`<div id="html_4bc05a484fdde7bf0eda82639e09ab0e" style="width: 100.0%; height: 100.0%;">Chalutier civil en zone Zone militaire 12 - Détroit d'Ormuz (risk=High)</div>`)[0];
+                popup_4a2fbb47cd776647364dcddac3814ea6.setContent(html_4bc05a484fdde7bf0eda82639e09ab0e);
+            
+        
+
+        marker_ab9899ddc13ca83a88f30abe571088be.bindPopup(popup_4a2fbb47cd776647364dcddac3814ea6)
+        ;
+
+        
+    
+    
+                marker_ab9899ddc13ca83a88f30abe571088be.setIcon(icon_852b6788562088652eb5f6fb5dedc7cb);
+            
+    
+            var marker_cf46396bd8ab1698cf32aef97911da6d = L.marker(
+                [25.0, 56.0],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_33498f9fec3d1c2f0f37aabbcde6a3c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f1554dd54bd5e1eef097e3581ae4e82f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_903389537c74822d8b08f37ed03c1dac = $(`<div id="html_903389537c74822d8b08f37ed03c1dac" style="width: 100.0%; height: 100.0%;">Navire de soutien civil en zone Zone militaire 12 - Détroit d'Ormuz (risk=High)</div>`)[0];
+                popup_f1554dd54bd5e1eef097e3581ae4e82f.setContent(html_903389537c74822d8b08f37ed03c1dac);
+            
+        
+
+        marker_cf46396bd8ab1698cf32aef97911da6d.bindPopup(popup_f1554dd54bd5e1eef097e3581ae4e82f)
+        ;
+
+        
+    
+    
+                marker_cf46396bd8ab1698cf32aef97911da6d.setIcon(icon_33498f9fec3d1c2f0f37aabbcde6a3c7);
+            
+    
+            var marker_b0c3964710b7faad5dfa1345a706fca7 = L.marker(
+                [31.2, 121.5],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_bee7f8ed7074bfabbda89b5f98203e59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e44297b120c8ccdb966501e958676fc8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92d91976197e12d72e82a2036d665fcd = $(`<div id="html_92d91976197e12d72e82a2036d665fcd" style="width: 100.0%; height: 100.0%;">Navire de soutien civil en zone Zone militaire 2 - Port de Shanghai (risk=Critical)</div>`)[0];
+                popup_e44297b120c8ccdb966501e958676fc8.setContent(html_92d91976197e12d72e82a2036d665fcd);
+            
+        
+
+        marker_b0c3964710b7faad5dfa1345a706fca7.bindPopup(popup_e44297b120c8ccdb966501e958676fc8)
+        ;
+
+        
+    
+    
+                marker_b0c3964710b7faad5dfa1345a706fca7.setIcon(icon_bee7f8ed7074bfabbda89b5f98203e59);
+            
+    
+            var marker_01e10a4c50e9ebbb3ae6bf51afbd6a80 = L.marker(
+                [31.2, 121.5],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_5b08fbcb8351b32768e0acaef431133c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77580675ea399bd3a35cfe07641475d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5485fb3ef83830fe2ef455c4d6b27ff = $(`<div id="html_c5485fb3ef83830fe2ef455c4d6b27ff" style="width: 100.0%; height: 100.0%;">Bâtiment de débarquement civil en zone Zone militaire 2 - Port de Shanghai (risk=Critical)</div>`)[0];
+                popup_77580675ea399bd3a35cfe07641475d9.setContent(html_c5485fb3ef83830fe2ef455c4d6b27ff);
+            
+        
+
+        marker_01e10a4c50e9ebbb3ae6bf51afbd6a80.bindPopup(popup_77580675ea399bd3a35cfe07641475d9)
+        ;
+
+        
+    
+    
+                marker_01e10a4c50e9ebbb3ae6bf51afbd6a80.setIcon(icon_5b08fbcb8351b32768e0acaef431133c);
+            
+    
+            var marker_aef86d1e189104e9364d714040b3fe99 = L.marker(
+                [31.2, 121.5],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_fa7c4fcb137d9a7f8372f9d2fb0319cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd7961d97b405448f8c5559eeafc7aa5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_288db6956e49bac627dddde3c93367e9 = $(`<div id="html_288db6956e49bac627dddde3c93367e9" style="width: 100.0%; height: 100.0%;">Cargo civil en zone Zone militaire 2 - Port de Shanghai (risk=Critical)</div>`)[0];
+                popup_bd7961d97b405448f8c5559eeafc7aa5.setContent(html_288db6956e49bac627dddde3c93367e9);
+            
+        
+
+        marker_aef86d1e189104e9364d714040b3fe99.bindPopup(popup_bd7961d97b405448f8c5559eeafc7aa5)
+        ;
+
+        
+    
+    
+                marker_aef86d1e189104e9364d714040b3fe99.setIcon(icon_fa7c4fcb137d9a7f8372f9d2fb0319cf);
+            
+    
+            var marker_68b4db86b50c3013b77eae6b1b99b974 = L.marker(
+                [25.0, 56.0],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_615ba2a71bf8ad57748dc01f63a25a5d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2e6b39638d8b4c7190b30f7e079a641 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d2a81676526333bd3a263f32dc3ec20 = $(`<div id="html_8d2a81676526333bd3a263f32dc3ec20" style="width: 100.0%; height: 100.0%;">Cargo civil en zone Zone militaire 12 - Détroit d'Ormuz (risk=High)</div>`)[0];
+                popup_b2e6b39638d8b4c7190b30f7e079a641.setContent(html_8d2a81676526333bd3a263f32dc3ec20);
+            
+        
+
+        marker_68b4db86b50c3013b77eae6b1b99b974.bindPopup(popup_b2e6b39638d8b4c7190b30f7e079a641)
+        ;
+
+        
+    
+    
+                marker_68b4db86b50c3013b77eae6b1b99b974.setIcon(icon_615ba2a71bf8ad57748dc01f63a25a5d);
+            
+    
+            var marker_be1da675e1ba3d7f19f8402aa00cbc18 = L.marker(
+                [31.2, 121.5],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_3e4eb5ea159273bc768e7615492c7613 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_271f5fd72c3208c1f3db4175ab812931 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b28ff8e78ca25913d3d9a470f8aad50 = $(`<div id="html_8b28ff8e78ca25913d3d9a470f8aad50" style="width: 100.0%; height: 100.0%;">Navire civil civil en zone Zone militaire 2 - Port de Shanghai (risk=Critical)</div>`)[0];
+                popup_271f5fd72c3208c1f3db4175ab812931.setContent(html_8b28ff8e78ca25913d3d9a470f8aad50);
+            
+        
+
+        marker_be1da675e1ba3d7f19f8402aa00cbc18.bindPopup(popup_271f5fd72c3208c1f3db4175ab812931)
+        ;
+
+        
+    
+    
+                marker_be1da675e1ba3d7f19f8402aa00cbc18.setIcon(icon_3e4eb5ea159273bc768e7615492c7613);
+            
+    
+            var marker_60ae6c7b00e2e39db6dafbd178585f4a = L.marker(
+                [25.0, 56.0],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_648293f6a82e2d82afbaf4bdf53a7739 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0289ee397c51e1aeb2a9ecb24f75c9fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3fe119bbe9cbbe8b49fab2898c885cbd = $(`<div id="html_3fe119bbe9cbbe8b49fab2898c885cbd" style="width: 100.0%; height: 100.0%;">Pétrolier civil en zone Zone militaire 12 - Détroit d'Ormuz (risk=High)</div>`)[0];
+                popup_0289ee397c51e1aeb2a9ecb24f75c9fb.setContent(html_3fe119bbe9cbbe8b49fab2898c885cbd);
+            
+        
+
+        marker_60ae6c7b00e2e39db6dafbd178585f4a.bindPopup(popup_0289ee397c51e1aeb2a9ecb24f75c9fb)
+        ;
+
+        
+    
+    
+                marker_60ae6c7b00e2e39db6dafbd178585f4a.setIcon(icon_648293f6a82e2d82afbaf4bdf53a7739);
+            
+    
+            var marker_f71ea3fdacc8bbc0460be309cd526f3e = L.marker(
+                [31.2, 121.5],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_663e77efc059f1c70b61d1fbbb0752f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eaa1dafd1aff89d10da20ba8d1cce36c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_acb77973f3ca02a9d68b5f12f3e68c2e = $(`<div id="html_acb77973f3ca02a9d68b5f12f3e68c2e" style="width: 100.0%; height: 100.0%;">Cargo civil en zone Zone militaire 2 - Port de Shanghai (risk=Critical)</div>`)[0];
+                popup_eaa1dafd1aff89d10da20ba8d1cce36c.setContent(html_acb77973f3ca02a9d68b5f12f3e68c2e);
+            
+        
+
+        marker_f71ea3fdacc8bbc0460be309cd526f3e.bindPopup(popup_eaa1dafd1aff89d10da20ba8d1cce36c)
+        ;
+
+        
+    
+    
+                marker_f71ea3fdacc8bbc0460be309cd526f3e.setIcon(icon_663e77efc059f1c70b61d1fbbb0752f7);
+            
+    
+            var marker_f86fbdfd92e2e4a4fd97a1afe3cdde43 = L.marker(
+                [43.12, 5.9],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_31b6b7e06c3d9d145d05bf796110c061 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba777cae395bda54714b63a4e1948734 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b77d7bab2c80e904b7920cce112339f5 = $(`<div id="html_b77d7bab2c80e904b7920cce112339f5" style="width: 100.0%; height: 100.0%;">Pétrolier civil en zone Zone militaire 11 - Port militaire de Toulon (risk=High)</div>`)[0];
+                popup_ba777cae395bda54714b63a4e1948734.setContent(html_b77d7bab2c80e904b7920cce112339f5);
+            
+        
+
+        marker_f86fbdfd92e2e4a4fd97a1afe3cdde43.bindPopup(popup_ba777cae395bda54714b63a4e1948734)
+        ;
+
+        
+    
+    
+                marker_f86fbdfd92e2e4a4fd97a1afe3cdde43.setIcon(icon_31b6b7e06c3d9d145d05bf796110c061);
+            
+    
+            var marker_e851440b6459aa9e7a16dba531b3eab4 = L.marker(
+                [43.12, 5.9],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_f227a656862d481ea43cd4944391b8f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_005553d5d8f6af1ee69dcf1c7a12cb78 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a16633edfe04529ae3546476e63420a6 = $(`<div id="html_a16633edfe04529ae3546476e63420a6" style="width: 100.0%; height: 100.0%;">Navire civil civil en zone Zone militaire 11 - Port militaire de Toulon (risk=High)</div>`)[0];
+                popup_005553d5d8f6af1ee69dcf1c7a12cb78.setContent(html_a16633edfe04529ae3546476e63420a6);
+            
+        
+
+        marker_e851440b6459aa9e7a16dba531b3eab4.bindPopup(popup_005553d5d8f6af1ee69dcf1c7a12cb78)
+        ;
+
+        
+    
+    
+                marker_e851440b6459aa9e7a16dba531b3eab4.setIcon(icon_f227a656862d481ea43cd4944391b8f9);
+            
+    
+            var marker_70aa1321b3508ad92ef001d4550f2be6 = L.marker(
+                [43.12, 5.9],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_722cf5407e5d86b12a949502aece5500 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3a237409d6c6d4b756310e4b1a1c311 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99b0b75aa92e93bc0eaaf59406cf797e = $(`<div id="html_99b0b75aa92e93bc0eaaf59406cf797e" style="width: 100.0%; height: 100.0%;">Navire de soutien civil en zone Zone militaire 11 - Port militaire de Toulon (risk=High)</div>`)[0];
+                popup_c3a237409d6c6d4b756310e4b1a1c311.setContent(html_99b0b75aa92e93bc0eaaf59406cf797e);
+            
+        
+
+        marker_70aa1321b3508ad92ef001d4550f2be6.bindPopup(popup_c3a237409d6c6d4b756310e4b1a1c311)
+        ;
+
+        
+    
+    
+                marker_70aa1321b3508ad92ef001d4550f2be6.setIcon(icon_722cf5407e5d86b12a949502aece5500);
+            
+    
+            var marker_94522b0d2bb2e7a67f58bb7ede4afb64 = L.marker(
+                [21.4, -157.9],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_9783f606468a59fdfb913b547721bd26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1779fb512bfbb441bb1ff06947d0bfa8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_858234fbabe6d72df9323ecdcf444791 = $(`<div id="html_858234fbabe6d72df9323ecdcf444791" style="width: 100.0%; height: 100.0%;">Bâtiment de débarquement civil en zone Zone militaire 5 - Base navale de Pearl Harbor (risk=Critical)</div>`)[0];
+                popup_1779fb512bfbb441bb1ff06947d0bfa8.setContent(html_858234fbabe6d72df9323ecdcf444791);
+            
+        
+
+        marker_94522b0d2bb2e7a67f58bb7ede4afb64.bindPopup(popup_1779fb512bfbb441bb1ff06947d0bfa8)
+        ;
+
+        
+    
+    
+                marker_94522b0d2bb2e7a67f58bb7ede4afb64.setIcon(icon_9783f606468a59fdfb913b547721bd26);
+            
+    
+            var marker_476bd8511c86d9f067a6dc5ceb9b62f8 = L.marker(
+                [21.4, -157.9],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_69ce8a99e31950b1c90c42b82a5a10b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d49f45547eda76e6e604aaf34a24541 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee3f63320f3769a4d23fd5e622d15381 = $(`<div id="html_ee3f63320f3769a4d23fd5e622d15381" style="width: 100.0%; height: 100.0%;">Bâtiment de débarquement civil en zone Zone militaire 5 - Base navale de Pearl Harbor (risk=Critical)</div>`)[0];
+                popup_3d49f45547eda76e6e604aaf34a24541.setContent(html_ee3f63320f3769a4d23fd5e622d15381);
+            
+        
+
+        marker_476bd8511c86d9f067a6dc5ceb9b62f8.bindPopup(popup_3d49f45547eda76e6e604aaf34a24541)
+        ;
+
+        
+    
+    
+                marker_476bd8511c86d9f067a6dc5ceb9b62f8.setIcon(icon_69ce8a99e31950b1c90c42b82a5a10b5);
+            
+    
+            var marker_3a25ff57487d5cff3706abbc9c1c500d = L.marker(
+                [21.4, -157.9],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_9297f121caf78689e50e62192959548f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12b0117d798eb225a53166147d350db2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_64e5e7383bf6bba18253b8783853d821 = $(`<div id="html_64e5e7383bf6bba18253b8783853d821" style="width: 100.0%; height: 100.0%;">Cargo civil en zone Zone militaire 5 - Base navale de Pearl Harbor (risk=Critical)</div>`)[0];
+                popup_12b0117d798eb225a53166147d350db2.setContent(html_64e5e7383bf6bba18253b8783853d821);
+            
+        
+
+        marker_3a25ff57487d5cff3706abbc9c1c500d.bindPopup(popup_12b0117d798eb225a53166147d350db2)
+        ;
+
+        
+    
+    
+                marker_3a25ff57487d5cff3706abbc9c1c500d.setIcon(icon_9297f121caf78689e50e62192959548f);
+            
+    
+            var marker_b1409a3f683e8f3c99e69eb4b54f1d53 = L.marker(
+                [31.2, 121.5],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_16b0f6d6a045326f07488c6c6106b05d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d986d6f58a3454333e01da4e76955c12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f481de68c3e961210f9a653fde53af8 = $(`<div id="html_0f481de68c3e961210f9a653fde53af8" style="width: 100.0%; height: 100.0%;">Navire de soutien civil en zone Zone militaire 2 - Port de Shanghai (risk=Critical)</div>`)[0];
+                popup_d986d6f58a3454333e01da4e76955c12.setContent(html_0f481de68c3e961210f9a653fde53af8);
+            
+        
+
+        marker_b1409a3f683e8f3c99e69eb4b54f1d53.bindPopup(popup_d986d6f58a3454333e01da4e76955c12)
+        ;
+
+        
+    
+    
+                marker_b1409a3f683e8f3c99e69eb4b54f1d53.setIcon(icon_16b0f6d6a045326f07488c6c6106b05d);
+            
+    
+            var marker_f3aa427032084ed7f54f9db86dd49a01 = L.marker(
+                [31.2, 121.5],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_42ee080c317ef265a2169704b4306183 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_200411d03277ff0fc39c35f60f91805e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b40fb1a1194d90449ff633d042aed88f = $(`<div id="html_b40fb1a1194d90449ff633d042aed88f" style="width: 100.0%; height: 100.0%;">Bâtiment de débarquement civil en zone Zone militaire 2 - Port de Shanghai (risk=Critical)</div>`)[0];
+                popup_200411d03277ff0fc39c35f60f91805e.setContent(html_b40fb1a1194d90449ff633d042aed88f);
+            
+        
+
+        marker_f3aa427032084ed7f54f9db86dd49a01.bindPopup(popup_200411d03277ff0fc39c35f60f91805e)
+        ;
+
+        
+    
+    
+                marker_f3aa427032084ed7f54f9db86dd49a01.setIcon(icon_42ee080c317ef265a2169704b4306183);
+            
+    
+            var marker_557a3cd85764829700a6600b94ce0b69 = L.marker(
+                [31.2, 121.5],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_311d083757dfd0239c4425860f09e758 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2f8e6f4e7164798bd0a876859233bc8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc2bc3bd0790d794751f262c5ea3bf6a = $(`<div id="html_dc2bc3bd0790d794751f262c5ea3bf6a" style="width: 100.0%; height: 100.0%;">Pétrolier civil en zone Zone militaire 2 - Port de Shanghai (risk=Critical)</div>`)[0];
+                popup_a2f8e6f4e7164798bd0a876859233bc8.setContent(html_dc2bc3bd0790d794751f262c5ea3bf6a);
+            
+        
+
+        marker_557a3cd85764829700a6600b94ce0b69.bindPopup(popup_a2f8e6f4e7164798bd0a876859233bc8)
+        ;
+
+        
+    
+    
+                marker_557a3cd85764829700a6600b94ce0b69.setIcon(icon_311d083757dfd0239c4425860f09e758);
+            
+    
+            var marker_f9e12f2e84f902a3dc56b08994887c09 = L.marker(
+                [31.2, 121.5],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_da0999d2766cf452f7eeb15fa679e7b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39499a06f5f186cdf99d3386dc4ffa5a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_055d6db6897d065149fcc4ddbdf24c4c = $(`<div id="html_055d6db6897d065149fcc4ddbdf24c4c" style="width: 100.0%; height: 100.0%;">Navire civil civil en zone Zone militaire 2 - Port de Shanghai (risk=Critical)</div>`)[0];
+                popup_39499a06f5f186cdf99d3386dc4ffa5a.setContent(html_055d6db6897d065149fcc4ddbdf24c4c);
+            
+        
+
+        marker_f9e12f2e84f902a3dc56b08994887c09.bindPopup(popup_39499a06f5f186cdf99d3386dc4ffa5a)
+        ;
+
+        
+    
+    
+                marker_f9e12f2e84f902a3dc56b08994887c09.setIcon(icon_da0999d2766cf452f7eeb15fa679e7b6);
+            
+    
+            var marker_8838e40cbb8ac938426209b173648497 = L.marker(
+                [31.2, 121.5],
+                {
+}
+            ).addTo(feature_group_87cac41eaefb0beaeda5a9877a58a283);
+        
+    
+            var icon_c11bb0d15f130759ac96e9dc658a8e9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba5c05cd2e88cdf8f654df4f72fc68f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36d7ef1bd1a2e816067881a67fae863d = $(`<div id="html_36d7ef1bd1a2e816067881a67fae863d" style="width: 100.0%; height: 100.0%;">Cargo civil en zone Zone militaire 2 - Port de Shanghai (risk=Critical)</div>`)[0];
+                popup_ba5c05cd2e88cdf8f654df4f72fc68f5.setContent(html_36d7ef1bd1a2e816067881a67fae863d);
+            
+        
+
+        marker_8838e40cbb8ac938426209b173648497.bindPopup(popup_ba5c05cd2e88cdf8f654df4f72fc68f5)
+        ;
+
+        
+    
+    
+                marker_8838e40cbb8ac938426209b173648497.setIcon(icon_c11bb0d15f130759ac96e9dc658a8e9f);
+            
+    
+            feature_group_87cac41eaefb0beaeda5a9877a58a283.addTo(map_05334cf80f651d6a2d623826211e0d89);
+        
+    
+            var layer_control_af6a5d1574bb3e5305ee91f8c83e9f8b_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_a05cecf4593ddbb29fcdb875421c2f9e,
+                },
+                overlays :  {
+                    "Type A \u00b7 militaire hors zone" : feature_group_5fb5a9406b914d1124d1be128401fd00,
+                    "Type B \u00b7 civil en zone critique" : feature_group_87cac41eaefb0beaeda5a9877a58a283,
+                },
+            };
+            let layer_control_af6a5d1574bb3e5305ee91f8c83e9f8b = L.control.layers(
+                layer_control_af6a5d1574bb3e5305ee91f8c83e9f8b_layers.base_layers,
+                layer_control_af6a5d1574bb3e5305ee91f8c83e9f8b_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_05334cf80f651d6a2d623826211e0d89);
+
+        
+</script>
+</html>

@@ -1,0 +1,6 @@
+model,contamination,auc,precision_at_k,time_s,error
+HBOS,0.02,0.5284384218289085,0.10416666666666667,1.28,
+COPOD,0.02,0.5218012536873157,0.125,0.04,
+KNN,0.02,0.5014288348082596,0.13541666666666666,0.1,
+ECOD,0.02,0.4917957227138643,0.08333333333333333,0.43,
+PCA-OD,,,,0.01,Input contains infinity or a value too large for dtype('float64').
