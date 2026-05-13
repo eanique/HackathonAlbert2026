@@ -1,0 +1,22 @@
+{
+  "vessel_detected": true,
+  "n_vessels_estimated": 8,
+  "vessel_category": "unknown",
+  "is_military": false,
+  "vessel_length_estimate_m": 85.0,
+  "confidence": 0.62,
+  "geographic_zone": "Rade de Brest",
+  "zone_type": "naval_base",
+  "geopolitical_risk_level": "low",
+  "geopolitical_context": "La rade de Brest est le principal port militaire français en Atlantique, abritant la Force Océanique Stratégique (FOST). La zone est sous souveraineté française et fait l'objet d'une surveillance permanente.",
+  "is_dark_candidate": false,
+  "alert": false,
+  "alert_reason": null,
+  "limits": "Image SAR : pas de MMSI, pas de pavillon, pas de nom de navire identifiable. Type précis de navire non déterminable (signature SAR ambiguë). Plusieurs points brillants pourraient être des artefacts de rétrodiffusion (quais, infrastructures métalliques) plutôt que des navires. Distinction militaire/civil impossible sans données AIS ou optique complémentaire. Résolution insuffisante pour discriminer sous-marin en surface.",
+  "model_version": "maritime-v1.1-bdd-minarm",
+  "model": "claude-sonnet-4-6",
+  "_image_file": "S1A_IW_GRDH_1SDV_20260511T181323_20260511T181348_064473_081EB8_rtc_vv.preview.jpg",
+  "_scene_id": "S1A_IW_GRDH_1SDV_20260511T181323_20260511T181348_064473_081EB8_rtc",
+  "_lat": 48.39,
+  "_lon": -4.47
+}

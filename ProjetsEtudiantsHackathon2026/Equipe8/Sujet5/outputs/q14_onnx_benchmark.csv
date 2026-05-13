@@ -1,0 +1,3 @@
+backend,weights,n_iter,median_ms,p10_ms,p90_ms,n_det
+pytorch_cpu,yolov8n.pt,5,25.02,24.17,27.78,6
+onnx_cpu,yolov8n.onnx,5,27.09,26.81,27.36,6

@@ -1,0 +1,416 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #fff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 800px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#e74", "flag": "Singapore", "font": {"color": "#222"}, "id": "ship:789983559", "kind": "Navire", "label": "NAVIRE-3559", "mmsi": "789983559", "score": 0.6827695814377354, "shape": "dot", "size": 10}, {"color": "#aaa", "font": {"color": "#222"}, "id": "flag:Singapore", "kind": "Pavillon", "label": "Singapore", "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:789983559", "kind": "Alerte", "label": "Alerte 789983559", "score": 0.6827695814377354, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Singapore", "font": {"color": "#222"}, "id": "ship:389921162", "kind": "Navire", "label": "NAVIRE-1162", "mmsi": "389921162", "score": 0.3792376033841868, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Singapore", "font": {"color": "#222"}, "id": "ship:377068202", "kind": "Navire", "label": "NAVIRE-8202", "mmsi": "377068202", "score": 0.562393431149239, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Singapore", "font": {"color": "#222"}, "id": "ship:220627024", "kind": "Navire", "label": "NAVIRE-7024", "mmsi": "220627024", "score": 0.21814503909720828, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Singapore", "font": {"color": "#222"}, "id": "ship:377992909", "kind": "Navire", "label": "NAVIRE-2909", "mmsi": "377992909", "score": 0.22015304681494266, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Singapore", "font": {"color": "#222"}, "id": "ship:206220320", "kind": "Navire", "label": "NAVIRE-0320", "mmsi": "206220320", "score": 0.22242081945093548, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Singapore", "font": {"color": "#222"}, "id": "ship:664640837", "kind": "Navire", "label": "NAVIRE-0837", "mmsi": "664640837", "score": 0.6869688398233812, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Singapore", "font": {"color": "#222"}, "id": "ship:393509366", "kind": "Navire", "label": "NAVIRE-9366", "mmsi": "393509366", "score": 0.46884317701490946, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Bahamas", "font": {"color": "#222"}, "id": "ship:345917757", "kind": "Navire", "label": "NAVIRE-7757", "mmsi": "345917757", "score": 0.38382756882834834, "shape": "dot", "size": 10}, {"color": "#aaa", "font": {"color": "#222"}, "id": "flag:Bahamas", "kind": "Pavillon", "label": "Bahamas", "shape": "dot", "size": 10}, {"color": "#fa3", "count": 12, "font": {"color": "#222"}, "id": "anom:Fake Flag", "kind": "Anomalie", "label": "Fake Flag", "shape": "dot", "size": 10}, {"color": "#fa3", "count": 16, "font": {"color": "#222"}, "id": "anom:Speed Anomaly", "kind": "Anomalie", "label": "Speed Anomaly", "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Bahamas", "font": {"color": "#222"}, "id": "ship:443828407", "kind": "Navire", "label": "NAVIRE-8407", "mmsi": "443828407", "score": 0.6735243692272108, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Bahamas", "font": {"color": "#222"}, "id": "ship:375047621", "kind": "Navire", "label": "NAVIRE-7621", "mmsi": "375047621", "score": 0.7256642246987051, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Bahamas", "font": {"color": "#222"}, "id": "ship:353821583", "kind": "Navire", "label": "NAVIRE-1583", "mmsi": "353821583", "score": 0.7260209862759668, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Bahamas", "font": {"color": "#222"}, "id": "ship:324742591", "kind": "Navire", "label": "NAVIRE-2591", "mmsi": "324742591", "score": 0.0736808572003099, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Bahamas", "font": {"color": "#222"}, "id": "ship:792163190", "kind": "Navire", "label": "NAVIRE-3190", "mmsi": "792163190", "score": 0.3548695108572895, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Bahamas", "font": {"color": "#222"}, "id": "ship:704843269", "kind": "Navire", "label": "NAVIRE-3269", "mmsi": "704843269", "score": 0.41603885085632963, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Bahamas", "font": {"color": "#222"}, "id": "ship:260273820", "kind": "Navire", "label": "NAVIRE-3820", "mmsi": "260273820", "score": 0.738820535139857, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Bahamas", "font": {"color": "#222"}, "id": "ship:333886054", "kind": "Navire", "label": "NAVIRE-6054", "mmsi": "333886054", "score": 0.492587488904567, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Bahamas", "font": {"color": "#222"}, "id": "ship:488577018", "kind": "Navire", "label": "NAVIRE-7018", "mmsi": "488577018", "score": 0.7098162383381792, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Bahamas", "font": {"color": "#222"}, "id": "ship:789472539", "kind": "Navire", "label": "NAVIRE-2539", "mmsi": "789472539", "score": 0.39328560252537004, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Bahamas", "font": {"color": "#222"}, "id": "ship:779191453", "kind": "Navire", "label": "NAVIRE-1453", "mmsi": "779191453", "score": 0.30833904312283167, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Liberia", "font": {"color": "#222"}, "id": "ship:728358748", "kind": "Navire", "label": "NAVIRE-8748", "mmsi": "728358748", "score": 0.6005972726275408, "shape": "dot", "size": 10}, {"color": "#aaa", "font": {"color": "#222"}, "id": "flag:Liberia", "kind": "Pavillon", "label": "Liberia", "shape": "dot", "size": 10}, {"color": "#fa3", "count": 21, "font": {"color": "#222"}, "id": "anom:Course Anomaly", "kind": "Anomalie", "label": "Course Anomaly", "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Liberia", "font": {"color": "#222"}, "id": "ship:636613948", "kind": "Navire", "label": "NAVIRE-3948", "mmsi": "636613948", "score": 0.6889044689904873, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Liberia", "font": {"color": "#222"}, "id": "ship:236799075", "kind": "Navire", "label": "NAVIRE-9075", "mmsi": "236799075", "score": 0.403645705458271, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Liberia", "font": {"color": "#222"}, "id": "ship:401816566", "kind": "Navire", "label": "NAVIRE-6566", "mmsi": "401816566", "score": 0.3917870713966314, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Liberia", "font": {"color": "#222"}, "id": "ship:347759038", "kind": "Navire", "label": "NAVIRE-9038", "mmsi": "347759038", "score": 0.3810420919834037, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Liberia", "font": {"color": "#222"}, "id": "ship:666126066", "kind": "Navire", "label": "NAVIRE-6066", "mmsi": "666126066", "score": 0.22129102576079943, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Liberia", "font": {"color": "#222"}, "id": "ship:763169399", "kind": "Navire", "label": "NAVIRE-9399", "mmsi": "763169399", "score": 0.4662641856205198, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Liberia", "font": {"color": "#222"}, "id": "ship:332786654", "kind": "Navire", "label": "NAVIRE-6654", "mmsi": "332786654", "score": 0.31152355883976623, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:742854816", "kind": "Navire", "label": "NAVIRE-4816", "mmsi": "742854816", "score": 0.4288476333864295, "shape": "dot", "size": 10}, {"color": "#aaa", "font": {"color": "#222"}, "id": "flag:Denmark", "kind": "Pavillon", "label": "Denmark", "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:647288961", "kind": "Navire", "label": "NAVIRE-8961", "mmsi": "647288961", "score": 0.42676536988944797, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:518636217", "kind": "Navire", "label": "NAVIRE-6217", "mmsi": "518636217", "score": 0.7356916289418071, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:685694091", "kind": "Navire", "label": "NAVIRE-4091", "mmsi": "685694091", "score": 0.34368372309629813, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:340668048", "kind": "Navire", "label": "NAVIRE-8048", "mmsi": "340668048", "score": 0.32496537712402374, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:602448584", "kind": "Navire", "label": "NAVIRE-8584", "mmsi": "602448584", "score": 0.5632304845734983, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:378367378", "kind": "Navire", "label": "NAVIRE-7378", "mmsi": "378367378", "score": 0.3714289710262007, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:360833773", "kind": "Navire", "label": "NAVIRE-3773", "mmsi": "360833773", "score": 0.7105353221857963, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:341249881", "kind": "Navire", "label": "NAVIRE-9881", "mmsi": "341249881", "score": 0.587527693739814, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:368365433", "kind": "Navire", "label": "NAVIRE-5433", "mmsi": "368365433", "score": 0.23788189139186935, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:418950990", "kind": "Navire", "label": "NAVIRE-0990", "mmsi": "418950990", "score": 0.7532938922456411, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:591498401", "kind": "Navire", "label": "NAVIRE-8401", "mmsi": "591498401", "score": 0.8064625592741934, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:721604393", "kind": "Navire", "label": "NAVIRE-4393", "mmsi": "721604393", "score": 0.5481586435822889, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:515300056", "kind": "Navire", "label": "NAVIRE-0056", "mmsi": "515300056", "score": 0.5465844241499579, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:457122734", "kind": "Navire", "label": "NAVIRE-2734", "mmsi": "457122734", "score": 0.16552490760414693, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:783109193", "kind": "Navire", "label": "NAVIRE-9193", "mmsi": "783109193", "score": 0.29196735351280595, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:431340436", "kind": "Navire", "label": "NAVIRE-0436", "mmsi": "431340436", "score": 0.43080241795904317, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:725306361", "kind": "Navire", "label": "NAVIRE-6361", "mmsi": "725306361", "score": 0.29459422911397776, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Denmark", "font": {"color": "#222"}, "id": "ship:580232268", "kind": "Navire", "label": "NAVIRE-2268", "mmsi": "580232268", "score": 0.37926865920660463, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Marshall Islands", "font": {"color": "#222"}, "id": "ship:208492908", "kind": "Navire", "label": "NAVIRE-2908", "mmsi": "208492908", "score": 0.3807762054187208, "shape": "dot", "size": 10}, {"color": "#aaa", "font": {"color": "#222"}, "id": "flag:Marshall Islands", "kind": "Pavillon", "label": "Marshall Islands", "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Marshall Islands", "font": {"color": "#222"}, "id": "ship:286026287", "kind": "Navire", "label": "NAVIRE-6287", "mmsi": "286026287", "score": 0.5084634250513769, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Marshall Islands", "font": {"color": "#222"}, "id": "ship:275509216", "kind": "Navire", "label": "NAVIRE-9216", "mmsi": "275509216", "score": 0.6889837207182543, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Marshall Islands", "font": {"color": "#222"}, "id": "ship:211394760", "kind": "Navire", "label": "NAVIRE-4760", "mmsi": "211394760", "score": 0.3623881239122123, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Marshall Islands", "font": {"color": "#222"}, "id": "ship:385217219", "kind": "Navire", "label": "NAVIRE-7219", "mmsi": "385217219", "score": 0.30267242028376157, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Marshall Islands", "font": {"color": "#222"}, "id": "ship:612140966", "kind": "Navire", "label": "NAVIRE-0966", "mmsi": "612140966", "score": 0.7016477829155614, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Marshall Islands", "font": {"color": "#222"}, "id": "ship:696020593", "kind": "Navire", "label": "NAVIRE-0593", "mmsi": "696020593", "score": 0.7320252756126439, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Marshall Islands", "font": {"color": "#222"}, "id": "ship:782140749", "kind": "Navire", "label": "NAVIRE-0749", "mmsi": "782140749", "score": 0.6671093314713367, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Marshall Islands", "font": {"color": "#222"}, "id": "ship:641942797", "kind": "Navire", "label": "NAVIRE-2797", "mmsi": "641942797", "score": 0.7248411526307749, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Marshall Islands", "font": {"color": "#222"}, "id": "ship:474472853", "kind": "Navire", "label": "NAVIRE-2853", "mmsi": "474472853", "score": 0.408137671464703, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Marshall Islands", "font": {"color": "#222"}, "id": "ship:544068709", "kind": "Navire", "label": "NAVIRE-8709", "mmsi": "544068709", "score": 0.33151783812007246, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Marshall Islands", "font": {"color": "#222"}, "id": "ship:548068452", "kind": "Navire", "label": "NAVIRE-8452", "mmsi": "548068452", "score": 0.2056739745097146, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:443828407", "kind": "Alerte", "label": "Alerte 443828407", "score": 0.6735243692272108, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "USA", "font": {"color": "#222"}, "id": "ship:543045682", "kind": "Navire", "label": "NAVIRE-5682", "mmsi": "543045682", "score": 0.6116004620098098, "shape": "dot", "size": 10}, {"color": "#aaa", "font": {"color": "#222"}, "id": "flag:USA", "kind": "Pavillon", "label": "USA", "shape": "dot", "size": 10}, {"color": "#9be", "flag": "USA", "font": {"color": "#222"}, "id": "ship:616945014", "kind": "Navire", "label": "NAVIRE-5014", "mmsi": "616945014", "score": 0.23105015630467812, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "USA", "font": {"color": "#222"}, "id": "ship:305790946", "kind": "Navire", "label": "NAVIRE-0946", "mmsi": "305790946", "score": 0.23092010526067117, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "USA", "font": {"color": "#222"}, "id": "ship:386428572", "kind": "Navire", "label": "NAVIRE-8572", "mmsi": "386428572", "score": 0.38772698941567374, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "USA", "font": {"color": "#222"}, "id": "ship:315074468", "kind": "Navire", "label": "NAVIRE-4468", "mmsi": "315074468", "score": 0.6509154758496914, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "USA", "font": {"color": "#222"}, "id": "ship:441462536", "kind": "Navire", "label": "NAVIRE-2536", "mmsi": "441462536", "score": 0.2206623042582795, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "USA", "font": {"color": "#222"}, "id": "ship:522604490", "kind": "Navire", "label": "NAVIRE-4490", "mmsi": "522604490", "score": 0.4224362520721317, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "USA", "font": {"color": "#222"}, "id": "ship:708338175", "kind": "Navire", "label": "NAVIRE-8175", "mmsi": "708338175", "score": 0.7625167455840093, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "USA", "font": {"color": "#222"}, "id": "ship:796671313", "kind": "Navire", "label": "NAVIRE-1313", "mmsi": "796671313", "score": 0.30909373538582335, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "USA", "font": {"color": "#222"}, "id": "ship:609473975", "kind": "Navire", "label": "NAVIRE-3975", "mmsi": "609473975", "score": 0.6806616874492427, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "USA", "font": {"color": "#222"}, "id": "ship:680213971", "kind": "Navire", "label": "NAVIRE-3971", "mmsi": "680213971", "score": 0.30958709320861577, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Malta", "font": {"color": "#222"}, "id": "ship:291644254", "kind": "Navire", "label": "NAVIRE-4254", "mmsi": "291644254", "score": 0.3380768072872698, "shape": "dot", "size": 10}, {"color": "#aaa", "font": {"color": "#222"}, "id": "flag:Malta", "kind": "Pavillon", "label": "Malta", "shape": "dot", "size": 10}, {"color": "#fa3", "count": 12, "font": {"color": "#222"}, "id": "anom:AIS Disabled", "kind": "Anomalie", "label": "AIS Disabled", "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Malta", "font": {"color": "#222"}, "id": "ship:447149593", "kind": "Navire", "label": "NAVIRE-9593", "mmsi": "447149593", "score": 0.25208178577918594, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Malta", "font": {"color": "#222"}, "id": "ship:230810621", "kind": "Navire", "label": "NAVIRE-0621", "mmsi": "230810621", "score": 0.34746646885595645, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Malta", "font": {"color": "#222"}, "id": "ship:575896922", "kind": "Navire", "label": "NAVIRE-6922", "mmsi": "575896922", "score": 0.7609153265150549, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Malta", "font": {"color": "#222"}, "id": "ship:583562034", "kind": "Navire", "label": "NAVIRE-2034", "mmsi": "583562034", "score": 0.4682342963586981, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Malta", "font": {"color": "#222"}, "id": "ship:553298294", "kind": "Navire", "label": "NAVIRE-8294", "mmsi": "553298294", "score": 0.23786398339627082, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Malta", "font": {"color": "#222"}, "id": "ship:571927479", "kind": "Navire", "label": "NAVIRE-7479", "mmsi": "571927479", "score": 0.5352638259500117, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Malta", "font": {"color": "#222"}, "id": "ship:723678138", "kind": "Navire", "label": "NAVIRE-8138", "mmsi": "723678138", "score": 0.3211698311765181, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Malta", "font": {"color": "#222"}, "id": "ship:796002514", "kind": "Navire", "label": "NAVIRE-2514", "mmsi": "796002514", "score": 0.5679744957405185, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Malta", "font": {"color": "#222"}, "id": "ship:465482524", "kind": "Navire", "label": "NAVIRE-2524", "mmsi": "465482524", "score": 1.0, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Malta", "font": {"color": "#222"}, "id": "ship:731337211", "kind": "Navire", "label": "NAVIRE-7211", "mmsi": "731337211", "score": 0.6724092939290351, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Malta", "font": {"color": "#222"}, "id": "ship:543131057", "kind": "Navire", "label": "NAVIRE-1057", "mmsi": "543131057", "score": 0.7677498650657455, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Malta", "font": {"color": "#222"}, "id": "ship:420862582", "kind": "Navire", "label": "NAVIRE-2582", "mmsi": "420862582", "score": 0.33794367182009016, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:769565144", "kind": "Navire", "label": "NAVIRE-5144", "mmsi": "769565144", "score": 0.23718296281904688, "shape": "dot", "size": 10}, {"color": "#aaa", "font": {"color": "#222"}, "id": "flag:Panama", "kind": "Pavillon", "label": "Panama", "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:426878147", "kind": "Navire", "label": "NAVIRE-8147", "mmsi": "426878147", "score": 0.8217825652290268, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:587285928", "kind": "Navire", "label": "NAVIRE-5928", "mmsi": "587285928", "score": 0.41965883802707565, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:468051507", "kind": "Navire", "label": "NAVIRE-1507", "mmsi": "468051507", "score": 0.7255023534525297, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:471117456", "kind": "Navire", "label": "NAVIRE-7456", "mmsi": "471117456", "score": 0.5272046942060766, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:392617917", "kind": "Navire", "label": "NAVIRE-7917", "mmsi": "392617917", "score": 0.6828386531246239, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:579409855", "kind": "Navire", "label": "NAVIRE-9855", "mmsi": "579409855", "score": 0.42651826371882406, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:566572399", "kind": "Navire", "label": "NAVIRE-2399", "mmsi": "566572399", "score": 0.6650384676587962, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:449459316", "kind": "Navire", "label": "NAVIRE-9316", "mmsi": "449459316", "score": 0.40187626288881134, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:586349749", "kind": "Navire", "label": "NAVIRE-9749", "mmsi": "586349749", "score": 0.27938945649028885, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:481997523", "kind": "Navire", "label": "NAVIRE-7523", "mmsi": "481997523", "score": 0.2680060392538024, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:559795298", "kind": "Navire", "label": "NAVIRE-5298", "mmsi": "559795298", "score": 0.32085772044151556, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:213287515", "kind": "Navire", "label": "NAVIRE-7515", "mmsi": "213287515", "score": 0.6807071973639981, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:630180360", "kind": "Navire", "label": "NAVIRE-0360", "mmsi": "630180360", "score": 0.36609661938070015, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:729794426", "kind": "Navire", "label": "NAVIRE-4426", "mmsi": "729794426", "score": 0.24430297554640093, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "Panama", "font": {"color": "#222"}, "id": "ship:656481138", "kind": "Navire", "label": "NAVIRE-1138", "mmsi": "656481138", "score": 0.40951121362378806, "shape": "dot", "size": 10}, {"color": "#fa3", "count": 10, "font": {"color": "#222"}, "id": "anom:Spoofing", "kind": "Anomalie", "label": "Spoofing", "shape": "dot", "size": 10}, {"color": "#e74", "flag": "France", "font": {"color": "#222"}, "id": "ship:733587569", "kind": "Navire", "label": "NAVIRE-7569", "mmsi": "733587569", "score": 0.48181495371772126, "shape": "dot", "size": 10}, {"color": "#aaa", "font": {"color": "#222"}, "id": "flag:France", "kind": "Pavillon", "label": "France", "shape": "dot", "size": 10}, {"color": "#9be", "flag": "France", "font": {"color": "#222"}, "id": "ship:290000334", "kind": "Navire", "label": "NAVIRE-0334", "mmsi": "290000334", "score": 0.26429732563255803, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "France", "font": {"color": "#222"}, "id": "ship:510872204", "kind": "Navire", "label": "NAVIRE-2204", "mmsi": "510872204", "score": 0.24042534010159086, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "France", "font": {"color": "#222"}, "id": "ship:469045896", "kind": "Navire", "label": "NAVIRE-5896", "mmsi": "469045896", "score": 0.2680128763235458, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "France", "font": {"color": "#222"}, "id": "ship:557579724", "kind": "Navire", "label": "NAVIRE-9724", "mmsi": "557579724", "score": 0.2701020584346768, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "France", "font": {"color": "#222"}, "id": "ship:580125089", "kind": "Navire", "label": "NAVIRE-5089", "mmsi": "580125089", "score": 0.415138315765553, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "France", "font": {"color": "#222"}, "id": "ship:620065675", "kind": "Navire", "label": "NAVIRE-5675", "mmsi": "620065675", "score": 0.41561333358803626, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "France", "font": {"color": "#222"}, "id": "ship:778196639", "kind": "Navire", "label": "NAVIRE-6639", "mmsi": "778196639", "score": 0.34095198699194096, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "France", "font": {"color": "#222"}, "id": "ship:749434747", "kind": "Navire", "label": "NAVIRE-4747", "mmsi": "749434747", "score": 0.37892171719638723, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "France", "font": {"color": "#222"}, "id": "ship:570937640", "kind": "Navire", "label": "NAVIRE-7640", "mmsi": "570937640", "score": 0.361263654540471, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "France", "font": {"color": "#222"}, "id": "ship:245445168", "kind": "Navire", "label": "NAVIRE-5168", "mmsi": "245445168", "score": 0.40501638071208634, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:518636217", "kind": "Alerte", "label": "Alerte 518636217", "score": 0.7356916289418071, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:636613948", "kind": "Alerte", "label": "Alerte 636613948", "score": 0.6889044689904873, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:375047621", "kind": "Alerte", "label": "Alerte 375047621", "score": 0.7256642246987051, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:275509216", "kind": "Alerte", "label": "Alerte 275509216", "score": 0.6889837207182543, "shape": "dot", "size": 10}, {"color": "#fa3", "count": 15, "font": {"color": "#222"}, "id": "anom:Name Change", "kind": "Anomalie", "label": "Name Change", "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:426878147", "kind": "Alerte", "label": "Alerte 426878147", "score": 0.8217825652290268, "shape": "dot", "size": 10}, {"color": "#fa3", "count": 14, "font": {"color": "#222"}, "id": "anom:Position Mismatch", "kind": "Anomalie", "label": "Position Mismatch", "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:353821583", "kind": "Alerte", "label": "Alerte 353821583", "score": 0.7260209862759668, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "China", "font": {"color": "#222"}, "id": "ship:777666051", "kind": "Navire", "label": "NAVIRE-6051", "mmsi": "777666051", "score": 0.40386931568664114, "shape": "dot", "size": 10}, {"color": "#aaa", "font": {"color": "#222"}, "id": "flag:China", "kind": "Pavillon", "label": "China", "shape": "dot", "size": 10}, {"color": "#e74", "flag": "China", "font": {"color": "#222"}, "id": "ship:614687847", "kind": "Navire", "label": "NAVIRE-7847", "mmsi": "614687847", "score": 0.4397095116610478, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "China", "font": {"color": "#222"}, "id": "ship:308695892", "kind": "Navire", "label": "NAVIRE-5892", "mmsi": "308695892", "score": 0.19840871148754147, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "China", "font": {"color": "#222"}, "id": "ship:270308779", "kind": "Navire", "label": "NAVIRE-8779", "mmsi": "270308779", "score": 0.4040393947919777, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "China", "font": {"color": "#222"}, "id": "ship:353691130", "kind": "Navire", "label": "NAVIRE-1130", "mmsi": "353691130", "score": 0.3437756097117173, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "China", "font": {"color": "#222"}, "id": "ship:642476777", "kind": "Navire", "label": "NAVIRE-6777", "mmsi": "642476777", "score": 0.5023950575917167, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "China", "font": {"color": "#222"}, "id": "ship:470359883", "kind": "Navire", "label": "NAVIRE-9883", "mmsi": "470359883", "score": 0.32777201064109285, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "China", "font": {"color": "#222"}, "id": "ship:379393743", "kind": "Navire", "label": "NAVIRE-3743", "mmsi": "379393743", "score": 0.36727917297217855, "shape": "dot", "size": 10}, {"color": "#9be", "flag": "China", "font": {"color": "#222"}, "id": "ship:780872220", "kind": "Navire", "label": "NAVIRE-2220", "mmsi": "780872220", "score": 0.25805662660703627, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "China", "font": {"color": "#222"}, "id": "ship:537057172", "kind": "Navire", "label": "NAVIRE-7172", "mmsi": "537057172", "score": 0.7302496212891513, "shape": "dot", "size": 10}, {"color": "#e74", "flag": "China", "font": {"color": "#222"}, "id": "ship:791982495", "kind": "Navire", "label": "NAVIRE-2495", "mmsi": "791982495", "score": 0.6952634709752705, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:612140966", "kind": "Alerte", "label": "Alerte 612140966", "score": 0.7016477829155614, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:468051507", "kind": "Alerte", "label": "Alerte 468051507", "score": 0.7255023534525297, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:575896922", "kind": "Alerte", "label": "Alerte 575896922", "score": 0.7609153265150549, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:696020593", "kind": "Alerte", "label": "Alerte 696020593", "score": 0.7320252756126439, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:392617917", "kind": "Alerte", "label": "Alerte 392617917", "score": 0.6828386531246239, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:782140749", "kind": "Alerte", "label": "Alerte 782140749", "score": 0.6671093314713367, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:260273820", "kind": "Alerte", "label": "Alerte 260273820", "score": 0.738820535139857, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:566572399", "kind": "Alerte", "label": "Alerte 566572399", "score": 0.6650384676587962, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:360833773", "kind": "Alerte", "label": "Alerte 360833773", "score": 0.7105353221857963, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:418950990", "kind": "Alerte", "label": "Alerte 418950990", "score": 0.7532938922456411, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:591498401", "kind": "Alerte", "label": "Alerte 591498401", "score": 0.8064625592741934, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:708338175", "kind": "Alerte", "label": "Alerte 708338175", "score": 0.7625167455840093, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:641942797", "kind": "Alerte", "label": "Alerte 641942797", "score": 0.7248411526307749, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:488577018", "kind": "Alerte", "label": "Alerte 488577018", "score": 0.7098162383381792, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:213287515", "kind": "Alerte", "label": "Alerte 213287515", "score": 0.6807071973639981, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:664640837", "kind": "Alerte", "label": "Alerte 664640837", "score": 0.6869688398233812, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:465482524", "kind": "Alerte", "label": "Alerte 465482524", "score": 1.0, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:609473975", "kind": "Alerte", "label": "Alerte 609473975", "score": 0.6806616874492427, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:731337211", "kind": "Alerte", "label": "Alerte 731337211", "score": 0.6724092939290351, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:537057172", "kind": "Alerte", "label": "Alerte 537057172", "score": 0.7302496212891513, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:543131057", "kind": "Alerte", "label": "Alerte 543131057", "score": 0.7677498650657455, "shape": "dot", "size": 10}, {"color": "#c33", "font": {"color": "#222"}, "id": "alert:791982495", "kind": "Alerte", "label": "Alerte 791982495", "score": 0.6952634709752705, "shape": "dot", "size": 10}]);
+                  edges = new vis.DataSet([{"from": "ship:789983559", "relation": "flies", "to": "flag:Singapore", "width": 1}, {"from": "ship:789983559", "relation": "triggers", "to": "alert:789983559", "width": 1}, {"from": "flag:Singapore", "relation": "flies", "to": "ship:389921162", "width": 1}, {"from": "flag:Singapore", "relation": "flies", "to": "ship:377068202", "width": 1}, {"from": "flag:Singapore", "relation": "flies", "to": "ship:220627024", "width": 1}, {"from": "flag:Singapore", "relation": "flies", "to": "ship:377992909", "width": 1}, {"from": "flag:Singapore", "relation": "flies", "to": "ship:206220320", "width": 1}, {"from": "flag:Singapore", "relation": "flies", "to": "ship:664640837", "width": 1}, {"from": "flag:Singapore", "relation": "flies", "to": "ship:393509366", "width": 1}, {"from": "ship:345917757", "relation": "flies", "to": "flag:Bahamas", "width": 1}, {"from": "ship:345917757", "relation": "flagged_as", "to": "anom:Fake Flag", "width": 1}, {"from": "ship:345917757", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "flag:Bahamas", "relation": "flies", "to": "ship:443828407", "width": 1}, {"from": "flag:Bahamas", "relation": "flies", "to": "ship:375047621", "width": 1}, {"from": "flag:Bahamas", "relation": "flies", "to": "ship:353821583", "width": 1}, {"from": "flag:Bahamas", "relation": "flies", "to": "ship:324742591", "width": 1}, {"from": "flag:Bahamas", "relation": "flies", "to": "ship:792163190", "width": 1}, {"from": "flag:Bahamas", "relation": "flies", "to": "ship:704843269", "width": 1}, {"from": "flag:Bahamas", "relation": "flies", "to": "ship:260273820", "width": 1}, {"from": "flag:Bahamas", "relation": "flies", "to": "ship:333886054", "width": 1}, {"from": "flag:Bahamas", "relation": "flies", "to": "ship:488577018", "width": 1}, {"from": "flag:Bahamas", "relation": "flies", "to": "ship:789472539", "width": 1}, {"from": "flag:Bahamas", "relation": "flies", "to": "ship:779191453", "width": 1}, {"from": "ship:728358748", "relation": "flies", "to": "flag:Liberia", "width": 1}, {"from": "ship:728358748", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "flag:Liberia", "relation": "flies", "to": "ship:636613948", "width": 1}, {"from": "flag:Liberia", "relation": "flies", "to": "ship:236799075", "width": 1}, {"from": "flag:Liberia", "relation": "flies", "to": "ship:401816566", "width": 1}, {"from": "flag:Liberia", "relation": "flies", "to": "ship:347759038", "width": 1}, {"from": "flag:Liberia", "relation": "flies", "to": "ship:666126066", "width": 1}, {"from": "flag:Liberia", "relation": "flies", "to": "ship:763169399", "width": 1}, {"from": "flag:Liberia", "relation": "flies", "to": "ship:332786654", "width": 1}, {"from": "ship:742854816", "relation": "flies", "to": "flag:Denmark", "width": 1}, {"from": "ship:742854816", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:647288961", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:518636217", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:685694091", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:340668048", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:602448584", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:378367378", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:360833773", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:341249881", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:368365433", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:418950990", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:591498401", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:721604393", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:515300056", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:457122734", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:783109193", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:431340436", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:725306361", "width": 1}, {"from": "flag:Denmark", "relation": "flies", "to": "ship:580232268", "width": 1}, {"from": "ship:208492908", "relation": "flies", "to": "flag:Marshall Islands", "width": 1}, {"from": "ship:208492908", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "flag:Marshall Islands", "relation": "flies", "to": "ship:286026287", "width": 1}, {"from": "flag:Marshall Islands", "relation": "flies", "to": "ship:275509216", "width": 1}, {"from": "flag:Marshall Islands", "relation": "flies", "to": "ship:211394760", "width": 1}, {"from": "flag:Marshall Islands", "relation": "flies", "to": "ship:385217219", "width": 1}, {"from": "flag:Marshall Islands", "relation": "flies", "to": "ship:612140966", "width": 1}, {"from": "flag:Marshall Islands", "relation": "flies", "to": "ship:696020593", "width": 1}, {"from": "flag:Marshall Islands", "relation": "flies", "to": "ship:782140749", "width": 1}, {"from": "flag:Marshall Islands", "relation": "flies", "to": "ship:641942797", "width": 1}, {"from": "flag:Marshall Islands", "relation": "flies", "to": "ship:474472853", "width": 1}, {"from": "flag:Marshall Islands", "relation": "flies", "to": "ship:544068709", "width": 1}, {"from": "flag:Marshall Islands", "relation": "flies", "to": "ship:548068452", "width": 1}, {"from": "ship:647288961", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:443828407", "relation": "triggers", "to": "alert:443828407", "width": 1}, {"from": "ship:543045682", "relation": "flies", "to": "flag:USA", "width": 1}, {"from": "ship:543045682", "relation": "flagged_as", "to": "anom:Fake Flag", "width": 1}, {"from": "flag:USA", "relation": "flies", "to": "ship:616945014", "width": 1}, {"from": "flag:USA", "relation": "flies", "to": "ship:305790946", "width": 1}, {"from": "flag:USA", "relation": "flies", "to": "ship:386428572", "width": 1}, {"from": "flag:USA", "relation": "flies", "to": "ship:315074468", "width": 1}, {"from": "flag:USA", "relation": "flies", "to": "ship:441462536", "width": 1}, {"from": "flag:USA", "relation": "flies", "to": "ship:522604490", "width": 1}, {"from": "flag:USA", "relation": "flies", "to": "ship:708338175", "width": 1}, {"from": "flag:USA", "relation": "flies", "to": "ship:796671313", "width": 1}, {"from": "flag:USA", "relation": "flies", "to": "ship:609473975", "width": 1}, {"from": "flag:USA", "relation": "flies", "to": "ship:680213971", "width": 1}, {"from": "ship:291644254", "relation": "flies", "to": "flag:Malta", "width": 1}, {"from": "ship:291644254", "relation": "flagged_as", "to": "anom:AIS Disabled", "width": 1}, {"from": "flag:Malta", "relation": "flies", "to": "ship:447149593", "width": 1}, {"from": "flag:Malta", "relation": "flies", "to": "ship:230810621", "width": 1}, {"from": "flag:Malta", "relation": "flies", "to": "ship:575896922", "width": 1}, {"from": "flag:Malta", "relation": "flies", "to": "ship:583562034", "width": 1}, {"from": "flag:Malta", "relation": "flies", "to": "ship:553298294", "width": 1}, {"from": "flag:Malta", "relation": "flies", "to": "ship:571927479", "width": 1}, {"from": "flag:Malta", "relation": "flies", "to": "ship:723678138", "width": 1}, {"from": "flag:Malta", "relation": "flies", "to": "ship:796002514", "width": 1}, {"from": "flag:Malta", "relation": "flies", "to": "ship:465482524", "width": 1}, {"from": "flag:Malta", "relation": "flies", "to": "ship:731337211", "width": 1}, {"from": "flag:Malta", "relation": "flies", "to": "ship:543131057", "width": 1}, {"from": "flag:Malta", "relation": "flies", "to": "ship:420862582", "width": 1}, {"from": "ship:286026287", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:447149593", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:769565144", "relation": "flies", "to": "flag:Panama", "width": 1}, {"from": "ship:769565144", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "flag:Panama", "relation": "flies", "to": "ship:426878147", "width": 1}, {"from": "flag:Panama", "relation": "flies", "to": "ship:587285928", "width": 1}, {"from": "flag:Panama", "relation": "flies", "to": "ship:468051507", "width": 1}, {"from": "flag:Panama", "relation": "flies", "to": "ship:471117456", "width": 1}, {"from": "flag:Panama", "relation": "flies", "to": "ship:392617917", "width": 1}, {"from": "flag:Panama", "relation": "flies", "to": "ship:579409855", "width": 1}, {"from": "flag:Panama", "relation": "flies", "to": "ship:566572399", "width": 1}, {"from": "flag:Panama", "relation": "flies", "to": "ship:449459316", "width": 1}, {"from": "flag:Panama", "relation": "flies", "to": "ship:586349749", "width": 1}, {"from": "flag:Panama", "relation": "flies", "to": "ship:481997523", "width": 1}, {"from": "flag:Panama", "relation": "flies", "to": "ship:559795298", "width": 1}, {"from": "flag:Panama", "relation": "flies", "to": "ship:213287515", "width": 1}, {"from": "flag:Panama", "relation": "flies", "to": "ship:630180360", "width": 1}, {"from": "flag:Panama", "relation": "flies", "to": "ship:729794426", "width": 1}, {"from": "flag:Panama", "relation": "flies", "to": "ship:656481138", "width": 1}, {"from": "ship:389921162", "relation": "flagged_as", "to": "anom:Spoofing", "width": 1}, {"from": "ship:733587569", "relation": "flies", "to": "flag:France", "width": 1}, {"from": "ship:733587569", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "flag:France", "relation": "flies", "to": "ship:290000334", "width": 1}, {"from": "flag:France", "relation": "flies", "to": "ship:510872204", "width": 1}, {"from": "flag:France", "relation": "flies", "to": "ship:469045896", "width": 1}, {"from": "flag:France", "relation": "flies", "to": "ship:557579724", "width": 1}, {"from": "flag:France", "relation": "flies", "to": "ship:580125089", "width": 1}, {"from": "flag:France", "relation": "flies", "to": "ship:620065675", "width": 1}, {"from": "flag:France", "relation": "flies", "to": "ship:778196639", "width": 1}, {"from": "flag:France", "relation": "flies", "to": "ship:749434747", "width": 1}, {"from": "flag:France", "relation": "flies", "to": "ship:570937640", "width": 1}, {"from": "flag:France", "relation": "flies", "to": "ship:245445168", "width": 1}, {"from": "ship:518636217", "relation": "triggers", "to": "alert:518636217", "width": 1}, {"from": "ship:636613948", "relation": "triggers", "to": "alert:636613948", "width": 1}, {"from": "ship:375047621", "relation": "triggers", "to": "alert:375047621", "width": 1}, {"from": "ship:275509216", "relation": "flagged_as", "to": "anom:Fake Flag", "width": 1}, {"from": "ship:275509216", "relation": "triggers", "to": "alert:275509216", "width": 1}, {"from": "ship:616945014", "relation": "flagged_as", "to": "anom:Name Change", "width": 1}, {"from": "ship:616945014", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "ship:377068202", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "ship:305790946", "relation": "flagged_as", "to": "anom:AIS Disabled", "width": 1}, {"from": "ship:386428572", "relation": "flagged_as", "to": "anom:AIS Disabled", "width": 1}, {"from": "ship:426878147", "relation": "flagged_as", "to": "anom:Fake Flag", "width": 1}, {"from": "ship:426878147", "relation": "triggers", "to": "alert:426878147", "width": 1}, {"from": "ship:211394760", "relation": "flagged_as", "to": "anom:Position Mismatch", "width": 1}, {"from": "ship:685694091", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:353821583", "relation": "triggers", "to": "alert:353821583", "width": 1}, {"from": "ship:220627024", "relation": "flagged_as", "to": "anom:Name Change", "width": 1}, {"from": "ship:340668048", "relation": "flagged_as", "to": "anom:Spoofing", "width": 1}, {"from": "ship:602448584", "relation": "flagged_as", "to": "anom:Fake Flag", "width": 1}, {"from": "ship:290000334", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:324742591", "relation": "flagged_as", "to": "anom:Fake Flag", "width": 1}, {"from": "ship:324742591", "relation": "flagged_as", "to": "anom:Position Mismatch", "width": 1}, {"from": "ship:792163190", "relation": "flagged_as", "to": "anom:Spoofing", "width": 1}, {"from": "ship:385217219", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:587285928", "relation": "flagged_as", "to": "anom:Fake Flag", "width": 1}, {"from": "ship:315074468", "relation": "flagged_as", "to": "anom:Fake Flag", "width": 1}, {"from": "ship:777666051", "relation": "flies", "to": "flag:China", "width": 1}, {"from": "ship:777666051", "relation": "flagged_as", "to": "anom:Position Mismatch", "width": 1}, {"from": "flag:China", "relation": "flies", "to": "ship:614687847", "width": 1}, {"from": "flag:China", "relation": "flies", "to": "ship:308695892", "width": 1}, {"from": "flag:China", "relation": "flies", "to": "ship:270308779", "width": 1}, {"from": "flag:China", "relation": "flies", "to": "ship:353691130", "width": 1}, {"from": "flag:China", "relation": "flies", "to": "ship:642476777", "width": 1}, {"from": "flag:China", "relation": "flies", "to": "ship:470359883", "width": 1}, {"from": "flag:China", "relation": "flies", "to": "ship:379393743", "width": 1}, {"from": "flag:China", "relation": "flies", "to": "ship:780872220", "width": 1}, {"from": "flag:China", "relation": "flies", "to": "ship:537057172", "width": 1}, {"from": "flag:China", "relation": "flies", "to": "ship:791982495", "width": 1}, {"from": "ship:704843269", "relation": "flagged_as", "to": "anom:AIS Disabled", "width": 1}, {"from": "ship:230810621", "relation": "flagged_as", "to": "anom:Name Change", "width": 1}, {"from": "ship:378367378", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:510872204", "relation": "flagged_as", "to": "anom:Name Change", "width": 1}, {"from": "ship:469045896", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:236799075", "relation": "flagged_as", "to": "anom:Spoofing", "width": 1}, {"from": "ship:614687847", "relation": "flagged_as", "to": "anom:Name Change", "width": 1}, {"from": "ship:612140966", "relation": "triggers", "to": "alert:612140966", "width": 1}, {"from": "ship:468051507", "relation": "triggers", "to": "alert:468051507", "width": 1}, {"from": "ship:471117456", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "ship:575896922", "relation": "triggers", "to": "alert:575896922", "width": 1}, {"from": "ship:557579724", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:580125089", "relation": "flagged_as", "to": "anom:Fake Flag", "width": 1}, {"from": "ship:696020593", "relation": "triggers", "to": "alert:696020593", "width": 1}, {"from": "ship:392617917", "relation": "triggers", "to": "alert:392617917", "width": 1}, {"from": "ship:782140749", "relation": "triggers", "to": "alert:782140749", "width": 1}, {"from": "ship:401816566", "relation": "flagged_as", "to": "anom:Name Change", "width": 1}, {"from": "ship:347759038", "relation": "flagged_as", "to": "anom:Spoofing", "width": 1}, {"from": "ship:583562034", "relation": "flagged_as", "to": "anom:Position Mismatch", "width": 1}, {"from": "ship:579409855", "relation": "flagged_as", "to": "anom:Position Mismatch", "width": 1}, {"from": "ship:260273820", "relation": "triggers", "to": "alert:260273820", "width": 1}, {"from": "ship:553298294", "relation": "flagged_as", "to": "anom:Name Change", "width": 1}, {"from": "ship:566572399", "relation": "triggers", "to": "alert:566572399", "width": 1}, {"from": "ship:441462536", "relation": "flagged_as", "to": "anom:Fake Flag", "width": 1}, {"from": "ship:620065675", "relation": "flagged_as", "to": "anom:Position Mismatch", "width": 1}, {"from": "ship:571927479", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:449459316", "relation": "flagged_as", "to": "anom:Name Change", "width": 1}, {"from": "ship:360833773", "relation": "triggers", "to": "alert:360833773", "width": 1}, {"from": "ship:778196639", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:723678138", "relation": "flagged_as", "to": "anom:Fake Flag", "width": 1}, {"from": "ship:666126066", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "ship:341249881", "relation": "flagged_as", "to": "anom:Position Mismatch", "width": 1}, {"from": "ship:522604490", "relation": "flagged_as", "to": "anom:Name Change", "width": 1}, {"from": "ship:333886054", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "ship:368365433", "relation": "flagged_as", "to": "anom:AIS Disabled", "width": 1}, {"from": "ship:308695892", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:418950990", "relation": "triggers", "to": "alert:418950990", "width": 1}, {"from": "ship:270308779", "relation": "flagged_as", "to": "anom:Position Mismatch", "width": 1}, {"from": "ship:586349749", "relation": "flagged_as", "to": "anom:Spoofing", "width": 1}, {"from": "ship:591498401", "relation": "flagged_as", "to": "anom:AIS Disabled", "width": 1}, {"from": "ship:591498401", "relation": "triggers", "to": "alert:591498401", "width": 1}, {"from": "ship:377992909", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:708338175", "relation": "triggers", "to": "alert:708338175", "width": 1}, {"from": "ship:721604393", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "ship:796671313", "relation": "flagged_as", "to": "anom:Fake Flag", "width": 1}, {"from": "ship:763169399", "relation": "flagged_as", "to": "anom:AIS Disabled", "width": 1}, {"from": "ship:749434747", "relation": "flagged_as", "to": "anom:AIS Disabled", "width": 1}, {"from": "ship:641942797", "relation": "triggers", "to": "alert:641942797", "width": 1}, {"from": "ship:474472853", "relation": "flagged_as", "to": "anom:Position Mismatch", "width": 1}, {"from": "ship:544068709", "relation": "flagged_as", "to": "anom:Spoofing", "width": 1}, {"from": "ship:353691130", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "ship:206220320", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "ship:515300056", "relation": "flagged_as", "to": "anom:Position Mismatch", "width": 1}, {"from": "ship:457122734", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:481997523", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:642476777", "relation": "flagged_as", "to": "anom:Name Change", "width": 1}, {"from": "ship:783109193", "relation": "flagged_as", "to": "anom:AIS Disabled", "width": 1}, {"from": "ship:783109193", "relation": "flagged_as", "to": "anom:Spoofing", "width": 1}, {"from": "ship:332786654", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:559795298", "relation": "flagged_as", "to": "anom:Name Change", "width": 1}, {"from": "ship:470359883", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:488577018", "relation": "triggers", "to": "alert:488577018", "width": 1}, {"from": "ship:213287515", "relation": "triggers", "to": "alert:213287515", "width": 1}, {"from": "ship:379393743", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "ship:630180360", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "ship:570937640", "relation": "flagged_as", "to": "anom:Name Change", "width": 1}, {"from": "ship:780872220", "relation": "flagged_as", "to": "anom:AIS Disabled", "width": 1}, {"from": "ship:796002514", "relation": "flagged_as", "to": "anom:Spoofing", "width": 1}, {"from": "ship:245445168", "relation": "flagged_as", "to": "anom:Name Change", "width": 1}, {"from": "ship:729794426", "relation": "flagged_as", "to": "anom:Name Change", "width": 1}, {"from": "ship:664640837", "relation": "triggers", "to": "alert:664640837", "width": 1}, {"from": "ship:431340436", "relation": "flagged_as", "to": "anom:Position Mismatch", "width": 1}, {"from": "ship:465482524", "relation": "flagged_as", "to": "anom:AIS Disabled", "width": 1}, {"from": "ship:465482524", "relation": "triggers", "to": "alert:465482524", "width": 1}, {"from": "ship:609473975", "relation": "triggers", "to": "alert:609473975", "width": 1}, {"from": "ship:789472539", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "ship:725306361", "relation": "flagged_as", "to": "anom:Spoofing", "width": 1}, {"from": "ship:731337211", "relation": "triggers", "to": "alert:731337211", "width": 1}, {"from": "ship:779191453", "relation": "flagged_as", "to": "anom:Position Mismatch", "width": 1}, {"from": "ship:537057172", "relation": "triggers", "to": "alert:537057172", "width": 1}, {"from": "ship:543131057", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "ship:543131057", "relation": "triggers", "to": "alert:543131057", "width": 1}, {"from": "ship:656481138", "relation": "flagged_as", "to": "anom:AIS Disabled", "width": 1}, {"from": "ship:420862582", "relation": "flagged_as", "to": "anom:Course Anomaly", "width": 1}, {"from": "ship:393509366", "relation": "flagged_as", "to": "anom:Speed Anomaly", "width": 1}, {"from": "ship:548068452", "relation": "flagged_as", "to": "anom:Position Mismatch", "width": 1}, {"from": "ship:580232268", "relation": "flagged_as", "to": "anom:Position Mismatch", "width": 1}, {"from": "ship:680213971", "relation": "flagged_as", "to": "anom:Name Change", "width": 1}, {"from": "ship:791982495", "relation": "triggers", "to": "alert:791982495", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"barnesHut": {"gravitationalConstant": -8000, "centralGravity": 0.3, "springLength": 120}}, "nodes": {"font": {"size": 14}}, "edges": {"smooth": {"enabled": true, "type": "dynamic"}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

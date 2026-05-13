@@ -1,0 +1,53 @@
+{
+  "dataset": "agungpambudi/sar-ship-detection",
+  "convert": {
+    "repo": "agungpambudi/sar-ship-detection",
+    "n_images": 1160,
+    "counts": {
+      "train": {
+        "img": 928,
+        "box": 2096,
+        "empty": 0
+      },
+      "val": {
+        "img": 116,
+        "box": 227,
+        "empty": 0
+      },
+      "test": {
+        "img": 116,
+        "box": 264,
+        "empty": 0
+      }
+    },
+    "data_yaml": "data/yolo_sar/data.yaml"
+  },
+  "training": {
+    "device": "mps",
+    "epochs": 30,
+    "imgsz": 512,
+    "batch": 16,
+    "train_seconds": 1956.0,
+    "val": {
+      "mAP50": 0.9511568860104372,
+      "mAP50_95": 0.6117802491281339,
+      "precision": 0.9469345951779913,
+      "recall": 0.8647240408424485
+    },
+    "best_weights": "models/yolo_sar_best.pt",
+    "run_dir": "outputs/yolo_runs/sar_ships_finetune",
+    "test": {
+      "mAP50": 0.9647241046671371,
+      "mAP50_95": 0.6468582024097203,
+      "precision": 0.9448630016203471,
+      "recall": 0.9087625027399194
+    }
+  },
+  "test_on_real_sar_previews": {
+    "S1A_IW_GRDH_1SDV_20260506T225808_20260506T225837_064403_081C3D_rtc_vv.preview.jpg": 4,
+    "S1A_IW_GRDH_1SDV_20260510T173047_20260510T173112_064458_081E36_rtc_vv.preview.jpg": 5,
+    "S1A_IW_GRDH_1SDV_20260511T181323_20260511T181348_064473_081EB8_rtc_vv.preview.jpg": 10,
+    "S1C_IW_GRDH_1SDV_20260511T043020_20260511T043045_007601_00F6FE_rtc_vv.preview.jpg": 10,
+    "S1C_IW_GRDH_1SDV_20260511T154326_20260511T154351_007608_00F73A_rtc_vv.preview.jpg": 7
+  }
+}

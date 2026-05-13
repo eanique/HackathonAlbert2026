@@ -1,0 +1,5 @@
+model,n_iter,median_ms,p10_ms,p90_ms,n_detections,error
+"YOLOv8n (ultralytics, COCO)",3.0,26.05,24.99,27.51,6.0,
+"RT-DETR-l (ultralytics, COCO)",3.0,357.97,356.53,363.8,9.0,
+"Faster R-CNN R50-FPN (torchvision, COCO)",3.0,559.13,549.4,564.65,5.0,
+Claude Vision (Anthropic) - skipped,,,,,,ANTHROPIC_API_KEY absent

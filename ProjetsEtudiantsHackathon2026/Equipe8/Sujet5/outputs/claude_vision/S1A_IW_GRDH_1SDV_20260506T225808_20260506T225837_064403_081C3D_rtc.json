@@ -1,0 +1,22 @@
+{
+  "vessel_detected": true,
+  "n_vessels_estimated": 3,
+  "vessel_category": "military",
+  "is_military": true,
+  "vessel_length_estimate_m": 180.0,
+  "confidence": 0.72,
+  "geographic_zone": "Naval Station Norfolk, Virginia, USA",
+  "zone_type": "naval_base",
+  "geopolitical_risk_level": "low",
+  "geopolitical_context": "Naval Station Norfolk est la plus grande base navale au monde (US Navy). La présence de bâtiments militaires à quai est normale et routinière dans ce contexte.",
+  "is_dark_candidate": false,
+  "alert": false,
+  "alert_reason": null,
+  "limits": "Image SAR granuleuse : impossible de distinguer le type précis de bâtiment (destroyer, porte-avions, frégate), pas de MMSI, pas de pavillon lisible, pas de nom de navire, ambiguïté entre infrastructures portuaires et coques — les retours brillants peuvent correspondre à des grues, pontons ou superstructures métalliques. Le nombre de navires est une estimation basse.",
+  "model_version": "maritime-v1.1-bdd-minarm",
+  "model": "claude-sonnet-4-6",
+  "_image_file": "S1A_IW_GRDH_1SDV_20260506T225808_20260506T225837_064403_081C3D_rtc_vv.preview.jpg",
+  "_scene_id": "S1A_IW_GRDH_1SDV_20260506T225808_20260506T225837_064403_081C3D_rtc",
+  "_lat": 36.96,
+  "_lon": -76.32
+}

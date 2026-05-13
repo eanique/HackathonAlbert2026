@@ -1,0 +1,22 @@
+{
+  "vessel_detected": true,
+  "n_vessels_estimated": 2,
+  "vessel_category": "unknown",
+  "is_military": false,
+  "vessel_length_estimate_m": 80.0,
+  "confidence": 0.45,
+  "geographic_zone": "Côte nord de Crimée, environs de Sébastopol",
+  "zone_type": "contested",
+  "geopolitical_risk_level": "critical",
+  "geopolitical_context": "Les coordonnées LAT 44.62 / LON 33.5 correspondent aux abords de Sébastopol, Crimée, territoire sous occupation russe depuis 2014 et contesté activement depuis l'invasion de 2022. La zone fait l'objet d'opérations navales russes et ukrainiennes régulières, incluant des frappes sur infrastructures et navires.",
+  "is_dark_candidate": true,
+  "alert": true,
+  "alert_reason": "Zone contestée à risque critique (Sébastopol/Crimée), présence de signatures brillantes typiques de coques métalliques en image SAR, comportement potentiellement dark (absence de confirmation AIS impossible depuis l'image seule), activité navale militaire documentée dans la zone.",
+  "limits": "Image SAR uniquement — impossible de déterminer : MMSI, pavillon, nom, type précis de navire (militaire vs civil vs pêche), cap, vitesse, état d'armement. Les signatures brillantes pourraient être des artefacts de rétrodiffusion littorale ou des infrastructures portuaires. Résolution insuffisante pour classification fine. Pas de données AIS/SIGINT dans l'image.",
+  "model_version": "maritime-v1.1-bdd-minarm",
+  "model": "claude-sonnet-4-6",
+  "_image_file": "S1C_IW_GRDH_1SDV_20260511T154326_20260511T154351_007608_00F73A_rtc_vv.preview.jpg",
+  "_scene_id": "S1C_IW_GRDH_1SDV_20260511T154326_20260511T154351_007608_00F73A_rtc",
+  "_lat": 44.62,
+  "_lon": 33.5
+}

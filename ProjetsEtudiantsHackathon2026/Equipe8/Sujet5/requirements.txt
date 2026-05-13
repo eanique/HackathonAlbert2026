@@ -1,0 +1,76 @@
+# Sujet 5 — Traque de navires militaires par imagerie satellite
+# Python 3.12 via uv (le système 3.9 est trop vieux pour torch/ultralytics récents)
+
+# Core data
+pandas>=2.2
+numpy>=1.26
+scipy>=1.13
+pyarrow>=15
+
+# ML — classification tabulaire (P3 Q7), benchmark (P6 Q17)
+scikit-learn>=1.5             # RandomForest, SVC, MLPClassifier, t-SNE, UMAP
+umap-learn>=0.5
+
+# Vision — détection (P2) + embeddings (P3 Q8) + benchmark (P6 Q16)
+ultralytics>=8.3              # YOLOv8/YOLO11, ONNX export, RT-DETR
+torch>=2.3                    # ResNet50 embeddings, Faster R-CNN
+torchvision>=0.18             # Faster R-CNN ResNet50-FPN pré-entraîné COCO
+pillow>=10.3
+opencv-python-headless>=4.10
+albumentations>=1.4           # Augmentations Q6
+
+# COCO / annotations
+pycocotools>=2.0.7
+
+# Géospatial / imagerie satellite (Piste B + P4)
+geopy>=2.4                    # distance géodésique (Q10)
+shapely>=2.0                  # point-in-polygon (zones OSM)
+pyproj>=3.6
+rasterio>=1.3                 # lire GeoTIFF Sentinel
+rioxarray>=0.15
+pystac-client>=0.8            # STAC catalog query (Planetary Computer — choix par défaut, pas d'inscription)
+planetary-computer>=1.0       # signe les hrefs d'asset STAC PC (Piste B)
+odc-stac>=0.3                 # mosaic Sentinel via STAC
+# sentinelhub>=3.10           # cité par README S5 : décommenter si compte Sentinel Hub utilisé
+# earthengine-api>=0.1.400    # cité par README S5 : décommenter pour Google Earth Engine (inscription requise)
+overpy>=0.7                   # Overpass OSM (zones military=naval_base)
+
+# HuggingFace datasets (cité par README S5 : DefendIntelligence/vessel-detection-labeled-patches)
+datasets>=2.20
+
+# Cartes & viz
+folium>=0.17                  # carte interactive Q10-Q12 + démo
+branca>=0.7
+matplotlib>=3.8
+plotly>=5.22
+
+# Graphe (Levier L5)
+networkx>=3.3
+pyvis>=0.3
+
+# OSINT / API
+requests>=2.32
+python-dotenv>=1.0
+joblib>=1.4
+feedparser>=6.0               # flux RSS presse navale (Naval News, USNI, gCaptain, ...) — src/osint_enrich.py ; parseur regex de secours si absent
+# telethon>=1.36              # Telegram (lecture seule, compte dédié) — optionnel, non branché dans le livrable
+
+# ONNX (Q14)
+onnx>=1.16
+onnxruntime>=1.18
+
+# LLM
+# Mistral : SDK officiel `mistralai` en quarantaine PyPI (mai 2026) → REST direct
+#   via `requests` (POST /v1/chat/completions, compatible OpenAI)
+anthropic>=0.40               # Claude Vision (4e baseline Q16 + fiches intel)
+# google-generativeai>=0.8    # Gemini Vision (5e baseline Q16, à activer si clé)
+jinja2>=3.1                   # fallback template hors-ligne
+
+# Rapport / alerte
+reportlab>=4.2                # PDF d'alerte
+markdown>=3.6
+tabulate>=0.9                 # pandas.DataFrame.to_markdown() pour Q18
+
+# Qualité (dev)
+ruff>=0.6
+pytest>=8.3

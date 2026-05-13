@@ -1,0 +1,29 @@
+{
+  "image_dir": "images2",
+  "models": {
+    "YOLOv8n-COCO (générique)": {
+      "weights": "yolov8n.pt",
+      "n_images": 40,
+      "n_detections_total": 5,
+      "n_ship_detections": 0,
+      "n_images_with_ship": 0,
+      "mean_ships_per_image": 0.0
+    },
+    "YOLOv8n-OBB DOTA (aérien)": {
+      "weights": "yolov8n-obb.pt",
+      "n_images": 40,
+      "n_detections_total": 11,
+      "n_ship_detections": 9,
+      "n_images_with_ship": 3,
+      "mean_ships_per_image": 0.23
+    },
+    "YOLOv8n fine-tuné navires": {
+      "weights": "yolo_vessels_best.pt",
+      "n_images": 40,
+      "n_detections_total": 21,
+      "n_ship_detections": 21,
+      "n_images_with_ship": 3,
+      "mean_ships_per_image": 0.53
+    }
+  }
+}

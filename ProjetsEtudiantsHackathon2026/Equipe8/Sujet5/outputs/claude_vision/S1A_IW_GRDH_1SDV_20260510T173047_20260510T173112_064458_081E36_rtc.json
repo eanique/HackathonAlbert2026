@@ -1,0 +1,22 @@
+{
+  "vessel_detected": true,
+  "n_vessels_estimated": 12,
+  "vessel_category": "military",
+  "is_military": true,
+  "vessel_length_estimate_m": 140.0,
+  "confidence": 0.82,
+  "geographic_zone": "Base navale de Toulon",
+  "zone_type": "naval_base",
+  "geopolitical_risk_level": "low",
+  "geopolitical_context": "La rade de Toulon est le principal port militaire français en Méditerranée, accueillant la Force d'action navale de la Marine nationale. Activité portuaire dense en cohérence avec une base opérationnelle permanente.",
+  "is_dark_candidate": false,
+  "alert": false,
+  "alert_reason": null,
+  "limits": "Image SAR monobande : impossible de déterminer pavillons, MMSI, noms de navires, cap précis ou état d'appareillage. Certains retours brillants (bright scatterers) peuvent correspondre à des grues ou infrastructures portuaires plutôt qu'à des coques. Nombre de bâtiments estimé par comptage des signatures cohérentes mais incertitude +/-3 unités. Pas de distinction fiable frégates/BPC/sous-marins à quai sans résolution plus fine.",
+  "model_version": "maritime-v1.1-bdd-minarm",
+  "model": "claude-sonnet-4-6",
+  "_image_file": "S1A_IW_GRDH_1SDV_20260510T173047_20260510T173112_064458_081E36_rtc_vv.preview.jpg",
+  "_scene_id": "S1A_IW_GRDH_1SDV_20260510T173047_20260510T173112_064458_081E36_rtc",
+  "_lat": 43.1,
+  "_lon": 5.92
+}

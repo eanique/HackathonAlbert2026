@@ -1,0 +1,22 @@
+{
+  "vessel_detected": true,
+  "n_vessels_estimated": 35,
+  "vessel_category": "military",
+  "is_military": true,
+  "vessel_length_estimate_m": 120.0,
+  "confidence": 0.82,
+  "geographic_zone": "Rade de Toulon et port militaire de Toulon",
+  "zone_type": "naval_base",
+  "geopolitical_risk_level": "low",
+  "geopolitical_context": "Toulon est le principal port militaire français en Méditerranée, base de la Marine nationale (ALFAN). La présence de bâtiments militaires à quai est nominale et attendue dans ce contexte opérationnel permanent.",
+  "is_dark_candidate": false,
+  "alert": false,
+  "alert_reason": null,
+  "limits": "Pas de MMSI ni d'identification individuelle des navires ; résolution insuffisante pour distinguer précisément frégates, BPC ou sous-marins à quai ; absence d'horodatage exact empêchant l'analyse de mouvement ; types de navires civils et militaires non différenciés avec certitude dans le bassin civil adjacent ; pas de données AIS dans l'image.",
+  "model_version": "maritime-v1.1-bdd-minarm",
+  "model": "claude-sonnet-4-6",
+  "_image_file": "S2A_MSIL2A_20260505T102701_R108_T31TGH_20260505T172317_visual.preview.jpg",
+  "_scene_id": "S2A_MSIL2A_20260505T102701_R108_T31TGH_20260505T172317",
+  "_lat": 43.1,
+  "_lon": 5.92
+}
